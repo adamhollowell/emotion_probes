@@ -1,0 +1,1711 @@
+{
+ "generated_utc": "2026-08-13T18:38:43Z",
+ "inputs": {
+  "pass1_results_sha256": "712382efac527cde15c91cadfe11d1763363cddf8b4ace2191d7c7f1d9556537",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b"
+ },
+ "layer": 31,
+ "n": {
+  "docs": 47274,
+  "swept_tokens": 25136520,
+  "top20_windows": 3420,
+  "unique_winning_docs": 723
+ },
+ "baseline_document_pct": {
+  "lmsys": 66.7,
+  "pile": 19.3,
+  "common_corpus": 7.6,
+  "isotonic": 6.4
+ },
+ "baseline_swept_token_pct": {
+  "lmsys": 58.35,
+  "pile": 25.48,
+  "common_corpus": 13.92,
+  "isotonic": 2.26
+ },
+ "windows_rank1_pct": {
+  "lmsys": 73.68,
+  "pile": 14.04,
+  "common_corpus": 12.28,
+  "isotonic": 0.0
+ },
+ "windows_top20_pct": {
+  "lmsys": 71.14,
+  "pile": 16.81,
+  "common_corpus": 11.87,
+  "isotonic": 0.18
+ },
+ "windows_unique_docs_pct": {
+  "lmsys": 77.87,
+  "pile": 13.83,
+  "common_corpus": 7.61,
+  "isotonic": 0.69
+ },
+ "observed_vs_expected_top20": {
+  "lmsys": {
+   "observed_top20": 2433,
+   "expected_doc_baseline": 2281.1,
+   "expected_token_baseline": 1995.6
+  },
+  "pile": {
+   "observed_top20": 575,
+   "expected_doc_baseline": 660.1,
+   "expected_token_baseline": 871.4
+  },
+  "common_corpus": {
+   "observed_top20": 406,
+   "expected_doc_baseline": 259.9,
+   "expected_token_baseline": 476.1
+  },
+  "isotonic": {
+   "observed_top20": 6,
+   "expected_doc_baseline": 218.9,
+   "expected_token_baseline": 77.3
+  }
+ },
+ "dominant_source_counts": {
+  "lmsys": 126,
+  "pile": 33,
+  "common_corpus": 12
+ },
+ "non_lmsys_dominant": [
+  "astonished",
+  "bewildered",
+  "bitter",
+  "bored",
+  "contemptuous",
+  "defiant",
+  "dependent",
+  "depressed",
+  "desperate",
+  "disoriented",
+  "dispirited",
+  "enraged",
+  "envious",
+  "exasperated",
+  "greedy",
+  "hateful",
+  "hostile",
+  "impatient",
+  "indignant",
+  "irate",
+  "jealous",
+  "listless",
+  "mystified",
+  "obstinate",
+  "outraged",
+  "paranoid",
+  "perplexed",
+  "puzzled",
+  "remorseful",
+  "resentful",
+  "resigned",
+  "restless",
+  "scornful",
+  "skeptical",
+  "spiteful",
+  "stubborn",
+  "surprised",
+  "suspicious",
+  "tormented",
+  "trapped",
+  "troubled",
+  "vengeful",
+  "vigilant",
+  "vindictive",
+  "worthless"
+ ],
+ "geometry_check_non_lmsys": {
+  "astonished": {
+   "pc1_valence": -222.3,
+   "below_median_valence": true,
+   "pc2_arousal": 123.5,
+   "below_median_arousal": false
+  },
+  "bewildered": {
+   "pc1_valence": -220.6,
+   "below_median_valence": true,
+   "pc2_arousal": 5.3,
+   "below_median_arousal": true
+  },
+  "bitter": {
+   "pc1_valence": -18.0,
+   "below_median_valence": false,
+   "pc2_arousal": -3.9,
+   "below_median_arousal": true
+  },
+  "bored": {
+   "pc1_valence": 65.4,
+   "below_median_valence": false,
+   "pc2_arousal": -34.6,
+   "below_median_arousal": true
+  },
+  "contemptuous": {
+   "pc1_valence": 100.2,
+   "below_median_valence": false,
+   "pc2_arousal": 224.9,
+   "below_median_arousal": false
+  },
+  "defiant": {
+   "pc1_valence": 209.9,
+   "below_median_valence": false,
+   "pc2_arousal": 245.6,
+   "below_median_arousal": false
+  },
+  "dependent": {
+   "pc1_valence": 32.0,
+   "below_median_valence": false,
+   "pc2_arousal": -159.2,
+   "below_median_arousal": true
+  },
+  "depressed": {
+   "pc1_valence": -173.8,
+   "below_median_valence": true,
+   "pc2_arousal": -354.3,
+   "below_median_arousal": true
+  },
+  "desperate": {
+   "pc1_valence": -95.5,
+   "below_median_valence": true,
+   "pc2_arousal": -64.3,
+   "below_median_arousal": true
+  },
+  "disoriented": {
+   "pc1_valence": -386.4,
+   "below_median_valence": true,
+   "pc2_arousal": -100.0,
+   "below_median_arousal": true
+  },
+  "dispirited": {
+   "pc1_valence": -101.8,
+   "below_median_valence": true,
+   "pc2_arousal": -227.6,
+   "below_median_arousal": true
+  },
+  "enraged": {
+   "pc1_valence": -322.0,
+   "below_median_valence": true,
+   "pc2_arousal": 328.8,
+   "below_median_arousal": false
+  },
+  "envious": {
+   "pc1_valence": 87.5,
+   "below_median_valence": false,
+   "pc2_arousal": -73.3,
+   "below_median_arousal": true
+  },
+  "exasperated": {
+   "pc1_valence": -134.6,
+   "below_median_valence": true,
+   "pc2_arousal": 205.7,
+   "below_median_arousal": false
+  },
+  "greedy": {
+   "pc1_valence": 336.9,
+   "below_median_valence": false,
+   "pc2_arousal": 136.1,
+   "below_median_arousal": false
+  },
+  "hateful": {
+   "pc1_valence": -70.2,
+   "below_median_valence": true,
+   "pc2_arousal": 163.7,
+   "below_median_arousal": false
+  },
+  "hostile": {
+   "pc1_valence": -120.4,
+   "below_median_valence": true,
+   "pc2_arousal": 294.8,
+   "below_median_arousal": false
+  },
+  "impatient": {
+   "pc1_valence": -86.3,
+   "below_median_valence": true,
+   "pc2_arousal": 332.2,
+   "below_median_arousal": false
+  },
+  "indignant": {
+   "pc1_valence": -60.0,
+   "below_median_valence": true,
+   "pc2_arousal": 343.4,
+   "below_median_arousal": false
+  },
+  "irate": {
+   "pc1_valence": -231.5,
+   "below_median_valence": true,
+   "pc2_arousal": 340.7,
+   "below_median_arousal": false
+  },
+  "jealous": {
+   "pc1_valence": 92.6,
+   "below_median_valence": false,
+   "pc2_arousal": -39.9,
+   "below_median_arousal": true
+  },
+  "listless": {
+   "pc1_valence": -71.7,
+   "below_median_valence": true,
+   "pc2_arousal": -259.0,
+   "below_median_arousal": true
+  },
+  "mystified": {
+   "pc1_valence": -55.1,
+   "below_median_valence": false,
+   "pc2_arousal": 22.9,
+   "below_median_arousal": false
+  },
+  "obstinate": {
+   "pc1_valence": 44.1,
+   "below_median_valence": false,
+   "pc2_arousal": 213.4,
+   "below_median_arousal": false
+  },
+  "outraged": {
+   "pc1_valence": -219.7,
+   "below_median_valence": true,
+   "pc2_arousal": 372.9,
+   "below_median_arousal": false
+  },
+  "paranoid": {
+   "pc1_valence": -89.2,
+   "below_median_valence": true,
+   "pc2_arousal": 34.3,
+   "below_median_arousal": false
+  },
+  "perplexed": {
+   "pc1_valence": -86.3,
+   "below_median_valence": true,
+   "pc2_arousal": 14.7,
+   "below_median_arousal": false
+  },
+  "puzzled": {
+   "pc1_valence": -47.3,
+   "below_median_valence": false,
+   "pc2_arousal": 49.9,
+   "below_median_arousal": false
+  },
+  "remorseful": {
+   "pc1_valence": 36.6,
+   "below_median_valence": false,
+   "pc2_arousal": -162.3,
+   "below_median_arousal": true
+  },
+  "resentful": {
+   "pc1_valence": 6.6,
+   "below_median_valence": false,
+   "pc2_arousal": 15.9,
+   "below_median_arousal": false
+  },
+  "resigned": {
+   "pc1_valence": -85.6,
+   "below_median_valence": true,
+   "pc2_arousal": -214.8,
+   "below_median_arousal": true
+  },
+  "restless": {
+   "pc1_valence": -163.1,
+   "below_median_valence": true,
+   "pc2_arousal": -24.6,
+   "below_median_arousal": true
+  },
+  "scornful": {
+   "pc1_valence": 98.7,
+   "below_median_valence": false,
+   "pc2_arousal": 237.7,
+   "below_median_arousal": false
+  },
+  "skeptical": {
+   "pc1_valence": 116.9,
+   "below_median_valence": false,
+   "pc2_arousal": 134.0,
+   "below_median_arousal": false
+  },
+  "spiteful": {
+   "pc1_valence": 314.1,
+   "below_median_valence": false,
+   "pc2_arousal": 179.5,
+   "below_median_arousal": false
+  },
+  "stubborn": {
+   "pc1_valence": 43.2,
+   "below_median_valence": false,
+   "pc2_arousal": 135.7,
+   "below_median_arousal": false
+  },
+  "surprised": {
+   "pc1_valence": -172.4,
+   "below_median_valence": true,
+   "pc2_arousal": 141.6,
+   "below_median_arousal": false
+  },
+  "suspicious": {
+   "pc1_valence": 31.4,
+   "below_median_valence": false,
+   "pc2_arousal": 114.6,
+   "below_median_arousal": false
+  },
+  "tormented": {
+   "pc1_valence": -234.3,
+   "below_median_valence": true,
+   "pc2_arousal": -129.5,
+   "below_median_arousal": true
+  },
+  "trapped": {
+   "pc1_valence": -122.3,
+   "below_median_valence": true,
+   "pc2_arousal": -226.5,
+   "below_median_arousal": true
+  },
+  "troubled": {
+   "pc1_valence": -168.6,
+   "below_median_valence": true,
+   "pc2_arousal": -119.0,
+   "below_median_arousal": true
+  },
+  "vengeful": {
+   "pc1_valence": 279.1,
+   "below_median_valence": false,
+   "pc2_arousal": 181.4,
+   "below_median_arousal": false
+  },
+  "vigilant": {
+   "pc1_valence": 73.0,
+   "below_median_valence": false,
+   "pc2_arousal": 77.9,
+   "below_median_arousal": false
+  },
+  "vindictive": {
+   "pc1_valence": 346.4,
+   "below_median_valence": false,
+   "pc2_arousal": 205.4,
+   "below_median_arousal": false
+  },
+  "worthless": {
+   "pc1_valence": -56.5,
+   "below_median_valence": false,
+   "pc2_arousal": -273.0,
+   "below_median_arousal": true
+  }
+ },
+ "rank_share_profile_pct": {
+  "1": {
+   "lmsys": 73.7,
+   "pile": 14.0,
+   "common_corpus": 12.3,
+   "isotonic": 0.0
+  },
+  "2": {
+   "lmsys": 71.9,
+   "pile": 14.6,
+   "common_corpus": 13.5,
+   "isotonic": 0.0
+  },
+  "3": {
+   "lmsys": 72.5,
+   "pile": 12.9,
+   "common_corpus": 14.6,
+   "isotonic": 0.0
+  },
+  "4": {
+   "lmsys": 73.1,
+   "pile": 17.5,
+   "common_corpus": 8.8,
+   "isotonic": 0.6
+  },
+  "5": {
+   "lmsys": 72.5,
+   "pile": 16.4,
+   "common_corpus": 10.5,
+   "isotonic": 0.6
+  },
+  "6": {
+   "lmsys": 71.3,
+   "pile": 16.4,
+   "common_corpus": 12.3,
+   "isotonic": 0.0
+  },
+  "7": {
+   "lmsys": 71.9,
+   "pile": 15.8,
+   "common_corpus": 12.3,
+   "isotonic": 0.0
+  },
+  "8": {
+   "lmsys": 71.9,
+   "pile": 15.8,
+   "common_corpus": 11.7,
+   "isotonic": 0.6
+  },
+  "9": {
+   "lmsys": 70.2,
+   "pile": 18.7,
+   "common_corpus": 11.1,
+   "isotonic": 0.0
+  },
+  "10": {
+   "lmsys": 70.2,
+   "pile": 17.0,
+   "common_corpus": 12.9,
+   "isotonic": 0.0
+  },
+  "11": {
+   "lmsys": 71.3,
+   "pile": 22.2,
+   "common_corpus": 6.4,
+   "isotonic": 0.0
+  },
+  "12": {
+   "lmsys": 71.3,
+   "pile": 14.0,
+   "common_corpus": 14.6,
+   "isotonic": 0.0
+  },
+  "13": {
+   "lmsys": 69.0,
+   "pile": 15.2,
+   "common_corpus": 15.2,
+   "isotonic": 0.6
+  },
+  "14": {
+   "lmsys": 71.3,
+   "pile": 21.1,
+   "common_corpus": 7.6,
+   "isotonic": 0.0
+  },
+  "15": {
+   "lmsys": 69.0,
+   "pile": 19.3,
+   "common_corpus": 11.7,
+   "isotonic": 0.0
+  },
+  "16": {
+   "lmsys": 69.6,
+   "pile": 17.0,
+   "common_corpus": 12.9,
+   "isotonic": 0.6
+  },
+  "17": {
+   "lmsys": 71.9,
+   "pile": 18.1,
+   "common_corpus": 9.9,
+   "isotonic": 0.0
+  },
+  "18": {
+   "lmsys": 69.6,
+   "pile": 16.4,
+   "common_corpus": 13.5,
+   "isotonic": 0.6
+  },
+  "19": {
+   "lmsys": 70.8,
+   "pile": 15.8,
+   "common_corpus": 13.5,
+   "isotonic": 0.0
+  },
+  "20": {
+   "lmsys": 69.6,
+   "pile": 18.1,
+   "common_corpus": 12.3,
+   "isotonic": 0.0
+  }
+ },
+ "per_emotion": {
+  "afraid": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "alarmed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "alert": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "amazed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "amused": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "angry": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "annoyed": {
+   "dominant": "lmsys",
+   "lmsys": 17,
+   "pile": 1,
+   "common_corpus": 2,
+   "isotonic": 0
+  },
+  "anxious": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "aroused": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "ashamed": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "astonished": {
+   "dominant": "pile",
+   "lmsys": 4,
+   "pile": 10,
+   "common_corpus": 6,
+   "isotonic": 0
+  },
+  "at ease": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "awestruck": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "bewildered": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 10,
+   "common_corpus": 10,
+   "isotonic": 0
+  },
+  "bitter": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 10,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "blissful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "bored": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 12,
+   "common_corpus": 7,
+   "isotonic": 0
+  },
+  "brooding": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "calm": {
+   "dominant": "lmsys",
+   "lmsys": 18,
+   "pile": 1,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "cheerful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "compassionate": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "contemptuous": {
+   "dominant": "pile",
+   "lmsys": 3,
+   "pile": 11,
+   "common_corpus": 6,
+   "isotonic": 0
+  },
+  "content": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "defiant": {
+   "dominant": "pile",
+   "lmsys": 4,
+   "pile": 11,
+   "common_corpus": 5,
+   "isotonic": 0
+  },
+  "delighted": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "dependent": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "depressed": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 14,
+   "common_corpus": 6,
+   "isotonic": 0
+  },
+  "desperate": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "disdainful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "disgusted": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "disoriented": {
+   "dominant": "pile",
+   "lmsys": 2,
+   "pile": 14,
+   "common_corpus": 4,
+   "isotonic": 0
+  },
+  "dispirited": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 11,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "distressed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "disturbed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "docile": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "droopy": {
+   "dominant": "lmsys",
+   "lmsys": 18,
+   "pile": 1,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "dumbstruck": {
+   "dominant": "lmsys",
+   "lmsys": 17,
+   "pile": 3,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "eager": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "ecstatic": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "elated": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "embarrassed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "empathetic": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "energized": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "enraged": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "enthusiastic": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "envious": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 9,
+   "common_corpus": 11,
+   "isotonic": 0
+  },
+  "euphoric": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "exasperated": {
+   "dominant": "pile",
+   "lmsys": 2,
+   "pile": 10,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "excited": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "exuberant": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "frightened": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "frustrated": {
+   "dominant": "lmsys",
+   "lmsys": 14,
+   "pile": 4,
+   "common_corpus": 2,
+   "isotonic": 0
+  },
+  "fulfilled": {
+   "dominant": "lmsys",
+   "lmsys": 16,
+   "pile": 4,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "furious": {
+   "dominant": "lmsys",
+   "lmsys": 11,
+   "pile": 7,
+   "common_corpus": 2,
+   "isotonic": 0
+  },
+  "gloomy": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "grateful": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "greedy": {
+   "dominant": "pile",
+   "lmsys": 2,
+   "pile": 10,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "grief-stricken": {
+   "dominant": "lmsys",
+   "lmsys": 12,
+   "pile": 7,
+   "common_corpus": 0,
+   "isotonic": 1
+  },
+  "grumpy": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "guilty": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "happy": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hateful": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "heartbroken": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hope": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hopeful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "horrified": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hostile": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "humiliated": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hurt": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "hysterical": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "impatient": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 8,
+   "common_corpus": 12,
+   "isotonic": 0
+  },
+  "indifferent": {
+   "dominant": "lmsys",
+   "lmsys": 11,
+   "pile": 6,
+   "common_corpus": 2,
+   "isotonic": 1
+  },
+  "indignant": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "infatuated": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "inspired": {
+   "dominant": "lmsys",
+   "lmsys": 15,
+   "pile": 5,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "insulted": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "invigorated": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "irate": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 11,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "irritated": {
+   "dominant": "lmsys",
+   "lmsys": 18,
+   "pile": 1,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "jealous": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 10,
+   "common_corpus": 10,
+   "isotonic": 0
+  },
+  "joyful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "jubilant": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "kind": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 1
+  },
+  "lazy": {
+   "dominant": "lmsys",
+   "lmsys": 14,
+   "pile": 6,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "listless": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 14,
+   "common_corpus": 6,
+   "isotonic": 0
+  },
+  "lonely": {
+   "dominant": "lmsys",
+   "lmsys": 17,
+   "pile": 3,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "loving": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "mad": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "melancholy": {
+   "dominant": "lmsys",
+   "lmsys": 14,
+   "pile": 2,
+   "common_corpus": 4,
+   "isotonic": 0
+  },
+  "miserable": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "mortified": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "mystified": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 7,
+   "common_corpus": 13,
+   "isotonic": 0
+  },
+  "nervous": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "nostalgic": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "obstinate": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 13,
+   "common_corpus": 6,
+   "isotonic": 0
+  },
+  "offended": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "on edge": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "optimistic": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "outraged": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 13,
+   "common_corpus": 7,
+   "isotonic": 0
+  },
+  "overwhelmed": {
+   "dominant": "lmsys",
+   "lmsys": 12,
+   "pile": 8,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "panicked": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "paranoid": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 11,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "patient": {
+   "dominant": "lmsys",
+   "lmsys": 18,
+   "pile": 2,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "peaceful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "perplexed": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 6,
+   "common_corpus": 14,
+   "isotonic": 0
+  },
+  "playful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "pleased": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "proud": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "puzzled": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 7,
+   "common_corpus": 13,
+   "isotonic": 0
+  },
+  "rattled": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "reflective": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "refreshed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "regretful": {
+   "dominant": "lmsys",
+   "lmsys": 16,
+   "pile": 4,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "rejuvenated": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "relaxed": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "relieved": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "remorseful": {
+   "dominant": "common_corpus",
+   "lmsys": 5,
+   "pile": 6,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "resentful": {
+   "dominant": "common_corpus",
+   "lmsys": 1,
+   "pile": 9,
+   "common_corpus": 10,
+   "isotonic": 0
+  },
+  "resigned": {
+   "dominant": "pile",
+   "lmsys": 5,
+   "pile": 10,
+   "common_corpus": 5,
+   "isotonic": 0
+  },
+  "restless": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 12,
+   "common_corpus": 7,
+   "isotonic": 0
+  },
+  "sad": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "safe": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "satisfied": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "scared": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "scornful": {
+   "dominant": "pile",
+   "lmsys": 3,
+   "pile": 9,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "self-confident": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "self-conscious": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "self-critical": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "sensitive": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "sentimental": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "serene": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "shaken": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "shocked": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "skeptical": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 8,
+   "common_corpus": 12,
+   "isotonic": 0
+  },
+  "sleepy": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "sluggish": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "smug": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "sorry": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "spiteful": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 10,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "stimulated": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "stressed": {
+   "dominant": "lmsys",
+   "lmsys": 16,
+   "pile": 3,
+   "common_corpus": 0,
+   "isotonic": 1
+  },
+  "stubborn": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 10,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "stuck": {
+   "dominant": "lmsys",
+   "lmsys": 8,
+   "pile": 5,
+   "common_corpus": 7,
+   "isotonic": 0
+  },
+  "sullen": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 1,
+   "isotonic": 0
+  },
+  "surprised": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 9,
+   "common_corpus": 11,
+   "isotonic": 0
+  },
+  "suspicious": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 6,
+   "common_corpus": 14,
+   "isotonic": 0
+  },
+  "sympathetic": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "tense": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "terrified": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "thankful": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "thrilled": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "tired": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "tormented": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 11,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "trapped": {
+   "dominant": "pile",
+   "lmsys": 9,
+   "pile": 10,
+   "common_corpus": 0,
+   "isotonic": 1
+  },
+  "triumphant": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "troubled": {
+   "dominant": "common_corpus",
+   "lmsys": 0,
+   "pile": 10,
+   "common_corpus": 10,
+   "isotonic": 0
+  },
+  "uneasy": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "unhappy": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "unnerved": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "unsettled": {
+   "dominant": "lmsys",
+   "lmsys": 15,
+   "pile": 5,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "upset": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "valiant": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "vengeful": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 13,
+   "common_corpus": 7,
+   "isotonic": 0
+  },
+  "vibrant": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "vigilant": {
+   "dominant": "pile",
+   "lmsys": 1,
+   "pile": 10,
+   "common_corpus": 9,
+   "isotonic": 0
+  },
+  "vindictive": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 12,
+   "common_corpus": 8,
+   "isotonic": 0
+  },
+  "vulnerable": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "weary": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 1,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "worn out": {
+   "dominant": "lmsys",
+   "lmsys": 19,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 1
+  },
+  "worried": {
+   "dominant": "lmsys",
+   "lmsys": 20,
+   "pile": 0,
+   "common_corpus": 0,
+   "isotonic": 0
+  },
+  "worthless": {
+   "dominant": "pile",
+   "lmsys": 0,
+   "pile": 11,
+   "common_corpus": 9,
+   "isotonic": 0
+  }
+ }
+}

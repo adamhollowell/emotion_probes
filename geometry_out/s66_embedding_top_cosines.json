@@ -1,0 +1,1026 @@
+{
+ "tag": "canonical",
+ "desc": "Embedding-level (static input embedding, no forward pass) pairwise cosine ranking among the 171 emotion vectors, cleaned. Answers 'which pairs are most similar before any transformer layer runs.' Companion to s66_embedding.json.",
+ "n_emotions": 171,
+ "cleaned": {
+  "max_pair": [
+   "obstinate",
+   "stubborn",
+   0.969
+  ],
+  "top50_pairs": [
+   [
+    "obstinate",
+    "stubborn",
+    0.969
+   ],
+   [
+    "guilty",
+    "remorseful",
+    0.9642
+   ],
+   [
+    "regretful",
+    "remorseful",
+    0.9632
+   ],
+   [
+    "afraid",
+    "scared",
+    0.9604
+   ],
+   [
+    "enraged",
+    "furious",
+    0.9604
+   ],
+   [
+    "frightened",
+    "scared",
+    0.9589
+   ],
+   [
+    "afraid",
+    "frightened",
+    0.9577
+   ],
+   [
+    "compassionate",
+    "empathetic",
+    0.9539
+   ],
+   [
+    "angry",
+    "furious",
+    0.9515
+   ],
+   [
+    "empathetic",
+    "sympathetic",
+    0.9502
+   ],
+   [
+    "peaceful",
+    "serene",
+    0.9474
+   ],
+   [
+    "compassionate",
+    "sympathetic",
+    0.9408
+   ],
+   [
+    "contemptuous",
+    "scornful",
+    0.9391
+   ],
+   [
+    "angry",
+    "enraged",
+    0.9385
+   ],
+   [
+    "contemptuous",
+    "disdainful",
+    0.937
+   ],
+   [
+    "guilty",
+    "regretful",
+    0.9358
+   ],
+   [
+    "grateful",
+    "thankful",
+    0.9308
+   ],
+   [
+    "angry",
+    "mad",
+    0.9245
+   ],
+   [
+    "disdainful",
+    "scornful",
+    0.9228
+   ],
+   [
+    "perplexed",
+    "puzzled",
+    0.9228
+   ],
+   [
+    "envious",
+    "jealous",
+    0.9227
+   ],
+   [
+    "compassionate",
+    "kind",
+    0.9208
+   ],
+   [
+    "ecstatic",
+    "elated",
+    0.9175
+   ],
+   [
+    "annoyed",
+    "irritated",
+    0.9171
+   ],
+   [
+    "happy",
+    "joyful",
+    0.9155
+   ],
+   [
+    "furious",
+    "mad",
+    0.9143
+   ],
+   [
+    "uneasy",
+    "unnerved",
+    0.9135
+   ],
+   [
+    "vengeful",
+    "vindictive",
+    0.9101
+   ],
+   [
+    "elated",
+    "jubilant",
+    0.9044
+   ],
+   [
+    "irate",
+    "outraged",
+    0.8963
+   ],
+   [
+    "sad",
+    "unhappy",
+    0.8957
+   ],
+   [
+    "weary",
+    "worn out",
+    0.8943
+   ],
+   [
+    "sleepy",
+    "tired",
+    0.8938
+   ],
+   [
+    "spiteful",
+    "vindictive",
+    0.8878
+   ],
+   [
+    "angry",
+    "irate",
+    0.8876
+   ],
+   [
+    "horrified",
+    "terrified",
+    0.8868
+   ],
+   [
+    "scared",
+    "terrified",
+    0.8863
+   ],
+   [
+    "enraged",
+    "mad",
+    0.8857
+   ],
+   [
+    "guilty",
+    "sorry",
+    0.8854
+   ],
+   [
+    "delighted",
+    "jubilant",
+    0.8849
+   ],
+   [
+    "empathetic",
+    "kind",
+    0.884
+   ],
+   [
+    "frightened",
+    "terrified",
+    0.8836
+   ],
+   [
+    "cheerful",
+    "playful",
+    0.8832
+   ],
+   [
+    "defiant",
+    "obstinate",
+    0.8811
+   ],
+   [
+    "ecstatic",
+    "thrilled",
+    0.8809
+   ],
+   [
+    "delighted",
+    "elated",
+    0.8803
+   ],
+   [
+    "uneasy",
+    "unsettled",
+    0.8802
+   ],
+   [
+    "joyful",
+    "jubilant",
+    0.8801
+   ],
+   [
+    "at ease",
+    "content",
+    0.8776
+   ],
+   [
+    "remorseful",
+    "sorry",
+    0.877
+   ]
+  ],
+  "nearest_neighbor_per_emotion": {
+   "afraid": [
+    "scared",
+    0.9604
+   ],
+   "alarmed": [
+    "shocked",
+    0.8674
+   ],
+   "alert": [
+    "vigilant",
+    0.5846
+   ],
+   "amazed": [
+    "awestruck",
+    0.7649
+   ],
+   "amused": [
+    "playful",
+    0.8352
+   ],
+   "angry": [
+    "furious",
+    0.9515
+   ],
+   "annoyed": [
+    "irritated",
+    0.9171
+   ],
+   "anxious": [
+    "nervous",
+    0.8621
+   ],
+   "aroused": [
+    "disgusted",
+    0.582
+   ],
+   "ashamed": [
+    "sorry",
+    0.8506
+   ],
+   "astonished": [
+    "surprised",
+    0.857
+   ],
+   "at ease": [
+    "content",
+    0.8776
+   ],
+   "awestruck": [
+    "amazed",
+    0.7649
+   ],
+   "bewildered": [
+    "perplexed",
+    0.811
+   ],
+   "bitter": [
+    "resentful",
+    0.8018
+   ],
+   "blissful": [
+    "euphoric",
+    0.7663
+   ],
+   "bored": [
+    "relaxed",
+    0.4622
+   ],
+   "brooding": [
+    "unhappy",
+    0.8373
+   ],
+   "calm": [
+    "at ease",
+    0.813
+   ],
+   "cheerful": [
+    "playful",
+    0.8832
+   ],
+   "compassionate": [
+    "empathetic",
+    0.9539
+   ],
+   "contemptuous": [
+    "scornful",
+    0.9391
+   ],
+   "content": [
+    "at ease",
+    0.8776
+   ],
+   "defiant": [
+    "obstinate",
+    0.8811
+   ],
+   "delighted": [
+    "jubilant",
+    0.8849
+   ],
+   "dependent": [
+    "compassionate",
+    0.6078
+   ],
+   "depressed": [
+    "listless",
+    0.7704
+   ],
+   "desperate": [
+    "overwhelmed",
+    0.6644
+   ],
+   "disdainful": [
+    "contemptuous",
+    0.937
+   ],
+   "disgusted": [
+    "upset",
+    0.6563
+   ],
+   "disoriented": [
+    "bewildered",
+    0.7841
+   ],
+   "dispirited": [
+    "listless",
+    0.7797
+   ],
+   "distressed": [
+    "shaken",
+    0.8231
+   ],
+   "disturbed": [
+    "unnerved",
+    0.8497
+   ],
+   "docile": [
+    "serene",
+    0.5778
+   ],
+   "droopy": [
+    "sluggish",
+    0.746
+   ],
+   "dumbstruck": [
+    "shocked",
+    0.8112
+   ],
+   "eager": [
+    "energized",
+    0.7833
+   ],
+   "ecstatic": [
+    "elated",
+    0.9175
+   ],
+   "elated": [
+    "ecstatic",
+    0.9175
+   ],
+   "embarrassed": [
+    "humiliated",
+    0.6943
+   ],
+   "empathetic": [
+    "compassionate",
+    0.9539
+   ],
+   "energized": [
+    "vibrant",
+    0.8588
+   ],
+   "enraged": [
+    "furious",
+    0.9604
+   ],
+   "enthusiastic": [
+    "energized",
+    0.848
+   ],
+   "envious": [
+    "jealous",
+    0.9227
+   ],
+   "euphoric": [
+    "elated",
+    0.8178
+   ],
+   "exasperated": [
+    "annoyed",
+    0.6566
+   ],
+   "excited": [
+    "thrilled",
+    0.8375
+   ],
+   "exuberant": [
+    "vibrant",
+    0.8627
+   ],
+   "frightened": [
+    "scared",
+    0.9589
+   ],
+   "frustrated": [
+    "irritated",
+    0.7909
+   ],
+   "fulfilled": [
+    "satisfied",
+    0.8019
+   ],
+   "furious": [
+    "enraged",
+    0.9604
+   ],
+   "gloomy": [
+    "melancholy",
+    0.8479
+   ],
+   "grateful": [
+    "thankful",
+    0.9308
+   ],
+   "greedy": [
+    "vindictive",
+    0.6763
+   ],
+   "grief-stricken": [
+    "heartbroken",
+    0.8628
+   ],
+   "grumpy": [
+    "irritated",
+    0.8451
+   ],
+   "guilty": [
+    "remorseful",
+    0.9642
+   ],
+   "happy": [
+    "joyful",
+    0.9155
+   ],
+   "hateful": [
+    "enraged",
+    0.6092
+   ],
+   "heartbroken": [
+    "grief-stricken",
+    0.8628
+   ],
+   "hope": [
+    "hopeful",
+    0.8762
+   ],
+   "hopeful": [
+    "hope",
+    0.8762
+   ],
+   "horrified": [
+    "terrified",
+    0.8868
+   ],
+   "hostile": [
+    "irate",
+    0.8077
+   ],
+   "humiliated": [
+    "mortified",
+    0.7801
+   ],
+   "hurt": [
+    "sad",
+    0.7721
+   ],
+   "hysterical": [
+    "euphoric",
+    0.503
+   ],
+   "impatient": [
+    "exasperated",
+    0.6408
+   ],
+   "indifferent": [
+    "resigned",
+    0.7694
+   ],
+   "indignant": [
+    "scornful",
+    0.7843
+   ],
+   "infatuated": [
+    "self-conscious",
+    0.5621
+   ],
+   "inspired": [
+    "invigorated",
+    0.7564
+   ],
+   "insulted": [
+    "offended",
+    0.8518
+   ],
+   "invigorated": [
+    "energized",
+    0.7879
+   ],
+   "irate": [
+    "outraged",
+    0.8963
+   ],
+   "irritated": [
+    "annoyed",
+    0.9171
+   ],
+   "jealous": [
+    "envious",
+    0.9227
+   ],
+   "joyful": [
+    "happy",
+    0.9155
+   ],
+   "jubilant": [
+    "elated",
+    0.9044
+   ],
+   "kind": [
+    "compassionate",
+    0.9208
+   ],
+   "lazy": [
+    "listless",
+    0.7178
+   ],
+   "listless": [
+    "dispirited",
+    0.7797
+   ],
+   "lonely": [
+    "reflective",
+    0.6168
+   ],
+   "loving": [
+    "empathetic",
+    0.7561
+   ],
+   "mad": [
+    "angry",
+    0.9245
+   ],
+   "melancholy": [
+    "gloomy",
+    0.8479
+   ],
+   "miserable": [
+    "unhappy",
+    0.7871
+   ],
+   "mortified": [
+    "humiliated",
+    0.7801
+   ],
+   "mystified": [
+    "puzzled",
+    0.874
+   ],
+   "nervous": [
+    "anxious",
+    0.8621
+   ],
+   "nostalgic": [
+    "sentimental",
+    0.8629
+   ],
+   "obstinate": [
+    "stubborn",
+    0.969
+   ],
+   "offended": [
+    "insulted",
+    0.8518
+   ],
+   "on edge": [
+    "anxious",
+    0.8402
+   ],
+   "optimistic": [
+    "enthusiastic",
+    0.8262
+   ],
+   "outraged": [
+    "irate",
+    0.8963
+   ],
+   "overwhelmed": [
+    "panicked",
+    0.7681
+   ],
+   "panicked": [
+    "terrified",
+    0.8352
+   ],
+   "paranoid": [
+    "worried",
+    0.6493
+   ],
+   "patient": [
+    "calm",
+    0.66
+   ],
+   "peaceful": [
+    "serene",
+    0.9474
+   ],
+   "perplexed": [
+    "puzzled",
+    0.9228
+   ],
+   "playful": [
+    "cheerful",
+    0.8832
+   ],
+   "pleased": [
+    "delighted",
+    0.8232
+   ],
+   "proud": [
+    "triumphant",
+    0.6803
+   ],
+   "puzzled": [
+    "perplexed",
+    0.9228
+   ],
+   "rattled": [
+    "shaken",
+    0.8467
+   ],
+   "reflective": [
+    "nostalgic",
+    0.6944
+   ],
+   "refreshed": [
+    "content",
+    0.6455
+   ],
+   "regretful": [
+    "remorseful",
+    0.9632
+   ],
+   "rejuvenated": [
+    "invigorated",
+    0.752
+   ],
+   "relaxed": [
+    "at ease",
+    0.8219
+   ],
+   "relieved": [
+    "thankful",
+    0.5162
+   ],
+   "remorseful": [
+    "guilty",
+    0.9642
+   ],
+   "resentful": [
+    "bitter",
+    0.8018
+   ],
+   "resigned": [
+    "dispirited",
+    0.7734
+   ],
+   "restless": [
+    "droopy",
+    0.4689
+   ],
+   "sad": [
+    "unhappy",
+    0.8957
+   ],
+   "safe": [
+    "at ease",
+    0.7989
+   ],
+   "satisfied": [
+    "fulfilled",
+    0.8019
+   ],
+   "scared": [
+    "afraid",
+    0.9604
+   ],
+   "scornful": [
+    "contemptuous",
+    0.9391
+   ],
+   "self-confident": [
+    "defiant",
+    0.7843
+   ],
+   "self-conscious": [
+    "sensitive",
+    0.5902
+   ],
+   "self-critical": [
+    "worthless",
+    0.7873
+   ],
+   "sensitive": [
+    "vulnerable",
+    0.7008
+   ],
+   "sentimental": [
+    "nostalgic",
+    0.8629
+   ],
+   "serene": [
+    "peaceful",
+    0.9474
+   ],
+   "shaken": [
+    "rattled",
+    0.8467
+   ],
+   "shocked": [
+    "alarmed",
+    0.8674
+   ],
+   "skeptical": [
+    "disdainful",
+    0.6208
+   ],
+   "sleepy": [
+    "tired",
+    0.8938
+   ],
+   "sluggish": [
+    "tired",
+    0.7738
+   ],
+   "smug": [
+    "self-confident",
+    0.7594
+   ],
+   "sorry": [
+    "guilty",
+    0.8854
+   ],
+   "spiteful": [
+    "vindictive",
+    0.8878
+   ],
+   "stimulated": [
+    "energized",
+    0.7377
+   ],
+   "stressed": [
+    "tense",
+    0.7798
+   ],
+   "stubborn": [
+    "obstinate",
+    0.969
+   ],
+   "stuck": [
+    "worthless",
+    0.5971
+   ],
+   "sullen": [
+    "gloomy",
+    0.8278
+   ],
+   "surprised": [
+    "astonished",
+    0.857
+   ],
+   "suspicious": [
+    "skeptical",
+    0.6116
+   ],
+   "sympathetic": [
+    "empathetic",
+    0.9502
+   ],
+   "tense": [
+    "alarmed",
+    0.8598
+   ],
+   "terrified": [
+    "horrified",
+    0.8868
+   ],
+   "thankful": [
+    "grateful",
+    0.9308
+   ],
+   "thrilled": [
+    "ecstatic",
+    0.8809
+   ],
+   "tired": [
+    "sleepy",
+    0.8938
+   ],
+   "tormented": [
+    "distressed",
+    0.7884
+   ],
+   "trapped": [
+    "troubled",
+    0.63
+   ],
+   "triumphant": [
+    "proud",
+    0.6803
+   ],
+   "troubled": [
+    "tormented",
+    0.7847
+   ],
+   "uneasy": [
+    "unnerved",
+    0.9135
+   ],
+   "unhappy": [
+    "sad",
+    0.8957
+   ],
+   "unnerved": [
+    "uneasy",
+    0.9135
+   ],
+   "unsettled": [
+    "uneasy",
+    0.8802
+   ],
+   "upset": [
+    "hurt",
+    0.7582
+   ],
+   "valiant": [
+    "self-confident",
+    0.7693
+   ],
+   "vengeful": [
+    "vindictive",
+    0.9101
+   ],
+   "vibrant": [
+    "exuberant",
+    0.8627
+   ],
+   "vigilant": [
+    "alert",
+    0.5846
+   ],
+   "vindictive": [
+    "vengeful",
+    0.9101
+   ],
+   "vulnerable": [
+    "sensitive",
+    0.7008
+   ],
+   "weary": [
+    "worn out",
+    0.8943
+   ],
+   "worn out": [
+    "weary",
+    0.8943
+   ],
+   "worried": [
+    "anxious",
+    0.7019
+   ],
+   "worthless": [
+    "self-critical",
+    0.7873
+   ]
+  }
+ },
+ "raw_reference": {
+  "max_pair": [
+   "obstinate",
+   "stubborn",
+   0.9718
+  ],
+  "top10_pairs": [
+   [
+    "obstinate",
+    "stubborn",
+    0.9718
+   ],
+   [
+    "guilty",
+    "remorseful",
+    0.9645
+   ],
+   [
+    "afraid",
+    "scared",
+    0.9618
+   ],
+   [
+    "regretful",
+    "remorseful",
+    0.961
+   ],
+   [
+    "enraged",
+    "furious",
+    0.9606
+   ],
+   [
+    "frightened",
+    "scared",
+    0.9574
+   ],
+   [
+    "afraid",
+    "frightened",
+    0.9553
+   ],
+   [
+    "compassionate",
+    "empathetic",
+    0.955
+   ],
+   [
+    "angry",
+    "furious",
+    0.9525
+   ],
+   [
+    "peaceful",
+    "serene",
+    0.9496
+   ]
+  ]
+ },
+ "legacy_example_pairs_cleaned": {
+  "afraid->scared": 0.9604,
+  "joyful->happy": 0.9155,
+  "compassionate->empathetic": 0.9539
+ },
+ "legacy_example_note": "afraid->scared (0.960) is the essay's carried-over example; it is NOT the embedding-level maximum. Top pair is obstinate/stubborn at 0.969; afraid/scared ranks 4th (ties enraged/furious).",
+ "_provenance": {
+  "basis": "canonical",
+  "embedding_vectors": "data/vectors/embedding_null_vectors.pt",
+  "embedding_vectors_sha256": "476230a0406c462e4769193dbe2fdc27846c2e5a92ebc0a5190efdf45874d5ea",
+  "L31_canonical_basis_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "matrix": "blob['vectors'] (cleaned); raw = blob['vectors_raw']",
+  "method": "row-normalize, C = Vn @ Vn.T, rank upper triangle",
+  "generated_utc": "2026-08-21T18:11:46Z",
+  "producer": "outputs/emit_embedding_top_cosines.py",
+  "reproduces_s66_neighbor_cosines": "afraid->scared, joyful->happy, compassionate->empathetic to the digit"
+ }
+}

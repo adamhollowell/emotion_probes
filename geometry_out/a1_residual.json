@@ -1,0 +1,56 @@
+{
+ "item": "A1",
+ "section": "5.4",
+ "desc": "PC1 valence residual",
+ "value": {
+  "pc1_var_pct": 26.732,
+  "full171": {
+   "neg": 93,
+   "pos": 78,
+   "raw_skew": 0.28,
+   "pc1_median": -56.5,
+   "most_positive": [
+    [
+     "optimistic",
+     546
+    ],
+    [
+     "kind",
+     512
+    ],
+    [
+     "cheerful",
+     503
+    ]
+   ],
+   "most_negative": [
+    [
+     "terrified",
+     -418
+    ],
+    [
+     "hysterical",
+     -417
+    ],
+    [
+     "frightened",
+     -408
+    ]
+   ]
+  },
+  "residual_test": {
+   "nrc_overlap_n": 161,
+   "median_residual": 8.9,
+   "residual_skew": 0.2,
+   "wilcoxon_p": 0.99,
+   "pred_neg": "101/161",
+   "act_neg": "88/161"
+  }
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T19:33:47Z"
+ }
+}

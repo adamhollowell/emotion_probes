@@ -1,0 +1,86 @@
+{
+ "value": {
+  "scornful": {
+   "deix": 28,
+   "second": 26
+  },
+  "defiant": {
+   "deix": 28,
+   "second": 28
+  },
+  "contemptuous": {
+   "deix": 27,
+   "second": 27
+  },
+  "smug": {
+   "deix": 24,
+   "second": 24
+  },
+  "self-confident": {
+   "deix": 24,
+   "second": 24
+  },
+  "disdainful": {
+   "deix": 11,
+   "second": 11
+  },
+  "compassionate": {
+   "deix": 21,
+   "second": 20
+  },
+  "sympathetic": {
+   "deix": 21,
+   "second": 21
+  },
+  "empathetic": {
+   "deix": 20,
+   "second": 19
+  },
+  "grateful": {
+   "deix": 12,
+   "second": 0
+  },
+  "kind": {
+   "deix": 7,
+   "second": 6
+  },
+  "thankful": {
+   "deix": 0,
+   "second": 0
+  },
+  "loving": {
+   "deix": 0,
+   "second": 0
+  },
+  "tired": {
+   "deix": 0,
+   "second": 0
+  },
+  "sad": {
+   "deix": 0,
+   "second": 0
+  },
+  "calm": {
+   "deix": 1,
+   "second": 1
+  },
+  "disgusted": {
+   "deix": 0,
+   "second": 0
+  },
+  "angry": {
+   "deix": 0,
+   "second": 0
+  },
+  "proud": {
+   "deix": 2,
+   "second": 2
+  }
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T19:41:37Z"
+ }
+}

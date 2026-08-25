@@ -1,0 +1,1076 @@
+{
+  "version": 1,
+  "savedAt": "2026-06-26T22:55:20.010Z",
+  "meta": {
+    "seed": 20260622,
+    "n_emotions": 30,
+    "n_stories_per_emotion": 10,
+    "total_stories": 300,
+    "sampling": "10 stories from 10 distinct topics per emotion",
+    "source_file": "data/stories/stories_171_canonical_clean.jsonl",
+    "chosen_emotions": [
+      "bitter",
+      "bored",
+      "disdainful",
+      "distressed",
+      "ecstatic",
+      "elated",
+      "exasperated",
+      "fulfilled",
+      "hope",
+      "hysterical",
+      "indifferent",
+      "irritated",
+      "nostalgic",
+      "overwhelmed",
+      "perplexed",
+      "pleased",
+      "refreshed",
+      "resentful",
+      "restless",
+      "sensitive",
+      "sentimental",
+      "serene",
+      "shocked",
+      "sullen",
+      "thrilled",
+      "uneasy",
+      "upset",
+      "vindictive",
+      "worn out",
+      "worried"
+    ]
+  },
+  "total": 300,
+  "position": 2,
+  "codings": {
+    "0": {
+      "verdict": "yes"
+    },
+    "1": {
+      "verdict": "yes"
+    },
+    "2": {
+      "verdict": "yes"
+    },
+    "3": {
+      "verdict": "yes"
+    },
+    "4": {
+      "verdict": "yes"
+    },
+    "5": {
+      "verdict": "yes"
+    },
+    "6": {
+      "verdict": "yes"
+    },
+    "7": {
+      "verdict": "yes"
+    },
+    "8": {
+      "verdict": "yes"
+    },
+    "9": {
+      "verdict": "yes"
+    },
+    "10": {
+      "verdict": "yes"
+    },
+    "11": {
+      "verdict": "yes"
+    },
+    "12": {
+      "verdict": "yes"
+    },
+    "13": {
+      "verdict": "yes"
+    },
+    "14": {
+      "verdict": "yes"
+    },
+    "15": {
+      "verdict": "yes"
+    },
+    "16": {
+      "verdict": "yes"
+    },
+    "17": {
+      "verdict": "yes"
+    },
+    "18": {
+      "verdict": "yes"
+    },
+    "19": {
+      "verdict": "yes"
+    },
+    "20": {
+      "verdict": "yes"
+    },
+    "21": {
+      "verdict": "yes"
+    },
+    "22": {
+      "verdict": "yes"
+    },
+    "23": {
+      "verdict": "yes"
+    },
+    "24": {
+      "verdict": "yes"
+    },
+    "25": {
+      "verdict": "yes"
+    },
+    "26": {
+      "verdict": "yes"
+    },
+    "27": {
+      "verdict": "yes"
+    },
+    "28": {
+      "verdict": "yes"
+    },
+    "29": {
+      "verdict": "yes"
+    },
+    "30": {
+      "verdict": "yes"
+    },
+    "31": {
+      "verdict": "yes"
+    },
+    "32": {
+      "verdict": "yes"
+    },
+    "33": {
+      "verdict": "yes"
+    },
+    "34": {
+      "verdict": "yes"
+    },
+    "35": {
+      "verdict": "yes"
+    },
+    "36": {
+      "verdict": "yes"
+    },
+    "37": {
+      "verdict": "yes"
+    },
+    "38": {
+      "verdict": "yes"
+    },
+    "39": {
+      "verdict": "yes"
+    },
+    "40": {
+      "verdict": "yes"
+    },
+    "41": {
+      "verdict": "yes"
+    },
+    "42": {
+      "verdict": "yes"
+    },
+    "43": {
+      "verdict": "yes"
+    },
+    "44": {
+      "verdict": "yes"
+    },
+    "45": {
+      "verdict": "yes"
+    },
+    "46": {
+      "verdict": "yes"
+    },
+    "47": {
+      "verdict": "yes"
+    },
+    "48": {
+      "verdict": "yes"
+    },
+    "49": {
+      "verdict": "yes"
+    },
+    "50": {
+      "verdict": "yes"
+    },
+    "51": {
+      "verdict": "yes"
+    },
+    "52": {
+      "verdict": "yes"
+    },
+    "53": {
+      "verdict": "yes"
+    },
+    "54": {
+      "verdict": "yes"
+    },
+    "55": {
+      "verdict": "yes"
+    },
+    "56": {
+      "verdict": "yes"
+    },
+    "57": {
+      "verdict": "yes"
+    },
+    "58": {
+      "verdict": "yes"
+    },
+    "59": {
+      "verdict": "yes"
+    },
+    "60": {
+      "verdict": "yes"
+    },
+    "61": {
+      "verdict": "yes"
+    },
+    "62": {
+      "verdict": "yes"
+    },
+    "63": {
+      "verdict": "yes"
+    },
+    "64": {
+      "verdict": "yes"
+    },
+    "65": {
+      "verdict": "yes"
+    },
+    "66": {
+      "verdict": "no"
+    },
+    "67": {
+      "verdict": "yes"
+    },
+    "68": {
+      "verdict": "yes"
+    },
+    "69": {
+      "verdict": "yes"
+    },
+    "70": {
+      "verdict": "yes"
+    },
+    "71": {
+      "verdict": "yes"
+    },
+    "72": {
+      "verdict": "yes"
+    },
+    "73": {
+      "verdict": "yes"
+    },
+    "74": {
+      "verdict": "yes"
+    },
+    "75": {
+      "verdict": "yes"
+    },
+    "76": {
+      "verdict": "yes"
+    },
+    "77": {
+      "verdict": "yes"
+    },
+    "78": {
+      "verdict": "yes"
+    },
+    "79": {
+      "verdict": "yes"
+    },
+    "80": {
+      "verdict": "yes"
+    },
+    "81": {
+      "verdict": "yes"
+    },
+    "82": {
+      "verdict": "yes"
+    },
+    "83": {
+      "verdict": "yes"
+    },
+    "84": {
+      "verdict": "yes"
+    },
+    "85": {
+      "verdict": "yes"
+    },
+    "86": {
+      "verdict": "yes"
+    },
+    "87": {
+      "verdict": "yes"
+    },
+    "88": {
+      "verdict": "yes"
+    },
+    "89": {
+      "verdict": "yes"
+    },
+    "90": {
+      "verdict": "yes"
+    },
+    "91": {
+      "verdict": "yes"
+    },
+    "92": {
+      "verdict": "yes"
+    },
+    "93": {
+      "verdict": "yes"
+    },
+    "94": {
+      "verdict": "yes"
+    },
+    "95": {
+      "verdict": "yes"
+    },
+    "96": {
+      "verdict": "yes"
+    },
+    "97": {
+      "verdict": "yes"
+    },
+    "98": {
+      "verdict": "yes"
+    },
+    "99": {
+      "verdict": "yes"
+    },
+    "100": {
+      "verdict": "yes"
+    },
+    "101": {
+      "verdict": "yes"
+    },
+    "102": {
+      "verdict": "yes"
+    },
+    "103": {
+      "verdict": "yes"
+    },
+    "104": {
+      "verdict": "yes"
+    },
+    "105": {
+      "verdict": "yes"
+    },
+    "106": {
+      "verdict": "yes"
+    },
+    "107": {
+      "verdict": "yes"
+    },
+    "108": {
+      "verdict": "yes"
+    },
+    "109": {
+      "verdict": "yes"
+    },
+    "110": {
+      "verdict": "yes"
+    },
+    "111": {
+      "verdict": "yes"
+    },
+    "112": {
+      "verdict": "yes"
+    },
+    "113": {
+      "verdict": "yes"
+    },
+    "114": {
+      "verdict": "yes"
+    },
+    "115": {
+      "verdict": "yes"
+    },
+    "116": {
+      "verdict": "yes"
+    },
+    "117": {
+      "verdict": "yes"
+    },
+    "118": {
+      "verdict": "yes"
+    },
+    "119": {
+      "verdict": "yes"
+    },
+    "120": {
+      "verdict": "yes"
+    },
+    "121": {
+      "verdict": "yes"
+    },
+    "122": {
+      "verdict": "yes"
+    },
+    "123": {
+      "verdict": "yes"
+    },
+    "124": {
+      "verdict": "yes"
+    },
+    "125": {
+      "verdict": "yes"
+    },
+    "126": {
+      "verdict": "yes"
+    },
+    "127": {
+      "verdict": "yes"
+    },
+    "128": {
+      "verdict": "yes"
+    },
+    "129": {
+      "verdict": "yes"
+    },
+    "130": {
+      "verdict": "yes"
+    },
+    "131": {
+      "verdict": "yes"
+    },
+    "132": {
+      "verdict": "yes"
+    },
+    "133": {
+      "verdict": "yes"
+    },
+    "134": {
+      "verdict": "yes"
+    },
+    "135": {
+      "verdict": "yes"
+    },
+    "136": {
+      "verdict": "yes"
+    },
+    "137": {
+      "verdict": "yes"
+    },
+    "138": {
+      "verdict": "yes"
+    },
+    "139": {
+      "verdict": "yes"
+    },
+    "140": {
+      "verdict": "no"
+    },
+    "141": {
+      "verdict": "yes"
+    },
+    "142": {
+      "verdict": "yes"
+    },
+    "143": {
+      "verdict": "yes"
+    },
+    "144": {
+      "verdict": "yes"
+    },
+    "145": {
+      "verdict": "yes"
+    },
+    "146": {
+      "verdict": "yes"
+    },
+    "147": {
+      "verdict": "yes"
+    },
+    "148": {
+      "verdict": "yes"
+    },
+    "149": {
+      "verdict": "yes"
+    },
+    "150": {
+      "verdict": "yes"
+    },
+    "151": {
+      "verdict": "yes"
+    },
+    "152": {
+      "verdict": "yes"
+    },
+    "153": {
+      "verdict": "yes"
+    },
+    "154": {
+      "verdict": "yes"
+    },
+    "155": {
+      "verdict": "yes"
+    },
+    "156": {
+      "verdict": "yes"
+    },
+    "157": {
+      "verdict": "yes"
+    },
+    "158": {
+      "verdict": "yes"
+    },
+    "159": {
+      "verdict": "yes"
+    },
+    "160": {
+      "verdict": "yes"
+    },
+    "161": {
+      "verdict": "yes"
+    },
+    "162": {
+      "verdict": "yes"
+    },
+    "163": {
+      "verdict": "yes"
+    },
+    "164": {
+      "verdict": "yes"
+    },
+    "165": {
+      "verdict": "yes"
+    },
+    "166": {
+      "verdict": "yes"
+    },
+    "167": {
+      "verdict": "yes"
+    },
+    "168": {
+      "verdict": "yes"
+    },
+    "169": {
+      "verdict": "yes"
+    },
+    "170": {
+      "verdict": "yes"
+    },
+    "171": {
+      "verdict": "yes"
+    },
+    "172": {
+      "verdict": "yes"
+    },
+    "173": {
+      "verdict": "yes"
+    },
+    "174": {
+      "verdict": "yes"
+    },
+    "175": {
+      "verdict": "yes"
+    },
+    "176": {
+      "verdict": "yes"
+    },
+    "177": {
+      "verdict": "yes"
+    },
+    "178": {
+      "verdict": "yes"
+    },
+    "179": {
+      "verdict": "yes"
+    },
+    "180": {
+      "verdict": "yes"
+    },
+    "181": {
+      "verdict": "yes"
+    },
+    "182": {
+      "verdict": "yes"
+    },
+    "183": {
+      "verdict": "yes"
+    },
+    "184": {
+      "verdict": "yes"
+    },
+    "185": {
+      "verdict": "yes"
+    },
+    "186": {
+      "verdict": "yes"
+    },
+    "187": {
+      "verdict": "yes"
+    },
+    "188": {
+      "verdict": "yes"
+    },
+    "189": {
+      "verdict": "yes"
+    },
+    "190": {
+      "verdict": "yes"
+    },
+    "191": {
+      "verdict": "yes"
+    },
+    "192": {
+      "verdict": "yes"
+    },
+    "193": {
+      "verdict": "yes"
+    },
+    "194": {
+      "verdict": "yes"
+    },
+    "195": {
+      "verdict": "yes"
+    },
+    "196": {
+      "verdict": "yes"
+    },
+    "197": {
+      "verdict": "yes"
+    },
+    "198": {
+      "verdict": "yes"
+    },
+    "199": {
+      "verdict": "yes"
+    },
+    "200": {
+      "verdict": "yes"
+    },
+    "201": {
+      "verdict": "yes"
+    },
+    "202": {
+      "verdict": "yes"
+    },
+    "203": {
+      "verdict": "yes"
+    },
+    "204": {
+      "verdict": "yes"
+    },
+    "205": {
+      "verdict": "yes"
+    },
+    "206": {
+      "verdict": "yes"
+    },
+    "207": {
+      "verdict": "yes"
+    },
+    "208": {
+      "verdict": "yes"
+    },
+    "209": {
+      "verdict": "yes"
+    },
+    "210": {
+      "verdict": "yes"
+    },
+    "211": {
+      "verdict": "yes"
+    },
+    "212": {
+      "verdict": "yes"
+    },
+    "213": {
+      "verdict": "yes"
+    },
+    "214": {
+      "verdict": "yes"
+    },
+    "215": {
+      "verdict": "yes"
+    },
+    "216": {
+      "verdict": "yes"
+    },
+    "217": {
+      "verdict": "yes"
+    },
+    "218": {
+      "verdict": "yes"
+    },
+    "219": {
+      "verdict": "yes"
+    },
+    "220": {
+      "verdict": "yes"
+    },
+    "221": {
+      "verdict": "yes"
+    },
+    "222": {
+      "verdict": "yes"
+    },
+    "223": {
+      "verdict": "yes"
+    },
+    "224": {
+      "verdict": "yes"
+    },
+    "225": {
+      "verdict": "yes"
+    },
+    "226": {
+      "verdict": "yes"
+    },
+    "227": {
+      "verdict": "yes"
+    },
+    "228": {
+      "verdict": "yes"
+    },
+    "229": {
+      "verdict": "yes"
+    },
+    "230": {
+      "verdict": "yes"
+    },
+    "231": {
+      "verdict": "yes"
+    },
+    "232": {
+      "verdict": "yes"
+    },
+    "233": {
+      "verdict": "yes"
+    },
+    "234": {
+      "verdict": "yes"
+    },
+    "235": {
+      "verdict": "yes"
+    },
+    "236": {
+      "verdict": "yes"
+    },
+    "237": {
+      "verdict": "yes"
+    },
+    "238": {
+      "verdict": "yes"
+    },
+    "239": {
+      "verdict": "yes"
+    },
+    "240": {
+      "verdict": "yes"
+    },
+    "241": {
+      "verdict": "yes"
+    },
+    "242": {
+      "verdict": "yes"
+    },
+    "243": {
+      "verdict": "yes"
+    },
+    "244": {
+      "verdict": "yes"
+    },
+    "245": {
+      "verdict": "yes"
+    },
+    "246": {
+      "verdict": "yes"
+    },
+    "247": {
+      "verdict": "yes"
+    },
+    "248": {
+      "verdict": "yes"
+    },
+    "249": {
+      "verdict": "yes"
+    },
+    "250": {
+      "verdict": "yes"
+    },
+    "251": {
+      "verdict": "yes"
+    },
+    "252": {
+      "verdict": "yes"
+    },
+    "253": {
+      "verdict": "yes"
+    },
+    "254": {
+      "verdict": "yes"
+    },
+    "255": {
+      "verdict": "yes"
+    },
+    "256": {
+      "verdict": "yes"
+    },
+    "257": {
+      "verdict": "yes"
+    },
+    "258": {
+      "verdict": "yes"
+    },
+    "259": {
+      "verdict": "yes"
+    },
+    "260": {
+      "verdict": "yes"
+    },
+    "261": {
+      "verdict": "yes"
+    },
+    "262": {
+      "verdict": "yes"
+    },
+    "263": {
+      "verdict": "yes"
+    },
+    "264": {
+      "verdict": "yes"
+    },
+    "265": {
+      "verdict": "yes"
+    },
+    "266": {
+      "verdict": "yes"
+    },
+    "267": {
+      "verdict": "yes"
+    },
+    "268": {
+      "verdict": "yes"
+    },
+    "269": {
+      "verdict": "yes"
+    },
+    "270": {
+      "verdict": "yes"
+    },
+    "271": {
+      "verdict": "yes"
+    },
+    "272": {
+      "verdict": "yes"
+    },
+    "273": {
+      "verdict": "yes"
+    },
+    "274": {
+      "verdict": "yes"
+    },
+    "275": {
+      "verdict": "yes"
+    },
+    "276": {
+      "verdict": "yes"
+    },
+    "277": {
+      "verdict": "yes"
+    },
+    "278": {
+      "verdict": "yes"
+    },
+    "279": {
+      "verdict": "yes"
+    },
+    "280": {
+      "verdict": "yes"
+    },
+    "281": {
+      "verdict": "yes"
+    },
+    "282": {
+      "verdict": "yes"
+    },
+    "283": {
+      "verdict": "yes"
+    },
+    "284": {
+      "verdict": "yes"
+    },
+    "285": {
+      "verdict": "yes"
+    },
+    "286": {
+      "verdict": "yes"
+    },
+    "287": {
+      "verdict": "yes"
+    },
+    "288": {
+      "verdict": "yes"
+    },
+    "289": {
+      "verdict": "yes"
+    },
+    "290": {
+      "verdict": "yes"
+    },
+    "291": {
+      "verdict": "yes"
+    },
+    "292": {
+      "verdict": "yes"
+    },
+    "293": {
+      "verdict": "yes"
+    },
+    "294": {
+      "verdict": "yes"
+    },
+    "295": {
+      "verdict": "yes"
+    },
+    "296": {
+      "verdict": "yes"
+    },
+    "297": {
+      "verdict": "yes"
+    },
+    "298": {
+      "verdict": "yes"
+    },
+    "299": {
+      "verdict": "yes"
+    }
+  },
+  "summary": {
+    "overall_pass_rate": 0.9933,
+    "pass": 298,
+    "coded": 300,
+    "flagged": 0,
+    "per_emotion": {
+      "bitter": {
+        "pass": 10,
+        "coded": 10
+      },
+      "bored": {
+        "pass": 10,
+        "coded": 10
+      },
+      "disdainful": {
+        "pass": 10,
+        "coded": 10
+      },
+      "distressed": {
+        "pass": 10,
+        "coded": 10
+      },
+      "ecstatic": {
+        "pass": 10,
+        "coded": 10
+      },
+      "elated": {
+        "pass": 10,
+        "coded": 10
+      },
+      "exasperated": {
+        "pass": 9,
+        "coded": 10
+      },
+      "fulfilled": {
+        "pass": 10,
+        "coded": 10
+      },
+      "hope": {
+        "pass": 10,
+        "coded": 10
+      },
+      "hysterical": {
+        "pass": 10,
+        "coded": 10
+      },
+      "indifferent": {
+        "pass": 10,
+        "coded": 10
+      },
+      "irritated": {
+        "pass": 10,
+        "coded": 10
+      },
+      "nostalgic": {
+        "pass": 10,
+        "coded": 10
+      },
+      "overwhelmed": {
+        "pass": 10,
+        "coded": 10
+      },
+      "perplexed": {
+        "pass": 9,
+        "coded": 10
+      },
+      "pleased": {
+        "pass": 10,
+        "coded": 10
+      },
+      "refreshed": {
+        "pass": 10,
+        "coded": 10
+      },
+      "resentful": {
+        "pass": 10,
+        "coded": 10
+      },
+      "restless": {
+        "pass": 10,
+        "coded": 10
+      },
+      "sensitive": {
+        "pass": 10,
+        "coded": 10
+      },
+      "sentimental": {
+        "pass": 10,
+        "coded": 10
+      },
+      "serene": {
+        "pass": 10,
+        "coded": 10
+      },
+      "shocked": {
+        "pass": 10,
+        "coded": 10
+      },
+      "sullen": {
+        "pass": 10,
+        "coded": 10
+      },
+      "thrilled": {
+        "pass": 10,
+        "coded": 10
+      },
+      "uneasy": {
+        "pass": 10,
+        "coded": 10
+      },
+      "upset": {
+        "pass": 10,
+        "coded": 10
+      },
+      "vindictive": {
+        "pass": 10,
+        "coded": 10
+      },
+      "worn out": {
+        "pass": 10,
+        "coded": 10
+      },
+      "worried": {
+        "pass": 10,
+        "coded": 10
+      }
+    }
+  }
+}

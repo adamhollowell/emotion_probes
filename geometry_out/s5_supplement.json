@@ -1,0 +1,171 @@
+{
+ "pc_var_pct": [
+  26.73224628251984,
+  13.37866276350873,
+  11.603951887678846,
+  8.554085058841673,
+  4.975807625788755
+ ],
+ "pc1_top": [
+  "optimistic",
+  "kind",
+  "cheerful",
+  "playful",
+  "self-confident",
+  "enthusiastic"
+ ],
+ "pc1_bot": [
+  "terrified",
+  "hysterical",
+  "frightened",
+  "panicked",
+  "scared",
+  "disoriented"
+ ],
+ "pc2_top": [
+  "playful",
+  "outraged",
+  "indignant",
+  "irate",
+  "amused",
+  "furious"
+ ],
+ "pc2_bot": [
+  "nostalgic",
+  "serene",
+  "depressed",
+  "reflective",
+  "grief-stricken",
+  "sentimental"
+ ],
+ "rm": {
+  "n": 45,
+  "pc1_pleasure": 0.7203121031143593,
+  "pc2_arousal": 0.6675247148150895,
+  "cross_pc1_arousal": -0.12519324201094784,
+  "cross_pc2_pleasure": -0.014592799663455518,
+  "ci_pleasure": [
+   0.5373588008932009,
+   0.8465843011236773
+  ],
+  "ci_arousal": [
+   0.48422702303145027,
+   0.8020558370380101
+  ]
+ },
+ "quadrants": {
+  "outraged": {
+   "expected": "upper_left",
+   "got": "upper_left",
+   "ok": true
+  },
+  "annoyed": {
+   "expected": "upper_left",
+   "got": "upper_left",
+   "ok": true
+  },
+  "nervous": {
+   "expected": "upper_left",
+   "got": "upper_left",
+   "ok": true
+  },
+  "playful": {
+   "expected": "upper_right",
+   "got": "upper_right",
+   "ok": true
+  },
+  "excited": {
+   "expected": "upper_right",
+   "got": "upper_right",
+   "ok": true
+  },
+  "cheerful": {
+   "expected": "upper_right",
+   "got": "upper_right",
+   "ok": true
+  },
+  "compassionate": {
+   "expected": "lower_right",
+   "got": "lower_right",
+   "ok": true
+  },
+  "sympathetic": {
+   "expected": "lower_right",
+   "got": "lower_right",
+   "ok": true
+  },
+  "hopeful": {
+   "expected": "lower_right",
+   "got": "lower_right",
+   "ok": true
+  },
+  "depressed": {
+   "expected": "lower_left",
+   "got": "lower_left",
+   "ok": true
+  },
+  "tormented": {
+   "expected": "lower_left",
+   "got": "lower_left",
+   "ok": true
+  },
+  "sluggish": {
+   "expected": "lower_left",
+   "got": "lower_left",
+   "ok": true
+  }
+ },
+ "quadrants_all_ok": true,
+ "norms_cleaned": {
+  "r_norm_pc1": 0.4062008370868286,
+  "r_norm_pc2_signed": 0.15105076155410044,
+  "r_norm_abs_pc2": 0.24308092815834095,
+  "lowest": [
+   "troubled",
+   "bitter",
+   "upset",
+   "distressed",
+   "disturbed",
+   "unhappy"
+  ],
+  "highest": [
+   "playful",
+   "sleepy",
+   "aroused",
+   "hysterical",
+   "amused",
+   "vindictive"
+  ]
+ },
+ "norms_raw": {
+  "r_norm_pc1": 0.37102241561689003,
+  "r_norm_pc2_signed": 0.1622953687783697,
+  "r_norm_abs_pc2": 0.2048463031551344,
+  "lowest": [
+   "troubled",
+   "distressed",
+   "bitter",
+   "upset",
+   "disturbed",
+   "stressed"
+  ],
+  "highest": [
+   "playful",
+   "hysterical",
+   "sleepy",
+   "aroused",
+   "vindictive",
+   "greedy"
+  ]
+ },
+ "s54": {
+  "n": 161,
+  "median_resid_sd": 0.05000620769075177
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T20:13:02Z"
+ }
+}

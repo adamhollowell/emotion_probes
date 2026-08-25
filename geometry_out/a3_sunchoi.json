@@ -1,0 +1,45 @@
+{
+ "item": "A3",
+ "section": "Sun/Choi engagement",
+ "desc": "27-subset arousal, NRC-VAD, Warriner, 5-PC LOO, Choi parabola",
+ "value": {
+  "pc1_pleasure": 0.7203,
+  "pc2_arousal": 0.6675,
+  "pc1var_pct": 26.732,
+  "pc2var_pct": 13.379,
+  "arousal_best_single_pc": "PC2",
+  "arousal_best_single_r": 0.6675,
+  "loo_pc1_5": 0.8927,
+  "loo_pc1_10": 0.8604,
+  "raw_l31": {
+   "pc1_pleasure": 0.6809,
+   "pc2_arousal": 0.6192,
+   "note": "Basis-independent (computed on vectors_raw)."
+  },
+  "parabola_r_absPC1_PC2": 0.2409,
+  "perm_p": {
+   "pleasure": 0.0002,
+   "arousal": 0.0002
+  },
+  "subsample_n27_500draws": {
+   "pc2_best_pct": 37,
+   "median_r_pc2_arousal": 0.429,
+   "full45_arousal_best_pc": "PC3",
+   "full45_pc2_r": 0.216
+  },
+  "warriner_n126": {
+   "pc1_valence": 0.699,
+   "pc2_arousal": 0.4985
+  },
+  "nrc_vad_v2_1_n161": {
+   "pc1_valence": 0.7338,
+   "pc2_arousal": 0.6438
+  }
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T19:34:55Z"
+ }
+}

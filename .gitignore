@@ -1,0 +1,73 @@
+# --- System noise ---
+.DS_Store
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# --- Virtual environments ---
+.venv/
+venv/
+lens_env/
+lens_env*/
+
+# --- Secrets: NEVER commit ---
+.env
+*.key
+*.token
+
+# --- Large inputs that live in the HF repos or regenerate locally (do NOT commit) ---
+# Emotion vectors + regenerated lens ingredients -> HF model repo / export recipe
+data/vectors/*.pt
+# ...but the raw scenario activations DO ship directly (§10.1 / §11): 12 scenarios + acts, no corpus text
+!data/vectors/scenario_acts.pt
+# Text-stripped per-token artifact (549 MB) -> hosted on Hugging Face, not GitHub (exceeds the 100 MB
+# limit). The .sha256 sidecar ships as the integrity check; the tar is fetched from HF. See README / RUN_MANIFEST.
+data/heldout/maxact/pertoken_stripped.tar
+# Story corpus (205,200) stays recipe-only — regenerate from the prompt/design; do not commit.
+data/stories/*.jsonl
+# ...but the 500 neutral dialogues DO ship (small, released for reproducibility).
+!data/stories/neutral_dialogues.jsonl
+# Held-out corpus is rebuilt from the recipe, never redistributed
+data/heldout/*.jsonl
+data/heldout/heldout_corpus_v2.jsonl
+
+# --- Recipe-only / excluded derived artifacts (regenerate; not redistributed) ---
+# (the full pertoken.tar is covered by the generic **/pertoken.tar rule below;
+#  maxact/maxactivating_v2.json is NOT shipped either — it carries third-party text, so the
+#  **/maxactivating*.json rule below excludes it; pass1_results.json ships the non-text metadata.
+#  Per essay §11: corpus text is never redistributed.)
+data/heldout/maxact_smoke/
+
+# --- Third-party human-norm lexicons: cite-don't-bundle (non-commercial) ---
+data/ratings/nrc_vad_v2_1.csv
+data/ratings/NRC-VAD-Lexicon-v2.1/
+data/ratings/warriner_cache.csv
+data/ratings/valence_arousal_judge.csv
+
+# --- Working render scratch / backups (not figures of record) ---
+e1_figures_gpt/
+geometry_out/*.bak*
+geometry_out/_superseded/
+geometry_out/_hero_drafts/
+
+# === Phase 6 exclusion-sweep hardening (2026-07-28) ===
+# Third-party data that must NEVER enter any published tree, wherever it is re-staged.
+# Scoped to DATA forms (extensions), so provenance stubs (*.PROVENANCE.txt) and the
+# recipe/producer scripts (*.py) that legitimately reference these names stay tracked.
+# See docs/exclusion_sweep_2026-07-28.md.
+**/nrc_vad*.csv
+**/NRC-VAD-Lexicon*/
+**/warriner*.csv
+**/heldout_corpus*.jsonl
+**/lmsys*.jsonl
+**/pile*.jsonl
+**/pertoken.tar
+**/pertoken/
+**/maxactivating*.json
+**/lens_ingredients*.pt
+**/*.safetensors

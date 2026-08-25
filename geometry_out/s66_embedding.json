@@ -1,0 +1,40 @@
+{
+ "basis": "canonical",
+ "inputs": {
+  "embedding": "data/vectors/embedding_null_vectors.pt",
+  "L31_target": "data/vectors/emotion_vectors_171.pt (cleaned L31)",
+  "partition": "geometry_out/s4_clusters.json"
+ },
+ "n_emotions": 171,
+ "n_rm_overlap": 45,
+ "cleaned": {
+  "valence_pc1_pleasure": 0.479,
+  "arousal_pc2_arousal": -0.179,
+  "pc1_var_pct": 23.1,
+  "pc2_var_pct": 14.5
+ },
+ "raw": {
+  "valence_pc1_pleasure": 0.378,
+  "arousal_pc2_arousal": 0.282
+ },
+ "arousal_sign_note": "Cleaned arousal |r| = 0.179; the sign is orientation-degenerate at the embedding (PC2 is not an arousal axis there), so magnitude is reported.",
+ "rsa_to_L31": {
+  "cosine_of_cosine": 0.882,
+  "pearson": 0.882
+ },
+ "ari": {
+  "embedding_vs_locked": 0.481,
+  "note": "Under sklearn 1.8.0 the locked partition reproduces exactly (sanity = 1.0); embedding->locked-partition ARI = 0.481."
+ },
+ "neighbor_cosines": {
+  "afraid->scared": 0.96,
+  "joyful->happy": 0.916,
+  "compassionate->empathetic": 0.954
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T20:19:13Z"
+ }
+}

@@ -1,0 +1,61 @@
+NRC VAD v2.1 — Local Provenance Record
+
+Local filename:
+  data/ratings/nrc_vad_v2_1.csv   (canonicalized; cols: word,valence,arousal,dominance)
+  Raw archive extracted to: data/ratings/NRC-VAD-Lexicon-v2.1/   (both .gitignored — see below)
+
+Original resource:
+  The NRC Valence, Arousal, and Dominance (NRC-VAD) Lexicon, Version 2.1
+
+Creator:
+  Dr. Saif M. Mohammad, National Research Council Canada
+
+Official homepage:
+  https://saifmohammad.com/WebPages/nrc-vad.html
+
+Paper citation:
+  Saif M. Mohammad. 2025. "NRC VAD Lexicon v2: Norms for Valence, Arousal, and
+  Dominance for over 55k English Terms." arXiv:2503.23547.
+  (v1 lineage: Mohammad 2018, "Obtaining Reliable Human Ratings of Valence, Arousal,
+  and Dominance for 20,000 English Words," Proc. ACL 2018, 174-184.)
+
+Downloaded by:
+  Adam Hollowell
+
+Download date:
+  2026-07-11
+
+Source archive / filename downloaded:
+  NRC-VAD-Lexicon-v2.1.zip
+  (from https://saifmohammad.com/WebDocs/Lexicons/NRC-VAD-Lexicon-v2.1.zip)
+
+Local transformation:
+  Extracted the archive; took the combined Unigrams file
+  Unigrams/unigrams-NRC-VAD-Lexicon-v2.1.txt (44,728 unigrams; tab-separated with
+  header term,valence,arousal,dominance) and canonicalized to
+  data/ratings/nrc_vad_v2_1.csv with columns word,valence,arousal,dominance
+  (word lowercased, one row per term). Conversion + use:
+  scripts/analyze_sun_choi_engagement.py (#4 block).
+
+Scale:
+  v2.1 scores are real-valued on a roughly -1 (lowest) to +1 (highest) scale for each
+  of valence, arousal, dominance. (Differs from v1's 0-1 range; immaterial here since
+  all uses are correlations, which are scale-invariant.)
+
+Terms of use / redistribution note:
+  Free for non-commercial research and educational use with citation.
+  Do NOT redistribute the raw data. Direct readers to the official NRC-VAD homepage.
+
+Use in this project:
+  P1.6 (Sun et al. 2026 engagement) norm-source robustness check: against Sun et al.'s
+  exact lexicon (this 44,728-unigram set), our L31 global-171 PCA gives PC2<->arousal
+  r = 0.636 over 161 covered emotions, best PC = PC2 -- ruling out norm source as the
+  explanation for their arousal null. Also available for the P1.4 BLOG human-baseline
+  stress test. Does NOT replace strict Essay-1 Figure 8, which remains
+  Russell-Mehrabian 1977 only.
+
+Integrity / release note:
+  The raw NRC data is excluded from the public release: .gitignore both
+  data/ratings/nrc_vad_v2_1.csv and data/ratings/NRC-VAD-Lexicon-v2.1/.
+  Commit this provenance record and the analysis script only, not the raw lexicon.
+Fetch script: scripts/fetch_nrc_vad.py (downloads + canonicalizes to the local path above).

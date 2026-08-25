@@ -1,0 +1,122 @@
+{
+ "figure": "Figure 8 - Russell & Mehrabian (1977) parallel",
+ "figure": "Figure 8 (cf. Anthropic Fig 5)",
+ "model": "Gemma 2 27B",
+ "layer": 31,
+ "basis": "canonical",
+ "input_manifest": {
+  "vectors": {
+   "path": "data/vectors/emotion_vectors_171.pt",
+   "sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b"
+  },
+  "ratings": {
+   "path": "data/ratings/russell_mehrabian_1977.csv",
+   "sha256": "b8a0e952957e6c849d3507bdd0d6e848fcb8f308b628837e3c6dc8f77bb6cffd"
+  }
+ },
+ "vector_file": "data/vectors/emotion_vectors_171.pt",
+ "vector_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+ "vector_key": "vectors",
+ "ratings_source": "data/ratings/russell_mehrabian_1977.csv",
+ "ratings_sha256": "b8a0e952957e6c849d3507bdd0d6e848fcb8f308b628837e3c6dc8f77bb6cffd",
+ "pca_fit_scope": "all 171 Gemma emotion vectors",
+ "overlap_rule": "exact normalized term intersection",
+ "n_total_emotions": 171,
+ "n_overlap": 45,
+ "pc_orientation": {
+  "pc1": "oriented to positive Pearson correlation with Russell & Mehrabian Pleasure",
+  "pc2": "oriented to positive Pearson correlation with Russell & Mehrabian Arousal"
+ },
+ "correlations": {
+  "pc1_pleasure_r_from_plotted_points": 0.7203121027930922,
+  "pc2_arousal_r_from_plotted_points": 0.6675247122103363,
+  "pc1_pleasure_r_from_raw_oriented_pc": 0.7203121027930921,
+  "pc2_arousal_r_from_raw_oriented_pc": 0.6675247122103363,
+  "pc1_arousal_cross_r": -0.1251932423785037,
+  "pc2_pleasure_cross_r": -0.014592799794584445
+ },
+ "displayed_r": {
+  "pc1_pleasure": 0.72,
+  "pc2_arousal": 0.67
+ },
+ "pca_explained_variance_percent": {
+  "pc1": 26.732248306274414,
+  "pc2": 13.378663063049316,
+  "pc3": 11.603950500488281
+ },
+ "expected": {
+  "correlations": {
+   "pc1_pleasure": 0.7203121031143593,
+   "pc2_arousal": 0.6675247148150895,
+   "cross_pc1_arousal": -0.12519324201094784,
+   "cross_pc2_pleasure": -0.014592799663455518
+  },
+  "correlation_tolerance": 1e-06,
+  "pca_explained_variance_percent": {
+   "pc1": 26.73,
+   "pc2": 13.38,
+   "pc3": 11.6
+  },
+  "variance_tolerance": 0.05,
+  "displayed_r": {
+   "pc1_pleasure": 0.72,
+   "pc2_arousal": 0.67
+  },
+  "source": "geometry_out/s5_supplement.json (rm, pc_var_pct)"
+ },
+ "self_check_passed": true,
+ "outputs": {
+  "png": "docs/e1_figures/E1_Figure_5_human_norms.png",
+  "pdf": "docs/e1_figures/E1_Figure_5_human_norms.pdf",
+  "points_csv": "geometry_out/fig8_pca_vs_russell_mehrabian_points.csv",
+  "summary_json": "geometry_out/fig8_pca_vs_russell_mehrabian_summary.json",
+  "audit_txt": "geometry_out/fig8_pca_vs_russell_mehrabian_audit.txt"
+ },
+ "overlap_terms": [
+  "alert",
+  "angry",
+  "anxious",
+  "aroused",
+  "astonished",
+  "bored",
+  "contemptuous",
+  "defiant",
+  "depressed",
+  "disdainful",
+  "disgusted",
+  "distressed",
+  "elated",
+  "embarrassed",
+  "enraged",
+  "excited",
+  "frustrated",
+  "grateful",
+  "guilty",
+  "happy",
+  "hopeful",
+  "hostile",
+  "humiliated",
+  "inspired",
+  "irritated",
+  "joyful",
+  "kind",
+  "listless",
+  "lonely",
+  "overwhelmed",
+  "proud",
+  "regretful",
+  "relaxed",
+  "sad",
+  "scornful",
+  "skeptical",
+  "surprised",
+  "suspicious",
+  "tense",
+  "terrified",
+  "thankful",
+  "triumphant",
+  "troubled",
+  "upset",
+  "weary"
+ ]
+}

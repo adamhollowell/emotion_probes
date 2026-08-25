@@ -1,0 +1,324 @@
+{
+ "tag": "canonical",
+ "neighbors": {
+  "afraid": [
+   [
+    "scared",
+    0.987
+   ],
+   [
+    "frightened",
+    0.983
+   ],
+   [
+    "terrified",
+    0.933
+   ]
+  ],
+  "joyful": [
+   [
+    "happy",
+    0.977
+   ],
+   [
+    "delighted",
+    0.959
+   ],
+   [
+    "jubilant",
+    0.94
+   ]
+  ],
+  "compassionate": [
+   [
+    "empathetic",
+    0.965
+   ],
+   [
+    "sympathetic",
+    0.95
+   ],
+   [
+    "kind",
+    0.93
+   ]
+  ]
+ },
+ "families": [
+  {
+   "size": 8,
+   "mean_pc1": 358.0,
+   "members": [
+    "compassionate",
+    "empathetic",
+    "grateful",
+    "kind",
+    "loving",
+    "sympathetic",
+    "thankful",
+    "valiant"
+   ]
+  },
+  {
+   "size": 24,
+   "mean_pc1": 350.0,
+   "members": [
+    "amused",
+    "blissful",
+    "cheerful",
+    "delighted",
+    "eager",
+    "ecstatic",
+    "elated",
+    "energized",
+    "enthusiastic",
+    "euphoric",
+    "excited",
+    "exuberant",
+    "happy",
+    "invigorated",
+    "joyful",
+    "jubilant",
+    "optimistic",
+    "playful",
+    "pleased",
+    "proud",
+    "stimulated",
+    "thrilled",
+    "triumphant",
+    "vibrant"
+   ]
+  },
+  {
+   "size": 16,
+   "mean_pc1": 277.1,
+   "members": [
+    "at ease",
+    "calm",
+    "content",
+    "fulfilled",
+    "hope",
+    "hopeful",
+    "inspired",
+    "patient",
+    "peaceful",
+    "refreshed",
+    "rejuvenated",
+    "relaxed",
+    "relieved",
+    "safe",
+    "satisfied",
+    "serene"
+   ]
+  },
+  {
+   "size": 15,
+   "mean_pc1": 191.2,
+   "members": [
+    "contemptuous",
+    "defiant",
+    "disdainful",
+    "greedy",
+    "obstinate",
+    "scornful",
+    "self-confident",
+    "skeptical",
+    "smug",
+    "spiteful",
+    "stubborn",
+    "suspicious",
+    "vengeful",
+    "vigilant",
+    "vindictive"
+   ]
+  },
+  {
+   "size": 14,
+   "mean_pc1": -35.3,
+   "members": [
+    "ashamed",
+    "bitter",
+    "embarrassed",
+    "envious",
+    "guilty",
+    "humiliated",
+    "jealous",
+    "mortified",
+    "regretful",
+    "remorseful",
+    "resentful",
+    "self-conscious",
+    "self-critical",
+    "sorry"
+   ]
+  },
+  {
+   "size": 32,
+   "mean_pc1": -98.6,
+   "members": [
+    "bored",
+    "brooding",
+    "dependent",
+    "depressed",
+    "desperate",
+    "dispirited",
+    "docile",
+    "gloomy",
+    "grief-stricken",
+    "heartbroken",
+    "hurt",
+    "indifferent",
+    "lazy",
+    "listless",
+    "lonely",
+    "melancholy",
+    "miserable",
+    "nostalgic",
+    "reflective",
+    "resigned",
+    "sad",
+    "sentimental",
+    "stuck",
+    "sullen",
+    "tormented",
+    "trapped",
+    "troubled",
+    "unhappy",
+    "vulnerable",
+    "weary",
+    "worn out",
+    "worthless"
+   ]
+  },
+  {
+   "size": 12,
+   "mean_pc1": -144.1,
+   "members": [
+    "amazed",
+    "aroused",
+    "astonished",
+    "awestruck",
+    "bewildered",
+    "dumbstruck",
+    "infatuated",
+    "mystified",
+    "perplexed",
+    "puzzled",
+    "shocked",
+    "surprised"
+   ]
+  },
+  {
+   "size": 17,
+   "mean_pc1": -180.8,
+   "members": [
+    "angry",
+    "annoyed",
+    "enraged",
+    "exasperated",
+    "frustrated",
+    "furious",
+    "grumpy",
+    "hateful",
+    "hostile",
+    "impatient",
+    "indignant",
+    "insulted",
+    "irate",
+    "irritated",
+    "mad",
+    "offended",
+    "outraged"
+   ]
+  },
+  {
+   "size": 4,
+   "mean_pc1": -298.3,
+   "members": [
+    "droopy",
+    "sleepy",
+    "sluggish",
+    "tired"
+   ]
+  },
+  {
+   "size": 29,
+   "mean_pc1": -307.5,
+   "members": [
+    "afraid",
+    "alarmed",
+    "alert",
+    "anxious",
+    "disgusted",
+    "disoriented",
+    "distressed",
+    "disturbed",
+    "frightened",
+    "horrified",
+    "hysterical",
+    "nervous",
+    "on edge",
+    "overwhelmed",
+    "panicked",
+    "paranoid",
+    "rattled",
+    "restless",
+    "scared",
+    "sensitive",
+    "shaken",
+    "stressed",
+    "tense",
+    "terrified",
+    "uneasy",
+    "unnerved",
+    "unsettled",
+    "upset",
+    "worried"
+   ]
+  }
+ ],
+ "family_sizes": [
+  8,
+  24,
+  16,
+  15,
+  14,
+  32,
+  12,
+  17,
+  4,
+  29
+ ],
+ "ari": {
+  "mean_pairwise": 0.686,
+  "min_pairwise": 0.467,
+  "mean_vs_seed0": 0.622
+ },
+ "cohesion": {
+  "mean_top10_incluster": 0.756,
+  "mutual_nn_pairs": 46,
+  "hostile_anger": 0.953,
+  "fear": 0.89,
+  "warm": 0.575
+ },
+ "least_stable": [
+  "infatuated",
+  "paranoid",
+  "mortified",
+  "embarrassed",
+  "restless",
+  "bored",
+  "indifferent",
+  "perplexed"
+ ],
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "seed": 0,
+  "n_init": 10,
+  "sklearn": "1.7.2",
+  "generated_utc": "2026-08-25T21:22:56Z",
+  "note": "fresh seed-0 KMeans(k=10) on emotion_vectors_171.pt cleaned L31; canonical native partition"
+ }
+}

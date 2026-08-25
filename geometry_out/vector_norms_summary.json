@@ -1,0 +1,306 @@
+{
+ "cleaned": {
+  "shape": [
+   171,
+   46,
+   4608
+  ],
+  "L31": {
+   "mean_norm": 491.6545104980469,
+   "median_norm": 488.6038513183594,
+   "std_norm": 107.43452453613281,
+   "min": {
+    "emotion": "troubled",
+    "norm": 260.16510009765625
+   },
+   "max": {
+    "emotion": "playful",
+    "norm": 883.5036010742188
+   },
+   "top_15": [
+    {
+     "emotion": "playful",
+     "norm": 883.5036010742188
+    },
+    {
+     "emotion": "sleepy",
+     "norm": 813.0825805664062
+    },
+    {
+     "emotion": "aroused",
+     "norm": 770.4837646484375
+    },
+    {
+     "emotion": "hysterical",
+     "norm": 767.8884887695312
+    },
+    {
+     "emotion": "amused",
+     "norm": 721.2372436523438
+    },
+    {
+     "emotion": "vindictive",
+     "norm": 719.2094116210938
+    },
+    {
+     "emotion": "kind",
+     "norm": 709.2572631835938
+    },
+    {
+     "emotion": "vengeful",
+     "norm": 696.8060913085938
+    },
+    {
+     "emotion": "compassionate",
+     "norm": 687.87451171875
+    },
+    {
+     "emotion": "inspired",
+     "norm": 686.9010620117188
+    },
+    {
+     "emotion": "serene",
+     "norm": 676.0894165039062
+    },
+    {
+     "emotion": "greedy",
+     "norm": 670.3203735351562
+    },
+    {
+     "emotion": "infatuated",
+     "norm": 649.8365478515625
+    },
+    {
+     "emotion": "loving",
+     "norm": 649.5340576171875
+    },
+    {
+     "emotion": "valiant",
+     "norm": 642.1556396484375
+    }
+   ],
+   "bottom_15": [
+    {
+     "emotion": "troubled",
+     "norm": 260.16510009765625
+    },
+    {
+     "emotion": "bitter",
+     "norm": 306.8502197265625
+    },
+    {
+     "emotion": "upset",
+     "norm": 308.54901123046875
+    },
+    {
+     "emotion": "distressed",
+     "norm": 314.4158935546875
+    },
+    {
+     "emotion": "disturbed",
+     "norm": 317.0437316894531
+    },
+    {
+     "emotion": "unhappy",
+     "norm": 322.3493957519531
+    },
+    {
+     "emotion": "stressed",
+     "norm": 324.3164978027344
+    },
+    {
+     "emotion": "unsettled",
+     "norm": 329.9921569824219
+    },
+    {
+     "emotion": "resentful",
+     "norm": 331.9590759277344
+    },
+    {
+     "emotion": "worried",
+     "norm": 338.95001220703125
+    },
+    {
+     "emotion": "uneasy",
+     "norm": 339.6154479980469
+    },
+    {
+     "emotion": "gloomy",
+     "norm": 340.4750671386719
+    },
+    {
+     "emotion": "hurt",
+     "norm": 340.6676330566406
+    },
+    {
+     "emotion": "dispirited",
+     "norm": 340.6900329589844
+    },
+    {
+     "emotion": "insulted",
+     "norm": 341.8306579589844
+    }
+   ]
+  },
+  "layer_peak_mean_norm": {
+   "layer": 45,
+   "mean_norm": 1235.5457763671875
+  },
+  "layer_lowest_mean_norm": {
+   "layer": 0,
+   "mean_norm": 9.080110549926758
+  }
+ },
+ "raw": {
+  "shape": [
+   171,
+   46,
+   4608
+  ],
+  "L31": {
+   "mean_norm": 538.2191162109375,
+   "median_norm": 531.8825073242188,
+   "std_norm": 122.45515441894531,
+   "min": {
+    "emotion": "troubled",
+    "norm": 278.28497314453125
+   },
+   "max": {
+    "emotion": "playful",
+    "norm": 935.207275390625
+   },
+   "top_15": [
+    {
+     "emotion": "playful",
+     "norm": 935.207275390625
+    },
+    {
+     "emotion": "hysterical",
+     "norm": 881.2130737304688
+    },
+    {
+     "emotion": "sleepy",
+     "norm": 872.8203735351562
+    },
+    {
+     "emotion": "aroused",
+     "norm": 838.5731201171875
+    },
+    {
+     "emotion": "vindictive",
+     "norm": 825.8757934570312
+    },
+    {
+     "emotion": "greedy",
+     "norm": 823.8536987304688
+    },
+    {
+     "emotion": "vengeful",
+     "norm": 808.2578735351562
+    },
+    {
+     "emotion": "kind",
+     "norm": 786.0367431640625
+    },
+    {
+     "emotion": "nostalgic",
+     "norm": 782.4210815429688
+    },
+    {
+     "emotion": "amused",
+     "norm": 772.9716796875
+    },
+    {
+     "emotion": "compassionate",
+     "norm": 772.593994140625
+    },
+    {
+     "emotion": "inspired",
+     "norm": 772.099609375
+    },
+    {
+     "emotion": "indifferent",
+     "norm": 734.601318359375
+    },
+    {
+     "emotion": "valiant",
+     "norm": 732.1177978515625
+    },
+    {
+     "emotion": "serene",
+     "norm": 713.51171875
+    }
+   ],
+   "bottom_15": [
+    {
+     "emotion": "troubled",
+     "norm": 278.28497314453125
+    },
+    {
+     "emotion": "distressed",
+     "norm": 325.9695739746094
+    },
+    {
+     "emotion": "bitter",
+     "norm": 326.9425964355469
+    },
+    {
+     "emotion": "upset",
+     "norm": 328.6074523925781
+    },
+    {
+     "emotion": "disturbed",
+     "norm": 341.7549743652344
+    },
+    {
+     "emotion": "stressed",
+     "norm": 342.9385681152344
+    },
+    {
+     "emotion": "unhappy",
+     "norm": 349.49176025390625
+    },
+    {
+     "emotion": "worried",
+     "norm": 354.9028625488281
+    },
+    {
+     "emotion": "hurt",
+     "norm": 359.3008117675781
+    },
+    {
+     "emotion": "insulted",
+     "norm": 360.6131591796875
+    },
+    {
+     "emotion": "vulnerable",
+     "norm": 362.511474609375
+    },
+    {
+     "emotion": "resentful",
+     "norm": 364.0213317871094
+    },
+    {
+     "emotion": "unsettled",
+     "norm": 364.6887512207031
+    },
+    {
+     "emotion": "dispirited",
+     "norm": 369.4032897949219
+    },
+    {
+     "emotion": "gloomy",
+     "norm": 370.7499084472656
+    }
+   ]
+  },
+  "layer_peak_mean_norm": {
+   "layer": 45,
+   "mean_norm": 1374.45849609375
+  },
+  "layer_lowest_mean_norm": {
+   "layer": 0,
+   "mean_norm": 9.931554794311523
+  }
+ }
+}

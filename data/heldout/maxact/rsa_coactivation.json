@@ -1,0 +1,215 @@
+{
+ "generated_utc": "2026-08-19T16:20:33Z",
+ "inputs": {
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "pass1_results_sha256": "712382efac527cde15c91cadfe11d1763363cddf8b4ace2191d7c7f1d9556537",
+  "histograms_sha256": "9fed42410c63862c9a7804f5eae841ce65de80be671a68f8624334ff781fc81b"
+ },
+ "layer": 31,
+ "n_pairs": 14535,
+ "n_docs": 723,
+ "n_tokens_raw": 831703,
+ "n_tokens_bulk": 325156,
+ "sample_note": "723 winner-selected documents (high-activation-biased sample), disclosed",
+ "isotropy_note": "under isotropic residual covariance co-activation correlation equals cosine; RSA measures preservation of geometry by the empirical covariance",
+ "variants": {
+  "raw": {
+   "rsa_pearson": 0.907,
+   "rsa_spearman": 0.9068,
+   "top_deviations": [
+    {
+     "pair": "droopy | listless",
+     "cosine": 0.572,
+     "coactivation": -0.115,
+     "delta": -0.688
+    },
+    {
+     "pair": "docile | listless",
+     "cosine": 0.386,
+     "coactivation": -0.278,
+     "delta": -0.664
+    },
+    {
+     "pair": "sullen | worthless",
+     "cosine": 0.33,
+     "coactivation": -0.324,
+     "delta": -0.653
+    },
+    {
+     "pair": "droopy | worthless",
+     "cosine": 0.265,
+     "coactivation": -0.37,
+     "delta": -0.635
+    },
+    {
+     "pair": "docile | stuck",
+     "cosine": 0.009,
+     "coactivation": -0.622,
+     "delta": -0.631
+    },
+    {
+     "pair": "docile | worthless",
+     "cosine": 0.133,
+     "coactivation": -0.496,
+     "delta": -0.629
+    },
+    {
+     "pair": "droopy | stuck",
+     "cosine": 0.119,
+     "coactivation": -0.459,
+     "delta": -0.577
+    },
+    {
+     "pair": "listless | tired",
+     "cosine": 0.278,
+     "coactivation": -0.289,
+     "delta": -0.567
+    },
+    {
+     "pair": "disgusted | scornful",
+     "cosine": -0.024,
+     "coactivation": -0.582,
+     "delta": -0.558
+    },
+    {
+     "pair": "stuck | sullen",
+     "cosine": 0.155,
+     "coactivation": -0.399,
+     "delta": -0.554
+    }
+   ]
+  },
+  "within_doc_centered": {
+   "rsa_pearson": 0.895,
+   "rsa_spearman": 0.8929,
+   "top_deviations": [
+    {
+     "pair": "droopy | listless",
+     "cosine": 0.572,
+     "coactivation": -0.133,
+     "delta": -0.705
+    },
+    {
+     "pair": "docile | listless",
+     "cosine": 0.386,
+     "coactivation": -0.318,
+     "delta": -0.704
+    },
+    {
+     "pair": "sullen | worthless",
+     "cosine": 0.33,
+     "coactivation": -0.362,
+     "delta": -0.691
+    },
+    {
+     "pair": "docile | stuck",
+     "cosine": 0.009,
+     "coactivation": -0.672,
+     "delta": -0.681
+    },
+    {
+     "pair": "droopy | worthless",
+     "cosine": 0.265,
+     "coactivation": -0.398,
+     "delta": -0.664
+    },
+    {
+     "pair": "docile | worthless",
+     "cosine": 0.133,
+     "coactivation": -0.522,
+     "delta": -0.655
+    },
+    {
+     "pair": "droopy | stuck",
+     "cosine": 0.119,
+     "coactivation": -0.499,
+     "delta": -0.618
+    },
+    {
+     "pair": "docile | reflective",
+     "cosine": 0.068,
+     "coactivation": -0.531,
+     "delta": -0.599
+    },
+    {
+     "pair": "stuck | sullen",
+     "cosine": 0.155,
+     "coactivation": -0.436,
+     "delta": -0.592
+    },
+    {
+     "pair": "disgusted | scornful",
+     "cosine": -0.024,
+     "coactivation": -0.614,
+     "delta": -0.59
+    }
+   ]
+  },
+  "bulk_only_below_p99": {
+   "rsa_pearson": 0.8939,
+   "rsa_spearman": 0.8838,
+   "top_deviations": [
+    {
+     "pair": "eager | ecstatic",
+     "cosine": 0.464,
+     "coactivation": -0.152,
+     "delta": -0.616
+    },
+    {
+     "pair": "distressed | satisfied",
+     "cosine": -0.543,
+     "coactivation": 0.046,
+     "delta": 0.589
+    },
+    {
+     "pair": "satisfied | upset",
+     "cosine": -0.456,
+     "coactivation": 0.114,
+     "delta": 0.57
+    },
+    {
+     "pair": "dispirited | surprised",
+     "cosine": -0.224,
+     "coactivation": 0.34,
+     "delta": 0.565
+    },
+    {
+     "pair": "sullen | worthless",
+     "cosine": 0.33,
+     "coactivation": -0.234,
+     "delta": -0.563
+    },
+    {
+     "pair": "docile | reflective",
+     "cosine": 0.068,
+     "coactivation": -0.479,
+     "delta": -0.546
+    },
+    {
+     "pair": "indignant | upset",
+     "cosine": 0.085,
+     "coactivation": -0.452,
+     "delta": -0.537
+    },
+    {
+     "pair": "ecstatic | sensitive",
+     "cosine": -0.152,
+     "coactivation": 0.377,
+     "delta": 0.529
+    },
+    {
+     "pair": "indifferent | nervous",
+     "cosine": -0.036,
+     "coactivation": 0.486,
+     "delta": 0.522
+    },
+    {
+     "pair": "eager | elated",
+     "cosine": 0.431,
+     "coactivation": -0.089,
+     "delta": -0.52
+    }
+   ]
+  }
+ }
+}

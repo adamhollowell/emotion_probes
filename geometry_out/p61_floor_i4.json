@@ -1,0 +1,41 @@
+{
+ "item": "P6.1-floor + I-4",
+ "desc": "\u00a78.1 max-activation structural floor (P6.1) + I-4 random-direction floor control",
+ "p61_floor": {
+  "value": {
+   "rank1_nonconcept": "52.6% (90/171) - IDENTICAL",
+   "rank1_composition": {
+    "numeric": 21.1,
+    "punct": 13.5,
+    "whitespace": 11.7,
+    "function": 6.4,
+    "content": 47.4
+   },
+   "top20_nonconcept": "48.4%",
+   "own_word": "9/148 (6.1%)",
+   "joy_collapse": "8/10 share the same scrub numeral (lmsys_012817)",
+   "note": "total floor basis-ROBUST (52.6% both); composition shifts (whitespace up 1.8->11.7%, numeric down 25.7->21.1%)"
+  }
+ },
+ "i4_random_floor": {
+  "method": "Identical all-docs top-20 decode+classify pipeline on the 171 emotion vectors vs 200 random directions (rand_directions_proj).",
+  "pipeline_control_emotion": {
+   "rank1": "51.5%",
+   "top20": "48.5%",
+   "validates_vs_canonical": "52.6%/47.6%"
+  },
+  "random_directions_n200": {
+   "rank1_nonconcept": "66.0% (132/200)",
+   "top20_nonconcept": "68.1% (2725/4000)",
+   "content_rank1": "34%",
+   "content_top20": "32%"
+  },
+  "finding": "random directions are MORE structurally-confounded (66-68%) than the emotion vectors (48-52%). The confound is a generic property of extreme projections on this corpus, AND the emotion vectors carry real concept signal ABOVE chance (content 52% vs random 34%)."
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-14T12:37:06Z"
+ }
+}

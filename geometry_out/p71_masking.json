@@ -1,0 +1,56 @@
+{
+ "item": "P7.1 loving-not-weak masking diagnostic",
+ "basis": "canonical",
+ "desc": "raw-dot L31 projection of loving onto the 5 colon-prompt residuals is dominated by a massive-activation dim; masking it moves loving to mid-pack -> 'loving is not a weak direction' holds.",
+ "massive_activation_dims": [
+  {
+   "dim": 4140,
+   "mean_abs_resid": 13593.6
+  },
+  {
+   "dim": 4530,
+   "mean_abs_resid": 1006.4
+  },
+  {
+   "dim": 3055,
+   "mean_abs_resid": 983.2
+  },
+  {
+   "dim": 2382,
+   "mean_abs_resid": 603.2
+  },
+  {
+   "dim": 3116,
+   "mean_abs_resid": 535.2
+  }
+ ],
+ "unmasked": {
+  "loving_proj": -177367.7,
+  "loving_rank": 151,
+  "note": "DO NOT CITE the point value -177,367 (dim-4140 artifact)"
+ },
+ "top1_mask": {
+  "dim": 4140,
+  "loving_rank": 126,
+  "loving_proj": -48937.1
+ },
+ "top3_mask": {
+  "dims": [
+   4140,
+   4530,
+   3055
+  ],
+  "loving_rank": 56,
+  "loving_proj": 17047.3,
+  "positive": true
+ },
+ "conclusion": "Loving sits mid-pack after masking (top-3 rank 56, positive) -> not a weak direction.",
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "residuals": "data/vectors/colon_analysis.pt",
+  "method": "torch-free numpy on on-disk residuals; proj reproduces stored proj_mean at max|\u0394|=0",
+  "generated_utc": "2026-08-18T15:41:39Z"
+ }
+}

@@ -1,0 +1,401 @@
+{
+ "tag": "canonical_L31",
+ "direct": {
+  "happy": {
+   "promoted": [
+    "excited",
+    " excited",
+    " excit",
+    " joy",
+    " happiness"
+   ],
+   "suppressed": [
+    " gentil",
+    "loyal",
+    " \u0915\u094d\u0930",
+    "Elegant",
+    " politely"
+   ]
+  },
+  "inspired": {
+   "promoted": [
+    " neglected",
+    " excited",
+    " inspired",
+    " dusty",
+    " ideas"
+   ],
+   "suppressed": [
+    " \u0434\u0435\u043c\u043e\u043d",
+    " esfuerzo",
+    "Liar",
+    "ulaski",
+    "\u0f44\u0f0b"
+   ]
+  },
+  "loving": {
+   "promoted": [
+    " goofy",
+    " tenderness",
+    "\u6031",
+    " cora\u00e7\u00f5es",
+    "licate"
+   ],
+   "suppressed": [
+    " politely",
+    "Einstellungen",
+    " mantiene",
+    " aumentado",
+    "Gdzie"
+   ]
+  },
+  "proud": {
+   "promoted": [
+    " proud",
+    " proudly",
+    " prou",
+    " proudest",
+    " beaming"
+   ],
+   "suppressed": [
+    " fijn",
+    "\u306a\u306e\u306b",
+    " kecelakaan",
+    " fijne",
+    " alleviate"
+   ]
+  },
+  "calm": {
+   "promoted": [
+    " curious",
+    " satisfied",
+    " mindful",
+    " enjoy",
+    " entstand"
+   ],
+   "suppressed": [
+    " berusaha",
+    " terus",
+    "\u307f\u307e\u3057\u305f",
+    "\u2762",
+    " sent\u00eda"
+   ]
+  },
+  "desperate": {
+   "promoted": [
+    " desperate",
+    " desesper",
+    " desperation",
+    "\u512a\u3057\u3044",
+    " afford"
+   ],
+   "suppressed": [
+    "\u01d2",
+    " appartiennent",
+    "\uffe3)",
+    " lamentable",
+    " inconven"
+   ]
+  },
+  "angry": {
+   "promoted": [
+    " anger",
+    "Anger",
+    " Anger",
+    " rage",
+    " angrily"
+   ],
+   "suppressed": [
+    " smiles",
+    "maha",
+    "\u05b8\u05bc",
+    "\u304f\u3066",
+    "\ud835\udc70"
+   ]
+  },
+  "guilty": {
+   "promoted": [
+    " guilt",
+    " carteles",
+    "ir\u00e9e",
+    "\uc84d",
+    "etl"
+   ],
+   "suppressed": [
+    " surprisingly",
+    " seriously",
+    " dramatically",
+    " dramatic",
+    " former"
+   ]
+  },
+  "sad": {
+   "promoted": [
+    " loneliness",
+    " depression",
+    " sadness",
+    "Lon",
+    "Depression"
+   ],
+   "suppressed": [
+    "\u72b9\u5982",
+    "\u064a\u0643\u0648\u0646",
+    "ICAL",
+    "\u0b4d",
+    "entially"
+   ]
+  },
+  "afraid": {
+   "promoted": [
+    " panic",
+    "panic",
+    " paranoia",
+    " Panic",
+    "Panic"
+   ],
+   "suppressed": [
+    " exasperated",
+    " frustrated",
+    " eyebrow",
+    " baffled",
+    " understood"
+   ]
+  },
+  "nervous": {
+   "promoted": [
+    "Anxiety",
+    " nervousness",
+    " nervously",
+    " Anxiety",
+    "anxiety"
+   ],
+   "suppressed": [
+    " smiles",
+    "isier",
+    " olhos",
+    " exhausted",
+    "anyan"
+   ]
+  },
+  "surprised": {
+   "promoted": [
+    " shock",
+    "\ud83d\ude31",
+    "shock",
+    "\u0f44\u0f0b",
+    "\ud83d\ude33"
+   ],
+   "suppressed": [
+    " nanti",
+    " afterwards",
+    " tomorrow",
+    " smiles",
+    " insomnia"
+   ]
+  }
+ },
+ "normalized": {
+  "happy": {
+   "promoted": [
+    " excited",
+    " skv\u011b",
+    " excit",
+    " happiness",
+    "excited"
+   ],
+   "suppressed": [
+    " or",
+    "\u0aec",
+    " \u043d\u0435\u043f\u0440\u0438\u044f\u0442",
+    "\uf0d3",
+    "\u30c1\u30fc\u30eb"
+   ]
+  },
+  "inspired": {
+   "promoted": [
+    " inspired",
+    " ideas",
+    " excited",
+    " promising",
+    "\u6709\u4e86"
+   ],
+   "suppressed": [
+    " \u0432\u0441\u0435\u043a\u0438",
+    " \u0434\u0435\u043c\u043e\u043d",
+    " \uffe5",
+    " bloemen",
+    " politiet"
+   ]
+  },
+  "loving": {
+   "promoted": [
+    "sometimes",
+    " goofy",
+    " byste",
+    "often",
+    "despite"
+   ],
+   "suppressed": [
+    " or",
+    "Einstellungen",
+    "\u0452\u0430",
+    " had",
+    "Gdzie"
+   ]
+  },
+  "proud": {
+   "promoted": [
+    " proud",
+    " somewhat",
+    " success",
+    "\u5bdd\u308b",
+    " proudly"
+   ],
+   "suppressed": [
+    " or",
+    " kehilangan",
+    "\u5404\u79cd",
+    " mencari",
+    " alleviate"
+   ]
+  },
+  "calm": {
+   "promoted": [
+    " enjoy",
+    " satisfied",
+    "lasyon",
+    " enjoyed",
+    " correct"
+   ],
+   "suppressed": [
+    " berusaha",
+    " sent\u00eda",
+    " terus",
+    " because",
+    " \u062a\u062d\u062a\u0648\u064a"
+   ]
+  },
+  "desperate": {
+   "promoted": [
+    " three",
+    " but",
+    " options",
+    " because",
+    " desesper"
+   ],
+   "suppressed": [
+    "\u0441\u044f\u0442\u0441\u044f",
+    " poliuret",
+    "Mening",
+    " conspir",
+    " lavabo"
+   ]
+  },
+  "angry": {
+   "promoted": [
+    " anger",
+    " angrily",
+    " angry",
+    " \u0915\u094d\u0930",
+    " rage"
+   ],
+   "suppressed": [
+    " cora\u00e7\u00f5es",
+    "upuesto",
+    " sinais",
+    " amazing",
+    " \u671d\u98df"
+   ]
+  },
+  "guilty": {
+   "promoted": [
+    " weeks",
+    "\u597d\u7528",
+    " months",
+    " \u062a\u0644\u0643",
+    " heeft"
+   ],
+   "suppressed": [
+    " surprisingly",
+    " impressively",
+    ",",
+    "!",
+    " haphazard"
+   ]
+  },
+  "sad": {
+   "promoted": [
+    " loneliness",
+    " without",
+    " where",
+    "\u0c95",
+    "\u0e40\u0e04\u0e22"
+   ],
+   "suppressed": [
+    "!",
+    " \"",
+    "\u9732\u51fa\u4e86",
+    " nonch\u00e9",
+    "\u5c45\u308b"
+   ]
+  },
+  "afraid": {
+   "promoted": [
+    " or",
+    " impending",
+    "fraid",
+    " panic",
+    "fordable"
+   ],
+   "suppressed": [
+    " somewhat",
+    " infinita",
+    " kinda",
+    " exasperated",
+    "actually"
+   ]
+  },
+  "nervous": {
+   "promoted": [
+    " nervously",
+    " alleviate",
+    "Anxiety",
+    " nervousness",
+    "tonsoft"
+   ],
+   "suppressed": [
+    " dessas",
+    " budete",
+    " usando",
+    " fatores",
+    " you"
+   ]
+  },
+  "surprised": {
+   "promoted": [
+    "\ud83d\ude31",
+    " \u0434\u0440\u0436\u0430\u0432\u0435",
+    "\u0452\u0430",
+    "\ud83d\ude32",
+    "\u045a\u0443"
+   ],
+   "suppressed": [
+    " tomorrow",
+    " nanti",
+    " afterwards",
+    " promise",
+    " \u0442\u0430\u0431\u043b\u0435"
+   ]
+  }
+ },
+ "own_word_rank_L31": {
+  "n_scored": 140,
+  "median": 189.0
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T19:40:13Z"
+ }
+}

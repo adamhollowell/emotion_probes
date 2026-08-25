@@ -1,0 +1,48 @@
+{
+ "item": "P4.5-Zipf",
+ "desc": "frequency-control of legibility onset (seam_bycat); Zipf R2 + family-staging permutation at BOTH self-rank thresholds. ENV-BRITTLE per F-2 (R2 informational; onset L23 + staging perm_p are the robust load-bearing numbers).",
+ "wordfreq": "3.1.1",
+ "value": {
+  "thresholds": {
+   "lt100": {
+    "threshold": 100,
+    "raw_R2": 0.06,
+    "cleaned_R2": 0.07,
+    "family_staging_perm_p": {
+     "raw": 0.0052,
+     "cleaned": 0.0124
+    },
+    "n_onset_defined": {
+     "raw": 113,
+     "cleaned": 112
+    }
+   },
+   "lt1000": {
+    "threshold": 1000,
+    "raw_R2": 0.026,
+    "cleaned_R2": 0.02,
+    "family_staging_perm_p": {
+     "raw": 0.0011,
+     "cleaned": 0.016
+    },
+    "n_onset_defined": {
+     "raw": 127,
+     "cleaned": 127
+    }
+   }
+  },
+  "note_raw": "Raw variant is basis-independent (computed on vectors_raw).",
+  "headline": "Affect-type staging survives frequency control at both thresholds (reactive resolve earlier than diffuse after removing zipf; p<0.05).",
+  "basis_trace": "Inputs are the sha-gated canonical vectors (6de2e293), the model lens (lens_ingredients.pt = frozen gemma-2-27b W_U/LN/vocab), and English wordfreq. The Zipf R2 is OLS(onset~zipf) over ALL emotions -> family-independent, no taxonomy input.",
+  "perm_p_families_note": "The family-staging perm_p uses seam_bycat's fixed REACTIVE/DIFFUSE affect-type grouping (a conceptual split, not the k-means partition); it does not enter the R2.",
+  "source": "OLS(onset~zipf) over all emotions; wordfreq Zipf"
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "lens_ingredients": "data/vectors/lens_ingredients.pt",
+  "sklearn_free": true,
+  "generated_utc": "2026-08-25T19:55:09Z"
+ }
+}

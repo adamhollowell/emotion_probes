@@ -1,0 +1,67 @@
+Warriner et al. 2013 VAD norms — Local Provenance Record
+
+Local filename:
+  data/ratings/warriner_cache.csv   (verbatim local cache of the published supplementary
+  file; 13,915 lemmas + header row; .gitignored — see release note below)
+
+Original resource:
+  Norms of Valence, Arousal, and Dominance for 13,915 English lemmas
+  (the "Warriner norms"; Amazon Mechanical Turk ratings, 1-9 Likert scales).
+
+Creators:
+  Amy Beth Warriner, Victor Kuperman, and Marc Brysbaert.
+
+Official homepage / source:
+  Center for Reading Research (CRR), Ghent University — dataset archive:
+  http://crr.ugent.be/archives/1003
+  (Distributed as supplementary material to the Behavior Research Methods paper below.)
+
+Paper citation:
+  Warriner, A. B., Kuperman, V., & Brysbaert, M. (2013). "Norms of valence, arousal, and
+  dominance for 13,915 English lemmas." Behavior Research Methods, 45(4), 1191-1207.
+  doi:10.3758/s13428-012-0314-x
+
+Downloaded by:
+  Adam Hollowell
+
+Download date / exact mirror:
+  [CONFIRM] — cache present in the working tree since 2026-06-12
+  (data/ratings/warriner_cache.csv). Verify the exact download date and mirror against the
+  CRR archive above before release; the file content is the standard published table.
+
+Scale:
+  Valence, arousal, and dominance are each rated on a 1-9 scale (1 = most negative / calm /
+  controlled; 9 = most positive / aroused / in-control). Immaterial to our use, which is
+  correlational and therefore scale-invariant.
+
+Columns used:
+  The cache retains all original Warriner columns (per-word means with M/F, younger/older,
+  and low/high sub-splits). This project reads only three:
+    Word          — the lemma (join key)
+    V.Mean.Sum    — mean valence over all raters
+    A.Mean.Sum    — mean arousal over all raters
+
+Local transformation:
+  NONE. warriner_cache.csv is the unmodified published supplementary CSV (a local cache).
+  Canonicalization to (word, valence, arousal) happens at read time inside
+  scripts/analyze_sun_choi_engagement.py (#4 norm-source block), not on disk.
+
+Terms of use / redistribution note:
+  Free for non-commercial research use with citation. (Project records the terms as
+  CC BY-NC-ND — confirm the exact license at the source before relying on it.) Do NOT
+  redistribute the dataset; direct readers to the CRR archive above.
+
+Use in this project:
+  §9.3 / P1.6 (Sun et al. 2026 engagement) norm-source robustness check. Against the Warriner
+  norms our L31 global-171 PCA gives, on the 126 overlapping emotions, PC1<->pleasure
+  r = 0.687 and PC2<->arousal r = 0.477, with arousal's best component = PC2 — one of three
+  human-norm sources (Russell-Mehrabian 0.62, Warriner 0.48, NRC-VAD 0.64) that all place
+  arousal on PC2, showing the alignment is not an artifact of any single norm instrument.
+  Warriner is the weakest of the three and is reported as such (it is not the main benchmark;
+  Essay-1 Figure 8 remains Russell-Mehrabian 1977 only).
+
+Integrity / release note:
+  The raw Warriner data is excluded from the public release: .gitignore
+  data/ratings/warriner_cache.csv. Commit this provenance record and the analysis script
+  only, not the raw dataset.
+Fetch script: scripts/fetch_warriner.py (downloads the verbatim cache to the local path above).

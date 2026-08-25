@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emotion_probes"
+version = "1.0.0"
+description = "Protocol-matched replication of Anthropic's emotion-vector study on base Gemma-2-27B"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+
+dependencies = [
+    "torch",
+    "transformer_lens==3.3.0",   # extraction regime pinned (raw-weights TransformerBridge)
+    "transformers",
+    "safetensors",
+    "huggingface_hub",
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+    "matplotlib",
+    "pillow",            # figure compositing (render_parallel_fig1_maxact.py)
+    "adjustText",        # non-overlapping labels (render_parallel_fig6_*.py)
+    "umap-learn",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+# Corpus generation (Anthropic Batches API) — only needed to rebuild the story corpus
+generation = ["anthropic"]
+# Lexical-frequency labels (only scripts/seam_bycat.py; lazy `from wordfreq import zipf_frequency`)
+lexical = ["wordfreq"]
+# Test suite
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["emotion_probes"]
+
+[tool.setuptools.package-data]
+emotion_probes = ["*.py"]

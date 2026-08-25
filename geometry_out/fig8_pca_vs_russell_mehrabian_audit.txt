@@ -1,0 +1,44 @@
+Figure 8 canonical audited rebuild
+================================================
+basis: canonical (derived from vector sha256, not asserted)
+vector_file: data/vectors/emotion_vectors_171.pt
+vector_sha256: 6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b
+vector_key: vectors
+ratings_source: data/ratings/russell_mehrabian_1977.csv
+ratings_sha256: b8a0e952957e6c849d3507bdd0d6e848fcb8f308b628837e3c6dc8f77bb6cffd
+layer: 31
+pca_fit_n: 171
+overlap_n: 45
+
+PC1 vs Human Pleasure r from plotted points: 0.720312
+PC1 vs Human Pleasure r from raw oriented PC: 0.720312
+PC2 vs Human Arousal r from plotted points:  0.667525
+PC2 vs Human Arousal r from raw oriented PC:  0.667525
+
+Cross PC1 vs Human Arousal r:  -0.125193
+Cross PC2 vs Human Pleasure r: -0.014593
+
+PC1 variance percent: 26.732248
+PC2 variance percent: 13.378663
+PC3 variance percent: 11.603951
+
+Displayed PC1/Pleasure r: 0.72
+Displayed PC2/Arousal r:  0.67
+
+Integrity checks:
+- basis sha256 == canonical (6de2e293d0e6…): True
+- points rows == 45: True
+- raw/plotted PC1 correlation match: True
+- raw/plotted PC2 correlation match: True
+- displayed values match canonical target 0.72 / 0.67: True
+- full-precision correlations match s5_supplement (tol 1e-06): True
+- PCA variance matches canonical 26.73 / 13.38 / 11.6 (tol 0.05): True
+- PC1 panel: all 45 points inside xlim [-1, 1] / ylim [-2.5, 2.8]
+- PC2 panel: all 45 points inside xlim [-1, 1] / ylim [-2.2, 2.2]
+
+Outputs:
+- docs/e1_figures/E1_Figure_5_human_norms.png
+- docs/e1_figures/E1_Figure_5_human_norms.pdf
+- geometry_out/fig8_pca_vs_russell_mehrabian_points.csv
+- geometry_out/fig8_pca_vs_russell_mehrabian_summary.json
+- geometry_out/fig8_pca_vs_russell_mehrabian_audit.txt

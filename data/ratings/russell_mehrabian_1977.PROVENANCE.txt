@@ -1,0 +1,61 @@
+PROVENANCE — russell_mehrabian_1977.csv
+========================================
+
+Source
+------
+Russell, J. A., & Mehrabian, A. (1977). Evidence for a three-factor theory
+of emotions. Journal of Research in Personality, 11(3), 273–294.
+
+This is the human-norm source used by Sofroniew et al. (2026,
+arXiv:2604.07729) for their Figure 8 comparison (their reference [9]), and
+therefore the exact benchmark inherited by this replication (Essay 1, §5.2
+/ ledger P1.2).
+
+Contents
+--------
+45 rows (+ header): the emotion terms from Russell & Mehrabian's rating
+study that overlap the 171-emotion vocabulary of Sofroniew et al. (2026).
+Columns: Term, N (raters), Pleasure Mean/SD, Arousal Mean/SD, Dominance
+Mean/SD. Values are the published normative ratings on [-1, +1] scales.
+
+Role in the pipeline
+--------------------
+Canonical input to the Figure 8 human-norm comparison
+(repo/github_repo/scripts/render_parallel_fig8_russell_mehrabian.py) and the
+layerwise affect-alignment sweep (layerwise_va_global.py). The PC1↔Pleasure
+and PC2↔Arousal correlations reported in Essay 1 (r = 0.7203 / 0.6675 at L31
+on the canonical basis, vectors sha256 6de2e293…) are computed against this table,
+restricted to these 45 overlap emotions after a global PCA over all 171
+vectors. This file is basis-independent; only the vectors change with basis.
+
+Producer-name correction (2026-08-17)
+-------------------------------------
+Earlier revisions of this file and of the findings ledger named
+"fig8_rebuild_locked_audit.py" as the Figure 8 producer. No such file has
+ever existed in this repository — it is a documentation ghost. The
+authoritative producer, and the one named by
+locked_figures_and_tables/LOCK_RECORD.json, is
+render_parallel_fig8_russell_mehrabian.py.
+
+Earlier r figures quoted here were computed on superseded bases and no longer
+apply; current values are computed against the canonical vectors (sha256 6de2e293).
+
+Redistribution rationale
+------------------------
+A small derived table of factual normative ratings transcribed from a
+published 1977 paper, redistributed with citation. It is not a licensed
+lexicon; the licensed third-party lexicons used in robustness checks
+(NRC-VAD v2.1, Warriner 2013) are NOT bundled with the release and ship as
+provenance + fetch scripts only.
+
+History (2026-07-11 consolidation, per ledger PROV.7(c))
+--------------------------------------------------------
+Three content-identical variants of this table existed, differing only in
+header format (verified 315/315 cells identical). This file
+(russell_mehrabian_1977.csv, "Capitalized Space" headers, read by the
+locked Figure 8 producer) is the single canonical release file. The two
+redundant variants — russell_mehrabian_45_emotions.csv and
+russell_mehrabian_overlap_45.csv (read only by the retired v3 pipeline) —
+were retired to archive_historical/ on 2026-07-11. A corrupted
+transcription (russell_mehrabian_overlap_45_DISCARD_BAD.csv, 77 divergent
+cells) was previously deleted and must never be used.

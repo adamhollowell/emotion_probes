@@ -1,0 +1,35 @@
+{
+ "item": "P3.7",
+ "desc": "dimensional velocity \u2014 per-emotion adjacent-layer cosine minimum (rotation), population buckets over 171",
+ "metric": "argmin over 45 steps of cos(V[e,L],V[e,L+1]) on cleaned vectors; step idx i = L_i->L_{i+1}",
+ "value": {
+  "terminal_L43_44": 86,
+  "band_L42_44": 105,
+  "band_L42_44_pct": 61.4,
+  "seam_L21_23": 52,
+  "seam_pct": 30.4,
+  "note": "Terminal output-collapse share 86/171; sub-terminal seam share 30%, well above the implementation-validation level. Corroborative of P3.1/P3.2; not emotion-specific (dominated by terminal collapse)."
+ },
+ "texture": {
+  "metric": "per-emotion argmin = max-rotation step; argmax = most-stable step (cleaned vectors, cos of consecutive layers)",
+  "median_max_rotation_layer": 43,
+  "mean_max_rotation_layer": 33.9,
+  "median_most_stable_layer": 37,
+  "max_rotation_modes": {
+   "L43": 86,
+   "L21": 46,
+   "L44": 19,
+   "L10": 7,
+   "L22": 6
+  },
+  "texture_claims_verified": "Median max-rotation L43 (claim L43) and most-stable 'maxes' ~L37 (claim L37) both reproduce; torch-free cosine geometry, version-independent.",
+  "recompute_gate": "Reproduces the stamped buckets exactly (terminal argmin==L43 ->86; band L42-44 ->105; seam L21-22 ->52).",
+  "source": "outputs/p37_texture.py"
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T21:04:08Z"
+ }
+}

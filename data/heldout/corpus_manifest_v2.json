@@ -1,0 +1,67 @@
+{
+  "builder_version": "2.0.0",
+  "built_utc": "2026-07-06T12:51:05Z",
+  "seed": 20260706,
+  "shuffle_buffer": 10000,
+  "shingle_words": 12,
+  "min_chars": 100,
+  "store_char_cap": 32000,
+  "sources": {
+    "lmsys": {
+      "hf_dataset": "lmsys/lmsys-chat-1m",
+      "target": 31532,
+      "accepted": 31532
+    },
+    "pile": {
+      "hf_dataset": "monology/pile-uncopyrighted",
+      "target": 9124,
+      "accepted": 9124
+    },
+    "common_corpus": {
+      "hf_dataset": "PleIAs/common_corpus",
+      "target": 3593,
+      "accepted": 3593
+    },
+    "isotonic": {
+      "hf_dataset": "Isotonic/human_assistant_conversation",
+      "target": 3025,
+      "accepted": 3025
+    }
+  },
+  "rejections": {
+    "gate": {
+      "lmsys": 1,
+      "pile": 0,
+      "common_corpus": 0,
+      "isotonic": 0
+    },
+    "dupe": {
+      "lmsys": 341,
+      "pile": 0,
+      "common_corpus": 3,
+      "isotonic": 3
+    },
+    "too_short": {
+      "lmsys": 1845,
+      "pile": 69,
+      "common_corpus": 156,
+      "isotonic": 38
+    },
+    "unusable": {
+      "lmsys": 0,
+      "pile": 0,
+      "common_corpus": 0,
+      "isotonic": 0
+    }
+  },
+  "total_accepted": 47274,
+  "disjointness_gate": "reject on >=1 shared normalized 12-word shingle with stories_171_canonical_clean.jsonl",
+  "disclosures": [
+    "Proportions set to the P6.2 window mix under the composition hypothesis (Decision 1A).",
+    "monology/pile-uncopyrighted substitutes for the original Pile (Decision 2A).",
+    "Conversations flattened without role labels, turns joined by blank lines.",
+    "Multilingual kept; no cleaning; stored text truncated at 32000 chars."
+  ],
+  "corpus_sha256": "e821eebe67e9647ce0eae4d520c7a3c5efa7d07bf7b33803986b52ffeaef2e29",
+  "corpus_file": "heldout_corpus_v2.jsonl"
+}

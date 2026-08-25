@@ -1,0 +1,41 @@
+{
+ "item": "P4.5 seam onset",
+ "section": "7.3 P4.5",
+ "desc": "legibility onset + self-rank collapse (population median self-rank)",
+ "value": {
+  "onset": "L23 (AX-critical: PRESERVED)",
+  "median_self_rank_raw_L20_27": {
+   "20": 35978.0,
+   "21": 31320.0,
+   "22": 23248.0,
+   "23": 7100.0,
+   "24": 4214.0,
+   "25": 3309.0,
+   "26": 2315.0,
+   "27": 2270.0
+  },
+  "median_self_rank_cleaned_L20_27": {
+   "20": 24842.0,
+   "21": 20203.0,
+   "22": 23673.0,
+   "23": 5384.0,
+   "24": 3936.0,
+   "25": 2921.0,
+   "26": 1724.0,
+   "27": 1301.0
+  },
+  "collapse_cleaned_L21_24": [
+   20203.0,
+   23673.0,
+   5384.0,
+   3936.0
+  ],
+  "note_raw_basis_independent": "Raw variant uses vectors_raw; the raw seam curve is basis-independent, so the basis-sensitive check is the cleaned variant (also onset L23)."
+ },
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-13T20:11:15Z"
+ }
+}

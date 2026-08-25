@@ -1,0 +1,37 @@
+{
+ "item": "P3.5-per-emotion",
+ "desc": "per-emotion top-5 neighbor Jaccard across layers (6 probes)",
+ "value": {
+  "angry": {
+   "L0_L31": 1.0,
+   "L31_L43": 1.0
+  },
+  "afraid": {
+   "L0_L31": 0.43,
+   "L31_L43": 1.0
+  },
+  "happy": {
+   "L0_L31": 0.43,
+   "L31_L43": 1.0
+  },
+  "sad": {
+   "L0_L31": 0.67,
+   "L31_L43": 1.0
+  },
+  "loving": {
+   "L0_L31": 0.67,
+   "L31_L43": 1.0
+  },
+  "terrified": {
+   "L0_L31": 0.67,
+   "L31_L43": 1.0
+  }
+ },
+ "note": "reactive-vs-developed split holds (angry stable from L0; afraid/happy build over depth); all six L31<->L43=1.00 (late collapse not semantic). Minor: sad L0<->L31 0.43->0.67.",
+ "_provenance": {
+  "basis": "canonical",
+  "vectors": "data/vectors/emotion_vectors_171.pt",
+  "vectors_sha256": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "generated_utc": "2026-08-14T12:04:29Z"
+ }
+}
