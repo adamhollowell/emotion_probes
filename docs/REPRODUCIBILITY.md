@@ -16,7 +16,7 @@ whether a shipped script regenerates it or whether it ships as a certified outpu
 | `adjacent_rsa.json` (adjacent-layer RSA) | `scripts/adjacent_rsa.py` |
 | `s66_embedding_top_cosines.json` (embedding-level cosine ranking; needs `embedding_null_vectors.pt`, regenerate via `extract_embedding_null.py`) | `scripts/s66_embedding_top_cosines.py` |
 | `peak_tokens.json` (P6.1 structural-floor peak tokens, derived; reproduces 52.6% floor via `scripts/analyze_maxact_peaks.py`) | `scripts/build_peak_tokens.py` (from the non-shipped `maxactivating_v2.json`) |
-| Figures 1–7 and the Gemma-numbered finals | the `render_parallel_*` / `lock_fig*` scripts; locked in `locked_figures_and_tables/LOCK_RECORD.json` |
+| Figures 1–7 and the Gemma-numbered finals | the `render_parallel_*` / `lock_fig*` scripts |
 | `vector_norms_*`, `fig8_*`, `s5_supplement.json` | `scripts/vector_norms.py`, `render_parallel_fig8_russell_mehrabian.py`, `lock_fig5.py` |
 
 
@@ -33,13 +33,13 @@ from a diagnostic, or depend on an input held outside the public tree.
 | `a3_sunchoi.json` | curated value-pin | `scripts/analyze_sun_choi_engagement.py` |
 | `a8_depth_arousal.json` | curated value-pin | `scripts/analyze_depth_arousal.py` |
 | `c1_seam_onset.json` | curated value-pin | `scripts/seam_sweep.py` |
-| `p35_peremotion.json` | curated value-pin | `scripts/peremotion_purity.py` |
+| `p35_peremotion.json` | curated value-pin (P3.5 per-emotion overlap) | `scripts/s6_layers.py` |
 | `p45_staging_arousal.json`, `p45_zipf.json` | curated value-pins (lexical staging) | word-frequency + lens analysis |
 | `p51_directedness.json` | curated value-pin | directedness geometry |
 | `p61_floor_i4.json` | curated value-pin | random-floor / I4 analysis |
 | `p37_velocity.json` | assembled from a print-diagnostic | `p37_texture` layer-rotation diagnostic |
 | `p71_masking.json` | needs `colon_analysis` (held nonpublic) | massive-activation masking |
-| `fig2_matrix_layer31.json` | Fig-2 cosine-matrix data | `scripts/render_parallel_fig5_cosine_matrix.py` |
+| `scenario_matrix_layer31.json` | §10.1 stimulus-response scenario projection matrix (12×171, P1 position) | `scripts/scenario_projection.py` |
 | `s66_embedding.json` | §6.6 embedding-null geometry summary | `extract_embedding_null.py` + geometry |
 
 The core geometry spine (vectors → layers → clusters/partition → readout → figures) is fully

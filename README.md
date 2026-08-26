@@ -129,7 +129,7 @@ which appendix JSONs ship as certified outputs vs. regenerate from a shipped scr
 | Embedding-layer baseline / null (§6.6) | `scripts/extract_embedding_null.py` → `embedding_null_vectors.pt` |
 | Direct-unembedding table (cf. Table 1) | `scripts/render_parallel_table1_unembedding.py` |
 | Logit-lens RMSNorm methods point | `scripts/lens_readout_decision.py`, `lens_research_emotions.py`, `lens_recompute_test.py` |
-| Lexicalization onset at the seam | `scripts/seam_sweep.py`, `seam_bycat.py` |
+| Lexicalization onset at the seam | `scripts/seam_sweep.py` |
 | Max-activation panels (Figure 1) | `scripts/render_parallel_fig1_maxact.py` |
 | Max-activation confound floor / sources | `scripts/maxact_sweep_v2.py`, `analyze_maxact_peaks.py`, `analyze_concept_word_corroboration.py`, `analyze_source_heterogeneity.py`, `analyze_thresholds.py`, `analyze_magnitude_diag.py` |
 
@@ -189,8 +189,7 @@ logit-lens. The paper's lens analysis (§7) is the `scripts/lens_*` producers, w
 
 Python 3.10–3.12. Core: `torch`, `transformer_lens==3.3.0`, `transformers`, `numpy`, `pandas`,
 `scipy`, `scikit-learn`, `matplotlib`, `pillow`, `adjustText`, `umap-learn`, `safetensors`, `huggingface_hub`
-(and `anthropic` for corpus generation; `wordfreq` for the optional lexical-frequency labels in
-`seam_bycat.py` — `pip install -e .[lexical]`). Extraction ran on a single **80 GB H100** in `bfloat16`;
+(and `anthropic` for corpus generation). Extraction ran on a single **80 GB H100** in `bfloat16`;
 the geometry and activation analyses run from the released artifacts without a GPU. The logit-lens
 export loads only two tensors from the base model and runs on CPU.
 

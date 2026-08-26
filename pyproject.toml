@@ -30,8 +30,6 @@ dependencies = [
 [project.optional-dependencies]
 # Corpus generation (Anthropic Batches API) — only needed to rebuild the story corpus
 generation = ["anthropic"]
-# Lexical-frequency labels (only scripts/seam_bycat.py; lazy `from wordfreq import zipf_frequency`)
-lexical = ["wordfreq"]
 # Test suite
 dev = ["pytest"]
 
