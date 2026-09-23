@@ -8,7 +8,7 @@ the subject model changes.
 This repo: `https://github.com/adamhollowell/emotion_probes` · companion model repo:
 `https://huggingface.co/adamhollowell/gemma-emotion-vectors`.
 
-Paper: *[arXiv link — added when the paper posts]*.
+Paper: *Replicating the Geometry of Emotion Representations in a Base Open-Weights Model*, [arXiv:2609.22208](https://arxiv.org/abs/2609.22208).
 
 ---
 
@@ -195,6 +195,19 @@ export loads only two tensors from the base model and runs on CPU.
 
 ## Citation & license
 
-Please cite the paper *[citation — TBD]*. Code license: **MIT** (see `LICENSE`). Third-party data are
+Please cite the paper ([arXiv:2609.22208](https://arxiv.org/abs/2609.22208)):
+
+```bibtex
+@misc{hollowell2026replicating,
+  title         = {Replicating the Geometry of Emotion Representations in a Base Open-Weights Model},
+  author        = {Hollowell, Adam},
+  year          = {2026},
+  eprint        = {2609.22208},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2609.22208}
+}
+```
+ Code license: **MIT** (see `LICENSE`). Third-party data are
 released under their own terms as described above; Gemma-2-27B is subject to Google's Gemma Terms
 of Use.
