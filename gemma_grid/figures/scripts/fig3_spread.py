@@ -67,7 +67,7 @@ axA.set_ylabel("PC1 variance share (%)")
 from matplotlib.lines import Line2D
 axA.legend(handles=[
     Line2D([], [], color=NEUTRAL_LINE, ls="-", label="base"),
-    Line2D([], [], color=NEUTRAL_LINE, ls="--", label="instruction-tuned")],
+    Line2D([], [], color=NEUTRAL_LINE, ls="--", label="tuned")],  # paper term (fix 4)
     loc="lower left", fontsize=6.5, frameon=False)
 G.panel_label(axA, "(a)")
 
@@ -80,9 +80,10 @@ axB.set_xlim(-0.25, 2.25)
 axB.set_ylim(3.4, 9.2)
 axB.set_xlabel("Model size")
 axB.set_ylabel("Effective dimensions")
-axB.text(2.18, max(chain(pr, "base")[-1], chain(pr, "it")[-1]) - 0.55,
-         "participation ratio", fontsize=G.ANNOT_FS, color="#555555",
-         ha="right", va="top")
+# label below the PR lines, between 2B and 9B (arXiv page-read fix 1:
+# the old top-right placement overlapped both lines between 9B and 27B)
+axB.text(1.0, 6.55, "participation ratio", fontsize=G.ANNOT_FS,
+         color="#555555", ha="center", va="top")
 axB.text(2.18, chain(idm, "base")[-1] + 0.25,
          "intrinsic dimension (TwoNN)", fontsize=G.ANNOT_FS,
          color=G.ANNOT_GREY, ha="right", va="bottom")

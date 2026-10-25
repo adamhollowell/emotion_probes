@@ -35,14 +35,18 @@ CKPT = {
 }
 SIZES = ["2b", "9b", "27b"]
 
-fig, ax = plt.subplots(figsize=(3.4, 2.4))
-ax.set_xlim(0, 8.6)
+fig, ax = plt.subplots(figsize=(3.8, 2.55))  # widened so the ids print legibly (fix 3)
+# axes fill the canvas: with default subplot margins only ~78% of the
+# figure width carries the 9 data units, which silently shrank the
+# inter-column spacing and made the id rows collide at print sizes
+fig.subplots_adjust(left=0, right=1, top=1, bottom=0)
+ax.set_xlim(0, 9.0)
 ax.set_ylim(0, 6.9)
 ax.axis("off")
 
 BASE_Y = 1.85            # y of layer 0
 K = 0.082                # height units per layer -> 27B column = 3.77
-CX = {"2b": 1.55, "9b": 4.25, "27b": 6.95}   # column centers
+CX = {"2b": 1.60, "9b": 4.50, "27b": 7.40}   # column centers
 BW, GAP = 0.62, 0.18     # bar width, gap within the pair
 
 for s in SIZES:
@@ -68,7 +72,7 @@ for s in SIZES:
             ha="center", va="bottom", fontsize=5.8, color="#777777")
 
 # layer-0 baseline
-ax.plot([0.45, 8.35], [BASE_Y, BASE_Y], color="#666666", linewidth=0.8,
+ax.plot([0.45, 8.75], [BASE_Y, BASE_Y], color="#666666", linewidth=0.8,
         zorder=1)
 ax.text(0.40, BASE_Y - 0.12, "layer 0", ha="left", va="top", fontsize=5.6,
         color="#666666")
@@ -76,11 +80,11 @@ ax.text(0.40, BASE_Y - 0.12, "layer 0", ha="left", va="top", fontsize=5.6,
 # checkpoint identifiers below (tuning keyed by legend and -it suffix)
 for s in SIZES:
     col = G.SIZE_COLORS[s]
-    ax.text(CX[s], 1.18, CKPT[f"gemma-2-{s}-base"],
-            ha="center", va="center", fontsize=4.4, color=col,
+    ax.text(CX[s], 1.20, CKPT[f"gemma-2-{s}-base"],
+            ha="center", va="center", fontsize=6.0, color=col,
             family="monospace")
-    ax.text(CX[s], 0.86, CKPT[f"gemma-2-{s}-it"],
-            ha="center", va="center", fontsize=4.4, color=col,
+    ax.text(CX[s], 0.84, CKPT[f"gemma-2-{s}-it"],
+            ha="center", va="center", fontsize=6.0, color=col,
             family="monospace")
 
 # legend: tuning edges (matches Figures 2 to 4) + the mark's meaning
@@ -88,11 +92,11 @@ ax.plot([0.95, 1.40], [0.28, 0.28], color="#666666", linewidth=1.0, ls="-")
 ax.text(1.50, 0.28, "base", ha="left", va="center", fontsize=5.6,
         color="#666666")
 ax.plot([2.50, 2.95], [0.28, 0.28], color="#666666", linewidth=1.0, ls="--")
-ax.text(3.05, 0.28, "instruction-tuned", ha="left", va="center",
-        fontsize=5.6, color="#666666")
-ax.plot([5.45, 5.90], [0.28, 0.28], color="#666666", linewidth=1.7,
+ax.text(3.05, 0.28, "tuned", ha="left", va="center",
+        fontsize=5.6, color="#666666")  # paper term (fix 4)
+ax.plot([4.55, 5.00], [0.28, 0.28], color="#666666", linewidth=1.7,
         solid_capstyle="butt")
-ax.text(6.00, 0.28, "analysis layer", ha="left", va="center",
+ax.text(5.10, 0.28, "analysis layer", ha="left", va="center",
         fontsize=5.6, color="#666666")
 
 G.save(fig, "gge1_v3_fig1_design",

@@ -42,7 +42,14 @@ keys = list(pairs)
 keys.remove(PRIMARY)
 keys = [PRIMARY] + keys
 
-fig, ax = plt.subplots(figsize=(5.5, 3.6))
+# 2026-10-25 legibility pass (outside layout review, preview p. 8): the
+# figure carries ~100 labels, so type is raised to body-adjacent sizes
+# and the frame grown in height only; width must stay <= 5.5 in
+# (397 pt) or LaTeX scales it down. Annotation grey darkened for paper.
+LABEL_FS = 8.0
+ANNOT_FS = 7.5
+ANNOT_COL = "#4D4D4D"
+fig, ax = plt.subplots(figsize=(5.15, 4.4))
 n = len(keys)
 ys = list(range(n, 0, -1))
 
@@ -52,18 +59,19 @@ ax.axvspan(sh["min"], sh["max"], color=G.BAND_GREY, zorder=0)
 # below the bottom row's gridline so no connector cuts through the text
 ax.text(sh["max"] + 0.012, 0.28,
         "permutation floor (10,000 shuffles)",
-        fontsize=G.ANNOT_FS, color=G.ANNOT_GREY, va="center", ha="left")
+        fontsize=ANNOT_FS, color=ANNOT_COL, va="center", ha="left")
 
 # make the floor-to-ceiling gap load-bearing (Adam, 2026-09-06): a labeled
 # double-headed span through the empty mid-plot, factual endpoints only
 top1_min = min(v["top1_acc"] for v in pairs.values())
 gap_y = 8.5
 ax.annotate("", xy=(sh["max"], gap_y), xytext=(top1_min - 0.006, gap_y),
-            arrowprops=dict(arrowstyle="<|-|>", color="#8A8A8A",
-                            linewidth=1.0, mutation_scale=9))
+            arrowprops=dict(arrowstyle="<|-|>", color="#6E6E6E",
+                            linewidth=1.0, mutation_scale=10))
 ax.text((sh["max"] + top1_min) / 2, gap_y + 0.45,
-        f"shuffled maps ≤ {sh['max']:.3f}   ·   fitted maps ≥ {top1_min:.3f}",
-        fontsize=G.ANNOT_FS, color="#666666", ha="center", va="bottom")
+        (f"shuffled maps ≤ {sh['max']:.3f}   ·   "
+         f"fitted maps ≥ {top1_min:.3f}").replace("0.", "."),
+        fontsize=ANNOT_FS, color=ANNOT_COL, ha="center", va="bottom")
 
 for key, y in zip(keys, ys):
     v = pairs[key]
@@ -72,23 +80,25 @@ for key, y in zip(keys, ys):
             zorder=1)
     ax.plot(v["top1_acc"], y,
             marker="^" if primary else "o",
-            markersize=5.5 if primary else 4.0,
+            markersize=6.5 if primary else 4.8,
             color=G.SIZE_COLORS["27b"] if primary else "#5B7A94",
             zorder=3)
 
 ax.set_yticks(ys)
-ax.set_yticklabels([pair_label(k) for k in keys], fontsize=6.5)
+ax.set_yticklabels([pair_label(k) for k in keys], fontsize=LABEL_FS,
+                   color="#333333")
 # primary row label slightly emphasized
 ax.get_yticklabels()[0].set_fontweight("bold")
 ax.set_xlim(0, 1.04)
 ax.set_ylim(-0.35, n + 0.7)
-ax.set_xlabel("Held-out retrieval, top-1 accuracy")
+ax.set_xlabel("Held-out retrieval, top-1 accuracy", fontsize=8.5)
+ax.tick_params(axis="x", labelsize=7.5)
 ax.spines["left"].set_visible(False)
 ax.tick_params(axis="y", length=0)
 
 # right-side facts, neutral wording (claims live in the caption)
 ax.text(1.02, n + 0.45, "median held-out rank = 1.0, all pairs",
-        fontsize=G.ANNOT_FS, color=G.ANNOT_GREY, ha="right", va="bottom")
+        fontsize=ANNOT_FS, color=ANNOT_COL, ha="right", va="bottom")
 
 G.save(fig, "gge1_v3_fig2_transport",
        {"pairs": {k: {kk: pairs[k][kk] for kk in

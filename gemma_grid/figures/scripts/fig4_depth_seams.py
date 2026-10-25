@@ -78,6 +78,11 @@ ax.plot([], [], marker="D", markersize=4.6, linestyle="none",
         markerfacecolor="#555555", markeredgecolor="#555555",
         label="consolidation seam")
 ax.set_yscale("log")
+# write the ticks out (10 ... 100,000) instead of 10^n: mathtext exponents
+# render at ~5 pt, the smallest type in the set (layout review 2026-10-25)
+from matplotlib.ticker import FixedLocator, FuncFormatter
+ax.yaxis.set_major_locator(FixedLocator([1e1, 1e2, 1e3, 1e4, 1e5]))
+ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{int(round(v)):,}"))
 ax.set_xlim(0, 1.0)
 ax.set_xlabel("Fractional depth (layer / total layers)")
 ax.set_ylabel("Median own-word self-rank")
