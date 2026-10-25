@@ -1,0 +1,28 @@
+GGE1 100T — P-MAP FROZEN FLOOR ARTIFACT MANIFEST (for Coordinator verification)
+Pulled off critical path 2026-08-28 while B/A/C run. NOT yet appended to SR.5 (per Adam; SR.5 at full-batch handback).
+
+artifact         : pmap_transport_floor_100T.json
+sha256           : 09e3c4b8366b64394cf171fc0596227adf106319d186dc7ee6ffa2c7f61a323a
+  (matches pod OUTPUT sha256 09e3c4b8366b64394cf171fc0596227adf106319d186dc7ee6ffa2c7f61a323a)
+
+RESULT
+  primary_pair                       : gemma-2-2b-base->gemma-2-27b-base
+  observed_top1 / median_rank        : 1.0 / 1.0
+  n_perm / statistic / estimator     : 10000 / top-1 accuracy / add-one
+  perm_seed / fold_seed              : 0 / 0
+  floor_count                        : 0
+  p_add_one                          : 9.999000099990002e-05
+  determinism_gate_first30_reproduced: True
+  shuffled_top1 max / p99 / mean      : 0.03508771929824561 / 0.017543859649122806 / 0.0036836257309941518
+
+PROVENANCE
+  host platform  : Linux-6.8.0-1066-gcp-x86_64-with-glibc2.35
+  cpu / workers  : 32 / 31
+  numpy / blas   : 2.0.2 / scipy-openblas
+  wall_time_h    : 13.21
+  source         : GCP gge1-floor (n2-standard-32, us-central1-a)
+
+INTEGRITY (verified UNCHANGED on pod post-run)
+  anchor emotion_vectors_171_100T.pt : 6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b
+  frozen pmap_transport_100T.py      : ee736f5d36c9a04c8d6e4eaf043d932cbb979a5e4fba22a0ea0e8613b91e5526
+  pre-statement (governing)          : 09eaa4fb42f9f1a1333aa03d16880fe5c7e0c2f73bcc9a8315047cd282fd2eef

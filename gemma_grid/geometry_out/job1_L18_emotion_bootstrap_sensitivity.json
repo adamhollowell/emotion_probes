@@ -1,0 +1,65 @@
+{
+  "record": "JOB 1 \u2014 dependence-aware emotion bootstrap with the 2B cells read at L18 (the pre-registered 2B sensitivity layer); 27B at L31. Per dispatch DISPATCH_LEDGER_COMPUTE_L18_AND_PERMUTATION_100T.md.",
+  "LABEL": "UNREGISTERED sensitivity analysis at a REGISTERED layer (SR.7). The LAYER (L18) is pre-registered (PREREGISTRATION (c), GATE 1); the BOOTSTRAP is unregistered. This product may corroborate or complicate a registered verdict and may NEVER re-grade one. Not a registered sensitivity result.",
+  "procedure": "gap_boot template from scripts/phase4_c3_grade.py, unchanged except the 2B analysis layer is 18 not 17 (27B stays 31). Both measures from ONE shared resample index per round applied to all four estimators {2B_an, 2B_emb, 27B_an, 27B_emb}. PCA (center, SVD, scores=U*S) fit on all 171, PC2 taken, restricted to the 45 Russell-Mehrabian overlap, held FIXED outside the replicate loop. Per estimator r = abs(Pearson(PC2[sel], arousal[sel])), clamped at 0.999999. Arousal rise delta_z = z(r_an_27B) - z(r_an_2B); depth gap per cell = z(r_an) - z(r_emb), delta = gap_27B - gap_2B; z = arctanh. B = 2000, seed numpy.random.default_rng(0) fresh per chain (matching the L17 call). SE = numpy.std(boots), ddof 0. Two-sided normal p: standardize the delta by the bootstrap SE, then p = erfc(|delta/SE|/sqrt(2)).",
+  "reproduction_gate": "Deterministic point estimates reproduce the Ledger's independently-computed gate values to <=5e-9 on every quantity (float32-storage read precision, numpy vs torch SVD; eight orders below the bootstrap SE). The L17 reference values also reproduce (base rise delta_r 0.16828961, depth-gap delta 0.20263320). Gate PASSED; bootstrap reported.",
+  "flag_base_depth_gap_sign_reversal": "At L18 the base-chain arousal depth gap is NEGATIVE (delta -0.0344842), reversed from +0.2026332 at L17. Registered direction is that the gap grows with scale; at the pre-registered sensitivity layer in the base chain it shrinks. Driver: 2b-base arousal_r reads 0.4992351 at L17 and 0.6557977 at L18, so the 2B gap overtakes 27B's. Reported, not interpreted, not accommodated. Already with Adam under the surprise gate.",
+  "basis": "100T all the way down. Cleaned analysis-layer and embedding vectors.",
+  "return_path": "Handback to Coordinator verification done inline (gate PASS); routes to Adam. Not written to the ledger.",
+  "results": {
+    "base": {
+      "arousal_rise": {
+        "delta_r": 0.011727056525990931,
+        "delta_z": 0.02086080936882495,
+        "boot_SE": 0.03107840363585239,
+        "p_dep_aware": 0.5020729441182125
+      },
+      "depth_gap": {
+        "gap_z_2B": 0.6598799722293158,
+        "gap_z_27B": 0.6253957430408075,
+        "delta": -0.03448422918850835,
+        "boot_SE": 0.0573504156986378,
+        "p_dep_aware": 0.5476468752113544
+      },
+      "L17_reference": {
+        "arousal_rise_delta_r": 0.16828961444495638,
+        "arousal_rise_delta_z": 0.25797823844167855,
+        "depth_gap_2B_gapz": 0.42276254315646217,
+        "depth_gap_delta": 0.2026331998843453
+      }
+    },
+    "tuned": {
+      "arousal_rise": {
+        "delta_r": 0.1192069530752321,
+        "delta_z": 0.16375382777615877,
+        "boot_SE": 0.046370525569365474,
+        "p_dep_aware": 0.00041333398224753347
+      },
+      "depth_gap": {
+        "gap_z_2B": 0.3675077462673757,
+        "gap_z_27B": 0.480226880703575,
+        "delta": 0.1127191344361993,
+        "boot_SE": 0.06457090758002589,
+        "p_dep_aware": 0.08086928512814104
+      },
+      "L17_reference": {
+        "arousal_rise_delta_r": 0.21530723841835175,
+        "arousal_rise_delta_z": 0.27959200771124737,
+        "depth_gap_2B_gapz": 0.2516695663322871,
+        "depth_gap_delta": 0.2285573143712879
+      }
+    }
+  },
+  "sr5_input_manifest": {
+    "gemma-2-2b-base/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+    "gemma-2-2b-it/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+    "gemma-2-27b-base/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+    "gemma-2-27b-it/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5",
+    "gemma-2-2b-base/c3_vectors.pt": "6d23da00388a5514088c0bff5fe9250dcc33b09b7ec8619d7f33d4d77e7460c6",
+    "gemma-2-2b-it/c3_vectors.pt": "21edd586fb0aa7fe1775d954fb9e615b445854f4b6c1369198dfb858c2af880d",
+    "gemma-2-27b-base/c3_vectors.pt": "5b701c50f765bd798259013716d55ea8d3cff17cc13dd91ada09b2dbeaa7e4ca",
+    "gemma-2-27b-it/c3_vectors.pt": "40ca301223e376bfe78bd6eac6973945c182f9908264970b9ec1507eee5329f2",
+    "russell_mehrabian_1977.csv": "b8a0e952957e6c849d3507bdd0d6e848fcb8f308b628837e3c6dc8f77bb6cffd"
+  },
+  "generated_utc": "2026-10-14T14:31:47Z"
+}

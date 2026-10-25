@@ -1,0 +1,36 @@
+{
+ "figure": "gge1_v3_fig3_spread",
+ "source_artifacts": [
+  "geometry_out_100T/stageA_cross_cell_table.csv",
+  "geometry_out_100T/op1_spectrum_measures_100T_v1.json (ff483ee9f858)"
+ ],
+ "style": "STYLE_DECISIONS.md (locked 2026-08-04) + review/REVIEW_ROUND1.md revisions",
+ "plotted_values": {
+  "var_pc1": {
+   "gemma-2-2b-base": 31.62,
+   "gemma-2-2b-it": 31.89,
+   "gemma-2-9b-base": 29.85,
+   "gemma-2-9b-it": 29.16,
+   "gemma-2-27b-base": 26.73,
+   "gemma-2-27b-it": 27.27
+  },
+  "participation_ratio": {
+   "gemma-2-2b-base": 6.896,
+   "gemma-2-2b-it": 6.883,
+   "gemma-2-9b-base": 7.342,
+   "gemma-2-9b-it": 7.611,
+   "gemma-2-27b-base": 8.393,
+   "gemma-2-27b-it": 8.273
+  },
+  "twonn_id": {
+   "gemma-2-2b-base": 4.355,
+   "gemma-2-2b-it": 4.256,
+   "gemma-2-9b-base": 4.342,
+   "gemma-2-9b-it": 4.255,
+   "gemma-2-27b-base": 4.341,
+   "gemma-2-27b-it": 4.255
+  },
+  "spectrum_artifact_sha256_12": "ff483ee9f858",
+  "framing": "SR.7 descriptive support; Phase-5 SUSTAINED 2026-09-02; artifact status string stale by ruling 4"
+ }
+}

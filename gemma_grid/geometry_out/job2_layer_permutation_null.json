@@ -1,0 +1,56 @@
+{
+ "record": "JOB 2 \u2014 layer-permutation null for the \u00a77.3 two-block (tuning-shift) structure, rerun on the 100T layer-correlation matrices. Per dispatch DISPATCH_LEDGER_COMPUTE_L18_AND_PERMUTATION_100T.md.",
+ "LABEL": "Descriptive support (SR.7). The split SEARCH guarantees some gap; this null quantifies the search artifact and does not grade the structure. It may not re-grade a registered verdict.",
+ "estimator_fix": "Add-one form p=(1+count)/(B+1) applied UNIFORMLY to all three sizes, resolving the HA-era inconsistency where 2B used the plain 15/2000 form. Count reported alongside every p so the estimator is checkable.",
+ "procedure": "Input: the per-size layer_corr_matrix from fixed_probe_tuning_shifts_100T_results.json (values rounded to 3dp as stored). block_split (scripts/.../fixed_probe_tuning_shifts.py, verbatim): best contiguous split s in [2,L-2] maximizing within-block minus cross-block mean off-diagonal correlation. Layer-permutation null: relabel layers by a random permutation pi, form C[pi][:,pi], rerun block_split, record the best gap; B=2000 permutations; count = number with gap >= observed; p = (1+count)/(B+1); null_max = max permuted gap. Seed numpy.random.default_rng(20261007), STATED here because the HA-era run's seed was never recorded in the ledger.",
+ "DEFINITION_FLAG": "The HA-era permutation procedure is NOT serialized in the repo; only block_split is. This null is defined here as [permute layer labels, rerun block_split], the natural reading of 'layer-permutation null'. The Ledger should confirm this matches the \u00a77.3 claim's intended null before the footnote-1 caveat is dropped. If the intended null permuted something else (e.g. correlation values), say so and this reruns.",
+ "search_artifact_gap_note": "Observed gaps are large (0.39-0.62). The permutation null's gaps (the gap the split search manufactures from the same values in random layer order) are reported per size as null_mean/median/max. Whether the '<=.04 search-artifact gap bound' holds depends on which null statistic that bound referred to; the HA-era note is superseded, so the bound is reported here against the 100T null statistics for the Ledger to map.",
+ "results": {
+  "2B": {
+   "split_layer": 23,
+   "within_mean": 0.5286328124999999,
+   "cross_mean": -0.09092753623188407,
+   "gap_observed": 0.619560348731884,
+   "perm_count_ge_observed": 1,
+   "B": 2000,
+   "p_add_one": 0.0009995002498750624,
+   "null_max": 0.6829150120336943,
+   "null_mean": 0.15241104952178722,
+   "null_median": 0.13251519852126895,
+   "null_p95": 0.36839019199818157
+  },
+  "9B": {
+   "split_layer": 27,
+   "within_mean": 0.5250701754385966,
+   "cross_mean": 0.13874814814814812,
+   "gap_observed": 0.38632202729044846,
+   "perm_count_ge_observed": 0,
+   "B": 2000,
+   "p_add_one": 0.0004997501249375312,
+   "null_max": 0.3215253521126761,
+   "null_mean": 0.07001150604810105,
+   "null_median": 0.06103886352656074,
+   "null_p95": 0.15905046912535745
+  },
+  "27B": {
+   "split_layer": 16,
+   "within_mean": 0.6543891891891892,
+   "cross_mean": 0.049097916666666665,
+   "gap_observed": 0.6052912725225226,
+   "perm_count_ge_observed": 0,
+   "B": 2000,
+   "p_add_one": 0.0004997501249375312,
+   "null_max": 0.41563872756071807,
+   "null_mean": 0.12158046970537414,
+   "null_median": 0.11329819150370626,
+   "null_p95": 0.2625842629849027
+  }
+ },
+ "B": 2000,
+ "seed": 20261007,
+ "basis": "100T",
+ "generated_utc": "2026-10-07T15:10:21Z",
+ "sr5_input_manifest": {
+  "fixed_probe_tuning_shifts_100T_results.json": "4d7fe9eacd20cee46257d43b8ea6d1246cd24555194dac605c595727b75b318a"
+ }
+}

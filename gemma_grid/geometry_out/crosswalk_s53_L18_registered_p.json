@@ -1,0 +1,38 @@
+{
+  "record": "SR.4 crosswalk for the two derived p values at v7 section 5.3, the L18 registered-test p values quoted as .92 and .45.",
+  "LABEL": "DERIVATION of a REGISTERED test statistic from a serialized delta_z. No new measurement. Re-grades nothing (SR.7).",
+  "procedure": "z_stat = delta_z / SE_registered, two-sided normal p = erfc(|z_stat|/sqrt(2)). SE_registered = sqrt(2/(45-3)), the single-pair Fisher SE on the 45-emotion Russell and Mehrabian overlap.",
+  "se_registered": 0.21821789023599236,
+  "se_registered_formula": "sqrt(2/(45-3)) on the 45-emotion rated overlap",
+  "chains": {
+    "base": {
+      "delta_z_from_artifact": 0.02086080936882495,
+      "delta_r_from_artifact": 0.011727056525990931,
+      "z_stat": 0.0955962379906843,
+      "p_two_sided_registered_SE": 0.923841253165979,
+      "p_rounded_2dp": 0.92,
+      "clears_registered_floor_0.15_in_r_units": false
+    },
+    "tuned": {
+      "delta_z_from_artifact": 0.16375382777615877,
+      "delta_r_from_artifact": 0.1192069530752321,
+      "z_stat": 0.7504143111230097,
+      "p_two_sided_registered_SE": 0.453005214349983,
+      "p_rounded_2dp": 0.45,
+      "clears_registered_floor_0.15_in_r_units": false
+    }
+  },
+  "basis": "100T. Cleaned analysis-layer vectors, 2B read at L18, 27B at L31.",
+  "sr5_input_manifest": {
+    "geometry_out_100T/job1_L18_emotion_bootstrap_sensitivity_100T.json": "77f26c0493c86714eaecb0ed2e39c1a9fc2a1b58192120effcc2afc6c1c32143"
+  },
+  "draft_claim_checked": "v7 section 5.3: \"Neither rise clears the registered floor of .15, and the registered test is not significant in either chain (p = .92 and .45).\"",
+  "base_chain_delta_z_corroboration": {
+    "r_2b_base_L18_from_artifact_flag": 0.6557977,
+    "r_27b_base_implied": 0.667524756525991,
+    "delta_z_recomputed": 0.020860811417398484,
+    "delta_z_from_artifact": 0.02086080936882495,
+    "abs_difference": 2.0485735330311172e-09,
+    "note": "Agreement is bounded by the 7-figure precision at which the artifact's flag states r_2b_base. The tuned chain's component correlations are not serialized anywhere, so its delta_z rests on the artifact's own reproduction gate alone."
+  }
+}

@@ -1,0 +1,211 @@
+{
+ "record": "Analysis B v2 full-scope \u2014 seam/onset-curve/gap + lt100/lt1000 sensitivity + 2B/9B L0-readability (G6.2/G6.4).",
+ "params": {
+  "seam_B": 500,
+  "onset_B": 500,
+  "seed": 20260828,
+  "onset_window": [
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28
+  ],
+  "onset_threshold_headline": "<10000",
+  "sensitivity_thresholds": [
+   "<100",
+   "<1000"
+  ],
+  "gap_convention": "seam_frac - onset_frac (frozen seam_gap_metric)"
+ },
+ "seam_per_cell": {
+  "gemma-2-2b-base": {
+   "dist": {
+    "min": 7,
+    "p50": 7.0,
+    "p95_ci": [
+     7.0,
+     7.0
+    ],
+    "max": 7
+   },
+   "ci95": [
+    7.0,
+    7.0
+   ]
+  },
+  "gemma-2-2b-it": {
+   "dist": {
+    "min": 7,
+    "p50": 7.0,
+    "p95_ci": [
+     7.0,
+     7.0
+    ],
+    "max": 9
+   },
+   "ci95": [
+    7.0,
+    7.0
+   ]
+  },
+  "gemma-2-9b-base": {
+   "dist": {
+    "min": 8,
+    "p50": 9.0,
+    "p95_ci": [
+     8.0,
+     10.0
+    ],
+    "max": 10
+   },
+   "ci95": [
+    8.0,
+    10.0
+   ]
+  },
+  "gemma-2-9b-it": {
+   "dist": {
+    "min": 10,
+    "p50": 10.0,
+    "p95_ci": [
+     10.0,
+     10.0
+    ],
+    "max": 11
+   },
+   "ci95": [
+    10.0,
+    10.0
+   ]
+  },
+  "gemma-2-27b-base": {
+   "dist": {
+    "min": 23,
+    "p50": 23.0,
+    "p95_ci": [
+     23.0,
+     24.0
+    ],
+    "max": 24
+   },
+   "ci95": [
+    23.0,
+    24.0
+   ]
+  },
+  "gemma-2-27b-it": {
+   "dist": {
+    "min": 23,
+    "p50": 23.0,
+    "p95_ci": [
+     23.0,
+     24.0
+    ],
+    "max": 24
+   },
+   "ci95": [
+    23.0,
+    24.0
+   ]
+  }
+ },
+ "onset_27B": {
+  "gemma-2-27b-base": {
+   "min": 23,
+   "p50": 23.0,
+   "p95_ci": [
+    23.0,
+    23.0
+   ],
+   "max": 23
+  },
+  "gemma-2-27b-it": {
+   "min": 23,
+   "p50": 23.0,
+   "p95_ci": [
+    23.0,
+    23.0
+   ],
+   "max": 23
+  }
+ },
+ "gap_27B": {
+  "gemma-2-27b-base": {
+   "frac_gap_ci95": [
+    0.0,
+    0.0217
+   ],
+   "frac_zero_gap": 0.896
+  },
+  "gemma-2-27b-it": {
+   "frac_gap_ci95": [
+    0.0,
+    0.0217
+   ],
+   "frac_zero_gap": 0.756
+  }
+ },
+ "onset_27B_sensitivity": {
+  "lt100": {
+   "gemma-2-27b-base": {},
+   "gemma-2-27b-it": {}
+  },
+  "lt1000": {
+   "gemma-2-27b-base": {},
+   "gemma-2-27b-it": {
+    "min": 26,
+    "p50": 26.0,
+    "p95_ci": [
+     26.0,
+     27.0
+    ],
+    "max": 27
+   }
+  }
+ },
+ "gap_27B_sensitivity": {
+  "lt100": {
+   "gemma-2-27b-base": {
+    "frac_gap_ci95": null,
+    "frac_zero_gap": null
+   },
+   "gemma-2-27b-it": {
+    "frac_gap_ci95": null,
+    "frac_zero_gap": null
+   }
+  },
+  "lt1000": {
+   "gemma-2-27b-base": {
+    "frac_gap_ci95": null,
+    "frac_zero_gap": null
+   },
+   "gemma-2-27b-it": {
+    "frac_gap_ci95": [
+     -0.087,
+     -0.0435
+    ],
+    "frac_zero_gap": 0.0
+   }
+  }
+ },
+ "sensitivity_label": "lt100/lt1000 are DISCLOSED SENSITIVITY resolutions; the <10000 onset is the registered headline.",
+ "l0_readable_frac_2B9B": {
+  "gemma-2-2b-base": 1.0,
+  "gemma-2-2b-it": 1.0,
+  "gemma-2-9b-base": 1.0,
+  "gemma-2-9b-it": 1.0
+ },
+ "parallel_wrapper": {
+  "file": "analysisB_onset_parallel_100T_v2fullscope.py",
+  "workers": 30,
+  "wall_time_h": 15.306,
+  "note": "NEW wrapper/collector over gesvd-successor reference primitives; frozen 11a12790 + successor a9e5e376 byte-stable; RNG default_rng(20260828) unchanged; full onset curve over WIN; core <10k values bit-identical to headline run (Gate 3)."
+ }
+}

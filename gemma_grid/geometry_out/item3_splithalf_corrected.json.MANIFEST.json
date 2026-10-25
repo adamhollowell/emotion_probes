@@ -1,0 +1,70 @@
+{
+  "output": "gemma_grid/geometry_out_100T/item3_splithalf_corrected_100T.json",
+  "output_sha256": "267f2eefbf837fd628a3bf5d28a3e6729883ddfaa84720ce98444cb2bccd89a3",
+  "producer": "gemma_grid/scripts/item3_corrected_100T.py",
+  "producer_sha256": "6a99571a5543059dbb8f9d12d7c022e07c20dd73adaefb92cdb640ede04ae92d",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0",
+    "torch": "2.12.0",
+    "environment": ".venv",
+    "sys_prefix": ".venv",
+    "numpy_blas_lapack": {
+      "blas": {
+        "name": "accelerate",
+        "found": true,
+        "version": "unknown",
+        "detection method": "system",
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown"
+      },
+      "lapack": {
+        "name": "accelerate",
+        "found": true,
+        "version": "unknown",
+        "detection method": "system",
+        "include directory": "unknown",
+        "lib directory": "unknown",
+        "openblas configuration": "unknown",
+        "pc file directory": "unknown"
+      }
+    },
+    "blas_threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "inputs_sha256": {
+    "gemma_grid/nogpu_additions_100T/pmap_transport_100T.py": "ee736f5d36c9a04c8d6e4eaf043d932cbb979a5e4fba22a0ea0e8613b91e5526",
+    "gemma_grid/nogpu_additions_100T/pmap_battery_100T.py": "0c70b9d7295515e0f866fcde1010a5368bae2f5bd81249dc4825579b136a82cd",
+    "gemma_grid/nogpu_additions_100T/analysisB_seam_onset_bootstrap_100T_gesvdfix.py": "a9e5e3767a2c72645929d63948a20a3733566b2058d5121435d6fbf97f364c30",
+    "gemma_grid/geometry_out_100T/pmap_battery_100T.json": "2757ed848959f8a088ce2281cd1f6b96c5268f497f724bcf2261aff0f9b36a8c",
+    "gemma_grid/geometry_out_100T/item3_disjoint_gates.json": "c0c90f9ea80bcdcf33ca152c95d31bc74fd1466c92fe36357971e8a724f9c125",
+    "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+    "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+    "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+    "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+    "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+    "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5",
+    "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__per_story_slice.pt": "00497c9a93c768be61e938e057a5404eb3595e11a7ec423804cd9d05f2ca82c5",
+    "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__per_story_slice.pt": "ba821aa1f611208388786135e744cc4b62409aa39fe9a4e9ab109ff5ad9b4562",
+    "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__per_story_slice.pt": "c52766b0439dac06c71c3de48869627894e5b1d22f748ca0a26651bc07b6f985",
+    "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__per_story_slice.pt": "4764f7e4d7d6d729de043a344f6451dc2323fd14059dce361f840124cfc15de3",
+    "gemma_grid/data/gemma-2-27b-base/vectors/gemma-2-27b-base__per_story_slice.pt": "9cba27f8281e917ea4a1b62a5f53e8d83544a8c1ca1c07ffde075935e7be6ce2",
+    "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__per_story_slice.pt": "eb958b4c074c024a4fcb07bbb03aeef33e2dc593197bcca2a656f33c5c1a37d5",
+    "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__neutral_100T.pt": "13b6c6b98c67308f57dda598d2d4723e3708d9cc189ca9e371492faa6ec6c965",
+    "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__neutral_100T.pt": "82282c77ec8b94f0ecfa9bf08b4c69c46ed85a17d72920f03d6874c407f67bac",
+    "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__neutral_100T.pt": "723360d2febc35707deed7f6079023810c1e8c114917065d64f21affcee90340",
+    "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__neutral_100T.pt": "fd557d875961e6f6f12662a9319c99eb3b8233b077dc46362723990339c9ef74",
+    "neutral_100T.pt": "04e1a814c586f4aa30ef96edf075956dddab8bec19b6f46f998d36f1c30a644b",
+    "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__neutral_100T.pt": "0b6c5abde2e395fd2cecbe2522566f57759ec6bf635678681295e9465fa7d5bd"
+  },
+  "run_utc": "2026-10-19T14:20:15Z"
+}

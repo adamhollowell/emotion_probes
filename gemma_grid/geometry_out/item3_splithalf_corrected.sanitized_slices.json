@@ -1,0 +1,146 @@
+{
+ "record": "Item 3 corrected execution of pre-stated item 3, replacing the unintended neutral input (slice-file neutral rows, original corpus) with the designated 100T input. Original analysis plan unchanged.",
+ "dispatch_sha256": "09fd38ba352a2eebf573362dc8b848f5a5afc74dad3685626b1569b96089018b",
+ "one_change": "clean_layer second argument = cell's 100T neutral acts at the analysis layer (gate-2-passed); slice `neutral` key not read by the corrected path",
+ "split": "per emotion RandomState(0).permutation(1200); even positions -> half a, odd -> half b",
+ "estimator": {
+  "module": "pmap_transport_100T.py",
+  "fold_seed": 0,
+  "n_folds": 5,
+  "kind": "procrustes",
+  "scoring": "all 171 targets"
+ },
+ "emotion_order": "stored canonical vector files (pmap_battery_100T.load_all)",
+ "versions": {
+  "python": "3.12.13",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.8.0",
+  "torch": "2.12.0",
+  "environment": ".venv",
+  "sys_prefix": ".venv",
+  "numpy_blas_lapack": {
+   "blas": {
+    "name": "accelerate",
+    "found": true,
+    "version": "unknown",
+    "detection method": "system",
+    "include directory": "unknown",
+    "lib directory": "unknown",
+    "openblas configuration": "unknown",
+    "pc file directory": "unknown"
+   },
+   "lapack": {
+    "name": "accelerate",
+    "found": true,
+    "version": "unknown",
+    "detection method": "system",
+    "include directory": "unknown",
+    "lib directory": "unknown",
+    "openblas configuration": "unknown",
+    "pc file directory": "unknown"
+   }
+  },
+  "blas_threads": {
+   "OPENBLAS_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1"
+  }
+ },
+ "run_utc": "2026-10-23T15:38:03Z",
+ "cells": {
+  "gemma-2-2b-base": {
+   "analysis_layer": 17,
+   "neutral_100T_file": "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__neutral_100T.pt",
+   "neutral_100T_sha256": "13b6c6b98c67308f57dda598d2d4723e3708d9cc189ca9e371492faa6ec6c965",
+   "k_gate2": 11,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9707602339181286,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9555254343723468
+   }
+  },
+  "gemma-2-2b-it": {
+   "analysis_layer": 17,
+   "neutral_100T_file": "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__neutral_100T.pt",
+   "neutral_100T_sha256": "82282c77ec8b94f0ecfa9bf08b4c69c46ed85a17d72920f03d6874c407f67bac",
+   "k_gate2": 14,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9649122807017544,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9561483055901295
+   }
+  },
+  "gemma-2-9b-base": {
+   "analysis_layer": 28,
+   "neutral_100T_file": "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__neutral_100T.pt",
+   "neutral_100T_sha256": "723360d2febc35707deed7f6079023810c1e8c114917065d64f21affcee90340",
+   "k_gate2": 11,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9649122807017544,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9540557004939292
+   }
+  },
+  "gemma-2-9b-it": {
+   "analysis_layer": 28,
+   "neutral_100T_file": "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__neutral_100T.pt",
+   "neutral_100T_sha256": "fd557d875961e6f6f12662a9319c99eb3b8233b077dc46362723990339c9ef74",
+   "k_gate2": 19,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9532163742690059,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9522692060217399
+   }
+  },
+  "gemma-2-27b-base": {
+   "analysis_layer": 31,
+   "neutral_100T_file": "neutral_100T.pt",
+   "neutral_100T_sha256": "04e1a814c586f4aa30ef96edf075956dddab8bec19b6f46f998d36f1c30a644b",
+   "k_gate2": 28,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9473684210526315,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9440883799570113
+   }
+  },
+  "gemma-2-27b-it": {
+   "analysis_layer": 31,
+   "neutral_100T_file": "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__neutral_100T.pt",
+   "neutral_100T_sha256": "0b6c5abde2e395fd2cecbe2522566f57759ec6bf635678681295e9465fa7d5bd",
+   "k_gate2": 27,
+   "halves_reproduce_replay_under_old_input": "skipped: slice has no neutral key",
+   "split_half": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9473684210526315,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9477430526739166
+   }
+  }
+ },
+ "ranges": {
+  "top1_acc": [
+   0.9473684210526315,
+   0.9707602339181286
+  ],
+  "median_cosine": [
+   0.9440883799570113,
+   0.9561483055901295
+  ]
+ },
+ "replay_verification_file": "skipped: slice has no neutral key",
+ "replay_all_exact": "skipped: slice has no neutral key",
+ "lens_env_replay_note": "skipped: slice has no neutral key"
+}

@@ -1,0 +1,527 @@
+{
+  "layer": 31,
+  "n": 171,
+  "L": 46,
+  "d": 4608,
+  "pca": {
+    "pc1_pct": 26.070270538330078,
+    "pc2_pct": 13.34718132019043,
+    "pc3_pct": 11.872177124023438,
+    "pc1_top": [
+      "optimistic",
+      "kind",
+      "cheerful",
+      "self-confident",
+      "playful",
+      "happy",
+      "hopeful",
+      "valiant",
+      "enthusiastic",
+      "joyful"
+    ],
+    "pc1_bot": [
+      "sleepy",
+      "afraid",
+      "disgusted",
+      "dumbstruck",
+      "disoriented",
+      "scared",
+      "panicked",
+      "frightened",
+      "terrified",
+      "hysterical"
+    ],
+    "pc2_top": [
+      "outraged",
+      "indignant",
+      "playful",
+      "irate",
+      "furious",
+      "enraged",
+      "mad",
+      "hostile",
+      "vindictive",
+      "impatient"
+    ],
+    "pc2_bot": [
+      "fulfilled",
+      "lonely",
+      "grief-stricken",
+      "melancholy",
+      "depressed",
+      "reflective",
+      "sentimental",
+      "peaceful",
+      "nostalgic",
+      "serene"
+    ],
+    "loving": {
+      "pc1": 374.8179931640625,
+      "pc2": -224.3086700439453
+    }
+  },
+  "kmeans": {
+    "k": 10,
+    "clusters": [
+      {
+        "rank": 1,
+        "mean_pc1": -303.54669189453125,
+        "members": [
+          "afraid",
+          "alarmed",
+          "amazed",
+          "anxious",
+          "aroused",
+          "astonished",
+          "awestruck",
+          "disgusted",
+          "disoriented",
+          "distressed",
+          "disturbed",
+          "dumbstruck",
+          "embarrassed",
+          "frightened",
+          "horrified",
+          "hysterical",
+          "mortified",
+          "nervous",
+          "on edge",
+          "overwhelmed",
+          "panicked",
+          "rattled",
+          "scared",
+          "sensitive",
+          "shaken",
+          "shocked",
+          "sleepy",
+          "stressed",
+          "surprised",
+          "tense",
+          "terrified",
+          "tired",
+          "uneasy",
+          "unnerved",
+          "unsettled",
+          "upset",
+          "worried"
+        ]
+      },
+      {
+        "rank": 2,
+        "mean_pc1": -185.7562255859375,
+        "members": [
+          "angry",
+          "annoyed",
+          "enraged",
+          "exasperated",
+          "frustrated",
+          "furious",
+          "grumpy",
+          "hateful",
+          "hostile",
+          "indignant",
+          "insulted",
+          "irate",
+          "irritated",
+          "mad",
+          "offended",
+          "outraged"
+        ]
+      },
+      {
+        "rank": 3,
+        "mean_pc1": -120.8398666381836,
+        "members": [
+          "brooding",
+          "depressed",
+          "dispirited",
+          "droopy",
+          "gloomy",
+          "grief-stricken",
+          "heartbroken",
+          "hurt",
+          "lazy",
+          "listless",
+          "lonely",
+          "melancholy",
+          "miserable",
+          "nostalgic",
+          "reflective",
+          "resigned",
+          "restless",
+          "sad",
+          "sentimental",
+          "sluggish",
+          "stuck",
+          "sullen",
+          "tormented",
+          "trapped",
+          "troubled",
+          "unhappy",
+          "vulnerable",
+          "weary",
+          "worn out",
+          "worthless"
+        ]
+      },
+      {
+        "rank": 4,
+        "mean_pc1": -51.52143478393555,
+        "members": [
+          "alert",
+          "bewildered",
+          "bored",
+          "impatient",
+          "mystified",
+          "paranoid",
+          "perplexed",
+          "puzzled",
+          "skeptical",
+          "suspicious",
+          "vigilant"
+        ]
+      },
+      {
+        "rank": 5,
+        "mean_pc1": 2.6967015266418457,
+        "members": [
+          "ashamed",
+          "bitter",
+          "dependent",
+          "desperate",
+          "envious",
+          "guilty",
+          "humiliated",
+          "jealous",
+          "regretful",
+          "remorseful",
+          "resentful",
+          "self-conscious",
+          "self-critical",
+          "sorry"
+        ]
+      },
+      {
+        "rank": 6,
+        "mean_pc1": 181.73892211914062,
+        "members": [
+          "at ease",
+          "calm",
+          "content",
+          "docile",
+          "indifferent",
+          "patient",
+          "peaceful",
+          "relaxed",
+          "safe",
+          "serene"
+        ]
+      },
+      {
+        "rank": 7,
+        "mean_pc1": 250.9910888671875,
+        "members": [
+          "amused",
+          "contemptuous",
+          "defiant",
+          "disdainful",
+          "greedy",
+          "obstinate",
+          "playful",
+          "scornful",
+          "self-confident",
+          "smug",
+          "spiteful",
+          "stubborn",
+          "vengeful",
+          "vindictive"
+        ]
+      },
+      {
+        "rank": 8,
+        "mean_pc1": 324.6736755371094,
+        "members": [
+          "blissful",
+          "cheerful",
+          "delighted",
+          "eager",
+          "ecstatic",
+          "elated",
+          "energized",
+          "enthusiastic",
+          "euphoric",
+          "excited",
+          "exuberant",
+          "happy",
+          "infatuated",
+          "invigorated",
+          "joyful",
+          "jubilant",
+          "optimistic",
+          "pleased",
+          "stimulated",
+          "thrilled",
+          "triumphant",
+          "vibrant"
+        ]
+      },
+      {
+        "rank": 9,
+        "mean_pc1": 336.4891357421875,
+        "members": [
+          "fulfilled",
+          "grateful",
+          "hope",
+          "hopeful",
+          "inspired",
+          "proud",
+          "refreshed",
+          "rejuvenated",
+          "relieved",
+          "satisfied",
+          "thankful"
+        ]
+      },
+      {
+        "rank": 10,
+        "mean_pc1": 363.673095703125,
+        "members": [
+          "compassionate",
+          "empathetic",
+          "kind",
+          "loving",
+          "sympathetic",
+          "valiant"
+        ]
+      }
+    ],
+    "loving_cluster": [
+      "compassionate",
+      "empathetic",
+      "kind",
+      "loving",
+      "sympathetic",
+      "valiant"
+    ]
+  },
+  "neighbours": {
+    "afraid": [
+      [
+        "scared",
+        0.9872716665267944
+      ],
+      [
+        "frightened",
+        0.9830375909805298
+      ],
+      [
+        "terrified",
+        0.9334325790405273
+      ],
+      [
+        "panicked",
+        0.8653278350830078
+      ],
+      [
+        "alarmed",
+        0.8462638258934021
+      ]
+    ],
+    "joyful": [
+      [
+        "happy",
+        0.9765698909759521
+      ],
+      [
+        "delighted",
+        0.9597118496894836
+      ],
+      [
+        "jubilant",
+        0.9388591647148132
+      ],
+      [
+        "elated",
+        0.909645140171051
+      ],
+      [
+        "pleased",
+        0.8930355906486511
+      ]
+    ],
+    "angry": [
+      [
+        "mad",
+        0.9807198643684387
+      ],
+      [
+        "furious",
+        0.9754464626312256
+      ],
+      [
+        "enraged",
+        0.9580335021018982
+      ],
+      [
+        "irate",
+        0.9471305012702942
+      ],
+      [
+        "outraged",
+        0.9044155478477478
+      ]
+    ],
+    "sad": [
+      [
+        "unhappy",
+        0.8970353603363037
+      ],
+      [
+        "gloomy",
+        0.8909717798233032
+      ],
+      [
+        "melancholy",
+        0.8735514879226685
+      ],
+      [
+        "miserable",
+        0.8280676007270813
+      ],
+      [
+        "hurt",
+        0.8203633427619934
+      ]
+    ],
+    "loving": [
+      [
+        "grateful",
+        0.8311353921890259
+      ],
+      [
+        "thankful",
+        0.8233157396316528
+      ],
+      [
+        "kind",
+        0.7631716132164001
+      ],
+      [
+        "compassionate",
+        0.7527933716773987
+      ],
+      [
+        "empathetic",
+        0.7437207102775574
+      ]
+    ],
+    "calm": [
+      [
+        "at ease",
+        0.8469039797782898
+      ],
+      [
+        "peaceful",
+        0.8318065404891968
+      ],
+      [
+        "patient",
+        0.8223810791969299
+      ],
+      [
+        "serene",
+        0.7999579906463623
+      ],
+      [
+        "content",
+        0.7742501497268677
+      ]
+    ],
+    "proud": [
+      [
+        "triumphant",
+        0.8144409656524658
+      ],
+      [
+        "self-confident",
+        0.6757528185844421
+      ],
+      [
+        "valiant",
+        0.6460685729980469
+      ],
+      [
+        "pleased",
+        0.6243979334831238
+      ],
+      [
+        "smug",
+        0.6125726103782654
+      ]
+    ],
+    "grateful": [
+      [
+        "thankful",
+        0.9810779094696045
+      ],
+      [
+        "loving",
+        0.8311353921890259
+      ],
+      [
+        "fulfilled",
+        0.7603094577789307
+      ],
+      [
+        "hope",
+        0.7212883830070496
+      ],
+      [
+        "kind",
+        0.686493992805481
+      ]
+    ],
+    "compassionate": [
+      [
+        "empathetic",
+        0.9651747941970825
+      ],
+      [
+        "sympathetic",
+        0.9489865303039551
+      ],
+      [
+        "kind",
+        0.9268824458122253
+      ],
+      [
+        "loving",
+        0.7527933716773987
+      ],
+      [
+        "grateful",
+        0.6728649139404297
+      ]
+    ]
+  },
+  "layer_stability": {
+    "layers": [
+      0,
+      3,
+      7,
+      10,
+      14,
+      17,
+      21,
+      24,
+      28,
+      31,
+      35,
+      38,
+      42,
+      45
+    ],
+    "all": 0.8881728137099165,
+    "mid_late": 0.9489109192770956
+  }
+}

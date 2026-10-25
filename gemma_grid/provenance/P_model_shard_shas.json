@@ -1,0 +1,108 @@
+{
+  "model": "google/gemma-2-27b",
+  "snapshot": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+  "n_files": 33,
+  "files": {
+    "model-00023-of-00024.safetensors": {
+      "blob_sha": "74d88f36de5aa9a1daa64f2a8257a1c526e68eac9ed64a96656e6ad80e454a74"
+    },
+    "model-00021-of-00024.safetensors": {
+      "blob_sha": "9307e509d7f8f316a7c42b59eb5a6ab4ec37772dbdf3bec7d916c4653146bbd1"
+    },
+    "model-00024-of-00024.safetensors": {
+      "blob_sha": "20d8fc0a7336555cb185280ec795d46c8c0d28ee452b131455a52e240c389da5"
+    },
+    "model-00020-of-00024.safetensors": {
+      "blob_sha": "4a33e4177fa61ada31d70e2c6cdf0d0283e5ca00eaa4476986622817cc57d55d"
+    },
+    "model-00022-of-00024.safetensors": {
+      "blob_sha": "1ff99bcfd25a6b5de27b14bd17059d9b8e814100ef656aeb5507a160f2e344f2"
+    },
+    "model-00019-of-00024.safetensors": {
+      "blob_sha": "0527284883385faf5c329e986cf3e61b8a504b8883cba86ce69bb26c97c81e56"
+    },
+    "model-00018-of-00024.safetensors": {
+      "blob_sha": "cd3923017bb9e8f65a19cf9b9325286c7790f3d3350c516a3cab183bfa8e58d1"
+    },
+    "tokenizer_config.json": {
+      "blob_sha": "2357fc1a512dc3881eb99b9df3ef8e97ef7ffd51"
+    },
+    "tokenizer.model": {
+      "blob_sha": "61a7b147390c64585d6c3543dd6fc636906c9af3865a5548f27f31aee1d4c8e2"
+    },
+    "tokenizer.json": {
+      "blob_sha": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922"
+    },
+    "special_tokens_map.json": {
+      "blob_sha": "8d6368f7e735fbe4781bf6e956b7c6ad0586df80"
+    },
+    "model.safetensors.index.json": {
+      "blob_sha": "979b2f780f1effbb568e4a35bf4c99eb835b837a",
+      "sha256": "f7b066d4366d9256b2434857f71d84bfdfd420981129368e213452e6d7af8229"
+    },
+    "model-00017-of-00024.safetensors": {
+      "blob_sha": "54c59ca7deb748d36a779b7445fceb6d1b2d41c364389bb0aff86b23bb102db5"
+    },
+    "model-00014-of-00024.safetensors": {
+      "blob_sha": "e1eee596bce40cf3010dd220007f358e88b7752ff0fd68177c142e939a7862ec"
+    },
+    "model-00016-of-00024.safetensors": {
+      "blob_sha": "c0e6d9ded02638c59913747897d6b09303b08de0e39a1183b6be86ea38e59ddf"
+    },
+    "model-00012-of-00024.safetensors": {
+      "blob_sha": "bb56b4c4fa5ed2d3318b0ce54b25c9079532b8a1e468aa7097cfa56c7f3a7b4a"
+    },
+    "model-00015-of-00024.safetensors": {
+      "blob_sha": "f1c0cdde55e44cf05453c5ed3ea87b8a0ca8d833d96094597ce107f986868307"
+    },
+    "model-00011-of-00024.safetensors": {
+      "blob_sha": "7cdf50bca48c7e9b2122f65bdb0c3246051cb551d7d3af2a4df8ef20ec0379a6"
+    },
+    "model-00013-of-00024.safetensors": {
+      "blob_sha": "7ff11aed1a3e5ae2b8d2e1b0b68f2159180ddf495acb5a31c8c30863c926cba1"
+    },
+    "model-00010-of-00024.safetensors": {
+      "blob_sha": "dbbe06eadf59aa8d7e75597dd0392dc25bd5dc0feef84136c7b7b118ec2414a3"
+    },
+    "model-00009-of-00024.safetensors": {
+      "blob_sha": "4fa7fa92b4c2d88f95df56923be3cbd50d10906a55fe33f5dd8e98317ed8f67a"
+    },
+    "model-00007-of-00024.safetensors": {
+      "blob_sha": "f2e12b1f103e6a0aa6a7b50a7e5f3b7981bda9ccb680d70f3d2a8e350e489e33"
+    },
+    "model-00001-of-00024.safetensors": {
+      "blob_sha": "16518bc36dc061f50d6b3ff64c6e3e1ecfeee39e08d39ad508c737702a0904ff"
+    },
+    "model-00005-of-00024.safetensors": {
+      "blob_sha": "a74efd5208a490b55a2c34f3d45d516318a096fd3d669f5173dfaa81a9608580"
+    },
+    "model-00006-of-00024.safetensors": {
+      "blob_sha": "67ddac221759fee7ca95afd93698da181ff0b3c013b242f16c00fe0671d653b7"
+    },
+    "model-00002-of-00024.safetensors": {
+      "blob_sha": "f4698cf0605f39f1f7ea2f4253f051121486a87a8574ab1ae48cbfaa382f4d7f"
+    },
+    "model-00008-of-00024.safetensors": {
+      "blob_sha": "8995d087918fb12a19a354ece8f3fe852ecd71e30b8a00770d2d679926e69a7d"
+    },
+    "model-00004-of-00024.safetensors": {
+      "blob_sha": "1551fa608a38a9fcec9c59a250668efed661edbb264da72a0b68c037dfdd8312"
+    },
+    "model-00003-of-00024.safetensors": {
+      "blob_sha": "fada9381e1603fd9d8a485ef63336fe02c0cb30bcc18203813d38e4e703f74f2"
+    },
+    ".gitattributes": {
+      "blob_sha": "d1e86ce78a19dec74a9f35875a3977f9d25f9f12"
+    },
+    "config.json": {
+      "blob_sha": "9515f989c9c21d533f1ce21f89ba8a997217a950",
+      "sha256": "35b1c9a529c653817f6821250d4f9ccd7ab4eb863551d936dd290092a0793237"
+    },
+    "generation_config.json": {
+      "blob_sha": "bcab23978ab330a748b67d5bedf21a109f337b5e"
+    },
+    "README.md": {
+      "blob_sha": "f991bfae0a20b01b1559d1c0ec68f8050f0cb47e"
+    }
+  }
+}

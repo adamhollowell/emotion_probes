@@ -1,0 +1,92 @@
+{
+  "qualitative": {
+    "valence_present_at_embedding_everywhere": true,
+    "arousal_absent_at_embedding_everywhere": true,
+    "per_cell": [
+      {
+        "cell": "gemma-2-2b-base",
+        "emb_valence_r": 0.4845340254504865,
+        "p_vs_0": 0.0006089086000835575,
+        "emb_arousal_r": 0.12486911439096203,
+        "p_aro_vs_0": 0.41593709927190736
+      },
+      {
+        "cell": "gemma-2-2b-it",
+        "emb_valence_r": 0.48481519328603173,
+        "p_vs_0": 0.0006035889654663062,
+        "emb_arousal_r": 0.12800491556376778,
+        "p_aro_vs_0": 0.40420061744912483
+      },
+      {
+        "cell": "gemma-2-9b-base",
+        "emb_valence_r": 0.5071008097683555,
+        "p_vs_0": 0.00029282915567097056,
+        "emb_arousal_r": 0.14958262501665887,
+        "p_aro_vs_0": 0.3287003672655464
+      },
+      {
+        "cell": "gemma-2-9b-it",
+        "emb_valence_r": 0.5002167014590378,
+        "p_vs_0": 0.000368344118477415,
+        "emb_arousal_r": 0.17437039723696224,
+        "p_aro_vs_0": 0.25357209647656864
+      },
+      {
+        "cell": "gemma-2-27b-base",
+        "emb_valence_r": 0.47900808112471416,
+        "p_vs_0": 0.0007222838296625511,
+        "emb_arousal_r": 0.1789224637113393,
+        "p_aro_vs_0": 0.2411300171728883
+      },
+      {
+        "cell": "gemma-2-27b-it",
+        "emb_valence_r": 0.47907510502442313,
+        "p_vs_0": 0.0007208034105492533,
+        "emb_arousal_r": 0.17783461648471713,
+        "p_aro_vs_0": 0.24406544903499183
+      }
+    ]
+  },
+  "depth_gaps_z": {
+    "gemma-2-2b-base": 0.4228,
+    "gemma-2-2b-it": 0.2517,
+    "gemma-2-9b-base": 0.507,
+    "gemma-2-9b-it": 0.4474,
+    "gemma-2-27b-base": 0.6254,
+    "gemma-2-27b-it": 0.4802
+  },
+  "registered_scale_tests": [
+    {
+      "family": "scale",
+      "signal": "s12 arousal depth-gap",
+      "contrast": "2b->27b (base)",
+      "delta_z": 0.2026,
+      "se_approx": 0.3086,
+      "p": 0.5114339129344716,
+      "dir_match": true,
+      "note": "independence approx RETRACTED per Phase 5 C3 addendum (empirical rho~0.9-1.0); both analyses reported; registered-outcome row keeps the approximation p with caveat",
+      "holm_significant": false,
+      "verdict": "NULL_after_Holm",
+      "se_dependence_aware_bootstrap": 0.0676,
+      "p_dependence_aware": 0.0027291603551002908
+    },
+    {
+      "family": "scale",
+      "signal": "s12 arousal depth-gap",
+      "contrast": "2b->27b (it)",
+      "delta_z": 0.2286,
+      "se_approx": 0.3086,
+      "p": 0.4589297341775711,
+      "dir_match": true,
+      "note": "independence approx RETRACTED per Phase 5 C3 addendum (empirical rho~0.9-1.0); both analyses reported; registered-outcome row keeps the approximation p with caveat",
+      "holm_significant": false,
+      "verdict": "NULL_after_Holm",
+      "se_dependence_aware_bootstrap": 0.0716,
+      "p_dependence_aware": 0.0014062963930439043
+    }
+  ],
+  "holm_scale_family_final_m": 10,
+  "holm_changes_to_existing_verdicts": [],
+  "note": "tuning family unchanged (no registered tuning prediction for s12). Existing scale-family verdicts re-derived at m=10: ",
+  "existing_verdict_flips": []
+}

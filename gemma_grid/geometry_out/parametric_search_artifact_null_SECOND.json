@@ -1,0 +1,51 @@
+{
+ "record": "Coordinator second computation \u2014 parametric search-artifact null \u00a77.3",
+ "version": "v2 (corrected: range(2,L-2) split search; per-size independent seeding)",
+ "seed": 20261010,
+ "B": 2000,
+ "n_emotions": 171,
+ "run_utc": "2026-10-14T14:31:45.363068+00:00",
+ "v1_deviations_corrected": [
+  "split range was range(1,L); corrected to range(2,L-2) matching block_split verbatim",
+  "v1 advanced a single rng across sizes; corrected to reseed from SEED per size"
+ ],
+ "sizes": {
+  "2B": {
+   "n_layers": 26,
+   "observed_gap": 0.6195,
+   "null_mean": 0.014074404949710786,
+   "null_std": 0.0071982563383672146,
+   "null_p95": 0.026367249271500748,
+   "null_max": 0.05060691293571676,
+   "count_at_or_above_observed": 0,
+   "ratio_obs_to_null_max": 12.24
+  },
+  "9B": {
+   "n_layers": 42,
+   "observed_gap": 0.3863,
+   "null_mean": 0.010008012752345537,
+   "null_std": 0.004767767208049712,
+   "null_p95": 0.018390847461790996,
+   "null_max": 0.0319424910747205,
+   "count_at_or_above_observed": 0,
+   "ratio_obs_to_null_max": 12.09
+  },
+  "27B": {
+   "n_layers": 46,
+   "observed_gap": 0.6053,
+   "null_mean": 0.009651999281882845,
+   "null_std": 0.004636133588008292,
+   "null_p95": 0.017968551989270783,
+   "null_max": 0.032508639862496205,
+   "count_at_or_above_observed": 0,
+   "ratio_obs_to_null_max": 18.62
+  }
+ },
+ "summary": {
+  "across_size_max_of_null_max": 0.05060691293571676,
+  "check_max_below_047": false,
+  "check_all_ratios_in_12_to_21": true,
+  "check_zero_draws_reached_observed_gap": true,
+  "total_count_at_or_above": 0
+ }
+}

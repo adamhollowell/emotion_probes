@@ -1,0 +1,134 @@
+{
+ "spec_sha256": "09b4dacdafa6e3b0e9aa4b0c4d75b4a44d2aaa74b2c041303e7919ae5833ad38",
+ "frozen": {
+  "fold_seed": 0,
+  "n_folds": 5,
+  "n_perm": 10000,
+  "perm_seed": 0,
+  "ridge_grid": [
+   0.001,
+   0.01,
+   0.1,
+   1.0,
+   10.0,
+   100.0,
+   1000.0
+  ]
+ },
+ "ceiling_branch": "B",
+ "ceiling_note": "Branch B selected by artifact inventory BEFORE execution: no replicate/split-half 171xd emotion-vector matrices from independent story samples exist on disk for 2b-base or 27b-base (only PA/HA/100T/50TM basis-or-pooling variants of the SAME story sample; per_story_slice.pt exists but constructing a split-half would be ceiling-construction, which the spec forbids). Grading proceeds against the permutation floor alone.",
+ "input_adapter_note": "canonical_100T.pt / emotion_vectors_171_100T.pt store (171,L,d) all-layer cleaned vectors; the frozen loader expects (171,d). Realization-of-intent: sliced each cell at its registered analysis layer (2b17/9b28/27b31 per spec ANALYSIS_LAYERS) into 2D adapters; frozen script + constants byte-identical.",
+ "pairs": {
+  "gemma-2-2b-base->gemma-2-27b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9716237565124259,
+   "ridge_secondary": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "median_cosine": 0.9856777830953231
+   },
+   "perm_p_top1": null,
+   "perm_status": "DEFERRED_PROHIBITIVE_RUNTIME: frozen floor N_PERM=10000 x 5-fold Procrustes SVD(2304x4608) = ~12.2s/perm -> ~34h on 10-core CPU. NOT reduced (dispatch honesty note). Point estimates + ridge computed via frozen functions."
+  },
+  "gemma-2-27b-base->gemma-2-2b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9761545273223322
+  },
+  "gemma-2-2b-base->gemma-2-2b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9778643838357184
+  },
+  "gemma-2-2b-base->gemma-2-9b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9789539453740845
+  },
+  "gemma-2-2b-base->gemma-2-9b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9734240133192702
+  },
+  "gemma-2-2b-it->gemma-2-9b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 0.9941520467836257,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9758981268416925
+  },
+  "gemma-2-2b-it->gemma-2-9b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9775633482498901
+  },
+  "gemma-2-9b-base->gemma-2-9b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9769532025085265
+  },
+  "gemma-2-27b-base->gemma-2-2b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9753249655730594
+  },
+  "gemma-2-27b-base->gemma-2-9b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9760286022661359
+  },
+  "gemma-2-27b-base->gemma-2-9b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9741705146891101
+  },
+  "gemma-2-27b-base->gemma-2-27b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9744960503924579
+  },
+  "gemma-2-27b-it->gemma-2-2b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9734360273075726
+  },
+  "gemma-2-27b-it->gemma-2-2b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9777020689664115
+  },
+  "gemma-2-27b-it->gemma-2-9b-base": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9727536111804976
+  },
+  "gemma-2-27b-it->gemma-2-9b-it": {
+   "median_rank": 1.0,
+   "top1_acc": 1.0,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9777439661586026
+  }
+ },
+ "perm_sanity_nonfinal": {
+  "n_perm_sanity": 30,
+  "note": "NOT the frozen floor; N_PERM stays 10000 for the graded p. Direction check only.",
+  "obs_top1": 1.0,
+  "perm_top1_max": 0.011695906432748537,
+  "perm_top1_mean": 0.0029239766081871343,
+  "sanity_count_ge_obs": 0
+ }
+}

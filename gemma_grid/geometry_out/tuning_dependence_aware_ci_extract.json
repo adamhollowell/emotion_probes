@@ -1,0 +1,142 @@
+{
+ "record": "Dependence-aware bootstrap of the tuning contrasts, released extract. Unregistered. Corroborates, grades nothing.",
+ "quantities": "tuning delta = tuned minus base, in raw correlation units; pooled = mean of the three per-size deltas; interaction_arousal_r_raw = (tuned minus base) at 27B minus (tuned minus base) at 2B on arousal_r",
+ "method": {
+  "B": 2000,
+  "seed": 20261014,
+  "resampling": "in each draw, 45 indices drawn with replacement from the 45 rated emotions, the same indices for all six models",
+  "pca": "each model's principal components fit once on all 171 emotions and held fixed across draws",
+  "re_signing": "in each draw, each axis is re-signed to agree with its own human rating on the resampled emotions; stated in the specification before the run, not part of the registration",
+  "interval": "percentile, 95 percent",
+  "floors": "no interval is compared to any floor",
+  "ratings": "Russell and Mehrabian (1977), 45-emotion overlap"
+ },
+ "omitted": "bootstrap standard errors, 90 percent intervals, comparisons with the registered standard errors, and the second form of the interaction; see the README",
+ "rows": {
+  "valence_r|2b": {
+   "point_r": 0.053450748237238166,
+   "ci95_percentile": [
+    0.028365864304588595,
+    0.0877262687669839
+   ]
+  },
+  "valence_r|9b": {
+   "point_r": 0.06201606713799379,
+   "ci95_percentile": [
+    0.031689763997794884,
+    0.10632488720540956
+   ]
+  },
+  "valence_r|27b": {
+   "point_r": 0.052031590598756505,
+   "ci95_percentile": [
+    0.02814489813020852,
+    0.08301870618138478
+   ]
+  },
+  "valence_r|pooled": {
+   "point_r": 0.055832801991329485,
+   "ci95_percentile": [
+    0.03031574051344235,
+    0.09104418767295297
+   ]
+  },
+  "arousal_r|2b": {
+   "point_r": -0.1361971763752206,
+   "ci95_percentile": [
+    -0.19808607895079497,
+    -0.08044262072413946
+   ]
+  },
+  "arousal_r|9b": {
+   "point_r": -0.023253570039354243,
+   "ci95_percentile": [
+    -0.0568982078498249,
+    0.004445153546386619
+   ]
+  },
+  "arousal_r|27b": {
+   "point_r": -0.0891795492651919,
+   "ci95_percentile": [
+    -0.14770339895031023,
+    -0.041457098066550686
+   ]
+  },
+  "arousal_r|pooled": {
+   "point_r": -0.08287676522658892,
+   "ci95_percentile": [
+    -0.12903851580313744,
+    -0.044600903276956365
+   ]
+  },
+  "offdiag_pc1_arousal|2b": {
+   "point_r": 0.03156829409772717,
+   "ci95_percentile": [
+    0.005674249752247753,
+    0.05794590049994039
+   ]
+  },
+  "offdiag_pc1_arousal|9b": {
+   "point_r": 0.03335191101335022,
+   "ci95_percentile": [
+    -0.00020353132614123765,
+    0.0688625751060081
+   ]
+  },
+  "offdiag_pc1_arousal|27b": {
+   "point_r": 0.05786546570030013,
+   "ci95_percentile": [
+    0.03008125285724683,
+    0.08459441980529846
+   ]
+  },
+  "offdiag_pc1_arousal|pooled": {
+   "point_r": 0.04092855693712584,
+   "ci95_percentile": [
+    0.013948479937495574,
+    0.06904754272440328
+   ]
+  },
+  "offdiag_pc2_pleasure|2b": {
+   "point_r": -0.08071212415472784,
+   "ci95_percentile": [
+    -0.15743816252038695,
+    -0.002888845775690949
+   ]
+  },
+  "offdiag_pc2_pleasure|9b": {
+   "point_r": -0.036433128202317325,
+   "ci95_percentile": [
+    -0.06867597832308606,
+    -0.007205550893448576
+   ]
+  },
+  "offdiag_pc2_pleasure|27b": {
+   "point_r": -0.1471182413280856,
+   "ci95_percentile": [
+    -0.2158084706143123,
+    -0.08429341033769099
+   ]
+  },
+  "offdiag_pc2_pleasure|pooled": {
+   "point_r": -0.08808783122837692,
+   "ci95_percentile": [
+    -0.13900668127653482,
+    -0.035103557440721814
+   ]
+  },
+  "interaction_arousal_r_raw": {
+   "point_r": 0.047017627110028715,
+   "ci95_percentile": [
+    -0.005055336357858505,
+    0.09875789372450369
+   ]
+  }
+ },
+ "commitment_sha256": {
+  "tuning_dependence_aware_ci_100T.json": "8aac55a86a49b994ab203704cd727fcaf5f8fe337426d25bbd5ec72141e698fa",
+  "tuning_dependence_aware_ci_100T_manifest.json": "8baa6e9aad8bf5313edcd4fa2e0193293d45890d6c52a64ead4fb6df519b3251",
+  "tuning_dependence_aware_ci_100T.py": "f3ea66c08ca903740bd4bf14406044ded4779810e432df2ad5f4e4f202ae9b0e"
+ },
+ "generated_utc": "2026-10-14T23:25:10Z"
+}

@@ -1,0 +1,48 @@
+{
+  "B": 2000,
+  "seed": 0,
+  "diagnostic": "L45-EXCLUSION (Memo-04): absolute layer 45 dropped from the mid-late sampled window; identical \u00a76.4 case bootstrap otherwise. Compare to layerstab_ci_100T.json to read whether scale-base is L45-localized.",
+  "excluded_layer": 45,
+  "cells_with_layer_excluded": [
+    "gemma-2-27b-base",
+    "gemma-2-27b-it"
+  ],
+  "method": "\u00a76.4 case bootstrap over emotions, paired across cells, self-duplicate pairs excluded; verdict = CI excludes 0 AND |\u0394|>=0.01 (locked floor)",
+  "per_cell_mid_late_obs": {
+    "gemma-2-2b-base": 0.99164,
+    "gemma-2-2b-it": 0.99187,
+    "gemma-2-9b-base": 0.99346,
+    "gemma-2-9b-it": 0.99345,
+    "gemma-2-27b-base": 0.99429,
+    "gemma-2-27b-it": 0.99404
+  },
+  "contrasts": {
+    "tuning_pooled": {
+      "delta_obs": -1e-05,
+      "ci95": [
+        -0.00047,
+        0.00041
+      ],
+      "floor": 0.01,
+      "verdict": "NULL_subfloor"
+    },
+    "scale_2b27b_base": {
+      "delta_obs": 0.00266,
+      "ci95": [
+        0.00167,
+        0.00374
+      ],
+      "floor": 0.01,
+      "verdict": "NULL_subfloor"
+    },
+    "scale_2b27b_it": {
+      "delta_obs": 0.00217,
+      "ci95": [
+        0.00124,
+        0.00322
+      ],
+      "floor": 0.01,
+      "verdict": "NULL_subfloor"
+    }
+  }
+}

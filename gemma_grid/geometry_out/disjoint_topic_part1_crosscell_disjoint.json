@@ -1,0 +1,424 @@
+{
+ "record": "Part 1. Cross-cell, disjoint topics (source set A, target set B, then swapped). 32 fits.",
+ "dispatch_sha256": "09fd38ba352a2eebf573362dc8b848f5a5afc74dad3685626b1569b96089018b",
+ "prestatement_sha256": "aab3eef2dcb6d4ef1af38d4e49b2cc81cf502e23e56804f0a3c62dfdfa6c2d6b",
+ "amendment_1": {
+  "file": "repo_GGE1/repo_GGE1_public/gemma_grid/prestatements/DISJOINT_TOPIC_TRANSPORT_AMENDMENT_1.md",
+  "sha256": "91d5f365ee68ee15837d4e48048da00923106f49d5afda128fe93f78cc7a641e",
+  "effect": "fitted bag-of-words retrieval withdrawn; direct form reported alone"
+ },
+ "level": "pre-stated, exploratory; producer does not grade",
+ "partition": {
+  "rule": "sorted 100 corpus topic strings; numpy RandomState(20261019).permutation(100); first 50 positions -> set A",
+  "seed": 20261019,
+  "set_A_topics": [
+   "A person finds a hidden letter in a used book",
+   "An artist discovers someone has tattooed their work",
+   "A person finds out their article was published under someone else's name",
+   "Someone finds a time capsule they don't remember burying",
+   "Someone receives an apology letter years after the incident",
+   "A person finds out their partner has been learning their native language",
+   "A person's longtime hobby becomes their child's obsession",
+   "Two roommates disagree about getting a pet",
+   "Two friends plan separate birthday parties on the same day",
+   "A neighbor's dog keeps escaping into their yard",
+   "A person finds out their surprise party has been cancelled",
+   "A person learns their favorite restaurant is closing",
+   "A homeowner discovers previous residents left items in the attic",
+   "Someone finds their parent's draft letter of resignation from decades ago",
+   "Someone finds out their medical records were mixed up with another patient's",
+   "A person's manuscript is rejected by their dream publisher",
+   "Someone discovers their partner has been writing a novel about them",
+   "A student finds out their scholarship was meant for someone else",
+   "Two siblings inherit their grandmother's house",
+   "A coach has to cut a player from the team",
+   "A student learns their thesis advisor is leaving the university",
+   "Someone finds a wallet containing a large sum of cash",
+   "A person runs into their ex at a mutual friend's wedding",
+   "Two colleagues are both considered for the same promotion",
+   "A parent finds an old letter they wrote but never sent",
+   "A chef receives a harsh review from a food critic",
+   "Someone discovers their neighbor is secretly wealthy",
+   "A neighbor wants to install a fence",
+   "A neighbor's tree falls on their property",
+   "Two strangers discover they share the same rare medical condition",
+   "A traveler's flight is delayed, causing them to miss an important event",
+   "A neighbor asks to cut down a tree on the property line",
+   "Two strangers realize they've been dating the same person",
+   "Someone's childhood home is about to be demolished",
+   "An employee is asked to train their replacement",
+   "A musician hears their song being performed by someone else",
+   "A family member wants to sell a cherished heirloom",
+   "A person's online friend turns out to live in the same city",
+   "A student receives a much lower grade than expected",
+   "An employee discovers the company is being sold",
+   "Someone discovers their friend has been lying about their job",
+   "An adult child moves back in with their parents",
+   "Two siblings discover different versions of their inheritance",
+   "A teacher receives an unexpected gift from a former student",
+   "Two friends both apply for the same job",
+   "An employee is transferred to a different department",
+   "Someone discovers their recipe has become famous under another name",
+   "A neighbor complains about noise levels",
+   "A person finds out their biography was written without their knowledge",
+   "A person discovers their partner has been taking secret phone calls"
+  ]
+ },
+ "random_halves": {
+  "rule": "per emotion, fresh RandomState(20261019).permutation(1200) over slice order; first 600 -> R1, rest -> R2",
+  "seed": 20261019
+ },
+ "half_vector": "mean over the emotion's 600 stories in the half, minus the half's grand mean over 171 emotions, cleaned by clean_layer with the cell's 100T neutral acts at the analysis layer (gate-2-passed); story rows only, slice neutral rows never read",
+ "estimator": {
+  "module": "pmap_transport_100T.py (unmodified) via pmap_battery_100T.transport",
+  "map": "semi-orthogonal Procrustes + global scale",
+  "fold_seed": 0,
+  "n_folds": 5,
+  "scoring": "all 171 targets"
+ },
+ "criterion": "median rank <= 2 across all 171 predictions (inherited from section 4.3; reported as a fact, not a grade)",
+ "analysis_layers": {
+  "gemma-2-2b-base": 17,
+  "gemma-2-2b-it": 17,
+  "gemma-2-9b-base": 28,
+  "gemma-2-9b-it": 28,
+  "gemma-2-27b-base": 31,
+  "gemma-2-27b-it": 31
+ },
+ "versions": {
+  "python": "3.12.13",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "sklearn": "1.8.0",
+  "torch": "2.12.0",
+  "tokenizers": "0.22.2",
+  "environment": ".venv",
+  "sys_prefix": ".venv",
+  "numpy_blas_lapack": {
+   "blas": {
+    "name": "accelerate",
+    "found": true,
+    "version": "unknown",
+    "detection method": "system",
+    "include directory": "unknown",
+    "lib directory": "unknown",
+    "openblas configuration": "unknown",
+    "pc file directory": "unknown"
+   },
+   "lapack": {
+    "name": "accelerate",
+    "found": true,
+    "version": "unknown",
+    "detection method": "system",
+    "include directory": "unknown",
+    "lib directory": "unknown",
+    "openblas configuration": "unknown",
+    "pc file directory": "unknown"
+   }
+  },
+  "blas_threads": {
+   "OPENBLAS_NUM_THREADS": "1",
+   "OMP_NUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "NUMEXPR_NUM_THREADS": "1"
+  }
+ },
+ "run_utc": "2026-10-19T14:30:18Z",
+ "join": "Ledger gate-3 amendment 2026-10-19; gates file item3_disjoint_gates.json",
+ "fits": [
+  {
+   "pair": "gemma-2-2b-base->gemma-2-27b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9289657206832788,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-27b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8713450292397661,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9267693677626841,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-2b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9344671819273662,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-2b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9370643310387053,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-2b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9181286549707602,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9341486362229559,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-2b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9382367188178435,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-9b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9122807017543859,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9375006075645618,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-9b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9362124825444229,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-9b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9122807017543859,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9302551299413802,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-base->gemma-2-9b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9326347478980858,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-it->gemma-2-9b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9005847953216374,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9374964229976002,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-it->gemma-2-9b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9319094981442219,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-it->gemma-2-9b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9005847953216374,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9363849515477513,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-2b-it->gemma-2-9b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9373578523209561,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-9b-base->gemma-2-9b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9005847953216374,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9325346350236303,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-9b-base->gemma-2-9b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9355703396000218,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-2b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9344623901800068,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-2b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8771929824561403,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9392874982431451,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-9b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9318215988794829,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-9b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9346275309630919,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-9b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9291737247606525,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-9b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9357400150525249,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-27b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9286078082466378,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-base->gemma-2-27b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9315801182488698,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-2b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8947368421052632,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9336617549578626,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-2b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9343463862150712,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-2b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.9005847953216374,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9388857615423947,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-2b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9402053781963905,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-9b-base",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8830409356725146,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9309803110742264,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-9b-base",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9311160616310493,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-9b-it",
+   "assignment": "source A -> target B",
+   "median_rank": 1.0,
+   "top1_acc": 0.8888888888888888,
+   "top5_acc": 1.0,
+   "median_cosine": 0.9347404136948388,
+   "criterion_median_rank_le_2": true
+  },
+  {
+   "pair": "gemma-2-27b-it->gemma-2-9b-it",
+   "assignment": "source B -> target A",
+   "median_rank": 1.0,
+   "top1_acc": 0.9005847953216374,
+   "top5_acc": 1.0,
+   "median_cosine": 0.936780845506707,
+   "criterion_median_rank_le_2": true
+  }
+ ],
+ "criterion_check": {
+  "n_fits": 32,
+  "n_meeting": 32,
+  "fits_not_meeting": []
+ }
+}

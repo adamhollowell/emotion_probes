@@ -1,0 +1,19 @@
+# LC-60 Commission 1 — B1 floor-window sensitivity handback manifest
+artifact: gemma_grid/geometry_out_100T/b1_window_sensitivity_100T.json
+sha256: c264c3fe1b975e98723e0c09c56c26c25864465d9e8ac2e47b8d1f5bc2259b4f
+bytes: 4288
+description: B1 knee branch robustness under floor windows W4=[42,45] vs W5=[41,45] (100T); flip verdict for Phase-5 gate
+producer: gemma_grid/nogpu_additions_100T/lc60_c1_b1_window_sensitivity.py
+producer_sha256: fbe3c41d544abc1b0091a3c533ee8a7d43fdf8f3524a8e133b28bccbd64c942d
+authorizing: MEMO LC-60, Commission 1 (dispatch RUNNER_DISPATCH_LC60_C1_B1_WINDOW_SENSITIVITY_100T.md)
+frozen_input_sha256: f7b4f593bd89d040db1631640ca89e8c5b34e079ca80d6a8bde581183269826d  b1_onsetcurve_100T.json
+frozen_input_sha256: 713c494057137d670a19e892362102f03fa17aabd7c2e6a3bfc753575ebd9eff  b1_onsetcurve_knee_100T.json
+spec_sha256: ae05e8bdcd5611558f0999217f2555c1037a52cc95ef2e4e033fa589cf06569a
+method: pure arithmetic on stored y(l)=log10(median_rank(l)); no onset recompute, no estimator call, no neutrals/vectors touched
+onset_recomputed: false
+floor_recomputed: false
+qwen_touched: false
+W5_realization: W5=[41,45] = deepest FIVE available layers on 46-layer 27B; honest analogue of nominal [42,46]
+W4_self_consistency: PASS (both cells reproduce shipped frac to <1e-9: base 25.668705->26 DEEPER; it 25.467160->25 COINCIDENT)
+flip_verdict: NO FLIP — base stays DEEPER (W5 nearest 26), it stays COINCIDENT (W5 nearest 25); branch assignments window-robust
+generated_utc: 2026-09-03T18:37:53Z

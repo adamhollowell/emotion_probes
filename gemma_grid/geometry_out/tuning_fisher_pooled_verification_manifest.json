@@ -1,0 +1,13 @@
+{
+ "m9_note": "SR.5 input manifest -- sha256 of every input, written at run time.",
+ "inputs": {
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/stageA_summary.json": "b63e0deeda5537cda6856e54874bbc9e0bb04c0d3ef2c0f83ade97cebef6c21d",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-it/stageA_summary.json": "da853e5943ddbf8a78a525707ee64eb4f866142234dc940cc99e230d80060476",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-base/stageA_summary.json": "9e739107d4759b8cdaea06fb930cdcab9e0a0ccb19b69f3d16c1d888eb4ae824",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-it/stageA_summary.json": "d726dbe3a30c4113c78628ab08920e4bc808fb240667ef452e1ea0a34deac5aa",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-base/stageA_summary.json": "2008ed37bc34c22ec136d20ed2362879d096a53078a7724c70c1356bb938c7a4",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-it/stageA_summary.json": "b5d8a00575cc0fade95e4b7114fa61dca49285e191de6f0d191ee800dd42c41b",
+  "gemma_grid/geometry_out_100T/stageC_grading.json": "5ae1c53c7637b42a84346f787eddf7d9c2145b0c2cb99925644034d4bd2f4b7b"
+ },
+ "output": "gemma_grid/geometry_out_100T/tuning_fisher_pooled_verification_100T.json"
+}

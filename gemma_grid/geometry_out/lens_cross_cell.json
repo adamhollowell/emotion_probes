@@ -1,0 +1,38 @@
+{
+  "gemma-2-2b-base": {
+    "onset": 0,
+    "onset_frac": 0.0,
+    "L0_median_rank": 4488.0,
+    "final_median_rank": 25.5
+  },
+  "gemma-2-2b-it": {
+    "onset": 0,
+    "onset_frac": 0.0,
+    "L0_median_rank": 5071.0,
+    "final_median_rank": 19.5
+  },
+  "gemma-2-9b-base": {
+    "onset": 0,
+    "onset_frac": 0.0,
+    "L0_median_rank": 3690.5,
+    "final_median_rank": 21.0
+  },
+  "gemma-2-9b-it": {
+    "onset": 0,
+    "onset_frac": 0.0,
+    "L0_median_rank": 3827.0,
+    "final_median_rank": 23.0
+  },
+  "gemma-2-27b-base": {
+    "onset": 23,
+    "onset_frac": 0.5,
+    "L0_median_rank": 127742.5,
+    "final_median_rank": 18.5
+  },
+  "gemma-2-27b-it": {
+    "onset": 23,
+    "onset_frac": 0.5,
+    "L0_median_rank": 128634.5,
+    "final_median_rank": 16.0
+  }
+}

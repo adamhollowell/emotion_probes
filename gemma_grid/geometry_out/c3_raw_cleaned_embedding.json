@@ -1,0 +1,61 @@
+{
+  "record": "C3 embedding-table valence/arousal correlations, RAW vs CLEANED, per cell (100T).",
+  "method": "Per cell: PCA (center, SVD, scores=U*S) on the embedding-table diff-of-means vectors; sign-orient PC1->valence, PC2->arousal against Russell-Mehrabian 1977 (45-emotion overlap); Pearson r. RAW uses vectors_raw; CLEANED uses the 100T-cleaned vectors (neutral-embedding basis projected out). Identical to phase4_c3_embedding.signals, applied to each vector set.",
+  "source_vectors": "geometry_out_100T/<cell>/c3_vectors.pt (keys vectors_raw, vectors)",
+  "ratings": "data/ratings/russell_mehrabian_1977.csv",
+  "n_overlap": 45,
+  "basis_invariant": "RAW values are basis-invariant (no cleanup).",
+  "cells": {
+    "gemma-2-2b-base": {
+      "valence_r_raw": 0.03002746218048999,
+      "arousal_r_raw": 0.19507011245738146,
+      "valence_r_cleaned": 0.4845340255362745,
+      "arousal_r_cleaned": 0.12486911563001908
+    },
+    "gemma-2-2b-it": {
+      "valence_r_raw": 0.029144149166722335,
+      "arousal_r_raw": 0.1928535444912132,
+      "valence_r_cleaned": 0.4848151928844935,
+      "arousal_r_cleaned": 0.12800491529198355
+    },
+    "gemma-2-9b-base": {
+      "valence_r_raw": 0.06329914701045006,
+      "arousal_r_raw": 0.3154213984115444,
+      "valence_r_cleaned": 0.5071008099099715,
+      "arousal_r_cleaned": 0.14958262783448206
+    },
+    "gemma-2-9b-it": {
+      "valence_r_raw": 0.07430424511231541,
+      "arousal_r_raw": 0.3247283596596534,
+      "valence_r_cleaned": 0.5002167019847785,
+      "arousal_r_cleaned": 0.17437039705738788
+    },
+    "gemma-2-27b-base": {
+      "valence_r_raw": 0.3784332586470193,
+      "arousal_r_raw": 0.2823042496408704,
+      "valence_r_cleaned": 0.4790080813974809,
+      "arousal_r_cleaned": 0.17892246291843547
+    },
+    "gemma-2-27b-it": {
+      "valence_r_raw": 0.3802644904513642,
+      "arousal_r_raw": 0.2876621393996362,
+      "valence_r_cleaned": 0.4790751047120852,
+      "arousal_r_cleaned": 0.1778346162895614
+    }
+  },
+  "source_c3_vectors_sha256_12": {
+    "gemma-2-2b-base": "6d23da00388a",
+    "gemma-2-2b-it": "21edd586fb0a",
+    "gemma-2-9b-base": "1314eb023c10",
+    "gemma-2-9b-it": "270ac1001bdc",
+    "gemma-2-27b-base": "5b701c50f765",
+    "gemma-2-27b-it": "40ca301223e3"
+  },
+  "validation": {
+    "cleaned_reproduces_c3_embedding_json": "2b-base 0.4845/0.1249 and 27b-base 0.4790/0.1789 match on-disk c3_embedding.json exactly",
+    "raw_anchor_matches_E1_Table3": "27b-base raw 0.3784/0.2823 matches E1 (Hollowell 2026) Table 3 0.378/0.282",
+    "raw_2b_matches_ledger_seed": "2b-base raw valence 0.0300 matches the ledger C15 seed ~0.03",
+    "reader": "torch .pt read with a numpy-only zip/pickle reader (container has no torch); cleaned reproduction is the faithfulness proof"
+  },
+  "generated_utc": "2026-10-14T14:51:44Z"
+}

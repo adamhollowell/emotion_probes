@@ -1,0 +1,310 @@
+{
+ "record": "B2 covariate-transfer test (re G5.4a/T.3) \u2014 labeled unregistered exploratory.",
+ "spec_sha256": "ae05e8bdcd5611558f0999217f2555c1037a52cc95ef2e4e033fa589cf06569a",
+ "n_full_coverage": 137,
+ "dropped": [
+  [
+   "at ease",
+   "no NRC"
+  ],
+  [
+   "awestruck",
+   "no L0"
+  ],
+  [
+   "contemptuous",
+   "no L0"
+  ],
+  [
+   "disdainful",
+   "no L0"
+  ],
+  [
+   "disoriented",
+   "no L0"
+  ],
+  [
+   "dispirited",
+   "no L0"
+  ],
+  [
+   "droopy",
+   "no L0"
+  ],
+  [
+   "dumbstruck",
+   "no L0"
+  ],
+  [
+   "energized",
+   "no NRC"
+  ],
+  [
+   "euphoric",
+   "no L0"
+  ],
+  [
+   "grief-stricken",
+   "no NRC"
+  ],
+  [
+   "infatuated",
+   "no L0"
+  ],
+  [
+   "insulted",
+   "no NRC"
+  ],
+  [
+   "invigorated",
+   "no L0"
+  ],
+  [
+   "irate",
+   "no L0"
+  ],
+  [
+   "jubilant",
+   "no L0"
+  ],
+  [
+   "listless",
+   "no L0"
+  ],
+  [
+   "mortified",
+   "no L0"
+  ],
+  [
+   "mystified",
+   "no L0"
+  ],
+  [
+   "on edge",
+   "no NRC"
+  ],
+  [
+   "regretful",
+   "no L0"
+  ],
+  [
+   "rejuvenated",
+   "no L0"
+  ],
+  [
+   "remorseful",
+   "no L0"
+  ],
+  [
+   "resentful",
+   "no L0"
+  ],
+  [
+   "scornful",
+   "no L0"
+  ],
+  [
+   "self-confident",
+   "no NRC"
+  ],
+  [
+   "self-conscious",
+   "no NRC"
+  ],
+  [
+   "self-critical",
+   "no NRC"
+  ],
+  [
+   "spiteful",
+   "no L0"
+  ],
+  [
+   "stimulated",
+   "no NRC"
+  ],
+  [
+   "unnerved",
+   "no L0"
+  ],
+  [
+   "vengeful",
+   "no L0"
+  ],
+  [
+   "vindictive",
+   "no L0"
+  ],
+  [
+   "worn out",
+   "no NRC"
+  ]
+ ],
+ "emotions_used": [
+  "afraid",
+  "alarmed",
+  "alert",
+  "amazed",
+  "amused",
+  "angry",
+  "annoyed",
+  "anxious",
+  "aroused",
+  "ashamed",
+  "astonished",
+  "bewildered",
+  "bitter",
+  "blissful",
+  "bored",
+  "brooding",
+  "calm",
+  "cheerful",
+  "compassionate",
+  "content",
+  "defiant",
+  "delighted",
+  "dependent",
+  "depressed",
+  "desperate",
+  "disgusted",
+  "distressed",
+  "disturbed",
+  "docile",
+  "eager",
+  "ecstatic",
+  "elated",
+  "embarrassed",
+  "empathetic",
+  "enraged",
+  "enthusiastic",
+  "envious",
+  "exasperated",
+  "excited",
+  "exuberant",
+  "frightened",
+  "frustrated",
+  "fulfilled",
+  "furious",
+  "gloomy",
+  "grateful",
+  "greedy",
+  "grumpy",
+  "guilty",
+  "happy",
+  "hateful",
+  "heartbroken",
+  "hope",
+  "hopeful",
+  "horrified",
+  "hostile",
+  "humiliated",
+  "hurt",
+  "hysterical",
+  "impatient",
+  "indifferent",
+  "indignant",
+  "inspired",
+  "irritated",
+  "jealous",
+  "joyful",
+  "kind",
+  "lazy",
+  "lonely",
+  "loving",
+  "mad",
+  "melancholy",
+  "miserable",
+  "nervous",
+  "nostalgic",
+  "obstinate",
+  "offended",
+  "optimistic",
+  "outraged",
+  "overwhelmed",
+  "panicked",
+  "paranoid",
+  "patient",
+  "peaceful",
+  "perplexed",
+  "playful",
+  "pleased",
+  "proud",
+  "puzzled",
+  "rattled",
+  "reflective",
+  "refreshed",
+  "relaxed",
+  "relieved",
+  "resigned",
+  "restless",
+  "sad",
+  "safe",
+  "satisfied",
+  "scared",
+  "sensitive",
+  "sentimental",
+  "serene",
+  "shaken",
+  "shocked",
+  "skeptical",
+  "sleepy",
+  "sluggish",
+  "smug",
+  "sorry",
+  "stressed",
+  "stubborn",
+  "stuck",
+  "sullen",
+  "surprised",
+  "suspicious",
+  "sympathetic",
+  "tense",
+  "terrified",
+  "thankful",
+  "thrilled",
+  "tired",
+  "tormented",
+  "trapped",
+  "triumphant",
+  "troubled",
+  "uneasy",
+  "unhappy",
+  "unsettled",
+  "upset",
+  "valiant",
+  "vibrant",
+  "vigilant",
+  "vulnerable",
+  "weary",
+  "worried",
+  "worthless"
+ ],
+ "model_terms": [
+  "intercept",
+  "arousal_z",
+  "log_l0_z"
+ ],
+ "ols_fit_on_2B": {
+  "beta": [
+   0.0105269197080292,
+   0.0015171334326128218,
+   -0.001232525226319166
+  ],
+  "se": [
+   0.0005461339843990098,
+   0.0005419599285913061,
+   0.0005735736630355667
+  ],
+  "p_hc3": [
+   0.0,
+   0.005120621380367396,
+   0.031646090493609336
+  ],
+  "r2": 0.09123555979269138
+ },
+ "covariate_model_spearman_vs_27B": 0.2922095044753426,
+ "raw_cross_scale_spearman_baseline": 0.7900824903471638,
+ "T3_context_only": 0.23,
+ "covariate_beats_raw": false,
+ "branch": "covariate model does NOT beat raw baseline -> no reconciliation; reported as such"
+}

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper."
+title: "The Geometry of Emotion Representations Across Scale, Depth, and Instruction Tuning"
+authors:
+  - family-names: Hollowell
+    given-names: Adam
+license: MIT
+repository-code: "https://github.com/adamhollowell/emotion_probes/tree/main/gemma_grid"
+preferred-citation:
+  type: article
+  title: "The Geometry of Emotion Representations Across Scale, Depth, and Instruction Tuning"
+  authors:
+    - family-names: Hollowell
+      given-names: Adam
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:[ID ON POSTING]"
+references:
+  - type: article
+    title: "Replicating the Geometry of Emotion Representations in a Base Open-Weights Model"
+    authors:
+      - family-names: Hollowell
+        given-names: Adam
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2609.22208"

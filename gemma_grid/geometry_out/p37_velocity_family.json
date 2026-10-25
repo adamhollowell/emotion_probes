@@ -1,0 +1,67 @@
+{
+ "record": "P3.7 dimensional velocity \u2014 GGE1 family fold-in (E1 P3.7)",
+ "basis": "100T cleaned vectors (asserted 100T-in-path); adjacent-layer cosine per emotion",
+ "cells": {
+  "gemma-2-2b-base": {
+   "n_layers": 26,
+   "n_transitions": 25,
+   "median_maxrot_transition": 0,
+   "median_moststable_transition": 22,
+   "moststable_median_cos": 0.9561,
+   "count_maxrot_terminal": 0,
+   "count_maxrot_last3": 0,
+   "count_maxrot_seam": 0
+  },
+  "gemma-2-2b-it": {
+   "n_layers": 26,
+   "n_transitions": 25,
+   "median_maxrot_transition": 0,
+   "median_moststable_transition": 22,
+   "moststable_median_cos": 0.965,
+   "count_maxrot_terminal": 0,
+   "count_maxrot_last3": 0,
+   "count_maxrot_seam": 0
+  },
+  "gemma-2-9b-base": {
+   "n_layers": 42,
+   "n_transitions": 41,
+   "median_maxrot_transition": 0,
+   "median_moststable_transition": 34,
+   "moststable_median_cos": 0.981,
+   "count_maxrot_terminal": 0,
+   "count_maxrot_last3": 0,
+   "count_maxrot_seam": 0
+  },
+  "gemma-2-9b-it": {
+   "n_layers": 42,
+   "n_transitions": 41,
+   "median_maxrot_transition": 5,
+   "median_moststable_transition": 34,
+   "moststable_median_cos": 0.9825,
+   "count_maxrot_terminal": 0,
+   "count_maxrot_last3": 0,
+   "count_maxrot_seam": 0
+  },
+  "gemma-2-27b-base": {
+   "n_layers": 46,
+   "n_transitions": 45,
+   "median_maxrot_transition": 43,
+   "median_moststable_transition": 37,
+   "moststable_median_cos": 0.9921,
+   "count_maxrot_terminal": 19,
+   "count_maxrot_last3": 105,
+   "count_maxrot_seam": 10
+  },
+  "gemma-2-27b-it": {
+   "n_layers": 46,
+   "n_transitions": 45,
+   "median_maxrot_transition": 20,
+   "median_moststable_transition": 37,
+   "moststable_median_cos": 0.9921,
+   "count_maxrot_terminal": 1,
+   "count_maxrot_last3": 1,
+   "count_maxrot_seam": 51
+  }
+ },
+ "note": "terminal/last3/seam bands are cell-relative transition counts; E1's 27B absolute L43->44 terminal / L21-23 seam map to these. E2 firewall: do NOT interpret loving's velocity minimum (output-space artifact per E1 P3.7)."
+}

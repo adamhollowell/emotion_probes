@@ -1,0 +1,390 @@
+{
+  "cell": "gemma-2-27b-it",
+  "analysis_layer": 31,
+  "n_layers": 46,
+  "fair_selfrank_n": 140,
+  "onset_layer_median_lt_10k": 23,
+  "onset_fractional_depth": 0.5,
+  "per_layer_median_own_rank": [
+    {
+      "layer": 0,
+      "median_own_rank": 128634.5
+    },
+    {
+      "layer": 1,
+      "median_own_rank": 133380.0
+    },
+    {
+      "layer": 2,
+      "median_own_rank": 130207.5
+    },
+    {
+      "layer": 3,
+      "median_own_rank": 122085.5
+    },
+    {
+      "layer": 4,
+      "median_own_rank": 125053.0
+    },
+    {
+      "layer": 5,
+      "median_own_rank": 122846.0
+    },
+    {
+      "layer": 6,
+      "median_own_rank": 117890.5
+    },
+    {
+      "layer": 7,
+      "median_own_rank": 116960.5
+    },
+    {
+      "layer": 8,
+      "median_own_rank": 118527.0
+    },
+    {
+      "layer": 9,
+      "median_own_rank": 108477.0
+    },
+    {
+      "layer": 10,
+      "median_own_rank": 102661.0
+    },
+    {
+      "layer": 11,
+      "median_own_rank": 80384.0
+    },
+    {
+      "layer": 12,
+      "median_own_rank": 67835.5
+    },
+    {
+      "layer": 13,
+      "median_own_rank": 72178.0
+    },
+    {
+      "layer": 14,
+      "median_own_rank": 60428.0
+    },
+    {
+      "layer": 15,
+      "median_own_rank": 52430.5
+    },
+    {
+      "layer": 16,
+      "median_own_rank": 39512.0
+    },
+    {
+      "layer": 17,
+      "median_own_rank": 33917.5
+    },
+    {
+      "layer": 18,
+      "median_own_rank": 30182.5
+    },
+    {
+      "layer": 19,
+      "median_own_rank": 32749.0
+    },
+    {
+      "layer": 20,
+      "median_own_rank": 29032.5
+    },
+    {
+      "layer": 21,
+      "median_own_rank": 26037.0
+    },
+    {
+      "layer": 22,
+      "median_own_rank": 20052.0
+    },
+    {
+      "layer": 23,
+      "median_own_rank": 3708.5
+    },
+    {
+      "layer": 24,
+      "median_own_rank": 2345.5
+    },
+    {
+      "layer": 25,
+      "median_own_rank": 2014.5
+    },
+    {
+      "layer": 26,
+      "median_own_rank": 1433.0
+    },
+    {
+      "layer": 27,
+      "median_own_rank": 1011.5
+    },
+    {
+      "layer": 28,
+      "median_own_rank": 1618.5
+    },
+    {
+      "layer": 29,
+      "median_own_rank": 293.0
+    },
+    {
+      "layer": 30,
+      "median_own_rank": 237.0
+    },
+    {
+      "layer": 31,
+      "median_own_rank": 220.0
+    },
+    {
+      "layer": 32,
+      "median_own_rank": 209.5
+    },
+    {
+      "layer": 33,
+      "median_own_rank": 243.0
+    },
+    {
+      "layer": 34,
+      "median_own_rank": 78.5
+    },
+    {
+      "layer": 35,
+      "median_own_rank": 61.0
+    },
+    {
+      "layer": 36,
+      "median_own_rank": 55.5
+    },
+    {
+      "layer": 37,
+      "median_own_rank": 54.5
+    },
+    {
+      "layer": 38,
+      "median_own_rank": 55.5
+    },
+    {
+      "layer": 39,
+      "median_own_rank": 46.0
+    },
+    {
+      "layer": 40,
+      "median_own_rank": 46.0
+    },
+    {
+      "layer": 41,
+      "median_own_rank": 44.5
+    },
+    {
+      "layer": 42,
+      "median_own_rank": 36.5
+    },
+    {
+      "layer": 43,
+      "median_own_rank": 26.5
+    },
+    {
+      "layer": 44,
+      "median_own_rank": 18.0
+    },
+    {
+      "layer": 45,
+      "median_own_rank": 16.0
+    }
+  ],
+  "analysis_layer_raw_selfranks_median": 122.0,
+  "table1_raw_analysis_layer": {
+    "happy": {
+      "top": [
+        " excited",
+        "excited",
+        " excit",
+        " happiness",
+        " serious"
+      ],
+      "bottom": [
+        " gentil",
+        " functionalities",
+        "Anger",
+        "Helpful",
+        " bile"
+      ]
+    },
+    "sad": {
+      "top": [
+        " loneliness",
+        " emptiness",
+        " sadness",
+        " depression",
+        "Depression"
+      ],
+      "bottom": [
+        "ICAL",
+        " nervios",
+        "limited",
+        "\u064a\u0643\u0648\u0646",
+        "\u843d\u3061\u7740"
+      ]
+    },
+    "angry": {
+      "top": [
+        " anger",
+        "Anger",
+        " Anger",
+        " rage",
+        "Angry"
+      ],
+      "bottom": [
+        "wink",
+        " smiles",
+        "ogeneity",
+        "Accept",
+        " cheer"
+      ]
+    },
+    "afraid": {
+      "top": [
+        " paranoia",
+        " panic",
+        " Panic",
+        "Panic",
+        "Anxiety"
+      ],
+      "bottom": [
+        " eyebrow",
+        " frustrated",
+        " exasperated",
+        " exhausted",
+        " frustration"
+      ]
+    },
+    "surprised": {
+      "top": [
+        "\ud83d\ude31",
+        " shock",
+        "\ud83e\udd2f",
+        "shock",
+        " \ud83d\ude33"
+      ],
+      "bottom": [
+        " exhausted",
+        "\u0435\u0442\u043a\u0438",
+        " sighed",
+        " smiles",
+        " sighs"
+      ]
+    },
+    "guilty": {
+      "top": [
+        " guilt",
+        "ir\u00e9e",
+        "hamed",
+        "\u260d",
+        " responsabilit\u00e0"
+      ],
+      "bottom": [
+        " seriously",
+        " frustrating",
+        " frustration",
+        " surprisingly",
+        " dramatically"
+      ]
+    },
+    "nervous": {
+      "top": [
+        "Anxiety",
+        " nervousness",
+        " nervously",
+        " Anxiety",
+        "\u7dca\u5f35"
+      ],
+      "bottom": [
+        " exhausted",
+        "isier",
+        " smiles",
+        "anyan",
+        " sad"
+      ]
+    },
+    "desperate": {
+      "top": [
+        " desperation",
+        " desperate",
+        " desesper",
+        "Desperate",
+        "ggars"
+      ],
+      "bottom": [
+        " inconven",
+        "\uffe3)",
+        "\u01d2",
+        " baffled",
+        " discom"
+      ]
+    },
+    "proud": {
+      "top": [
+        " proud",
+        " proudly",
+        " beaming",
+        " prou",
+        " confidence"
+      ],
+      "bottom": [
+        " fijn",
+        " Houd",
+        " fijne",
+        "\u306a\u306e\u306b",
+        " kehilangan"
+      ]
+    },
+    "loving": {
+      "top": [
+        " goofy",
+        " tenderness",
+        " cheesy",
+        "oulli",
+        " Aunque"
+      ],
+      "bottom": [
+        " politely",
+        " polite",
+        "polite",
+        " aumentado",
+        "laint"
+      ]
+    },
+    "inspired": {
+      "top": [
+        " neglected",
+        " redis",
+        " inspired",
+        " excited",
+        " dusty"
+      ],
+      "bottom": [
+        " \u0434\u0435\u043c\u043e\u043d",
+        " esfuerzo",
+        " spyware",
+        "Liar",
+        " Activities"
+      ]
+    },
+    "calm": {
+      "top": [
+        " surprisingly",
+        " curious",
+        " mindful",
+        " calm",
+        " surprising"
+      ],
+      "bottom": [
+        " Minist\u00e9rio",
+        " berusaha",
+        "\u2762",
+        "yq",
+        " \u062a\u062d\u062a\u0648\u064a"
+      ]
+    }
+  },
+  "conventions": "raw v@W_U for Table-1; (1+w) norm lens (eps 1e-6) for sweep; cleaned vectors; own token = ' word' single-token (140/171)"
+}

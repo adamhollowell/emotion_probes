@@ -1,0 +1,14 @@
+# LC-59 P-map battery + B1/B2 handback manifest
+artifact: gemma_grid/geometry_out_100T/pmap_battery_100T.json
+sha256: 2757ed848959f8a088ce2281cd1f6b96c5268f497f724bcf2261aff0f9b36a8c
+bytes: 41027
+description: PMAP battery Items 1-8
+producer: gemma_grid/nogpu_additions_100T/pmap_battery_serial_100T.py
+producer_sha256: 5413c04f5ec64aaa2c0db29d7200c3a6c9cc74548e6325b936e4a907c97faef5
+frozen_input_sha256: ee736f5d36c9a04c8d6e4eaf043d932cbb979a5e4fba22a0ea0e8613b91e5526  pmap_transport_100T.py
+frozen_input_sha256: 0c70b9d7295515e0f866fcde1010a5368bae2f5bd81249dc4825579b136a82cd  pmap_battery_100T.py
+spec_sha256: 089fec1e4222bc91582fdc64c40430c5fef7a9e90894d44faeebd35bd2d3ef76
+floor_recomputed: false
+qwen_touched: false
+svd_note: gesdd->gesvd fallback (Coordinator remedy-1b) active in battery producer; convergent SVDs bit-identical; frozen pmap_transport_100T.py byte-stable
+generated_utc: 2026-09-03T05:25:52Z

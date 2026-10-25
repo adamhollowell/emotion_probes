@@ -1,0 +1,99 @@
+{
+ "frozen_indicator": [
+  "ashamed",
+  "guilty",
+  "embarrassed",
+  "humiliated",
+  "proud",
+  "remorseful",
+  "regretful",
+  "self-critical"
+ ],
+ "indicator_used": [
+  "ashamed",
+  "embarrassed",
+  "guilty",
+  "humiliated",
+  "proud",
+  "regretful",
+  "remorseful"
+ ],
+ "dropped_unrated": [
+  "at ease",
+  "energized",
+  "grief-stricken",
+  "insulted",
+  "on edge",
+  "self-confident",
+  "self-conscious",
+  "self-critical",
+  "stimulated",
+  "worn out"
+ ],
+ "n_full_model": 137,
+ "full_model": {
+  "terms": [
+   "intercept",
+   "indicator",
+   "abs_val",
+   "arousal",
+   "purity",
+   "log_l0",
+   "zipf"
+  ],
+  "beta": [
+   -0.009062858534089654,
+   0.24832232383405906,
+   -0.09721687923536185,
+   0.241297948304523,
+   -0.1326741735891598,
+   -0.24707564167775892,
+   0.04443356456000886
+  ],
+  "se": [
+   0.08388510593664446,
+   1.0275991988749733,
+   0.08345877132310311,
+   0.08649749450525755,
+   0.10858027952923381,
+   0.10036011009919231,
+   0.07612085071338856
+  ],
+  "p_hc3": [
+   0.9139647975823482,
+   0.8090491302771345,
+   0.2440800577996145,
+   0.005276464723088736,
+   0.22174568918085313,
+   0.013820670080211706,
+   0.5594060431918813
+  ],
+  "r2": 0.10700534686822916
+ },
+ "indicator_only": {
+  "beta": 1.0601022745009416,
+  "p_hc3": 0.11487927865999348,
+  "r2": 0.046737183970869456
+ },
+ "survival_criterion": "indicator beta > 0 and p<.05 (HC3) in the full pooled model",
+ "per_pair_descriptive": {
+  "tuning_2B": {
+   "indicator_beta": -0.004523863106513475,
+   "indicator_p_hc3": 0.9961380011429974,
+   "r2": 0.10537714062182502,
+   "n": 137
+  },
+  "tuning_9B": {
+   "indicator_beta": 0.5981537518310829,
+   "indicator_p_hc3": 0.5221925364431654,
+   "r2": 0.0939868467525713,
+   "n": 137
+  },
+  "tuning_27B": {
+   "indicator_beta": 0.14121214993988324,
+   "indicator_p_hc3": 0.8838077330919487,
+   "r2": 0.1278352592916947,
+   "n": 137
+  }
+ }
+}

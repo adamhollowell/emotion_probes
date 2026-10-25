@@ -1,0 +1,21 @@
+{
+ "gates": {
+  "T1_rs_mapping": "PASS (bootstrap means match point estimates)",
+  "T1_fullprecision_vs_csv": "PASS (per-cell summaries agree with the CSV aggregate at its per-column precision)",
+  "T2_mean_reproduces_pooled": "PASS (all 9 rows, tol 2.5e-4)"
+ },
+ "sources": {
+  "table1": [
+   "geometry_out_100T/stageA_cross_cell_table.csv",
+   "geometry_out_100T/<cell>/bootstrap_B1000.npz"
+  ],
+  "table2": [
+   "geometry_out_100T/stageC_grading.json",
+   "Ledger FINAL \u2014 G2.1 per-size serialization block"
+  ],
+  "table3": [
+   "Ledger FINAL \u2014 Appendix R rows R.1\u2013R.6",
+   "norm_robustness_full_100T_results.json (6b51146e, numbers stay in Appendix E)"
+  ]
+ }
+}

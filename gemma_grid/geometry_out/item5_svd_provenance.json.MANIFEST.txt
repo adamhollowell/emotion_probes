@@ -1,0 +1,14 @@
+# LC-59 Item 5 SVD-fallback provenance manifest
+artifact: gemma_grid/geometry_out_100T/item5_svd_provenance_100T.json
+sha256: 64981539c944242f0708b85aa8010f307a6fd681560d3f2aab81c674a1ec9bf3
+bytes: 871
+description: Item 5 gesdd->gesvd fallback count (closes LC-59 count gap)
+producer: gemma_grid/nogpu_additions_100T/item5_svd_provenance_100T.py
+producer_sha256: 45611aeb8539ab3db3733a7f3d7bad89c470f9505d547a59d991fab55f483d18
+frozen_input_sha256: ee736f5d36c9a04c8d6e4eaf043d932cbb979a5e4fba22a0ea0e8613b91e5526  pmap_transport_100T.py
+total_svd_calls_item5: 108
+total_fallbacks: 2
+fallbacks_by_task: {"gemma-2-27b-base->gemma-2-27b-it|k=40": 1, "gemma-2-27b-it->gemma-2-27b-base|k=40": 1}
+all_metrics_bit_identical_to_shipped: True
+governance: fallbacks>0 -> null-space caveat applies to the listed (task,shape) cases; Ledger amendment recorded
+generated_utc: 2026-09-03T13:08:12Z

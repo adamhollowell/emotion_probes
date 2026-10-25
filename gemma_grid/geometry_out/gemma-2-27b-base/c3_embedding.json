@@ -1,0 +1,29 @@
+{
+  "cell": "gemma-2-27b-base",
+  "source": "raw reused from PA c3 (story-derived, basis-independent); basis refit on HA neutral embeddings",
+  "basis_k": 3,
+  "var_pc": [
+    23.089476964014676,
+    14.47903695753599,
+    11.928075319122422
+  ],
+  "valence_r": 0.47900808112471416,
+  "arousal_r": 0.1789224637113393,
+  "rsa_to_analysis_layer": 0.8816270310373516,
+  "ari_vs_locked_partition": 0.4806136650322156,
+  "neighbor_cos": {
+    "afraid->scared": 0.9604491576698058,
+    "joyful->happy": 0.9155360538641896,
+    "angry->mad": 0.924470126307807,
+    "sad->unhappy": 0.8957251058251169,
+    "loving->grateful": 0.7511953257230265,
+    "calm->at ease": 0.8129933361148968,
+    "proud->triumphant": 0.6802619699554938,
+    "grateful->thankful": 0.9308186263558554,
+    "compassionate->empathetic": 0.9539107473507946
+  },
+  "depth_gap": {
+    "valence": 0.24130402166837794,
+    "arousal": 0.4886022484989971
+  }
+}

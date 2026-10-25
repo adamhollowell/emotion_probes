@@ -1,0 +1,3375 @@
+{
+ "_source_note": "per-emotion own-word self-ranks at layer 0 and final layer per cell; norm-lens ((v/rms)*(1+ln))@W_U (no b_U, eps=1e-6) on cleaned 100T vectors (canonical_100T / anchor emotion_vectors_171_100T.pt 6de2e293) + per-cell lens_ingredients W_U/ln (anchor W_U streamed from data/vectors/lens_ingredients.pt); validated to lens_cross_cell.json medians <=0.5 rank; consumed VERBATIM by g66_frequency_control_100T (ranks-json) and, L0-scalar view, by g54a_displacement_model_100T.",
+ "gemma-2-2b-base": {
+  "afraid": {
+   "L0": 23793,
+   "final": 17
+  },
+  "alarmed": {
+   "L0": 1611,
+   "final": 39
+  },
+  "alert": {
+   "L0": 2506,
+   "final": 2
+  },
+  "amazed": {
+   "L0": 243,
+   "final": 6
+  },
+  "amused": {
+   "L0": 1577,
+   "final": 40
+  },
+  "angry": {
+   "L0": 5327,
+   "final": 10
+  },
+  "annoyed": {
+   "L0": 73626,
+   "final": 4
+  },
+  "anxious": {
+   "L0": 44518,
+   "final": 40
+  },
+  "aroused": {
+   "L0": 1203,
+   "final": 18
+  },
+  "ashamed": {
+   "L0": 449,
+   "final": 2
+  },
+  "astonished": {
+   "L0": 1903,
+   "final": 21
+  },
+  "bewildered": {
+   "L0": 48857,
+   "final": 30
+  },
+  "bitter": {
+   "L0": 94734,
+   "final": 54
+  },
+  "blissful": {
+   "L0": 258,
+   "final": 52
+  },
+  "bored": {
+   "L0": 22560,
+   "final": 2
+  },
+  "brooding": {
+   "L0": 5239,
+   "final": 34
+  },
+  "calm": {
+   "L0": 191,
+   "final": 11848
+  },
+  "cheerful": {
+   "L0": 769,
+   "final": 639
+  },
+  "compassionate": {
+   "L0": 59527,
+   "final": 11
+  },
+  "content": {
+   "L0": 120091,
+   "final": 5316
+  },
+  "defiant": {
+   "L0": 18650,
+   "final": 6123
+  },
+  "delighted": {
+   "L0": 9,
+   "final": 2
+  },
+  "dependent": {
+   "L0": 36071,
+   "final": 2238
+  },
+  "depressed": {
+   "L0": 1917,
+   "final": 30
+  },
+  "desperate": {
+   "L0": 544,
+   "final": 13
+  },
+  "disgusted": {
+   "L0": 127,
+   "final": 3
+  },
+  "distressed": {
+   "L0": 93322,
+   "final": 2815
+  },
+  "disturbed": {
+   "L0": 3977,
+   "final": 76
+  },
+  "docile": {
+   "L0": 10587,
+   "final": 44
+  },
+  "eager": {
+   "L0": 186,
+   "final": 19
+  },
+  "ecstatic": {
+   "L0": 27,
+   "final": 1
+  },
+  "elated": {
+   "L0": 218,
+   "final": 14
+  },
+  "embarrassed": {
+   "L0": 46,
+   "final": 2
+  },
+  "empathetic": {
+   "L0": 90413,
+   "final": 283
+  },
+  "energized": {
+   "L0": 2576,
+   "final": 15
+  },
+  "enraged": {
+   "L0": 365,
+   "final": 7
+  },
+  "enthusiastic": {
+   "L0": 17159,
+   "final": 74
+  },
+  "envious": {
+   "L0": 39563,
+   "final": 2
+  },
+  "exasperated": {
+   "L0": 20749,
+   "final": 112
+  },
+  "excited": {
+   "L0": 3340,
+   "final": 3
+  },
+  "exuberant": {
+   "L0": 676,
+   "final": 84
+  },
+  "frightened": {
+   "L0": 23472,
+   "final": 5
+  },
+  "frustrated": {
+   "L0": 45585,
+   "final": 40
+  },
+  "fulfilled": {
+   "L0": 3632,
+   "final": 44
+  },
+  "furious": {
+   "L0": 317,
+   "final": 12
+  },
+  "gloomy": {
+   "L0": 464,
+   "final": 17
+  },
+  "grateful": {
+   "L0": 1761,
+   "final": 3
+  },
+  "greedy": {
+   "L0": 27959,
+   "final": 1082
+  },
+  "grumpy": {
+   "L0": 1789,
+   "final": 43
+  },
+  "guilty": {
+   "L0": 27508,
+   "final": 1140
+  },
+  "happy": {
+   "L0": 5279,
+   "final": 17
+  },
+  "hateful": {
+   "L0": 363,
+   "final": 7
+  },
+  "heartbroken": {
+   "L0": 3502,
+   "final": 9
+  },
+  "hope": {
+   "L0": 1257,
+   "final": 383
+  },
+  "hopeful": {
+   "L0": 590,
+   "final": 149
+  },
+  "horrified": {
+   "L0": 622,
+   "final": 23
+  },
+  "hostile": {
+   "L0": 6732,
+   "final": 214
+  },
+  "humiliated": {
+   "L0": 81,
+   "final": 2
+  },
+  "hurt": {
+   "L0": 23705,
+   "final": 27
+  },
+  "hysterical": {
+   "L0": 940,
+   "final": 1
+  },
+  "impatient": {
+   "L0": 1368,
+   "final": 3
+  },
+  "indifferent": {
+   "L0": 30510,
+   "final": 972
+  },
+  "indignant": {
+   "L0": 11334,
+   "final": 166
+  },
+  "inspired": {
+   "L0": 26,
+   "final": 1
+  },
+  "insulted": {
+   "L0": 1027,
+   "final": 1
+  },
+  "irritated": {
+   "L0": 27372,
+   "final": 5
+  },
+  "jealous": {
+   "L0": 113109,
+   "final": 3
+  },
+  "joyful": {
+   "L0": 38,
+   "final": 8
+  },
+  "kind": {
+   "L0": 1577,
+   "final": 12555
+  },
+  "lazy": {
+   "L0": 2518,
+   "final": 10
+  },
+  "lonely": {
+   "L0": 149,
+   "final": 2
+  },
+  "loving": {
+   "L0": 459,
+   "final": 7
+  },
+  "mad": {
+   "L0": 79230,
+   "final": 1925
+  },
+  "melancholy": {
+   "L0": 73842,
+   "final": 2
+  },
+  "miserable": {
+   "L0": 3943,
+   "final": 25
+  },
+  "nervous": {
+   "L0": 30402,
+   "final": 10
+  },
+  "nostalgic": {
+   "L0": 238,
+   "final": 9
+  },
+  "obstinate": {
+   "L0": 59945,
+   "final": 55
+  },
+  "offended": {
+   "L0": 925,
+   "final": 42
+  },
+  "optimistic": {
+   "L0": 11230,
+   "final": 733
+  },
+  "outraged": {
+   "L0": 312,
+   "final": 44
+  },
+  "overwhelmed": {
+   "L0": 25688,
+   "final": 229
+  },
+  "panicked": {
+   "L0": 1123,
+   "final": 4
+  },
+  "paranoid": {
+   "L0": 84541,
+   "final": 4
+  },
+  "patient": {
+   "L0": 33903,
+   "final": 2791
+  },
+  "peaceful": {
+   "L0": 68,
+   "final": 4
+  },
+  "perplexed": {
+   "L0": 27815,
+   "final": 5
+  },
+  "playful": {
+   "L0": 11641,
+   "final": 849
+  },
+  "pleased": {
+   "L0": 1167,
+   "final": 125
+  },
+  "proud": {
+   "L0": 4849,
+   "final": 1
+  },
+  "puzzled": {
+   "L0": 3339,
+   "final": 1
+  },
+  "rattled": {
+   "L0": 561,
+   "final": 166
+  },
+  "reflective": {
+   "L0": 187610,
+   "final": 324
+  },
+  "refreshed": {
+   "L0": 4567,
+   "final": 15
+  },
+  "relaxed": {
+   "L0": 48,
+   "final": 3
+  },
+  "relieved": {
+   "L0": 123,
+   "final": 2
+  },
+  "resigned": {
+   "L0": 18422,
+   "final": 14
+  },
+  "restless": {
+   "L0": 11536,
+   "final": 4
+  },
+  "sad": {
+   "L0": 19553,
+   "final": 25
+  },
+  "safe": {
+   "L0": 159900,
+   "final": 927
+  },
+  "satisfied": {
+   "L0": 11907,
+   "final": 43
+  },
+  "scared": {
+   "L0": 6471,
+   "final": 24
+  },
+  "sensitive": {
+   "L0": 23332,
+   "final": 555
+  },
+  "sentimental": {
+   "L0": 4410,
+   "final": 10
+  },
+  "serene": {
+   "L0": 13,
+   "final": 6
+  },
+  "shaken": {
+   "L0": 1510,
+   "final": 89
+  },
+  "shocked": {
+   "L0": 3800,
+   "final": 30
+  },
+  "skeptical": {
+   "L0": 3819,
+   "final": 35
+  },
+  "sleepy": {
+   "L0": 21,
+   "final": 8
+  },
+  "sluggish": {
+   "L0": 49,
+   "final": 3
+  },
+  "smug": {
+   "L0": 52568,
+   "final": 4094
+  },
+  "sorry": {
+   "L0": 42172,
+   "final": 322
+  },
+  "stimulated": {
+   "L0": 35073,
+   "final": 1474
+  },
+  "stressed": {
+   "L0": 127738,
+   "final": 42
+  },
+  "stubborn": {
+   "L0": 13571,
+   "final": 26
+  },
+  "stuck": {
+   "L0": 170258,
+   "final": 1589
+  },
+  "sullen": {
+   "L0": 945,
+   "final": 1
+  },
+  "surprised": {
+   "L0": 125036,
+   "final": 5705
+  },
+  "suspicious": {
+   "L0": 3830,
+   "final": 1
+  },
+  "sympathetic": {
+   "L0": 100698,
+   "final": 4451
+  },
+  "tense": {
+   "L0": 631,
+   "final": 11
+  },
+  "terrified": {
+   "L0": 843,
+   "final": 1
+  },
+  "thankful": {
+   "L0": 16401,
+   "final": 76
+  },
+  "thrilled": {
+   "L0": 76,
+   "final": 9
+  },
+  "tired": {
+   "L0": 37604,
+   "final": 13
+  },
+  "tormented": {
+   "L0": 10086,
+   "final": 29
+  },
+  "trapped": {
+   "L0": 166579,
+   "final": 4053
+  },
+  "triumphant": {
+   "L0": 1508,
+   "final": 35
+  },
+  "troubled": {
+   "L0": 99250,
+   "final": 2458
+  },
+  "uneasy": {
+   "L0": 2351,
+   "final": 4
+  },
+  "unhappy": {
+   "L0": 15545,
+   "final": 199
+  },
+  "unsettled": {
+   "L0": 50419,
+   "final": 7
+  },
+  "upset": {
+   "L0": 101455,
+   "final": 722
+  },
+  "valiant": {
+   "L0": 66985,
+   "final": 4812
+  },
+  "vibrant": {
+   "L0": 1029,
+   "final": 983
+  },
+  "vigilant": {
+   "L0": 4743,
+   "final": 17
+  },
+  "vulnerable": {
+   "L0": 30119,
+   "final": 137
+  },
+  "weary": {
+   "L0": 1055,
+   "final": 26
+  },
+  "worried": {
+   "L0": 31906,
+   "final": 81
+  },
+  "worthless": {
+   "L0": 23425,
+   "final": 47
+  }
+ },
+ "gemma-2-2b-it": {
+  "afraid": {
+   "L0": 18132,
+   "final": 19
+  },
+  "alarmed": {
+   "L0": 2397,
+   "final": 54
+  },
+  "alert": {
+   "L0": 1147,
+   "final": 3
+  },
+  "amazed": {
+   "L0": 190,
+   "final": 5
+  },
+  "amused": {
+   "L0": 2461,
+   "final": 21
+  },
+  "angry": {
+   "L0": 10890,
+   "final": 5
+  },
+  "annoyed": {
+   "L0": 85146,
+   "final": 5
+  },
+  "anxious": {
+   "L0": 65541,
+   "final": 23
+  },
+  "aroused": {
+   "L0": 985,
+   "final": 15
+  },
+  "ashamed": {
+   "L0": 339,
+   "final": 2
+  },
+  "astonished": {
+   "L0": 3882,
+   "final": 44
+  },
+  "bewildered": {
+   "L0": 73789,
+   "final": 16
+  },
+  "bitter": {
+   "L0": 70473,
+   "final": 17
+  },
+  "blissful": {
+   "L0": 474,
+   "final": 69
+  },
+  "bored": {
+   "L0": 14446,
+   "final": 2
+  },
+  "brooding": {
+   "L0": 9360,
+   "final": 78
+  },
+  "calm": {
+   "L0": 162,
+   "final": 635
+  },
+  "cheerful": {
+   "L0": 785,
+   "final": 500
+  },
+  "compassionate": {
+   "L0": 67044,
+   "final": 31
+  },
+  "content": {
+   "L0": 52713,
+   "final": 325
+  },
+  "defiant": {
+   "L0": 28843,
+   "final": 5963
+  },
+  "delighted": {
+   "L0": 11,
+   "final": 1
+  },
+  "dependent": {
+   "L0": 59037,
+   "final": 2394
+  },
+  "depressed": {
+   "L0": 3245,
+   "final": 32
+  },
+  "desperate": {
+   "L0": 862,
+   "final": 5
+  },
+  "disgusted": {
+   "L0": 135,
+   "final": 2
+  },
+  "distressed": {
+   "L0": 132992,
+   "final": 3693
+  },
+  "disturbed": {
+   "L0": 5004,
+   "final": 94
+  },
+  "docile": {
+   "L0": 42685,
+   "final": 67
+  },
+  "eager": {
+   "L0": 243,
+   "final": 17
+  },
+  "ecstatic": {
+   "L0": 34,
+   "final": 2
+  },
+  "elated": {
+   "L0": 327,
+   "final": 19
+  },
+  "embarrassed": {
+   "L0": 101,
+   "final": 2
+  },
+  "empathetic": {
+   "L0": 91069,
+   "final": 332
+  },
+  "energized": {
+   "L0": 1358,
+   "final": 3
+  },
+  "enraged": {
+   "L0": 329,
+   "final": 4
+  },
+  "enthusiastic": {
+   "L0": 19040,
+   "final": 47
+  },
+  "envious": {
+   "L0": 24550,
+   "final": 2
+  },
+  "exasperated": {
+   "L0": 29385,
+   "final": 46
+  },
+  "excited": {
+   "L0": 7527,
+   "final": 3
+  },
+  "exuberant": {
+   "L0": 790,
+   "final": 43
+  },
+  "frightened": {
+   "L0": 16303,
+   "final": 5
+  },
+  "frustrated": {
+   "L0": 56922,
+   "final": 11
+  },
+  "fulfilled": {
+   "L0": 915,
+   "final": 20
+  },
+  "furious": {
+   "L0": 404,
+   "final": 8
+  },
+  "gloomy": {
+   "L0": 847,
+   "final": 34
+  },
+  "grateful": {
+   "L0": 3058,
+   "final": 3
+  },
+  "greedy": {
+   "L0": 24537,
+   "final": 428
+  },
+  "grumpy": {
+   "L0": 1887,
+   "final": 24
+  },
+  "guilty": {
+   "L0": 21385,
+   "final": 202
+  },
+  "happy": {
+   "L0": 3632,
+   "final": 14
+  },
+  "hateful": {
+   "L0": 459,
+   "final": 8
+  },
+  "heartbroken": {
+   "L0": 4731,
+   "final": 3
+  },
+  "hope": {
+   "L0": 1856,
+   "final": 31
+  },
+  "hopeful": {
+   "L0": 367,
+   "final": 39
+  },
+  "horrified": {
+   "L0": 601,
+   "final": 13
+  },
+  "hostile": {
+   "L0": 10119,
+   "final": 111
+  },
+  "humiliated": {
+   "L0": 70,
+   "final": 2
+  },
+  "hurt": {
+   "L0": 22933,
+   "final": 28
+  },
+  "hysterical": {
+   "L0": 1090,
+   "final": 2
+  },
+  "impatient": {
+   "L0": 4128,
+   "final": 3
+  },
+  "indifferent": {
+   "L0": 21840,
+   "final": 220
+  },
+  "indignant": {
+   "L0": 10847,
+   "final": 99
+  },
+  "inspired": {
+   "L0": 39,
+   "final": 1
+  },
+  "insulted": {
+   "L0": 3232,
+   "final": 1
+  },
+  "irritated": {
+   "L0": 30874,
+   "final": 4
+  },
+  "jealous": {
+   "L0": 95456,
+   "final": 3
+  },
+  "joyful": {
+   "L0": 41,
+   "final": 7
+  },
+  "kind": {
+   "L0": 1782,
+   "final": 1456
+  },
+  "lazy": {
+   "L0": 2525,
+   "final": 11
+  },
+  "lonely": {
+   "L0": 178,
+   "final": 2
+  },
+  "loving": {
+   "L0": 476,
+   "final": 6
+  },
+  "mad": {
+   "L0": 136840,
+   "final": 2273
+  },
+  "melancholy": {
+   "L0": 146519,
+   "final": 3
+  },
+  "miserable": {
+   "L0": 5138,
+   "final": 19
+  },
+  "nervous": {
+   "L0": 52556,
+   "final": 13
+  },
+  "nostalgic": {
+   "L0": 365,
+   "final": 5
+  },
+  "obstinate": {
+   "L0": 99103,
+   "final": 66
+  },
+  "offended": {
+   "L0": 1847,
+   "final": 43
+  },
+  "optimistic": {
+   "L0": 10958,
+   "final": 461
+  },
+  "outraged": {
+   "L0": 742,
+   "final": 20
+  },
+  "overwhelmed": {
+   "L0": 36486,
+   "final": 57
+  },
+  "panicked": {
+   "L0": 774,
+   "final": 4
+  },
+  "paranoid": {
+   "L0": 67752,
+   "final": 3
+  },
+  "patient": {
+   "L0": 61681,
+   "final": 2503
+  },
+  "peaceful": {
+   "L0": 73,
+   "final": 4
+  },
+  "perplexed": {
+   "L0": 29836,
+   "final": 2
+  },
+  "playful": {
+   "L0": 7827,
+   "final": 327
+  },
+  "pleased": {
+   "L0": 1973,
+   "final": 220
+  },
+  "proud": {
+   "L0": 3522,
+   "final": 2
+  },
+  "puzzled": {
+   "L0": 3954,
+   "final": 2
+  },
+  "rattled": {
+   "L0": 328,
+   "final": 110
+  },
+  "reflective": {
+   "L0": 200668,
+   "final": 658
+  },
+  "refreshed": {
+   "L0": 2737,
+   "final": 5
+  },
+  "relaxed": {
+   "L0": 22,
+   "final": 5
+  },
+  "relieved": {
+   "L0": 178,
+   "final": 1
+  },
+  "resigned": {
+   "L0": 40457,
+   "final": 18
+  },
+  "restless": {
+   "L0": 14560,
+   "final": 3
+  },
+  "sad": {
+   "L0": 18325,
+   "final": 24
+  },
+  "safe": {
+   "L0": 95295,
+   "final": 1057
+  },
+  "satisfied": {
+   "L0": 3770,
+   "final": 20
+  },
+  "scared": {
+   "L0": 8030,
+   "final": 26
+  },
+  "sensitive": {
+   "L0": 26463,
+   "final": 477
+  },
+  "sentimental": {
+   "L0": 12335,
+   "final": 21
+  },
+  "serene": {
+   "L0": 22,
+   "final": 5
+  },
+  "shaken": {
+   "L0": 855,
+   "final": 140
+  },
+  "shocked": {
+   "L0": 9791,
+   "final": 47
+  },
+  "skeptical": {
+   "L0": 3315,
+   "final": 48
+  },
+  "sleepy": {
+   "L0": 23,
+   "final": 19
+  },
+  "sluggish": {
+   "L0": 57,
+   "final": 3
+  },
+  "smug": {
+   "L0": 53511,
+   "final": 1193
+  },
+  "sorry": {
+   "L0": 22762,
+   "final": 261
+  },
+  "stimulated": {
+   "L0": 25930,
+   "final": 594
+  },
+  "stressed": {
+   "L0": 165385,
+   "final": 22
+  },
+  "stubborn": {
+   "L0": 22827,
+   "final": 17
+  },
+  "stuck": {
+   "L0": 144119,
+   "final": 163
+  },
+  "sullen": {
+   "L0": 2559,
+   "final": 2
+  },
+  "surprised": {
+   "L0": 153314,
+   "final": 4815
+  },
+  "suspicious": {
+   "L0": 2589,
+   "final": 2
+  },
+  "sympathetic": {
+   "L0": 119910,
+   "final": 5723
+  },
+  "tense": {
+   "L0": 2957,
+   "final": 14
+  },
+  "terrified": {
+   "L0": 1115,
+   "final": 3
+  },
+  "thankful": {
+   "L0": 22723,
+   "final": 66
+  },
+  "thrilled": {
+   "L0": 143,
+   "final": 11
+  },
+  "tired": {
+   "L0": 65950,
+   "final": 20
+  },
+  "tormented": {
+   "L0": 8044,
+   "final": 11
+  },
+  "trapped": {
+   "L0": 171703,
+   "final": 854
+  },
+  "triumphant": {
+   "L0": 1646,
+   "final": 9
+  },
+  "troubled": {
+   "L0": 107747,
+   "final": 1423
+  },
+  "uneasy": {
+   "L0": 2645,
+   "final": 5
+  },
+  "unhappy": {
+   "L0": 17193,
+   "final": 96
+  },
+  "unsettled": {
+   "L0": 61332,
+   "final": 23
+  },
+  "upset": {
+   "L0": 110633,
+   "final": 1125
+  },
+  "valiant": {
+   "L0": 100810,
+   "final": 7464
+  },
+  "vibrant": {
+   "L0": 850,
+   "final": 672
+  },
+  "vigilant": {
+   "L0": 6378,
+   "final": 8
+  },
+  "vulnerable": {
+   "L0": 44790,
+   "final": 97
+  },
+  "weary": {
+   "L0": 1230,
+   "final": 10
+  },
+  "worried": {
+   "L0": 72699,
+   "final": 109
+  },
+  "worthless": {
+   "L0": 28458,
+   "final": 29
+  }
+ },
+ "gemma-2-9b-base": {
+  "afraid": {
+   "L0": 2414,
+   "final": 23
+  },
+  "alarmed": {
+   "L0": 4042,
+   "final": 34
+  },
+  "alert": {
+   "L0": 7775,
+   "final": 6
+  },
+  "amazed": {
+   "L0": 216,
+   "final": 4
+  },
+  "amused": {
+   "L0": 726,
+   "final": 30
+  },
+  "angry": {
+   "L0": 648,
+   "final": 8
+  },
+  "annoyed": {
+   "L0": 66722,
+   "final": 6
+  },
+  "anxious": {
+   "L0": 33000,
+   "final": 25
+  },
+  "aroused": {
+   "L0": 838,
+   "final": 28
+  },
+  "ashamed": {
+   "L0": 619,
+   "final": 1
+  },
+  "astonished": {
+   "L0": 3040,
+   "final": 37
+  },
+  "bewildered": {
+   "L0": 182356,
+   "final": 34
+  },
+  "bitter": {
+   "L0": 36730,
+   "final": 23
+  },
+  "blissful": {
+   "L0": 198,
+   "final": 48
+  },
+  "bored": {
+   "L0": 104643,
+   "final": 3
+  },
+  "brooding": {
+   "L0": 24894,
+   "final": 22
+  },
+  "calm": {
+   "L0": 3231,
+   "final": 5405
+  },
+  "cheerful": {
+   "L0": 254,
+   "final": 416
+  },
+  "compassionate": {
+   "L0": 45266,
+   "final": 9
+  },
+  "content": {
+   "L0": 164592,
+   "final": 658
+  },
+  "defiant": {
+   "L0": 136999,
+   "final": 5908
+  },
+  "delighted": {
+   "L0": 25,
+   "final": 3
+  },
+  "dependent": {
+   "L0": 117020,
+   "final": 270
+  },
+  "depressed": {
+   "L0": 60022,
+   "final": 13
+  },
+  "desperate": {
+   "L0": 92740,
+   "final": 6
+  },
+  "disgusted": {
+   "L0": 155,
+   "final": 3
+  },
+  "distressed": {
+   "L0": 69034,
+   "final": 1444
+  },
+  "disturbed": {
+   "L0": 645,
+   "final": 174
+  },
+  "docile": {
+   "L0": 2722,
+   "final": 24
+  },
+  "eager": {
+   "L0": 1964,
+   "final": 30
+  },
+  "ecstatic": {
+   "L0": 19,
+   "final": 2
+  },
+  "elated": {
+   "L0": 78,
+   "final": 8
+  },
+  "embarrassed": {
+   "L0": 45,
+   "final": 1
+  },
+  "empathetic": {
+   "L0": 121007,
+   "final": 222
+  },
+  "energized": {
+   "L0": 1317,
+   "final": 14
+  },
+  "enraged": {
+   "L0": 225,
+   "final": 2
+  },
+  "enthusiastic": {
+   "L0": 2983,
+   "final": 34
+  },
+  "envious": {
+   "L0": 3691,
+   "final": 2
+  },
+  "exasperated": {
+   "L0": 68226,
+   "final": 73
+  },
+  "excited": {
+   "L0": 1054,
+   "final": 4
+  },
+  "exuberant": {
+   "L0": 230,
+   "final": 28
+  },
+  "frightened": {
+   "L0": 1315,
+   "final": 6
+  },
+  "frustrated": {
+   "L0": 17610,
+   "final": 29
+  },
+  "fulfilled": {
+   "L0": 189,
+   "final": 23
+  },
+  "furious": {
+   "L0": 187,
+   "final": 6
+  },
+  "gloomy": {
+   "L0": 2186,
+   "final": 21
+  },
+  "grateful": {
+   "L0": 147,
+   "final": 2
+  },
+  "greedy": {
+   "L0": 19254,
+   "final": 73
+  },
+  "grumpy": {
+   "L0": 1910,
+   "final": 25
+  },
+  "guilty": {
+   "L0": 5750,
+   "final": 119
+  },
+  "happy": {
+   "L0": 2591,
+   "final": 30
+  },
+  "hateful": {
+   "L0": 251,
+   "final": 10
+  },
+  "heartbroken": {
+   "L0": 905,
+   "final": 5
+  },
+  "hope": {
+   "L0": 4959,
+   "final": 89
+  },
+  "hopeful": {
+   "L0": 10607,
+   "final": 54
+  },
+  "horrified": {
+   "L0": 511,
+   "final": 11
+  },
+  "hostile": {
+   "L0": 1054,
+   "final": 152
+  },
+  "humiliated": {
+   "L0": 170,
+   "final": 2
+  },
+  "hurt": {
+   "L0": 3779,
+   "final": 27
+  },
+  "hysterical": {
+   "L0": 194,
+   "final": 2
+  },
+  "impatient": {
+   "L0": 4046,
+   "final": 3
+  },
+  "indifferent": {
+   "L0": 17333,
+   "final": 112
+  },
+  "indignant": {
+   "L0": 4082,
+   "final": 100
+  },
+  "inspired": {
+   "L0": 38,
+   "final": 1
+  },
+  "insulted": {
+   "L0": 93,
+   "final": 2
+  },
+  "irritated": {
+   "L0": 25366,
+   "final": 6
+  },
+  "jealous": {
+   "L0": 30202,
+   "final": 1
+  },
+  "joyful": {
+   "L0": 26,
+   "final": 4
+  },
+  "kind": {
+   "L0": 167451,
+   "final": 36416
+  },
+  "lazy": {
+   "L0": 8748,
+   "final": 9
+  },
+  "lonely": {
+   "L0": 368,
+   "final": 1
+  },
+  "loving": {
+   "L0": 40,
+   "final": 8
+  },
+  "mad": {
+   "L0": 44273,
+   "final": 1941
+  },
+  "melancholy": {
+   "L0": 38898,
+   "final": 2
+  },
+  "miserable": {
+   "L0": 6599,
+   "final": 20
+  },
+  "nervous": {
+   "L0": 1844,
+   "final": 7
+  },
+  "nostalgic": {
+   "L0": 223,
+   "final": 14
+  },
+  "obstinate": {
+   "L0": 32301,
+   "final": 10
+  },
+  "offended": {
+   "L0": 435,
+   "final": 52
+  },
+  "optimistic": {
+   "L0": 9938,
+   "final": 336
+  },
+  "outraged": {
+   "L0": 213,
+   "final": 31
+  },
+  "overwhelmed": {
+   "L0": 70450,
+   "final": 105
+  },
+  "panicked": {
+   "L0": 1187,
+   "final": 3
+  },
+  "paranoid": {
+   "L0": 58734,
+   "final": 3
+  },
+  "patient": {
+   "L0": 224779,
+   "final": 403
+  },
+  "peaceful": {
+   "L0": 18,
+   "final": 6
+  },
+  "perplexed": {
+   "L0": 77654,
+   "final": 2
+  },
+  "playful": {
+   "L0": 5533,
+   "final": 332
+  },
+  "pleased": {
+   "L0": 527,
+   "final": 163
+  },
+  "proud": {
+   "L0": 195,
+   "final": 2
+  },
+  "puzzled": {
+   "L0": 19117,
+   "final": 2
+  },
+  "rattled": {
+   "L0": 958,
+   "final": 63
+  },
+  "reflective": {
+   "L0": 73004,
+   "final": 2266
+  },
+  "refreshed": {
+   "L0": 5513,
+   "final": 12
+  },
+  "relaxed": {
+   "L0": 56,
+   "final": 4
+  },
+  "relieved": {
+   "L0": 154,
+   "final": 1
+  },
+  "resigned": {
+   "L0": 32469,
+   "final": 80
+  },
+  "restless": {
+   "L0": 31022,
+   "final": 3
+  },
+  "sad": {
+   "L0": 12419,
+   "final": 16
+  },
+  "safe": {
+   "L0": 27160,
+   "final": 350
+  },
+  "satisfied": {
+   "L0": 2187,
+   "final": 14
+  },
+  "scared": {
+   "L0": 593,
+   "final": 29
+  },
+  "sensitive": {
+   "L0": 1256,
+   "final": 945
+  },
+  "sentimental": {
+   "L0": 2863,
+   "final": 28
+  },
+  "serene": {
+   "L0": 22,
+   "final": 6
+  },
+  "shaken": {
+   "L0": 425,
+   "final": 96
+  },
+  "shocked": {
+   "L0": 1527,
+   "final": 38
+  },
+  "skeptical": {
+   "L0": 15713,
+   "final": 20
+  },
+  "sleepy": {
+   "L0": 122,
+   "final": 5
+  },
+  "sluggish": {
+   "L0": 146,
+   "final": 3
+  },
+  "smug": {
+   "L0": 85151,
+   "final": 35
+  },
+  "sorry": {
+   "L0": 30950,
+   "final": 191
+  },
+  "stimulated": {
+   "L0": 3872,
+   "final": 400
+  },
+  "stressed": {
+   "L0": 195788,
+   "final": 23
+  },
+  "stubborn": {
+   "L0": 95567,
+   "final": 10
+  },
+  "stuck": {
+   "L0": 32276,
+   "final": 256
+  },
+  "sullen": {
+   "L0": 3850,
+   "final": 1
+  },
+  "surprised": {
+   "L0": 154783,
+   "final": 1898
+  },
+  "suspicious": {
+   "L0": 30034,
+   "final": 1
+  },
+  "sympathetic": {
+   "L0": 156251,
+   "final": 1372
+  },
+  "tense": {
+   "L0": 1835,
+   "final": 9
+  },
+  "terrified": {
+   "L0": 342,
+   "final": 2
+  },
+  "thankful": {
+   "L0": 429,
+   "final": 16
+  },
+  "thrilled": {
+   "L0": 39,
+   "final": 7
+  },
+  "tired": {
+   "L0": 8329,
+   "final": 8
+  },
+  "tormented": {
+   "L0": 10665,
+   "final": 49
+  },
+  "trapped": {
+   "L0": 150831,
+   "final": 194
+  },
+  "triumphant": {
+   "L0": 204,
+   "final": 10
+  },
+  "troubled": {
+   "L0": 48930,
+   "final": 1487
+  },
+  "uneasy": {
+   "L0": 3022,
+   "final": 1
+  },
+  "unhappy": {
+   "L0": 11034,
+   "final": 411
+  },
+  "unsettled": {
+   "L0": 17657,
+   "final": 8
+  },
+  "upset": {
+   "L0": 16136,
+   "final": 377
+  },
+  "valiant": {
+   "L0": 94733,
+   "final": 1137
+  },
+  "vibrant": {
+   "L0": 1781,
+   "final": 1344
+  },
+  "vigilant": {
+   "L0": 2212,
+   "final": 10
+  },
+  "vulnerable": {
+   "L0": 6630,
+   "final": 154
+  },
+  "weary": {
+   "L0": 3930,
+   "final": 14
+  },
+  "worried": {
+   "L0": 26983,
+   "final": 48
+  },
+  "worthless": {
+   "L0": 3689,
+   "final": 21
+  }
+ },
+ "gemma-2-9b-it": {
+  "afraid": {
+   "L0": 2093,
+   "final": 33
+  },
+  "alarmed": {
+   "L0": 3686,
+   "final": 56
+  },
+  "alert": {
+   "L0": 1629,
+   "final": 9
+  },
+  "amazed": {
+   "L0": 222,
+   "final": 4
+  },
+  "amused": {
+   "L0": 763,
+   "final": 14
+  },
+  "angry": {
+   "L0": 891,
+   "final": 7
+  },
+  "annoyed": {
+   "L0": 66327,
+   "final": 7
+  },
+  "anxious": {
+   "L0": 30213,
+   "final": 21
+  },
+  "aroused": {
+   "L0": 505,
+   "final": 56
+  },
+  "ashamed": {
+   "L0": 936,
+   "final": 2
+  },
+  "astonished": {
+   "L0": 2608,
+   "final": 85
+  },
+  "bewildered": {
+   "L0": 223675,
+   "final": 22
+  },
+  "bitter": {
+   "L0": 38933,
+   "final": 8
+  },
+  "blissful": {
+   "L0": 167,
+   "final": 96
+  },
+  "bored": {
+   "L0": 128236,
+   "final": 3
+  },
+  "brooding": {
+   "L0": 35220,
+   "final": 64
+  },
+  "calm": {
+   "L0": 5349,
+   "final": 1755
+  },
+  "cheerful": {
+   "L0": 277,
+   "final": 558
+  },
+  "compassionate": {
+   "L0": 66012,
+   "final": 116
+  },
+  "content": {
+   "L0": 204046,
+   "final": 1123
+  },
+  "defiant": {
+   "L0": 206424,
+   "final": 6754
+  },
+  "delighted": {
+   "L0": 14,
+   "final": 4
+  },
+  "dependent": {
+   "L0": 144252,
+   "final": 73
+  },
+  "depressed": {
+   "L0": 66812,
+   "final": 33
+  },
+  "desperate": {
+   "L0": 118695,
+   "final": 3
+  },
+  "disgusted": {
+   "L0": 167,
+   "final": 3
+  },
+  "distressed": {
+   "L0": 50038,
+   "final": 3123
+  },
+  "disturbed": {
+   "L0": 651,
+   "final": 100
+  },
+  "docile": {
+   "L0": 2586,
+   "final": 50
+  },
+  "eager": {
+   "L0": 4324,
+   "final": 22
+  },
+  "ecstatic": {
+   "L0": 16,
+   "final": 2
+  },
+  "elated": {
+   "L0": 83,
+   "final": 13
+  },
+  "embarrassed": {
+   "L0": 44,
+   "final": 3
+  },
+  "empathetic": {
+   "L0": 147162,
+   "final": 13459
+  },
+  "energized": {
+   "L0": 1154,
+   "final": 4
+  },
+  "enraged": {
+   "L0": 233,
+   "final": 3
+  },
+  "enthusiastic": {
+   "L0": 6129,
+   "final": 35
+  },
+  "envious": {
+   "L0": 2370,
+   "final": 3
+  },
+  "exasperated": {
+   "L0": 113851,
+   "final": 64
+  },
+  "excited": {
+   "L0": 667,
+   "final": 3
+  },
+  "exuberant": {
+   "L0": 209,
+   "final": 33
+  },
+  "frightened": {
+   "L0": 1458,
+   "final": 8
+  },
+  "frustrated": {
+   "L0": 22512,
+   "final": 10
+  },
+  "fulfilled": {
+   "L0": 386,
+   "final": 23
+  },
+  "furious": {
+   "L0": 242,
+   "final": 10
+  },
+  "gloomy": {
+   "L0": 2058,
+   "final": 48
+  },
+  "grateful": {
+   "L0": 179,
+   "final": 3
+  },
+  "greedy": {
+   "L0": 40649,
+   "final": 101
+  },
+  "grumpy": {
+   "L0": 2088,
+   "final": 18
+  },
+  "guilty": {
+   "L0": 2518,
+   "final": 28
+  },
+  "happy": {
+   "L0": 2156,
+   "final": 44
+  },
+  "hateful": {
+   "L0": 243,
+   "final": 9
+  },
+  "heartbroken": {
+   "L0": 969,
+   "final": 7
+  },
+  "hope": {
+   "L0": 14361,
+   "final": 4
+  },
+  "hopeful": {
+   "L0": 12987,
+   "final": 12
+  },
+  "horrified": {
+   "L0": 302,
+   "final": 11
+  },
+  "hostile": {
+   "L0": 3968,
+   "final": 113
+  },
+  "humiliated": {
+   "L0": 145,
+   "final": 2
+  },
+  "hurt": {
+   "L0": 2517,
+   "final": 31
+  },
+  "hysterical": {
+   "L0": 364,
+   "final": 2
+  },
+  "impatient": {
+   "L0": 8094,
+   "final": 7
+  },
+  "indifferent": {
+   "L0": 32515,
+   "final": 69
+  },
+  "indignant": {
+   "L0": 11695,
+   "final": 67
+  },
+  "inspired": {
+   "L0": 71,
+   "final": 2
+  },
+  "insulted": {
+   "L0": 89,
+   "final": 2
+  },
+  "irritated": {
+   "L0": 17069,
+   "final": 6
+  },
+  "jealous": {
+   "L0": 18413,
+   "final": 4
+  },
+  "joyful": {
+   "L0": 34,
+   "final": 4
+  },
+  "kind": {
+   "L0": 202961,
+   "final": 10984
+  },
+  "lazy": {
+   "L0": 5705,
+   "final": 12
+  },
+  "lonely": {
+   "L0": 330,
+   "final": 1
+  },
+  "loving": {
+   "L0": 35,
+   "final": 15
+  },
+  "mad": {
+   "L0": 49545,
+   "final": 3960
+  },
+  "melancholy": {
+   "L0": 34719,
+   "final": 2
+  },
+  "miserable": {
+   "L0": 5064,
+   "final": 30
+  },
+  "nervous": {
+   "L0": 3574,
+   "final": 16
+  },
+  "nostalgic": {
+   "L0": 414,
+   "final": 13
+  },
+  "obstinate": {
+   "L0": 38136,
+   "final": 74
+  },
+  "offended": {
+   "L0": 571,
+   "final": 39
+  },
+  "optimistic": {
+   "L0": 16641,
+   "final": 303
+  },
+  "outraged": {
+   "L0": 304,
+   "final": 18
+  },
+  "overwhelmed": {
+   "L0": 92420,
+   "final": 67
+  },
+  "panicked": {
+   "L0": 2107,
+   "final": 3
+  },
+  "paranoid": {
+   "L0": 67771,
+   "final": 3
+  },
+  "patient": {
+   "L0": 235015,
+   "final": 355
+  },
+  "peaceful": {
+   "L0": 8,
+   "final": 5
+  },
+  "perplexed": {
+   "L0": 111082,
+   "final": 1
+  },
+  "playful": {
+   "L0": 6435,
+   "final": 135
+  },
+  "pleased": {
+   "L0": 398,
+   "final": 281
+  },
+  "proud": {
+   "L0": 132,
+   "final": 2
+  },
+  "puzzled": {
+   "L0": 30679,
+   "final": 1
+  },
+  "rattled": {
+   "L0": 843,
+   "final": 121
+  },
+  "reflective": {
+   "L0": 54885,
+   "final": 4000
+  },
+  "refreshed": {
+   "L0": 9838,
+   "final": 38
+  },
+  "relaxed": {
+   "L0": 70,
+   "final": 2
+  },
+  "relieved": {
+   "L0": 128,
+   "final": 2
+  },
+  "resigned": {
+   "L0": 26005,
+   "final": 41
+  },
+  "restless": {
+   "L0": 38488,
+   "final": 3
+  },
+  "sad": {
+   "L0": 8820,
+   "final": 24
+  },
+  "safe": {
+   "L0": 42537,
+   "final": 5701
+  },
+  "satisfied": {
+   "L0": 1445,
+   "final": 26
+  },
+  "scared": {
+   "L0": 433,
+   "final": 38
+  },
+  "sensitive": {
+   "L0": 1285,
+   "final": 2480
+  },
+  "sentimental": {
+   "L0": 5318,
+   "final": 89
+  },
+  "serene": {
+   "L0": 22,
+   "final": 6
+  },
+  "shaken": {
+   "L0": 299,
+   "final": 79
+  },
+  "shocked": {
+   "L0": 774,
+   "final": 69
+  },
+  "skeptical": {
+   "L0": 32507,
+   "final": 34
+  },
+  "sleepy": {
+   "L0": 118,
+   "final": 14
+  },
+  "sluggish": {
+   "L0": 81,
+   "final": 4
+  },
+  "smug": {
+   "L0": 111165,
+   "final": 63
+  },
+  "sorry": {
+   "L0": 20538,
+   "final": 172
+  },
+  "stimulated": {
+   "L0": 2309,
+   "final": 170
+  },
+  "stressed": {
+   "L0": 223605,
+   "final": 26
+  },
+  "stubborn": {
+   "L0": 140671,
+   "final": 8
+  },
+  "stuck": {
+   "L0": 62871,
+   "final": 54
+  },
+  "sullen": {
+   "L0": 4239,
+   "final": 2
+  },
+  "surprised": {
+   "L0": 124611,
+   "final": 42475
+  },
+  "suspicious": {
+   "L0": 51512,
+   "final": 2
+  },
+  "sympathetic": {
+   "L0": 180491,
+   "final": 62590
+  },
+  "tense": {
+   "L0": 500,
+   "final": 56
+  },
+  "terrified": {
+   "L0": 287,
+   "final": 2
+  },
+  "thankful": {
+   "L0": 592,
+   "final": 34
+  },
+  "thrilled": {
+   "L0": 25,
+   "final": 8
+  },
+  "tired": {
+   "L0": 9457,
+   "final": 15
+  },
+  "tormented": {
+   "L0": 8874,
+   "final": 38
+  },
+  "trapped": {
+   "L0": 158997,
+   "final": 28
+  },
+  "triumphant": {
+   "L0": 179,
+   "final": 4
+  },
+  "troubled": {
+   "L0": 38771,
+   "final": 3725
+  },
+  "uneasy": {
+   "L0": 1889,
+   "final": 4
+  },
+  "unhappy": {
+   "L0": 11420,
+   "final": 243
+  },
+  "unsettled": {
+   "L0": 21104,
+   "final": 30
+  },
+  "upset": {
+   "L0": 6696,
+   "final": 598
+  },
+  "valiant": {
+   "L0": 106637,
+   "final": 7813
+  },
+  "vibrant": {
+   "L0": 2718,
+   "final": 730
+  },
+  "vigilant": {
+   "L0": 1869,
+   "final": 9
+  },
+  "vulnerable": {
+   "L0": 6414,
+   "final": 104
+  },
+  "weary": {
+   "L0": 5360,
+   "final": 12
+  },
+  "worried": {
+   "L0": 47776,
+   "final": 68
+  },
+  "worthless": {
+   "L0": 4836,
+   "final": 15
+  }
+ },
+ "gemma-2-27b-base": {
+  "afraid": {
+   "L0": 230263,
+   "final": 13
+  },
+  "alarmed": {
+   "L0": 241547,
+   "final": 11
+  },
+  "alert": {
+   "L0": 106733,
+   "final": 2
+  },
+  "amazed": {
+   "L0": 249001,
+   "final": 6
+  },
+  "amused": {
+   "L0": 240004,
+   "final": 13
+  },
+  "angry": {
+   "L0": 251059,
+   "final": 5
+  },
+  "annoyed": {
+   "L0": 252101,
+   "final": 16
+  },
+  "anxious": {
+   "L0": 250220,
+   "final": 17
+  },
+  "aroused": {
+   "L0": 80744,
+   "final": 10
+  },
+  "ashamed": {
+   "L0": 81381,
+   "final": 1
+  },
+  "astonished": {
+   "L0": 223968,
+   "final": 53
+  },
+  "bewildered": {
+   "L0": 181023,
+   "final": 174
+  },
+  "bitter": {
+   "L0": 29251,
+   "final": 16
+  },
+  "blissful": {
+   "L0": 94310,
+   "final": 39
+  },
+  "bored": {
+   "L0": 109294,
+   "final": 2
+  },
+  "brooding": {
+   "L0": 20398,
+   "final": 73
+  },
+  "calm": {
+   "L0": 220124,
+   "final": 3917
+  },
+  "cheerful": {
+   "L0": 224842,
+   "final": 5720
+  },
+  "compassionate": {
+   "L0": 218689,
+   "final": 45
+  },
+  "content": {
+   "L0": 140775,
+   "final": 3452
+  },
+  "defiant": {
+   "L0": 182674,
+   "final": 69342
+  },
+  "delighted": {
+   "L0": 111965,
+   "final": 3
+  },
+  "dependent": {
+   "L0": 7735,
+   "final": 767
+  },
+  "depressed": {
+   "L0": 12489,
+   "final": 25
+  },
+  "desperate": {
+   "L0": 21368,
+   "final": 5
+  },
+  "disgusted": {
+   "L0": 103517,
+   "final": 5
+  },
+  "distressed": {
+   "L0": 111771,
+   "final": 1511
+  },
+  "disturbed": {
+   "L0": 48128,
+   "final": 56
+  },
+  "docile": {
+   "L0": 31588,
+   "final": 80
+  },
+  "eager": {
+   "L0": 105747,
+   "final": 21
+  },
+  "ecstatic": {
+   "L0": 14852,
+   "final": 3
+  },
+  "elated": {
+   "L0": 202323,
+   "final": 13
+  },
+  "embarrassed": {
+   "L0": 122726,
+   "final": 1
+  },
+  "empathetic": {
+   "L0": 255046,
+   "final": 1537
+  },
+  "energized": {
+   "L0": 82547,
+   "final": 17
+  },
+  "enraged": {
+   "L0": 118778,
+   "final": 6
+  },
+  "enthusiastic": {
+   "L0": 45209,
+   "final": 34
+  },
+  "envious": {
+   "L0": 119659,
+   "final": 2
+  },
+  "exasperated": {
+   "L0": 239197,
+   "final": 124
+  },
+  "excited": {
+   "L0": 222429,
+   "final": 4
+  },
+  "exuberant": {
+   "L0": 199810,
+   "final": 31
+  },
+  "frightened": {
+   "L0": 237317,
+   "final": 4
+  },
+  "frustrated": {
+   "L0": 230672,
+   "final": 9
+  },
+  "fulfilled": {
+   "L0": 36319,
+   "final": 328
+  },
+  "furious": {
+   "L0": 243385,
+   "final": 8
+  },
+  "gloomy": {
+   "L0": 21969,
+   "final": 14
+  },
+  "grateful": {
+   "L0": 195232,
+   "final": 2
+  },
+  "greedy": {
+   "L0": 50697,
+   "final": 1558
+  },
+  "grumpy": {
+   "L0": 121151,
+   "final": 31
+  },
+  "guilty": {
+   "L0": 99709,
+   "final": 25
+  },
+  "happy": {
+   "L0": 228825,
+   "final": 19
+  },
+  "hateful": {
+   "L0": 83518,
+   "final": 7
+  },
+  "heartbroken": {
+   "L0": 177911,
+   "final": 6
+  },
+  "hope": {
+   "L0": 108378,
+   "final": 943
+  },
+  "hopeful": {
+   "L0": 133602,
+   "final": 117
+  },
+  "horrified": {
+   "L0": 201042,
+   "final": 18
+  },
+  "hostile": {
+   "L0": 178278,
+   "final": 45
+  },
+  "humiliated": {
+   "L0": 152040,
+   "final": 1
+  },
+  "hurt": {
+   "L0": 89220,
+   "final": 24
+  },
+  "hysterical": {
+   "L0": 223169,
+   "final": 2
+  },
+  "impatient": {
+   "L0": 220279,
+   "final": 5
+  },
+  "indifferent": {
+   "L0": 109113,
+   "final": 2401
+  },
+  "indignant": {
+   "L0": 25156,
+   "final": 367
+  },
+  "inspired": {
+   "L0": 192691,
+   "final": 2
+  },
+  "insulted": {
+   "L0": 234320,
+   "final": 6
+  },
+  "irritated": {
+   "L0": 243596,
+   "final": 7
+  },
+  "jealous": {
+   "L0": 109333,
+   "final": 4
+  },
+  "joyful": {
+   "L0": 5114,
+   "final": 9
+  },
+  "kind": {
+   "L0": 2980,
+   "final": 125744
+  },
+  "lazy": {
+   "L0": 123954,
+   "final": 10
+  },
+  "lonely": {
+   "L0": 78047,
+   "final": 2
+  },
+  "loving": {
+   "L0": 150940,
+   "final": 7
+  },
+  "mad": {
+   "L0": 138970,
+   "final": 1604
+  },
+  "melancholy": {
+   "L0": 201133,
+   "final": 3
+  },
+  "miserable": {
+   "L0": 148194,
+   "final": 28
+  },
+  "nervous": {
+   "L0": 22816,
+   "final": 6
+  },
+  "nostalgic": {
+   "L0": 31941,
+   "final": 6
+  },
+  "obstinate": {
+   "L0": 12014,
+   "final": 11078
+  },
+  "offended": {
+   "L0": 249600,
+   "final": 28
+  },
+  "optimistic": {
+   "L0": 92378,
+   "final": 8876
+  },
+  "outraged": {
+   "L0": 237731,
+   "final": 29
+  },
+  "overwhelmed": {
+   "L0": 138120,
+   "final": 144
+  },
+  "panicked": {
+   "L0": 74145,
+   "final": 2
+  },
+  "paranoid": {
+   "L0": 174858,
+   "final": 4
+  },
+  "patient": {
+   "L0": 154563,
+   "final": 3531
+  },
+  "peaceful": {
+   "L0": 132665,
+   "final": 4
+  },
+  "perplexed": {
+   "L0": 2129,
+   "final": 13
+  },
+  "playful": {
+   "L0": 242904,
+   "final": 746
+  },
+  "pleased": {
+   "L0": 189961,
+   "final": 83
+  },
+  "proud": {
+   "L0": 189707,
+   "final": 2
+  },
+  "puzzled": {
+   "L0": 156968,
+   "final": 2
+  },
+  "rattled": {
+   "L0": 82170,
+   "final": 109
+  },
+  "reflective": {
+   "L0": 66133,
+   "final": 62369
+  },
+  "refreshed": {
+   "L0": 174622,
+   "final": 17
+  },
+  "relaxed": {
+   "L0": 134806,
+   "final": 4
+  },
+  "relieved": {
+   "L0": 51974,
+   "final": 1
+  },
+  "resigned": {
+   "L0": 59300,
+   "final": 71
+  },
+  "restless": {
+   "L0": 103987,
+   "final": 2
+  },
+  "sad": {
+   "L0": 67364,
+   "final": 46
+  },
+  "safe": {
+   "L0": 218814,
+   "final": 3724
+  },
+  "satisfied": {
+   "L0": 168972,
+   "final": 17
+  },
+  "scared": {
+   "L0": 242505,
+   "final": 45
+  },
+  "sensitive": {
+   "L0": 124589,
+   "final": 2383
+  },
+  "sentimental": {
+   "L0": 255324,
+   "final": 8
+  },
+  "serene": {
+   "L0": 253553,
+   "final": 8
+  },
+  "shaken": {
+   "L0": 76683,
+   "final": 52
+  },
+  "shocked": {
+   "L0": 220558,
+   "final": 12
+  },
+  "skeptical": {
+   "L0": 180986,
+   "final": 285
+  },
+  "sleepy": {
+   "L0": 147778,
+   "final": 9
+  },
+  "sluggish": {
+   "L0": 125389,
+   "final": 2
+  },
+  "smug": {
+   "L0": 238769,
+   "final": 38
+  },
+  "sorry": {
+   "L0": 29492,
+   "final": 542
+  },
+  "stimulated": {
+   "L0": 215629,
+   "final": 531
+  },
+  "stressed": {
+   "L0": 190918,
+   "final": 21
+  },
+  "stubborn": {
+   "L0": 5025,
+   "final": 718
+  },
+  "stuck": {
+   "L0": 130097,
+   "final": 501
+  },
+  "sullen": {
+   "L0": 155033,
+   "final": 1
+  },
+  "surprised": {
+   "L0": 245596,
+   "final": 20812
+  },
+  "suspicious": {
+   "L0": 142708,
+   "final": 1
+  },
+  "sympathetic": {
+   "L0": 233992,
+   "final": 39903
+  },
+  "tense": {
+   "L0": 98037,
+   "final": 15
+  },
+  "terrified": {
+   "L0": 139168,
+   "final": 2
+  },
+  "thankful": {
+   "L0": 46338,
+   "final": 102
+  },
+  "thrilled": {
+   "L0": 115202,
+   "final": 10
+  },
+  "tired": {
+   "L0": 228370,
+   "final": 9
+  },
+  "tormented": {
+   "L0": 2934,
+   "final": 40
+  },
+  "trapped": {
+   "L0": 39051,
+   "final": 331
+  },
+  "triumphant": {
+   "L0": 64665,
+   "final": 2
+  },
+  "troubled": {
+   "L0": 69800,
+   "final": 5225
+  },
+  "uneasy": {
+   "L0": 51060,
+   "final": 7
+  },
+  "unhappy": {
+   "L0": 9745,
+   "final": 423
+  },
+  "unsettled": {
+   "L0": 41662,
+   "final": 13
+  },
+  "upset": {
+   "L0": 72320,
+   "final": 337
+  },
+  "valiant": {
+   "L0": 254713,
+   "final": 55145
+  },
+  "vibrant": {
+   "L0": 137179,
+   "final": 6647
+  },
+  "vigilant": {
+   "L0": 80907,
+   "final": 26
+  },
+  "vulnerable": {
+   "L0": 103586,
+   "final": 150
+  },
+  "weary": {
+   "L0": 121692,
+   "final": 15
+  },
+  "worried": {
+   "L0": 65548,
+   "final": 18
+  },
+  "worthless": {
+   "L0": 24757,
+   "final": 200
+  }
+ },
+ "gemma-2-27b-it": {
+  "afraid": {
+   "L0": 186560,
+   "final": 21
+  },
+  "alarmed": {
+   "L0": 242663,
+   "final": 68
+  },
+  "alert": {
+   "L0": 94755,
+   "final": 9
+  },
+  "amazed": {
+   "L0": 249969,
+   "final": 9
+  },
+  "amused": {
+   "L0": 246256,
+   "final": 10
+  },
+  "angry": {
+   "L0": 251615,
+   "final": 6
+  },
+  "annoyed": {
+   "L0": 252425,
+   "final": 13
+  },
+  "anxious": {
+   "L0": 251025,
+   "final": 15
+  },
+  "aroused": {
+   "L0": 78921,
+   "final": 41
+  },
+  "ashamed": {
+   "L0": 88443,
+   "final": 1
+  },
+  "astonished": {
+   "L0": 221326,
+   "final": 55
+  },
+  "bewildered": {
+   "L0": 176277,
+   "final": 29
+  },
+  "bitter": {
+   "L0": 20676,
+   "final": 2
+  },
+  "blissful": {
+   "L0": 111978,
+   "final": 71
+  },
+  "bored": {
+   "L0": 104177,
+   "final": 2
+  },
+  "brooding": {
+   "L0": 25101,
+   "final": 108
+  },
+  "calm": {
+   "L0": 219174,
+   "final": 32
+  },
+  "cheerful": {
+   "L0": 213637,
+   "final": 638
+  },
+  "compassionate": {
+   "L0": 214259,
+   "final": 12
+  },
+  "content": {
+   "L0": 143544,
+   "final": 1110
+  },
+  "defiant": {
+   "L0": 162727,
+   "final": 2528
+  },
+  "delighted": {
+   "L0": 103624,
+   "final": 6
+  },
+  "dependent": {
+   "L0": 17747,
+   "final": 36
+  },
+  "depressed": {
+   "L0": 11342,
+   "final": 38
+  },
+  "desperate": {
+   "L0": 11286,
+   "final": 4
+  },
+  "disgusted": {
+   "L0": 136987,
+   "final": 2
+  },
+  "distressed": {
+   "L0": 73704,
+   "final": 1666
+  },
+  "disturbed": {
+   "L0": 35060,
+   "final": 47
+  },
+  "docile": {
+   "L0": 25083,
+   "final": 25
+  },
+  "eager": {
+   "L0": 102485,
+   "final": 14
+  },
+  "ecstatic": {
+   "L0": 16148,
+   "final": 1
+  },
+  "elated": {
+   "L0": 210164,
+   "final": 18
+  },
+  "embarrassed": {
+   "L0": 134821,
+   "final": 2
+  },
+  "empathetic": {
+   "L0": 255362,
+   "final": 158
+  },
+  "energized": {
+   "L0": 83278,
+   "final": 6
+  },
+  "enraged": {
+   "L0": 98547,
+   "final": 5
+  },
+  "enthusiastic": {
+   "L0": 28574,
+   "final": 19
+  },
+  "envious": {
+   "L0": 115545,
+   "final": 2
+  },
+  "exasperated": {
+   "L0": 240283,
+   "final": 34
+  },
+  "excited": {
+   "L0": 224870,
+   "final": 4
+  },
+  "exuberant": {
+   "L0": 191366,
+   "final": 22
+  },
+  "frightened": {
+   "L0": 236049,
+   "final": 6
+  },
+  "frustrated": {
+   "L0": 217832,
+   "final": 5
+  },
+  "fulfilled": {
+   "L0": 43392,
+   "final": 21
+  },
+  "furious": {
+   "L0": 240159,
+   "final": 8
+  },
+  "gloomy": {
+   "L0": 23809,
+   "final": 33
+  },
+  "grateful": {
+   "L0": 219641,
+   "final": 1
+  },
+  "greedy": {
+   "L0": 63887,
+   "final": 176
+  },
+  "grumpy": {
+   "L0": 114989,
+   "final": 22
+  },
+  "guilty": {
+   "L0": 97777,
+   "final": 6
+  },
+  "happy": {
+   "L0": 229687,
+   "final": 20
+  },
+  "hateful": {
+   "L0": 71277,
+   "final": 10
+  },
+  "heartbroken": {
+   "L0": 150249,
+   "final": 5
+  },
+  "hope": {
+   "L0": 68628,
+   "final": 2
+  },
+  "hopeful": {
+   "L0": 139836,
+   "final": 4
+  },
+  "horrified": {
+   "L0": 177158,
+   "final": 14
+  },
+  "hostile": {
+   "L0": 193436,
+   "final": 55
+  },
+  "humiliated": {
+   "L0": 144554,
+   "final": 1
+  },
+  "hurt": {
+   "L0": 83547,
+   "final": 10
+  },
+  "hysterical": {
+   "L0": 211917,
+   "final": 1
+  },
+  "impatient": {
+   "L0": 212869,
+   "final": 5
+  },
+  "indifferent": {
+   "L0": 118331,
+   "final": 57
+  },
+  "indignant": {
+   "L0": 9152,
+   "final": 56
+  },
+  "inspired": {
+   "L0": 195517,
+   "final": 2
+  },
+  "insulted": {
+   "L0": 229357,
+   "final": 15
+  },
+  "irritated": {
+   "L0": 247624,
+   "final": 7
+  },
+  "jealous": {
+   "L0": 132426,
+   "final": 5
+  },
+  "joyful": {
+   "L0": 5974,
+   "final": 6
+  },
+  "kind": {
+   "L0": 4897,
+   "final": 4207
+  },
+  "lazy": {
+   "L0": 112597,
+   "final": 12
+  },
+  "lonely": {
+   "L0": 88101,
+   "final": 1
+  },
+  "loving": {
+   "L0": 192402,
+   "final": 5
+  },
+  "mad": {
+   "L0": 127393,
+   "final": 6480
+  },
+  "melancholy": {
+   "L0": 196315,
+   "final": 5
+  },
+  "miserable": {
+   "L0": 144602,
+   "final": 39
+  },
+  "nervous": {
+   "L0": 16712,
+   "final": 7
+  },
+  "nostalgic": {
+   "L0": 97590,
+   "final": 6
+  },
+  "obstinate": {
+   "L0": 7089,
+   "final": 60
+  },
+  "offended": {
+   "L0": 243579,
+   "final": 51
+  },
+  "optimistic": {
+   "L0": 102274,
+   "final": 625
+  },
+  "outraged": {
+   "L0": 235632,
+   "final": 24
+  },
+  "overwhelmed": {
+   "L0": 94996,
+   "final": 38
+  },
+  "panicked": {
+   "L0": 65826,
+   "final": 4
+  },
+  "paranoid": {
+   "L0": 183743,
+   "final": 3
+  },
+  "patient": {
+   "L0": 174110,
+   "final": 18
+  },
+  "peaceful": {
+   "L0": 153284,
+   "final": 2
+  },
+  "perplexed": {
+   "L0": 3156,
+   "final": 2
+  },
+  "playful": {
+   "L0": 238839,
+   "final": 170
+  },
+  "pleased": {
+   "L0": 195149,
+   "final": 192
+  },
+  "proud": {
+   "L0": 190345,
+   "final": 1
+  },
+  "puzzled": {
+   "L0": 187732,
+   "final": 2
+  },
+  "rattled": {
+   "L0": 60766,
+   "final": 115
+  },
+  "reflective": {
+   "L0": 72497,
+   "final": 8068
+  },
+  "refreshed": {
+   "L0": 190359,
+   "final": 38
+  },
+  "relaxed": {
+   "L0": 162711,
+   "final": 2
+  },
+  "relieved": {
+   "L0": 60791,
+   "final": 3
+  },
+  "resigned": {
+   "L0": 64001,
+   "final": 6
+  },
+  "restless": {
+   "L0": 104888,
+   "final": 2
+  },
+  "sad": {
+   "L0": 64514,
+   "final": 30
+  },
+  "safe": {
+   "L0": 217957,
+   "final": 717
+  },
+  "satisfied": {
+   "L0": 174977,
+   "final": 17
+  },
+  "scared": {
+   "L0": 229729,
+   "final": 59
+  },
+  "sensitive": {
+   "L0": 109523,
+   "final": 778
+  },
+  "sentimental": {
+   "L0": 255453,
+   "final": 20
+  },
+  "serene": {
+   "L0": 253297,
+   "final": 4
+  },
+  "shaken": {
+   "L0": 39890,
+   "final": 109
+  },
+  "shocked": {
+   "L0": 211593,
+   "final": 30
+  },
+  "skeptical": {
+   "L0": 199113,
+   "final": 28
+  },
+  "sleepy": {
+   "L0": 172147,
+   "final": 12
+  },
+  "sluggish": {
+   "L0": 120687,
+   "final": 4
+  },
+  "smug": {
+   "L0": 242236,
+   "final": 10
+  },
+  "sorry": {
+   "L0": 35101,
+   "final": 148
+  },
+  "stimulated": {
+   "L0": 212702,
+   "final": 214
+  },
+  "stressed": {
+   "L0": 139104,
+   "final": 20
+  },
+  "stubborn": {
+   "L0": 2637,
+   "final": 11
+  },
+  "stuck": {
+   "L0": 129876,
+   "final": 18
+  },
+  "sullen": {
+   "L0": 171994,
+   "final": 4
+  },
+  "surprised": {
+   "L0": 244119,
+   "final": 42851
+  },
+  "suspicious": {
+   "L0": 159353,
+   "final": 2
+  },
+  "sympathetic": {
+   "L0": 244789,
+   "final": 7738
+  },
+  "tense": {
+   "L0": 97030,
+   "final": 41
+  },
+  "terrified": {
+   "L0": 118782,
+   "final": 2
+  },
+  "thankful": {
+   "L0": 57865,
+   "final": 8
+  },
+  "thrilled": {
+   "L0": 108133,
+   "final": 6
+  },
+  "tired": {
+   "L0": 227068,
+   "final": 12
+  },
+  "tormented": {
+   "L0": 2340,
+   "final": 26
+  },
+  "trapped": {
+   "L0": 27592,
+   "final": 26
+  },
+  "triumphant": {
+   "L0": 57479,
+   "final": 1
+  },
+  "troubled": {
+   "L0": 59017,
+   "final": 11617
+  },
+  "uneasy": {
+   "L0": 46632,
+   "final": 9
+  },
+  "unhappy": {
+   "L0": 9836,
+   "final": 358
+  },
+  "unsettled": {
+   "L0": 40418,
+   "final": 39
+  },
+  "upset": {
+   "L0": 63397,
+   "final": 1526
+  },
+  "valiant": {
+   "L0": 252691,
+   "final": 10029
+  },
+  "vibrant": {
+   "L0": 165113,
+   "final": 780
+  },
+  "vigilant": {
+   "L0": 104220,
+   "final": 5
+  },
+  "vulnerable": {
+   "L0": 100323,
+   "final": 40
+  },
+  "weary": {
+   "L0": 120943,
+   "final": 11
+  },
+  "worried": {
+   "L0": 40880,
+   "final": 51
+  },
+  "worthless": {
+   "L0": 24433,
+   "final": 34
+  }
+ }
+}

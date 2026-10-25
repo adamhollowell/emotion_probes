@@ -1,0 +1,35 @@
+{
+  "_provenance": {
+    "status": "VERIFIED register — supersedes hf_model_revisions_ASSUMED.json per Adam's 2026-08-10 ruling ('take assumed off the file') and PUBLICATION_AUDIT_2026-08-02.md §5.3 recommendation ('supersede with a verified register; keep the assumed file as dated predecessor').",
+    "verification": "revision_match: true for all six checkpoints — probe_l45/PROVENANCE/model_config_provenance.json, ha_neutrals/model_config_provenance_27b.json, ha_neutrals/model_config_provenance_5cells.json; backed by 53 weight-shard SHA256 lines (ha_neutrals/weight_shard_sha256_{27b,5cells}.txt). SHAs identical to the ASSUMED file.",
+    "verification_date": "2026-07-31",
+    "extraction_date": "2026-07-23",
+    "date_nuance": "Verification ran 2026-07-31 against the pods' HF caches (contemporaneous with the HA/precision runs), not with the 07-23 extraction — same pinned revisions throughout (M.3, honest nuance carried).",
+    "predecessor": "hf_model_revisions_ASSUMED.json — retained unmodified as dated predecessor; it is hash-listed in RUN_MANIFEST.json and referenced by extraction-era scripts, so it must not be renamed or deleted.",
+    "created": "2026-08-10, Ledger Chat"
+  },
+  "google/gemma-2-2b": {
+    "current_main_sha": "c5ebcd40d208330abc697524c919956e692655cf",
+    "last_modified": "2024-08-07 18:25:49"
+  },
+  "google/gemma-2-2b-it": {
+    "current_main_sha": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+    "last_modified": "2024-08-27 19:41:44"
+  },
+  "google/gemma-2-9b": {
+    "current_main_sha": "33c193028431c2fde6c6e51f29e6f17b60cbfac6",
+    "last_modified": "2024-08-07 18:26:02"
+  },
+  "google/gemma-2-9b-it": {
+    "current_main_sha": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "last_modified": "2024-08-27 19:41:49"
+  },
+  "google/gemma-2-27b": {
+    "current_main_sha": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+    "last_modified": "2024-08-07 18:26:09"
+  },
+  "google/gemma-2-27b-it": {
+    "current_main_sha": "aaf20e6b9f4c0fcf043f6fb2a2068419086d77b0",
+    "last_modified": "2024-08-27 19:41:54"
+  }
+}

@@ -1,0 +1,211 @@
+{
+ "job": "GGE1-G3 / OP.3 band-sweep analysis (W11)",
+ "band_layers": [
+  31,
+  42,
+  43,
+  44,
+  45
+ ],
+ "basis": "100T session output. NOTE: this analysis operates on RAW diff-of-means structures (basis-immune \u2014 byte-identical under PA/HA/100T); the locked reference vectors_raw sha is stamped in inputs_sha256 so no value rides on the filename.",
+ "part1_ceilings": {
+  "R_ff": {
+   "31": 0.9710368178511879,
+   "42": 0.9784217304142462,
+   "43": 0.9772765705814919,
+   "44": 0.9210212381745969,
+   "45": 0.8953745564990163
+  },
+  "P": {
+   "31": 0.9854120041136032,
+   "42": 0.9891520259364817,
+   "43": 0.9885729970930279,
+   "44": 0.9596985142088097,
+   "45": 0.9462423349750403
+  },
+  "ceiling_reproduction": {
+   "45": {
+    "P": 0.9462423349750403,
+    "expected": 0.9462,
+    "abs_dev": 4.233497504024797e-05,
+    "pass": true
+   },
+   "31": {
+    "P": 0.9854120041136032,
+    "expected": 0.9856,
+    "abs_dev": 0.00018799588639684117,
+    "pass": true
+   }
+  },
+  "ceiling_gate_pass": true,
+  "l31_attenuation_selfcheck_absdev": 0.0004785934961550886
+ },
+ "part2_band_shape": {
+  "seed0_vs_locked": {
+   "31": 0.9849334106174481,
+   "42": 0.9890413357089547,
+   "43": 0.9882674392030182,
+   "44": 0.9599497995868815,
+   "45": 0.9485696540919212
+  },
+  "seed1_vs_locked": {
+   "31": 0.9865728679371527,
+   "42": 0.9890096920187975,
+   "43": 0.9882887935375746,
+   "44": 0.9584516203032074,
+   "45": 0.9450003488058902
+  },
+  "grades": {
+   "42": {
+    "grade": "GENUINE",
+    "why": "both seed-vs-locked >= P-0.010 (0.9792)",
+    "P": 0.9891520259364817,
+    "P_minus_010": 0.9791520259364817,
+    "P_minus_020": 0.9691520259364816,
+    "seed0_vs_locked": 0.9890413357089547,
+    "seed1_vs_locked": 0.9890096920187975
+   },
+   "43": {
+    "grade": "GENUINE",
+    "why": "both seed-vs-locked >= P-0.010 (0.9786)",
+    "P": 0.9885729970930279,
+    "P_minus_010": 0.9785729970930279,
+    "P_minus_020": 0.9685729970930279,
+    "seed0_vs_locked": 0.9882674392030182,
+    "seed1_vs_locked": 0.9882887935375746
+   },
+   "44": {
+    "grade": "GENUINE",
+    "why": "both seed-vs-locked >= P-0.010 (0.9497)",
+    "P": 0.9596985142088097,
+    "P_minus_010": 0.9496985142088097,
+    "P_minus_020": 0.9396985142088097,
+    "seed0_vs_locked": 0.9599497995868815,
+    "seed1_vs_locked": 0.9584516203032074
+   },
+   "45": {
+    "grade": "GENUINE",
+    "why": "both seed-vs-locked >= P-0.010 (0.9362)",
+    "P": 0.9462423349750403,
+    "P_minus_010": 0.9362423349750403,
+    "P_minus_020": 0.9262423349750403,
+    "seed0_vs_locked": 0.9485696540919212,
+    "seed1_vs_locked": 0.9450003488058902
+   }
+  },
+  "consecutive_corr_seedavg": {
+   "31->42": 0.983612170384717,
+   "42->43": 0.9969655231385691,
+   "43->44": 0.9086643749754747,
+   "44->45": 0.9799921224617651
+  },
+  "band_unlikeness_vs_lockedL42": {
+   "42": {
+    "seed0_L45style_vs_lockedL42": 0.9890413357089547,
+    "seed1_vs_lockedL42": 0.9890096920187975
+   },
+   "43": {
+    "seed0_L45style_vs_lockedL42": 0.9856201885741369,
+    "seed1_vs_lockedL42": 0.985212406494378
+   },
+   "44": {
+    "seed0_L45style_vs_lockedL42": 0.8608959874935072,
+    "seed1_vs_lockedL42": 0.8560108421593433
+   },
+   "45": {
+    "seed0_L45style_vs_lockedL42": 0.7954886477520929,
+    "seed1_vs_lockedL42": 0.7906294369956599
+   }
+  }
+ },
+ "part3_mechanism_L44_L45": {
+  "note": "Part-3 attribution operationalization (DOF resolved by the diag_T2.py precedent, flagged to coordination): dims ranked by their share of the L44->L45 change in the per-emotion diff-of-means (the object RSA sees), i.e. per-dim sum over emotions of (D45-D44)^2 where D_l = diff_of_means of the seed-averaged fresh means at layer l. 'Recovery fraction' = (RSA_after_drop - RSA_base)/(1 - RSA_base), RSA_base = RSA(struct L44, struct L45) on the seed-averaged fresh diff-of-means. dim 4140 reported individually. No verdict attached \u2014 first mechanism measurement only.",
+  "rsa_L44_L45_base": 0.9799921224617651,
+  "top1_dim": 4140,
+  "top1": {
+   "rsa_after_drop": 0.9757553153517734,
+   "recovery_fraction": -0.21175694932634664
+  },
+  "top10": {
+   "rsa_after_drop": 0.9757663356338325,
+   "recovery_fraction": -0.2112061521696734
+  },
+  "top100": {
+   "rsa_after_drop": 0.9788395684104252,
+   "recovery_fraction": -0.05760501328226549
+  },
+  "dim4140_individually": {
+   "rsa_after_drop": 0.9757553153517734,
+   "recovery_fraction": -0.21175694932634664
+  },
+  "dim4140_rank_in_change_order": 0,
+  "dim4140_change_share_pct": 13.822083473205566
+ },
+ "part4_IT_comparison": {
+  "IT_consecutive_corr": {
+   "31->42": 0.9863468020150475,
+   "42->43": 0.9974556438898389,
+   "43->44": 0.9796249426993213,
+   "44->45": 0.9920468173188384
+  },
+  "IT_band_vs_L42": {
+   "42": 1.0,
+   "43": 0.9974556438898388,
+   "44": 0.9677856236927384,
+   "45": 0.9637425892082881
+  },
+  "BASE_locked_band_vs_L42": {
+   "42": 0.9999999999999999,
+   "43": 0.9975526753545175,
+   "44": 0.8918462843000506,
+   "45": 0.8325719677173029
+  },
+  "note": "IT has one realization (canonical raw), so no R_ff/ceiling; the dip is read as within-band RSA(l, L42). Compare IT_band_vs_L42 to BASE_locked_band_vs_L42 for the 'milder dip' note."
+ },
+ "inputs_sha256": {
+  "seed0": "6240994dff6916210917a8e31b3678ef272e80ea0498b077151879903c0d9108",
+  "seed1": "3fc5dd053278262b0c57614f358c9b23db5794e4b343f4f0a4afa487cad625ec",
+  "locked": "aa58e06d251bc1c0d17fc4987956b945811dbe635079e71365ba19b9e305be12",
+  "it": "482a73813d220d009968ba8d86d3e3ad0e1aa1ca2e280cef51a4f1ceee26cb32"
+ },
+ "provenance": {
+  "seed0": {
+   "job": "GGE1-G3 / OP.3 band sweep (pod P)",
+   "hf_revision_resolved": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+   "torch": "2.8.0+cu128",
+   "tl_compatibility_mode": false,
+   "dtype": "bfloat16",
+   "skip_first_n_tokens": 50,
+   "pod_gpu": "NVIDIA H100 80GB HBM3",
+   "date_utc": "2026-08-13T17:28:29Z",
+   "host": "a8e3a6d29892",
+   "pilot": false,
+   "sampling": {
+    "sampling": "seeded_random",
+    "seed": 0,
+    "n_stories": 120
+   },
+   "pooling": "mean over resid_post from token 50 (BOS-inclusive); identical to _mean_resid_post_single via extract_story_slice",
+   "basis_note": "RAW structures only \u2014 basis-immune; valid under HA and 100T alike"
+  },
+  "seed1": {
+   "job": "GGE1-G3 / OP.3 band sweep (pod P)",
+   "hf_revision_resolved": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+   "torch": "2.8.0+cu128",
+   "tl_compatibility_mode": false,
+   "dtype": "bfloat16",
+   "skip_first_n_tokens": 50,
+   "pod_gpu": "NVIDIA H100 80GB HBM3",
+   "date_utc": "2026-08-13T17:56:08Z",
+   "host": "a8e3a6d29892",
+   "pilot": false,
+   "sampling": {
+    "sampling": "seeded_random",
+    "seed": 1,
+    "n_stories": 120
+   },
+   "pooling": "mean over resid_post from token 50 (BOS-inclusive); identical to _mean_resid_post_single via extract_story_slice",
+   "basis_note": "RAW structures only \u2014 basis-immune; valid under HA and 100T alike"
+  }
+ }
+}

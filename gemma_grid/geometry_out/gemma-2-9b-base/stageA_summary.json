@@ -1,0 +1,940 @@
+{
+  "cell": "gemma-2-9b-base",
+  "layer": 28,
+  "n": 171,
+  "L": 42,
+  "d": 3584,
+  "layer_rule": "round(2/3*42)=28",
+  "deterministic": {
+    "var_pc1": 29.849178314208984,
+    "var_pc2": 13.930781364440918,
+    "var_pc3": 11.022136688232422,
+    "loving_pc1": 16.576759338378906,
+    "loving_pc2": -9.497701644897461,
+    "valence_r": 0.7150585763315936,
+    "arousal_r": 0.5768415079446031,
+    "offdiag_pc1_arousal": -0.09695447915232609,
+    "offdiag_pc2_pleasure": -0.11349749973791236,
+    "nbr_afraid_cos": 0.9883198738098145,
+    "nbr_joyful_cos": 0.9784501791000366,
+    "nbr_angry_cos": 0.982485830783844,
+    "nbr_sad_cos": 0.9040704369544983,
+    "nbr_loving_cos": 0.8544743657112122,
+    "nbr_calm_cos": 0.8611149787902832,
+    "nbr_proud_cos": 0.8456652760505676,
+    "nbr_grateful_cos": 0.9844361543655396,
+    "nbr_compassionate_cos": 0.9676344990730286,
+    "norm_valence_r": 0.4594888399877614,
+    "norm_arousal_abs_r": 0.28203993903298036,
+    "layerstab_all": 0.9715422200585463,
+    "layerstab_mid_late": 0.9934606345273911
+  },
+  "kmeans_seed_sweep": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "ari_to_locked_min": 0.6239165989982541,
+    "ari_to_locked_mean": 0.7497284908389285,
+    "ari_to_locked_std": 0.072766487262421,
+    "self_ari_min": 0.5385680169815792,
+    "self_ari_mean": 0.6954877487469985,
+    "self_ari_std": 0.06885654067474395
+  },
+  "rankings": {
+    "pc1_top": [
+      "optimistic",
+      "kind",
+      "cheerful",
+      "self-confident",
+      "playful",
+      "hopeful",
+      "happy",
+      "enthusiastic",
+      "valiant",
+      "joyful"
+    ],
+    "pc1_bot": [
+      "afraid",
+      "rattled",
+      "scared",
+      "dumbstruck",
+      "sleepy",
+      "frightened",
+      "panicked",
+      "terrified",
+      "disoriented",
+      "hysterical"
+    ],
+    "pc2_top": [
+      "playful",
+      "amused",
+      "indignant",
+      "outraged",
+      "impatient",
+      "irate",
+      "hostile",
+      "enraged",
+      "furious",
+      "mad"
+    ],
+    "pc2_bot": [
+      "lonely",
+      "fulfilled",
+      "melancholy",
+      "depressed",
+      "grief-stricken",
+      "reflective",
+      "sentimental",
+      "nostalgic",
+      "peaceful",
+      "serene"
+    ]
+  },
+  "perm_p_5000": {
+    "valence": 0.0001999600079984003,
+    "arousal": 0.0001999600079984003
+  },
+  "scale_refit_45": {
+    "arousal_best_pc": 3,
+    "arousal_best_abs_r": 0.67092929072552,
+    "arousal_pc2_abs_r": 0.3213005240870047,
+    "survives_refit": false
+  },
+  "kmeans_partition": {
+    "clusters": [
+      {
+        "rank": 1,
+        "members": [
+          "afraid",
+          "alarmed",
+          "amazed",
+          "anxious",
+          "aroused",
+          "astonished",
+          "awestruck",
+          "disgusted",
+          "disoriented",
+          "distressed",
+          "disturbed",
+          "dumbstruck",
+          "embarrassed",
+          "frightened",
+          "horrified",
+          "hysterical",
+          "mortified",
+          "nervous",
+          "on edge",
+          "overwhelmed",
+          "panicked",
+          "rattled",
+          "scared",
+          "self-conscious",
+          "sensitive",
+          "shaken",
+          "shocked",
+          "sleepy",
+          "stressed",
+          "surprised",
+          "tense",
+          "terrified",
+          "tired",
+          "uneasy",
+          "unnerved",
+          "unsettled",
+          "upset",
+          "worried"
+        ]
+      },
+      {
+        "rank": 2,
+        "members": [
+          "angry",
+          "annoyed",
+          "enraged",
+          "exasperated",
+          "frustrated",
+          "furious",
+          "grumpy",
+          "hateful",
+          "hostile",
+          "impatient",
+          "indignant",
+          "insulted",
+          "irate",
+          "irritated",
+          "mad",
+          "offended",
+          "outraged"
+        ]
+      },
+      {
+        "rank": 3,
+        "members": [
+          "brooding",
+          "depressed",
+          "dispirited",
+          "docile",
+          "droopy",
+          "gloomy",
+          "grief-stricken",
+          "heartbroken",
+          "hurt",
+          "lazy",
+          "listless",
+          "lonely",
+          "melancholy",
+          "miserable",
+          "resigned",
+          "sad",
+          "sluggish",
+          "sullen",
+          "troubled",
+          "unhappy",
+          "vulnerable",
+          "weary",
+          "worn out"
+        ]
+      },
+      {
+        "rank": 4,
+        "members": [
+          "alert",
+          "bewildered",
+          "bored",
+          "indifferent",
+          "mystified",
+          "paranoid",
+          "perplexed",
+          "puzzled",
+          "restless",
+          "skeptical",
+          "suspicious",
+          "vigilant"
+        ]
+      },
+      {
+        "rank": 5,
+        "members": [
+          "ashamed",
+          "bitter",
+          "dependent",
+          "desperate",
+          "envious",
+          "guilty",
+          "humiliated",
+          "infatuated",
+          "jealous",
+          "nostalgic",
+          "reflective",
+          "regretful",
+          "remorseful",
+          "resentful",
+          "self-critical",
+          "sentimental",
+          "sorry",
+          "stuck",
+          "tormented",
+          "trapped",
+          "worthless"
+        ]
+      },
+      {
+        "rank": 6,
+        "members": [
+          "contemptuous",
+          "defiant",
+          "disdainful",
+          "greedy",
+          "obstinate",
+          "scornful",
+          "self-confident",
+          "smug",
+          "spiteful",
+          "stubborn",
+          "vengeful",
+          "vindictive"
+        ]
+      },
+      {
+        "rank": 7,
+        "members": [
+          "at ease",
+          "calm",
+          "content",
+          "fulfilled",
+          "patient",
+          "peaceful",
+          "refreshed",
+          "rejuvenated",
+          "relaxed",
+          "relieved",
+          "safe",
+          "satisfied",
+          "serene"
+        ]
+      },
+      {
+        "rank": 8,
+        "members": [
+          "blissful",
+          "delighted",
+          "eager",
+          "ecstatic",
+          "elated",
+          "energized",
+          "enthusiastic",
+          "euphoric",
+          "excited",
+          "exuberant",
+          "happy",
+          "hope",
+          "hopeful",
+          "inspired",
+          "invigorated",
+          "joyful",
+          "jubilant",
+          "optimistic",
+          "pleased",
+          "proud",
+          "stimulated",
+          "thrilled",
+          "triumphant",
+          "vibrant"
+        ]
+      },
+      {
+        "rank": 9,
+        "members": [
+          "compassionate",
+          "empathetic",
+          "grateful",
+          "kind",
+          "loving",
+          "sympathetic",
+          "thankful",
+          "valiant"
+        ]
+      },
+      {
+        "rank": 10,
+        "members": [
+          "amused",
+          "cheerful",
+          "playful"
+        ]
+      }
+    ],
+    "loving_cluster": [
+      "compassionate",
+      "empathetic",
+      "grateful",
+      "kind",
+      "loving",
+      "sympathetic",
+      "thankful",
+      "valiant"
+    ]
+  },
+  "cohesion": {
+    "mean_purity_top10": 0.747953216374269,
+    "mutual_top1_pairs": 45,
+    "boundary_lowest_purity": [
+      [
+        "restless",
+        0.0
+      ],
+      [
+        "tormented",
+        0.0
+      ],
+      [
+        "humiliated",
+        0.1
+      ],
+      [
+        "indifferent",
+        0.1
+      ],
+      [
+        "alert",
+        0.1
+      ],
+      [
+        "cheerful",
+        0.1
+      ],
+      [
+        "infatuated",
+        0.2
+      ],
+      [
+        "amused",
+        0.2
+      ],
+      [
+        "playful",
+        0.2
+      ],
+      [
+        "valiant",
+        0.2
+      ]
+    ]
+  },
+  "neighbours_top5": {
+    "afraid": [
+      [
+        "scared",
+        0.9883198738098145
+      ],
+      [
+        "frightened",
+        0.9849093556404114
+      ],
+      [
+        "terrified",
+        0.9357914924621582
+      ],
+      [
+        "panicked",
+        0.8689171075820923
+      ],
+      [
+        "shaken",
+        0.8633231520652771
+      ]
+    ],
+    "joyful": [
+      [
+        "happy",
+        0.9784501791000366
+      ],
+      [
+        "delighted",
+        0.9622644186019897
+      ],
+      [
+        "jubilant",
+        0.9452872276306152
+      ],
+      [
+        "elated",
+        0.9162994623184204
+      ],
+      [
+        "pleased",
+        0.8917459845542908
+      ]
+    ],
+    "angry": [
+      [
+        "mad",
+        0.982485830783844
+      ],
+      [
+        "furious",
+        0.9734451174736023
+      ],
+      [
+        "enraged",
+        0.959152340888977
+      ],
+      [
+        "irate",
+        0.9466532468795776
+      ],
+      [
+        "outraged",
+        0.8995308876037598
+      ]
+    ],
+    "sad": [
+      [
+        "gloomy",
+        0.9040704369544983
+      ],
+      [
+        "unhappy",
+        0.900476336479187
+      ],
+      [
+        "melancholy",
+        0.8838011026382446
+      ],
+      [
+        "hurt",
+        0.8359811305999756
+      ],
+      [
+        "miserable",
+        0.8290108442306519
+      ]
+    ],
+    "loving": [
+      [
+        "grateful",
+        0.8544743657112122
+      ],
+      [
+        "thankful",
+        0.8440619707107544
+      ],
+      [
+        "kind",
+        0.7784010767936707
+      ],
+      [
+        "compassionate",
+        0.7778908014297485
+      ],
+      [
+        "empathetic",
+        0.7689298987388611
+      ]
+    ],
+    "calm": [
+      [
+        "at ease",
+        0.8611149787902832
+      ],
+      [
+        "peaceful",
+        0.830565333366394
+      ],
+      [
+        "patient",
+        0.8233189582824707
+      ],
+      [
+        "content",
+        0.7890933156013489
+      ],
+      [
+        "relaxed",
+        0.7883044481277466
+      ]
+    ],
+    "proud": [
+      [
+        "triumphant",
+        0.8456652760505676
+      ],
+      [
+        "pleased",
+        0.6933649182319641
+      ],
+      [
+        "self-confident",
+        0.6905277371406555
+      ],
+      [
+        "valiant",
+        0.6838709712028503
+      ],
+      [
+        "happy",
+        0.664934515953064
+      ]
+    ],
+    "grateful": [
+      [
+        "thankful",
+        0.9844361543655396
+      ],
+      [
+        "loving",
+        0.8544743657112122
+      ],
+      [
+        "fulfilled",
+        0.7959068417549133
+      ],
+      [
+        "hope",
+        0.7457727193832397
+      ],
+      [
+        "kind",
+        0.709170937538147
+      ]
+    ],
+    "compassionate": [
+      [
+        "empathetic",
+        0.9676344990730286
+      ],
+      [
+        "sympathetic",
+        0.9563388228416443
+      ],
+      [
+        "kind",
+        0.9338401556015015
+      ],
+      [
+        "loving",
+        0.7778908014297485
+      ],
+      [
+        "grateful",
+        0.7015414237976074
+      ]
+    ]
+  },
+  "norm_cv_across_depth": 0.7481966018676758,
+  "c2": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "rsa_pearson": 0.9220093477371409,
+        "rsa_spearman": 0.9083015823045686,
+        "top5_overlap": 3.8421052631578947,
+        "top10_jaccard": 0.6371244567838995
+      },
+      {
+        "layer": 1,
+        "rsa_pearson": 0.9364649219529161,
+        "rsa_spearman": 0.9255809028541055,
+        "top5_overlap": 3.9064327485380117,
+        "top10_jaccard": 0.6589765010817643
+      },
+      {
+        "layer": 2,
+        "rsa_pearson": 0.942204595095115,
+        "rsa_spearman": 0.93265847020625,
+        "top5_overlap": 3.871345029239766,
+        "top10_jaccard": 0.6556168003536424
+      },
+      {
+        "layer": 3,
+        "rsa_pearson": 0.9388162936029953,
+        "rsa_spearman": 0.9299377130752849,
+        "top5_overlap": 3.8421052631578947,
+        "top10_jaccard": 0.6400815386883498
+      },
+      {
+        "layer": 4,
+        "rsa_pearson": 0.9386969761695682,
+        "rsa_spearman": 0.9298913294583184,
+        "top5_overlap": 3.847953216374269,
+        "top10_jaccard": 0.6524625471993893
+      },
+      {
+        "layer": 5,
+        "rsa_pearson": 0.9454424051347846,
+        "rsa_spearman": 0.9371801485204174,
+        "top5_overlap": 3.9473684210526314,
+        "top10_jaccard": 0.672267189295053
+      },
+      {
+        "layer": 6,
+        "rsa_pearson": 0.9535407608271059,
+        "rsa_spearman": 0.9466592202321862,
+        "top5_overlap": 3.9883040935672516,
+        "top10_jaccard": 0.6921850079744817
+      },
+      {
+        "layer": 7,
+        "rsa_pearson": 0.955815743193734,
+        "rsa_spearman": 0.948964825002306,
+        "top5_overlap": 4.076023391812866,
+        "top10_jaccard": 0.7080969712548659
+      },
+      {
+        "layer": 8,
+        "rsa_pearson": 0.9692417373426492,
+        "rsa_spearman": 0.9637197565882443,
+        "top5_overlap": 4.251461988304094,
+        "top10_jaccard": 0.7600119179066547
+      },
+      {
+        "layer": 9,
+        "rsa_pearson": 0.9724302982140991,
+        "rsa_spearman": 0.9667543921789556,
+        "top5_overlap": 4.280701754385965,
+        "top10_jaccard": 0.7828701512912039
+      },
+      {
+        "layer": 10,
+        "rsa_pearson": 0.9781583353892161,
+        "rsa_spearman": 0.973584841140787,
+        "top5_overlap": 4.368421052631579,
+        "top10_jaccard": 0.7971833234991131
+      },
+      {
+        "layer": 11,
+        "rsa_pearson": 0.9843774597101607,
+        "rsa_spearman": 0.9810858977570933,
+        "top5_overlap": 4.43859649122807,
+        "top10_jaccard": 0.8153834469623944
+      },
+      {
+        "layer": 12,
+        "rsa_pearson": 0.9854496723393964,
+        "rsa_spearman": 0.9823381395691833,
+        "top5_overlap": 4.450292397660819,
+        "top10_jaccard": 0.8244874034347718
+      },
+      {
+        "layer": 13,
+        "rsa_pearson": 0.9883544913005345,
+        "rsa_spearman": 0.9858806223602216,
+        "top5_overlap": 4.502923976608187,
+        "top10_jaccard": 0.8402903139745246
+      },
+      {
+        "layer": 14,
+        "rsa_pearson": 0.9913125251762852,
+        "rsa_spearman": 0.989443260313709,
+        "top5_overlap": 4.526315789473684,
+        "top10_jaccard": 0.8580367001419634
+      },
+      {
+        "layer": 15,
+        "rsa_pearson": 0.9914418376784181,
+        "rsa_spearman": 0.9897443718399401,
+        "top5_overlap": 4.549707602339181,
+        "top10_jaccard": 0.8525587472955896
+      },
+      {
+        "layer": 16,
+        "rsa_pearson": 0.9926983710963775,
+        "rsa_spearman": 0.9915270550240282,
+        "top5_overlap": 4.538011695906433,
+        "top10_jaccard": 0.8520115362220625
+      },
+      {
+        "layer": 17,
+        "rsa_pearson": 0.9936696124754972,
+        "rsa_spearman": 0.9922261803054455,
+        "top5_overlap": 4.60233918128655,
+        "top10_jaccard": 0.8790196158617213
+      },
+      {
+        "layer": 18,
+        "rsa_pearson": 0.9939999833961584,
+        "rsa_spearman": 0.9926431301878195,
+        "top5_overlap": 4.590643274853801,
+        "top10_jaccard": 0.8689984479458164
+      },
+      {
+        "layer": 19,
+        "rsa_pearson": 0.9941026893086661,
+        "rsa_spearman": 0.9928269210001102,
+        "top5_overlap": 4.555555555555555,
+        "top10_jaccard": 0.8812415654520916
+      },
+      {
+        "layer": 20,
+        "rsa_pearson": 0.9940408030447818,
+        "rsa_spearman": 0.99280031874446,
+        "top5_overlap": 4.549707602339181,
+        "top10_jaccard": 0.8629031786926525
+      },
+      {
+        "layer": 21,
+        "rsa_pearson": 0.9941909960490294,
+        "rsa_spearman": 0.9927267070173751,
+        "top5_overlap": 4.567251461988304,
+        "top10_jaccard": 0.8760732444942972
+      },
+      {
+        "layer": 22,
+        "rsa_pearson": 0.9951171632039407,
+        "rsa_spearman": 0.9939437730208345,
+        "top5_overlap": 4.614035087719298,
+        "top10_jaccard": 0.8790449316765108
+      },
+      {
+        "layer": 23,
+        "rsa_pearson": 0.9957589448061981,
+        "rsa_spearman": 0.9948349717263311,
+        "top5_overlap": 4.690058479532164,
+        "top10_jaccard": 0.8849084638558322
+      },
+      {
+        "layer": 24,
+        "rsa_pearson": 0.9960833425049188,
+        "rsa_spearman": 0.9952432276465419,
+        "top5_overlap": 4.6608187134502925,
+        "top10_jaccard": 0.8901546796283639
+      },
+      {
+        "layer": 25,
+        "rsa_pearson": 0.9973210678694466,
+        "rsa_spearman": 0.9967667295076275,
+        "top5_overlap": 4.730994152046784,
+        "top10_jaccard": 0.9055058002426423
+      },
+      {
+        "layer": 26,
+        "rsa_pearson": 0.9987073470192234,
+        "rsa_spearman": 0.9984278885207181,
+        "top5_overlap": 4.818713450292398,
+        "top10_jaccard": 0.9408116250221514
+      },
+      {
+        "layer": 27,
+        "rsa_pearson": 0.9991836878568692,
+        "rsa_spearman": 0.9990036488848548,
+        "top5_overlap": 4.883040935672515,
+        "top10_jaccard": 0.9392167286904128
+      },
+      {
+        "layer": 28,
+        "rsa_pearson": 1.0,
+        "rsa_spearman": 1.0,
+        "top5_overlap": 5.0,
+        "top10_jaccard": 1.0
+      },
+      {
+        "layer": 29,
+        "rsa_pearson": 0.9992423148930355,
+        "rsa_spearman": 0.9990956718505256,
+        "top5_overlap": 4.853801169590644,
+        "top10_jaccard": 0.9450646819067873
+      },
+      {
+        "layer": 30,
+        "rsa_pearson": 0.9989810312044175,
+        "rsa_spearman": 0.9987950776316783,
+        "top5_overlap": 4.807017543859649,
+        "top10_jaccard": 0.945064681906787
+      },
+      {
+        "layer": 31,
+        "rsa_pearson": 0.9987233118556961,
+        "rsa_spearman": 0.9984701324282721,
+        "top5_overlap": 4.807017543859649,
+        "top10_jaccard": 0.9288976131081396
+      },
+      {
+        "layer": 32,
+        "rsa_pearson": 0.9982456911198004,
+        "rsa_spearman": 0.9979074547547715,
+        "top5_overlap": 4.766081871345029,
+        "top10_jaccard": 0.9204323941166045
+      },
+      {
+        "layer": 33,
+        "rsa_pearson": 0.9973985724529095,
+        "rsa_spearman": 0.996933304160552,
+        "top5_overlap": 4.701754385964913,
+        "top10_jaccard": 0.9104676999413841
+      },
+      {
+        "layer": 34,
+        "rsa_pearson": 0.9966505144895991,
+        "rsa_spearman": 0.9960130554814633,
+        "top5_overlap": 4.690058479532164,
+        "top10_jaccard": 0.9088728036096456
+      },
+      {
+        "layer": 35,
+        "rsa_pearson": 0.9960506442922135,
+        "rsa_spearman": 0.9952808425367989,
+        "top5_overlap": 4.695906432748538,
+        "top10_jaccard": 0.8980629506945296
+      },
+      {
+        "layer": 36,
+        "rsa_pearson": 0.9952632562460021,
+        "rsa_spearman": 0.9943437021199054,
+        "top5_overlap": 4.654970760233918,
+        "top10_jaccard": 0.890620101146417
+      },
+      {
+        "layer": 37,
+        "rsa_pearson": 0.9942050821468816,
+        "rsa_spearman": 0.9930104731765921,
+        "top5_overlap": 4.614035087719298,
+        "top10_jaccard": 0.8754345070134544
+      },
+      {
+        "layer": 38,
+        "rsa_pearson": 0.9940172995490464,
+        "rsa_spearman": 0.9927525439403019,
+        "top5_overlap": 4.608187134502924,
+        "top10_jaccard": 0.8725991357570305
+      },
+      {
+        "layer": 39,
+        "rsa_pearson": 0.9938554374687151,
+        "rsa_spearman": 0.9925514247727619,
+        "top5_overlap": 4.578947368421052,
+        "top10_jaccard": 0.8730898730898731
+      },
+      {
+        "layer": 40,
+        "rsa_pearson": 0.992172785653217,
+        "rsa_spearman": 0.9905142903073018,
+        "top5_overlap": 4.543859649122807,
+        "top10_jaccard": 0.8612011769906505
+      },
+      {
+        "layer": 41,
+        "rsa_pearson": 0.991779728906192,
+        "rsa_spearman": 0.9901377366752091,
+        "top5_overlap": 4.526315789473684,
+        "top10_jaccard": 0.8680013943171837
+      }
+    ],
+    "band_rsa_ge_0.95": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ]
+  }
+}

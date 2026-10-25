@@ -1,0 +1,138 @@
+{
+  "record": "LC-60 C1 \u2014 B1 floor-window sensitivity: knee branch robustness under W4=[42,45] vs W5=[41,45] (100T).",
+  "spec_sha256": "ae05e8bdcd5611558f0999217f2555c1037a52cc95ef2e4e033fa589cf06569a",
+  "authorizing": "MEMO LC-60, Commission 1 (dispatch RUNNER_DISPATCH_LC60_C1_B1_WINDOW_SENSITIVITY_100T.md)",
+  "method": "Pure arithmetic on stored y(l)=log10(median_rank(l)); no onset recompute, no estimator call.",
+  "plateau_window": [
+    0,
+    4
+  ],
+  "windows": {
+    "W4": [
+      42,
+      45
+    ],
+    "W5": [
+      41,
+      45
+    ]
+  },
+  "W5_realization": "W5=[41,45] pinned to the DEEPEST FIVE available layers on the 46-layer 27B (L0..L45); honest 5-real-layer analogue of the nominal [42,46]. If the Ledger intended a different 5-layer set, that is a one-line correction (flagged, not guessed wider).",
+  "input_shas": {
+    "b1_onsetcurve_100T.json": "f7b4f593bd89d040db1631640ca89e8c5b34e079ca80d6a8bde581183269826d",
+    "b1_onsetcurve_knee_100T.json": "713c494057137d670a19e892362102f03fa17aabd7c2e6a3bfc753575ebd9eff"
+  },
+  "cells": {
+    "gemma-2-27b-base": {
+      "plateau_Y_P": 5.094347200900761,
+      "windows": {
+        "W4": {
+          "floor_window": [
+            42,
+            45
+          ],
+          "Y_F": 1.6302899903478911,
+          "Y_M": 3.362318595624326,
+          "primary_knee_interp_frac": 25.668705160828218,
+          "bracket": [
+            25,
+            26
+          ],
+          "primary_knee_nearest_sampled": 26,
+          "branch": "DEEPER",
+          "secondary_knee_lower_layer": 33,
+          "secondary_knee_frac_mid": 33.5,
+          "signed_frac_distance_from_seam": 2.6687051608282175
+        },
+        "W5": {
+          "floor_window": [
+            41,
+            45
+          ],
+          "Y_F": 1.6809642793090362,
+          "Y_M": 3.387655740104899,
+          "primary_knee_interp_frac": 25.55486270770155,
+          "bracket": [
+            25,
+            26
+          ],
+          "primary_knee_nearest_sampled": 26,
+          "branch": "DEEPER",
+          "secondary_knee_lower_layer": 33,
+          "secondary_knee_frac_mid": 33.5,
+          "signed_frac_distance_from_seam": 2.554862707701549
+        }
+      }
+    },
+    "gemma-2-27b-it": {
+      "plateau_Y_P": 5.106568505590791,
+      "windows": {
+        "W4": {
+          "floor_window": [
+            42,
+            45
+          ],
+          "Y_F": 1.3635871416328234,
+          "Y_M": 3.235077823611807,
+          "primary_knee_interp_frac": 25.46715980109999,
+          "bracket": [
+            25,
+            26
+          ],
+          "primary_knee_nearest_sampled": 25,
+          "branch": "COINCIDENT",
+          "secondary_knee_lower_layer": 28,
+          "secondary_knee_frac_mid": 28.5,
+          "signed_frac_distance_from_seam": 2.4671598010999887
+        },
+        "W5": {
+          "floor_window": [
+            41,
+            45
+          ],
+          "Y_F": 1.4195602486034962,
+          "Y_M": 3.2630643770971437,
+          "primary_knee_interp_frac": 25.27762832191503,
+          "bracket": [
+            25,
+            26
+          ],
+          "primary_knee_nearest_sampled": 25,
+          "branch": "COINCIDENT",
+          "secondary_knee_lower_layer": 28,
+          "secondary_knee_frac_mid": 28.5,
+          "signed_frac_distance_from_seam": 2.2776283219150315
+        }
+      }
+    }
+  },
+  "self_consistency_W4": {
+    "gemma-2-27b-base": {
+      "shipped_frac": 25.668705160828218,
+      "rederived_frac": 25.668705160828218,
+      "frac_match_1e-9": true,
+      "shipped_nearest": 26,
+      "rederived_nearest": 26,
+      "nearest_match": true,
+      "shipped_branch": "DEEPER",
+      "rederived_branch": "DEEPER",
+      "branch_match": true,
+      "PASS": true
+    },
+    "gemma-2-27b-it": {
+      "shipped_frac": 25.46715980109999,
+      "rederived_frac": 25.46715980109999,
+      "frac_match_1e-9": true,
+      "shipped_nearest": 25,
+      "rederived_nearest": 25,
+      "nearest_match": true,
+      "shipped_branch": "COINCIDENT",
+      "rederived_branch": "COINCIDENT",
+      "branch_match": true,
+      "PASS": true
+    },
+    "ALL_PASS": true
+  },
+  "flip_verdict": "NO FLIP: both cells keep their branch under W5 \u2014 assignments are window-robust; feeds Phase-5 unchanged.",
+  "any_flip": false
+}

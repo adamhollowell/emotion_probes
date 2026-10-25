@@ -1,0 +1,13 @@
+# LC-59 P-map battery + B1/B2 handback manifest
+artifact: gemma_grid/geometry_out_100T/b1_onsetcurve_knee_100T.json
+sha256: 713c494057137d670a19e892362102f03fa17aabd7c2e6a3bfc753575ebd9eff
+bytes: 4498
+description: B1 knee vs seam
+producer: gemma_grid/nogpu_additions_100T/b1_onsetcurve_100T.py
+producer_sha256: 4275fa8e6df6894511198e1e610bc99d0c88243d4ac851584471b0c79ab0e907
+frozen_input_sha256: a9e5e3767a2c72645929d63948a20a3733566b2058d5121435d6fbf97f364c30  analysisB_seam_onset_bootstrap_100T_gesvdfix.py
+spec_sha256: ae05e8bdcd5611558f0999217f2555c1037a52cc95ef2e4e033fa589cf06569a
+floor_recomputed: false
+qwen_touched: false
+svd_note: gesdd->gesvd fallback (Coordinator remedy-1b) active in battery producer; convergent SVDs bit-identical; frozen pmap_transport_100T.py byte-stable
+generated_utc: 2026-09-03T05:25:52Z

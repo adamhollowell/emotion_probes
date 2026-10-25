@@ -1,0 +1,14 @@
+{
+ "m9_note": "SR.5 input manifest \u2014 sha256 of every input, written at run time beside the output.",
+ "created_utc": "2026-10-14T14:46:49+00:00",
+ "inputs": {
+  "data/vectors/lens_ingredients.pt": "6653b2908a88fa50f3b25ee1d481e5dc5ab87629a5d00c392b6517953a5b4096",
+  "data/ratings/valence_arousal_judge.csv": "399bbbe7e500a2ce4f99f11b4d5f2f4fa7dea74bd0a1c5a82504b418292e3c5f",
+  "data/ratings/nrc_vad_v2_1.csv": "eacaf94f81d0df5d7250c4cdc7c80668f3a81a91adf0ed525c4d95f6149db12a",
+  "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/lens_summary.json": "3fe84478e3335f3f00c65fcc9559d9beb3a2138acd54bed24f0949749c92bc63"
+ },
+ "output": {
+  "gemma_grid/geometry_out_100T/fair_emotions_v1.json": "5ad3b102af05967b48d5e7bbda4722be34a65f3ac3253e267f50f6d14660534e"
+ }
+}

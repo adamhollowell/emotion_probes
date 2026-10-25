@@ -1,0 +1,13 @@
+{
+ "record": "Anchor (27B base) vocabulary map rebuilt from tokenizer.json at the pinned revision and compared with the stored lens ingredients' vocab field.",
+ "model": "google/gemma-2-27b",
+ "revision": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+ "tokenizer_json_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+ "stored_file": "data/vectors/lens_ingredients.pt",
+ "stored_vocab_type": "dict",
+ "n_entries": 256000,
+ "identical": true,
+ "n_diffs": 0,
+ "first_diffs": [],
+ "run_utc": "2026-10-23T15:26:09Z"
+}

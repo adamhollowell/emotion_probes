@@ -1,0 +1,714 @@
+{
+ "record": "Topic partition for the disjoint-topic transport analysis (prestatements/DISJOINT_TOPIC_TRANSPORT.md, Amendment 1).",
+ "rule": "sorted 100 corpus topic strings; numpy RandomState(20261019).permutation(100); first 50 positions -> set A, remaining 50 -> set B",
+ "seed": 20261019,
+ "source_of_set_A": "geometry_out/disjoint_topic_part1_crosscell_disjoint.json, field partition.set_A_topics (identical in all four Part B outputs)",
+ "source_sha256": "df049fad744bc5daa3a7fdad11b0221e0663579c5238dfb419b713ab1f764427",
+ "n_topics": 100,
+ "topics_sorted": [
+  {
+   "index": 0,
+   "topic": "A chef receives a harsh review from a food critic",
+   "set": "A",
+   "permutation_position": 25
+  },
+  {
+   "index": 1,
+   "topic": "A coach has to cut a player from the team",
+   "set": "A",
+   "permutation_position": 19
+  },
+  {
+   "index": 2,
+   "topic": "A college student discovers their roommate has been reading their journal",
+   "set": "B",
+   "permutation_position": 75
+  },
+  {
+   "index": 3,
+   "topic": "A family member announces they're converting to a different religion",
+   "set": "B",
+   "permutation_position": 64
+  },
+  {
+   "index": 4,
+   "topic": "A family member wants to sell a cherished heirloom",
+   "set": "A",
+   "permutation_position": 36
+  },
+  {
+   "index": 5,
+   "topic": "A homeowner discovers previous residents left items in the attic",
+   "set": "A",
+   "permutation_position": 12
+  },
+  {
+   "index": 6,
+   "topic": "A homeowner learns their house was a former crime scene",
+   "set": "B",
+   "permutation_position": 50
+  },
+  {
+   "index": 7,
+   "topic": "A musician hears their song being performed by someone else",
+   "set": "A",
+   "permutation_position": 35
+  },
+  {
+   "index": 8,
+   "topic": "A neighbor asks to cut down a tree on the property line",
+   "set": "A",
+   "permutation_position": 31
+  },
+  {
+   "index": 9,
+   "topic": "A neighbor asks to use part of the yard for a garden",
+   "set": "B",
+   "permutation_position": 80
+  },
+  {
+   "index": 10,
+   "topic": "A neighbor complains about noise levels",
+   "set": "A",
+   "permutation_position": 47
+  },
+  {
+   "index": 11,
+   "topic": "A neighbor starts a renovation project",
+   "set": "B",
+   "permutation_position": 85
+  },
+  {
+   "index": 12,
+   "topic": "A neighbor wants to install a fence",
+   "set": "A",
+   "permutation_position": 27
+  },
+  {
+   "index": 13,
+   "topic": "A neighbor's dog keeps escaping into their yard",
+   "set": "A",
+   "permutation_position": 9
+  },
+  {
+   "index": 14,
+   "topic": "A neighbor's tree falls on their property",
+   "set": "A",
+   "permutation_position": 28
+  },
+  {
+   "index": 15,
+   "topic": "A parent finds an old letter they wrote but never sent",
+   "set": "A",
+   "permutation_position": 24
+  },
+  {
+   "index": 16,
+   "topic": "A person accidentally sends a text to the wrong recipient",
+   "set": "B",
+   "permutation_position": 93
+  },
+  {
+   "index": 17,
+   "topic": "A person discovers the tree they planted as a child has been cut down",
+   "set": "B",
+   "permutation_position": 51
+  },
+  {
+   "index": 18,
+   "topic": "A person discovers their child has the same teacher they had",
+   "set": "B",
+   "permutation_position": 76
+  },
+  {
+   "index": 19,
+   "topic": "A person discovers their mentor has retired without saying goodbye",
+   "set": "B",
+   "permutation_position": 98
+  },
+  {
+   "index": 20,
+   "topic": "A person discovers their partner has been taking secret phone calls",
+   "set": "A",
+   "permutation_position": 49
+  },
+  {
+   "index": 21,
+   "topic": "A person discovers their teenage diary has been published online",
+   "set": "B",
+   "permutation_position": 58
+  },
+  {
+   "index": 22,
+   "topic": "A person finds a hidden letter in a used book",
+   "set": "A",
+   "permutation_position": 0
+  },
+  {
+   "index": 23,
+   "topic": "A person finds old photos that contradict family stories",
+   "set": "B",
+   "permutation_position": 71
+  },
+  {
+   "index": 24,
+   "topic": "A person finds out their article was published under someone else's name",
+   "set": "A",
+   "permutation_position": 2
+  },
+  {
+   "index": 25,
+   "topic": "A person finds out their biography was written without their knowledge",
+   "set": "A",
+   "permutation_position": 48
+  },
+  {
+   "index": 26,
+   "topic": "A person finds out their partner has been learning their native language",
+   "set": "A",
+   "permutation_position": 5
+  },
+  {
+   "index": 27,
+   "topic": "A person finds out their surprise party has been cancelled",
+   "set": "A",
+   "permutation_position": 10
+  },
+  {
+   "index": 28,
+   "topic": "A person finds out they were adopted through a DNA test",
+   "set": "B",
+   "permutation_position": 66
+  },
+  {
+   "index": 29,
+   "topic": "A person finds their childhood home listed for sale online",
+   "set": "B",
+   "permutation_position": 61
+  },
+  {
+   "index": 30,
+   "topic": "A person finds their spouse's secret savings account",
+   "set": "B",
+   "permutation_position": 77
+  },
+  {
+   "index": 31,
+   "topic": "A person is asked to give a speech at their parent's retirement party",
+   "set": "B",
+   "permutation_position": 52
+  },
+  {
+   "index": 32,
+   "topic": "A person learns their apartment building is going condo",
+   "set": "B",
+   "permutation_position": 95
+  },
+  {
+   "index": 33,
+   "topic": "A person learns their childhood best friend doesn't remember them",
+   "set": "B",
+   "permutation_position": 91
+  },
+  {
+   "index": 34,
+   "topic": "A person learns their childhood bully became a therapist",
+   "set": "B",
+   "permutation_position": 79
+  },
+  {
+   "index": 35,
+   "topic": "A person learns their college is closing down",
+   "set": "B",
+   "permutation_position": 57
+  },
+  {
+   "index": 36,
+   "topic": "A person learns their favorite restaurant is closing",
+   "set": "A",
+   "permutation_position": 11
+  },
+  {
+   "index": 37,
+   "topic": "A person runs into their ex at a mutual friend's wedding",
+   "set": "A",
+   "permutation_position": 22
+  },
+  {
+   "index": 38,
+   "topic": "A person's car is towed from their own driveway",
+   "set": "B",
+   "permutation_position": 90
+  },
+  {
+   "index": 39,
+   "topic": "A person's invention is already patented by someone else",
+   "set": "B",
+   "permutation_position": 73
+  },
+  {
+   "index": 40,
+   "topic": "A person's longtime hobby becomes their child's obsession",
+   "set": "A",
+   "permutation_position": 6
+  },
+  {
+   "index": 41,
+   "topic": "A person's manuscript is rejected by their dream publisher",
+   "set": "A",
+   "permutation_position": 15
+  },
+  {
+   "index": 42,
+   "topic": "A person's online friend turns out to live in the same city",
+   "set": "A",
+   "permutation_position": 37
+  },
+  {
+   "index": 43,
+   "topic": "A student discovers their teacher follows them on social media",
+   "set": "B",
+   "permutation_position": 97
+  },
+  {
+   "index": 44,
+   "topic": "A student finds out their scholarship was meant for someone else",
+   "set": "A",
+   "permutation_position": 17
+  },
+  {
+   "index": 45,
+   "topic": "A student is accused of plagiarism",
+   "set": "B",
+   "permutation_position": 82
+  },
+  {
+   "index": 46,
+   "topic": "A student learns their scholarship application was denied",
+   "set": "B",
+   "permutation_position": 92
+  },
+  {
+   "index": 47,
+   "topic": "A student learns their thesis advisor is leaving the university",
+   "set": "A",
+   "permutation_position": 20
+  },
+  {
+   "index": 48,
+   "topic": "A student receives a much lower grade than expected",
+   "set": "A",
+   "permutation_position": 38
+  },
+  {
+   "index": 49,
+   "topic": "A teacher receives an unexpected gift from a former student",
+   "set": "A",
+   "permutation_position": 43
+  },
+  {
+   "index": 50,
+   "topic": "A tenant receives an eviction notice",
+   "set": "B",
+   "permutation_position": 65
+  },
+  {
+   "index": 51,
+   "topic": "A traveler's flight is delayed, causing them to miss an important event",
+   "set": "A",
+   "permutation_position": 30
+  },
+  {
+   "index": 52,
+   "topic": "An adult child moves back in with their parents",
+   "set": "A",
+   "permutation_position": 41
+  },
+  {
+   "index": 53,
+   "topic": "An artist discovers someone has tattooed their work",
+   "set": "A",
+   "permutation_position": 1
+  },
+  {
+   "index": 54,
+   "topic": "An artist's work is displayed without their permission",
+   "set": "B",
+   "permutation_position": 87
+  },
+  {
+   "index": 55,
+   "topic": "An athlete doesn't make the team they expected to join",
+   "set": "B",
+   "permutation_position": 68
+  },
+  {
+   "index": 56,
+   "topic": "An athlete is asked to switch positions",
+   "set": "B",
+   "permutation_position": 63
+  },
+  {
+   "index": 57,
+   "topic": "An employee discovers the company is being sold",
+   "set": "A",
+   "permutation_position": 39
+  },
+  {
+   "index": 58,
+   "topic": "An employee finds out a junior colleague makes more money",
+   "set": "B",
+   "permutation_position": 69
+  },
+  {
+   "index": 59,
+   "topic": "An employee is asked to train their replacement",
+   "set": "A",
+   "permutation_position": 34
+  },
+  {
+   "index": 60,
+   "topic": "An employee is transferred to a different department",
+   "set": "A",
+   "permutation_position": 45
+  },
+  {
+   "index": 61,
+   "topic": "Someone discovers a hidden room in their new house",
+   "set": "B",
+   "permutation_position": 67
+  },
+  {
+   "index": 62,
+   "topic": "Someone discovers their friend has been lying about their job",
+   "set": "A",
+   "permutation_position": 40
+  },
+  {
+   "index": 63,
+   "topic": "Someone discovers their mother kept every school assignment",
+   "set": "B",
+   "permutation_position": 86
+  },
+  {
+   "index": 64,
+   "topic": "Someone discovers their neighbor is secretly wealthy",
+   "set": "A",
+   "permutation_position": 26
+  },
+  {
+   "index": 65,
+   "topic": "Someone discovers their partner has been writing a novel about them",
+   "set": "A",
+   "permutation_position": 16
+  },
+  {
+   "index": 66,
+   "topic": "Someone discovers their recipe has become famous under another name",
+   "set": "A",
+   "permutation_position": 46
+  },
+  {
+   "index": 67,
+   "topic": "Someone discovers their teenager has a secret social media account",
+   "set": "B",
+   "permutation_position": 55
+  },
+  {
+   "index": 68,
+   "topic": "Someone finds a time capsule they don't remember burying",
+   "set": "A",
+   "permutation_position": 3
+  },
+  {
+   "index": 69,
+   "topic": "Someone finds a wallet containing a large sum of cash",
+   "set": "A",
+   "permutation_position": 21
+  },
+  {
+   "index": 70,
+   "topic": "Someone finds an unsigned birthday card in their mailbox",
+   "set": "B",
+   "permutation_position": 89
+  },
+  {
+   "index": 71,
+   "topic": "Someone finds out their best friend is moving across the country",
+   "set": "B",
+   "permutation_position": 84
+  },
+  {
+   "index": 72,
+   "topic": "Someone finds out their medical records were mixed up with another patient's",
+   "set": "A",
+   "permutation_position": 14
+  },
+  {
+   "index": 73,
+   "topic": "Someone finds out they have a half-sibling they never knew about",
+   "set": "B",
+   "permutation_position": 53
+  },
+  {
+   "index": 74,
+   "topic": "Someone finds their childhood teddy bear at a yard sale",
+   "set": "B",
+   "permutation_position": 78
+  },
+  {
+   "index": 75,
+   "topic": "Someone finds their college application essay published as an example",
+   "set": "B",
+   "permutation_position": 60
+  },
+  {
+   "index": 76,
+   "topic": "Someone finds their deceased parent's bucket list",
+   "set": "B",
+   "permutation_position": 74
+  },
+  {
+   "index": 77,
+   "topic": "Someone finds their grandmother's engagement ring in a pawn shop",
+   "set": "B",
+   "permutation_position": 62
+  },
+  {
+   "index": 78,
+   "topic": "Someone finds their parent's draft letter of resignation from decades ago",
+   "set": "A",
+   "permutation_position": 13
+  },
+  {
+   "index": 79,
+   "topic": "Someone finds their partner's bucket list",
+   "set": "B",
+   "permutation_position": 81
+  },
+  {
+   "index": 80,
+   "topic": "Someone learns their favorite author plagiarized their stories",
+   "set": "B",
+   "permutation_position": 99
+  },
+  {
+   "index": 81,
+   "topic": "Someone receives a friend request from a childhood bully",
+   "set": "B",
+   "permutation_position": 72
+  },
+  {
+   "index": 82,
+   "topic": "Someone receives a package intended for the previous tenant",
+   "set": "B",
+   "permutation_position": 94
+  },
+  {
+   "index": 83,
+   "topic": "Someone receives an apology letter years after the incident",
+   "set": "A",
+   "permutation_position": 4
+  },
+  {
+   "index": 84,
+   "topic": "Someone receives an invitation to their high school reunion",
+   "set": "B",
+   "permutation_position": 59
+  },
+  {
+   "index": 85,
+   "topic": "Someone receives flowers with no card attached",
+   "set": "B",
+   "permutation_position": 70
+  },
+  {
+   "index": 86,
+   "topic": "Someone's childhood home is about to be demolished",
+   "set": "A",
+   "permutation_position": 33
+  },
+  {
+   "index": 87,
+   "topic": "Someone's childhood imaginary friend appears in their niece's drawings",
+   "set": "B",
+   "permutation_position": 56
+  },
+  {
+   "index": 88,
+   "topic": "Two colleagues are both considered for the same promotion",
+   "set": "A",
+   "permutation_position": 23
+  },
+  {
+   "index": 89,
+   "topic": "Two coworkers are stuck in an elevator for three hours",
+   "set": "B",
+   "permutation_position": 54
+  },
+  {
+   "index": 90,
+   "topic": "Two coworkers discover they went to the same summer camp",
+   "set": "B",
+   "permutation_position": 83
+  },
+  {
+   "index": 91,
+   "topic": "Two friends both apply for the same job",
+   "set": "A",
+   "permutation_position": 44
+  },
+  {
+   "index": 92,
+   "topic": "Two friends plan separate birthday parties on the same day",
+   "set": "A",
+   "permutation_position": 8
+  },
+  {
+   "index": 93,
+   "topic": "Two friends realize they remember a shared event completely differently",
+   "set": "B",
+   "permutation_position": 96
+  },
+  {
+   "index": 94,
+   "topic": "Two people discover they've been working on identical projects",
+   "set": "B",
+   "permutation_position": 88
+  },
+  {
+   "index": 95,
+   "topic": "Two roommates disagree about getting a pet",
+   "set": "A",
+   "permutation_position": 7
+  },
+  {
+   "index": 96,
+   "topic": "Two siblings discover different versions of their inheritance",
+   "set": "A",
+   "permutation_position": 42
+  },
+  {
+   "index": 97,
+   "topic": "Two siblings inherit their grandmother's house",
+   "set": "A",
+   "permutation_position": 18
+  },
+  {
+   "index": 98,
+   "topic": "Two strangers discover they share the same rare medical condition",
+   "set": "A",
+   "permutation_position": 29
+  },
+  {
+   "index": 99,
+   "topic": "Two strangers realize they've been dating the same person",
+   "set": "A",
+   "permutation_position": 32
+  }
+ ],
+ "set_A_topics": [
+  "A person finds a hidden letter in a used book",
+  "An artist discovers someone has tattooed their work",
+  "A person finds out their article was published under someone else's name",
+  "Someone finds a time capsule they don't remember burying",
+  "Someone receives an apology letter years after the incident",
+  "A person finds out their partner has been learning their native language",
+  "A person's longtime hobby becomes their child's obsession",
+  "Two roommates disagree about getting a pet",
+  "Two friends plan separate birthday parties on the same day",
+  "A neighbor's dog keeps escaping into their yard",
+  "A person finds out their surprise party has been cancelled",
+  "A person learns their favorite restaurant is closing",
+  "A homeowner discovers previous residents left items in the attic",
+  "Someone finds their parent's draft letter of resignation from decades ago",
+  "Someone finds out their medical records were mixed up with another patient's",
+  "A person's manuscript is rejected by their dream publisher",
+  "Someone discovers their partner has been writing a novel about them",
+  "A student finds out their scholarship was meant for someone else",
+  "Two siblings inherit their grandmother's house",
+  "A coach has to cut a player from the team",
+  "A student learns their thesis advisor is leaving the university",
+  "Someone finds a wallet containing a large sum of cash",
+  "A person runs into their ex at a mutual friend's wedding",
+  "Two colleagues are both considered for the same promotion",
+  "A parent finds an old letter they wrote but never sent",
+  "A chef receives a harsh review from a food critic",
+  "Someone discovers their neighbor is secretly wealthy",
+  "A neighbor wants to install a fence",
+  "A neighbor's tree falls on their property",
+  "Two strangers discover they share the same rare medical condition",
+  "A traveler's flight is delayed, causing them to miss an important event",
+  "A neighbor asks to cut down a tree on the property line",
+  "Two strangers realize they've been dating the same person",
+  "Someone's childhood home is about to be demolished",
+  "An employee is asked to train their replacement",
+  "A musician hears their song being performed by someone else",
+  "A family member wants to sell a cherished heirloom",
+  "A person's online friend turns out to live in the same city",
+  "A student receives a much lower grade than expected",
+  "An employee discovers the company is being sold",
+  "Someone discovers their friend has been lying about their job",
+  "An adult child moves back in with their parents",
+  "Two siblings discover different versions of their inheritance",
+  "A teacher receives an unexpected gift from a former student",
+  "Two friends both apply for the same job",
+  "An employee is transferred to a different department",
+  "Someone discovers their recipe has become famous under another name",
+  "A neighbor complains about noise levels",
+  "A person finds out their biography was written without their knowledge",
+  "A person discovers their partner has been taking secret phone calls"
+ ],
+ "set_B_topics": [
+  "A homeowner learns their house was a former crime scene",
+  "A person discovers the tree they planted as a child has been cut down",
+  "A person is asked to give a speech at their parent's retirement party",
+  "Someone finds out they have a half-sibling they never knew about",
+  "Two coworkers are stuck in an elevator for three hours",
+  "Someone discovers their teenager has a secret social media account",
+  "Someone's childhood imaginary friend appears in their niece's drawings",
+  "A person learns their college is closing down",
+  "A person discovers their teenage diary has been published online",
+  "Someone receives an invitation to their high school reunion",
+  "Someone finds their college application essay published as an example",
+  "A person finds their childhood home listed for sale online",
+  "Someone finds their grandmother's engagement ring in a pawn shop",
+  "An athlete is asked to switch positions",
+  "A family member announces they're converting to a different religion",
+  "A tenant receives an eviction notice",
+  "A person finds out they were adopted through a DNA test",
+  "Someone discovers a hidden room in their new house",
+  "An athlete doesn't make the team they expected to join",
+  "An employee finds out a junior colleague makes more money",
+  "Someone receives flowers with no card attached",
+  "A person finds old photos that contradict family stories",
+  "Someone receives a friend request from a childhood bully",
+  "A person's invention is already patented by someone else",
+  "Someone finds their deceased parent's bucket list",
+  "A college student discovers their roommate has been reading their journal",
+  "A person discovers their child has the same teacher they had",
+  "A person finds their spouse's secret savings account",
+  "Someone finds their childhood teddy bear at a yard sale",
+  "A person learns their childhood bully became a therapist",
+  "A neighbor asks to use part of the yard for a garden",
+  "Someone finds their partner's bucket list",
+  "A student is accused of plagiarism",
+  "Two coworkers discover they went to the same summer camp",
+  "Someone finds out their best friend is moving across the country",
+  "A neighbor starts a renovation project",
+  "Someone discovers their mother kept every school assignment",
+  "An artist's work is displayed without their permission",
+  "Two people discover they've been working on identical projects",
+  "Someone finds an unsigned birthday card in their mailbox",
+  "A person's car is towed from their own driveway",
+  "A person learns their childhood best friend doesn't remember them",
+  "A student learns their scholarship application was denied",
+  "A person accidentally sends a text to the wrong recipient",
+  "Someone receives a package intended for the previous tenant",
+  "A person learns their apartment building is going condo",
+  "Two friends realize they remember a shared event completely differently",
+  "A student discovers their teacher follows them on social media",
+  "A person discovers their mentor has retired without saying goodbye",
+  "Someone learns their favorite author plagiarized their stories"
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "job": "GGE1-G4 / P-colon analysis (W7)",
+ "basis": "100T (probes = emotion_vectors_171_100T.pt cleaned vectors, both sides; sha stamped in inputs_sha256.vectors_100T)",
+ "convention": "frozen fig2 \u00a71: bare-final, L31 resid_post f32, unit-normalized dot resid\u00b7(v/\u2016v\u2016), E1 100T probes both sides",
+ "n_scenarios": 12,
+ "layer": 31,
+ "pcolon_primary_probes": {
+  "regretful": {
+   "base_mean": 230.4473419189453,
+   "it_mean": 114.9378890991211,
+   "diff_mean": -115.50946807861328,
+   "diff_sd_across_scenarios": 210.8353271484375,
+   "diff_sem": 60.8629164419166,
+   "z_vs_sem": -1.8978628503425006,
+   "sign": "IT_lower"
+  },
+  "remorseful": {
+   "base_mean": 353.8511962890625,
+   "it_mean": 284.3419494628906,
+   "diff_mean": -69.50924682617188,
+   "diff_sd_across_scenarios": 198.46861267089844,
+   "diff_sem": 57.292953475617395,
+   "z_vs_sem": -1.2132250583966397,
+   "sign": "IT_lower"
+  },
+  "guilty": {
+   "base_mean": 377.3229064941406,
+   "it_mean": 310.1480407714844,
+   "diff_mean": -67.17491912841797,
+   "diff_sd_across_scenarios": 158.8247833251953,
+   "diff_sem": 45.84876570339275,
+   "z_vs_sem": -1.465141276931848,
+   "sign": "IT_lower"
+  },
+  "self-critical": {
+   "base_mean": 429.4963073730469,
+   "it_mean": 397.6282043457031,
+   "diff_mean": -31.868078231811523,
+   "diff_sd_across_scenarios": 195.42752075195312,
+   "diff_sem": 56.41506585660066,
+   "z_vs_sem": -0.5648859528554978,
+   "sign": "IT_lower"
+  },
+  "reflective": {
+   "base_mean": -226.0225830078125,
+   "it_mean": -406.13818359375,
+   "diff_mean": -180.11558532714844,
+   "diff_sd_across_scenarios": 234.05393981933594,
+   "diff_sem": 67.56555257979304,
+   "z_vs_sem": -2.665790161553655,
+   "sign": "IT_lower"
+  }
+ },
+ "pcolon_aggregate_triad": {
+  "probes": [
+   "regretful",
+   "remorseful",
+   "guilty"
+  ],
+  "diff_mean": -84.06453704833984,
+  "diff_sem": 52.897049085709725,
+  "z_vs_sem": -1.5892103340609618,
+  "sign": "IT_lower",
+  "prediction": "IT_lower (P-colon, conf M)",
+  "points_toward": "CONFIRMS direction (formal grade = coordination's per design \u00a74)"
+ },
+ "band_means_triad_diff_IT_minus_base": {
+  "early": -62.35317611694336,
+  "mid": 182.56834411621094,
+  "late": -881.253173828125
+ },
+ "rank_overlap_vs_T1": {
+  "our_top10_suppressed_L31": [
+   "lonely",
+   "envious",
+   "trapped",
+   "nostalgic",
+   "jealous",
+   "fulfilled",
+   "resigned",
+   "stuck",
+   "indifferent",
+   "spiteful"
+  ],
+  "T1_down_top10": [
+   "nostalgic",
+   "regretful",
+   "remorseful",
+   "guilty",
+   "sentimental",
+   "reflective",
+   "sympathetic",
+   "self-critical",
+   "sorry",
+   "jealous"
+  ],
+  "overlap_set": [
+   "jealous",
+   "nostalgic"
+  ],
+  "n_overlap": 2,
+  "T1_emotions_rank_in_our_suppression": {
+   "nostalgic": 3,
+   "regretful": 34,
+   "remorseful": 55,
+   "guilty": 57,
+   "sentimental": 25,
+   "reflective": 12,
+   "sympathetic": 51,
+   "self-critical": 76,
+   "sorry": 91,
+   "jealous": 4
+  }
+ },
+ "it_own_probe_sensitivity": {
+  "note": "IT bare-final residuals projected onto IT's OWN 100T-cleaned probes (canonical raw thru gemma-2-27b-it__neutral_100T). Sensitivity only; not paired to base (different probe set breaks comparability).",
+  "it_own_triad_L31_mean": {
+   "regretful": -477.4287109375,
+   "remorseful": -215.04803466796875,
+   "guilty": -406.1335754394531
+  }
+ },
+ "format_arms_L31_triax_datum_sec46": {
+  "bare": {
+   "regretful": 114.9378890991211,
+   "remorseful": 284.3419494628906,
+   "guilty": 310.1480407714844
+  },
+  "template": {
+   "regretful": -433.0993957519531,
+   "remorseful": -124.92266845703125,
+   "guilty": -360.8889465332031
+  },
+  "colon": {
+   "regretful": -491.8502197265625,
+   "remorseful": -132.1319580078125,
+   "guilty": -426.473876953125
+  }
+ },
+ "inputs_sha256": {
+  "scenario_acts": "94244b237e36b8d5f2d3b28eabf17dd46e754c11e3c928e5cebfe32169345e12",
+  "colon_it": "769a917f5b652e950afb2d4d274eff1ad4e697c46b93e4434cccecd1792cb785",
+  "vectors_100T": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b"
+ },
+ "grading_note": "producer reports numbers; Grid/coordination adjudicates the P-colon grade."
+}

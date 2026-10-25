@@ -1,0 +1,364 @@
+{
+  "record": "Regenerated vocabulary-readout ingredients against the stored files, per model.",
+  "pins_file_sha256_prefix": "f3376e4fbc882ae9",
+  "results": {
+    "gemma-2-2b-base": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            2304,
+            256000
+          ],
+          "shape_stored": [
+            2304,
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "b_U": {
+          "shape_regen": [
+            256000
+          ],
+          "shape_stored": [
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_w": {
+          "shape_regen": [
+            2304
+          ],
+          "shape_stored": [
+            2304
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "d_model": {
+          "regen": "2304",
+          "stored": "2304",
+          "match": true
+        },
+        "n_layers": {
+          "regen": "26",
+          "stored": "26",
+          "match": true
+        },
+        "dtype": {
+          "regen": "torch.bfloat16",
+          "stored": "torch.bfloat16",
+          "match": true
+        }
+      },
+      "pass": true,
+      "revision": "c5ebcd40d208330abc697524c919956e692655cf",
+      "stored_file": "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__lens_ingredients.pt",
+      "seconds": 36.2,
+      "run_utc": "2026-10-18T20:01:47Z"
+    },
+    "gemma-2-2b-it": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            2304,
+            256000
+          ],
+          "shape_stored": [
+            2304,
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "b_U": {
+          "shape_regen": [
+            256000
+          ],
+          "shape_stored": [
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_w": {
+          "shape_regen": [
+            2304
+          ],
+          "shape_stored": [
+            2304
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "d_model": {
+          "regen": "2304",
+          "stored": "2304",
+          "match": true
+        },
+        "n_layers": {
+          "regen": "26",
+          "stored": "26",
+          "match": true
+        },
+        "dtype": {
+          "regen": "torch.bfloat16",
+          "stored": "torch.bfloat16",
+          "match": true
+        }
+      },
+      "pass": true,
+      "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+      "stored_file": "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__lens_ingredients.pt",
+      "seconds": 19.4,
+      "run_utc": "2026-10-18T20:02:10Z"
+    },
+    "gemma-2-9b-base": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            3584,
+            256000
+          ],
+          "shape_stored": [
+            3584,
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "b_U": {
+          "shape_regen": [
+            256000
+          ],
+          "shape_stored": [
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_w": {
+          "shape_regen": [
+            3584
+          ],
+          "shape_stored": [
+            3584
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "d_model": {
+          "regen": "3584",
+          "stored": "3584",
+          "match": true
+        },
+        "n_layers": {
+          "regen": "42",
+          "stored": "42",
+          "match": true
+        },
+        "dtype": {
+          "regen": "torch.bfloat16",
+          "stored": "torch.bfloat16",
+          "match": true
+        }
+      },
+      "pass": true,
+      "revision": "33c193028431c2fde6c6e51f29e6f17b60cbfac6",
+      "stored_file": "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__lens_ingredients.pt",
+      "seconds": 50.1,
+      "run_utc": "2026-10-18T20:03:00Z"
+    },
+    "gemma-2-9b-it": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            3584,
+            256000
+          ],
+          "shape_stored": [
+            3584,
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "b_U": {
+          "shape_regen": [
+            256000
+          ],
+          "shape_stored": [
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_w": {
+          "shape_regen": [
+            3584
+          ],
+          "shape_stored": [
+            3584
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "d_model": {
+          "regen": "3584",
+          "stored": "3584",
+          "match": true
+        },
+        "n_layers": {
+          "regen": "42",
+          "stored": "42",
+          "match": true
+        },
+        "dtype": {
+          "regen": "torch.bfloat16",
+          "stored": "torch.bfloat16",
+          "match": true
+        }
+      },
+      "pass": true,
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "stored_file": "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__lens_ingredients.pt",
+      "seconds": 28.9,
+      "run_utc": "2026-10-18T20:03:29Z"
+    },
+    "gemma-2-27b-it": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            4608,
+            256000
+          ],
+          "shape_stored": [
+            4608,
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "b_U": {
+          "shape_regen": [
+            256000
+          ],
+          "shape_stored": [
+            256000
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_w": {
+          "shape_regen": [
+            4608
+          ],
+          "shape_stored": [
+            4608
+          ],
+          "dtype_stored": "torch.bfloat16",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "d_model": {
+          "regen": "4608",
+          "stored": "4608",
+          "match": true
+        },
+        "n_layers": {
+          "regen": "46",
+          "stored": "46",
+          "match": true
+        },
+        "dtype": {
+          "regen": "torch.bfloat16",
+          "stored": "torch.bfloat16",
+          "match": true
+        }
+      },
+      "pass": true,
+      "revision": "aaf20e6b9f4c0fcf043f6fb2a2068419086d77b0",
+      "stored_file": "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__lens_ingredients.pt",
+      "seconds": 36.3,
+      "run_utc": "2026-10-18T20:04:05Z"
+    },
+    "gemma-2-27b-base": {
+      "tensors": {
+        "W_U": {
+          "shape_regen": [
+            4608,
+            256000
+          ],
+          "shape_stored": [
+            4608,
+            256000
+          ],
+          "dtype_stored": "torch.float32",
+          "equal": true,
+          "max_abs_diff": 0.0
+        },
+        "ln_final_weight": {
+          "shape_regen": [
+            4608
+          ],
+          "shape_stored": [
+            4608
+          ],
+          "dtype_stored": "torch.float32",
+          "equal": true,
+          "max_abs_diff": 0.0
+        }
+      },
+      "scalars": {
+        "ln_final_eps": {
+          "regen": "1e-06",
+          "stored": "1e-06",
+          "match": true
+        },
+        "vocab_size": {
+          "regen": "256000",
+          "stored": "256000",
+          "match": true
+        },
+        "d_model": {
+          "regen": "4608",
+          "stored": "4608",
+          "match": true
+        }
+      },
+      "vocab": {
+        "checked": false
+      },
+      "pass": true,
+      "revision": "938270f5272feb02779b55c2bb2fffdd0f53ff0c",
+      "stored_file": "data/vectors/lens_ingredients.pt",
+      "seconds": 21123.1,
+      "run_utc": "2026-10-19T01:58:05Z"
+    }
+  }
+}

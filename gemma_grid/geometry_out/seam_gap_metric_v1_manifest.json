@@ -1,0 +1,16 @@
+{
+ "m9_note": "SR.5 input manifest.",
+ "created_utc": "2026-08-19T16:24:14+00:00",
+ "inputs": {
+  "gemma_grid/geometry_out_100T/extracts_summary.json": "293743dd21b986cb4828eb365aee74f0d63e98795d16e0fd66856d4c5adde636",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/lens_summary.json": "3fe84478e3335f3f00c65fcc9559d9beb3a2138acd54bed24f0949749c92bc63",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-it/lens_summary.json": "5cfd570ffe83149fdcb4a4dc641c8b6ca3942a9e5ee1a5a2c4e2a68f04baf240",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-base/lens_summary.json": "e2617f72164f1388cfd96542fac66d50fd9ce91cdcdf44804b4c13c07ce8670a",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-it/lens_summary.json": "341eec4a675b0995b2eb3b9f7ad9ea32a567fb4f51b37cb52ada03ce46fb8a69",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-base/lens_summary.json": "2767b6ec8ed946b8c412fe9da4a084150f5d1f28e9817f28e4253b050ade703a",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-it/lens_summary.json": "1bd4776f11ab547c762bc9523b9abe7f554733514b0d637b7066b2517a78ef62"
+ },
+ "output": {
+  "gemma_grid/geometry_out_100T/seam_gap_metric_100T_v1.json": "d605a2813d62d08fe1a631dfbaa19e84cd4d43eb5a3a4028f41b0e751b5b8f24"
+ }
+}

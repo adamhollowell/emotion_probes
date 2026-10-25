@@ -1,0 +1,1406 @@
+{
+  "gemma-2-2b-base": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.514,
+        "arousal_pc2_r": 0.39,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.441,
+        "arousal_pc2_r": 0.42,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.451,
+        "arousal_pc2_r": 0.397,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.433,
+        "arousal_pc2_r": 0.425,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.456,
+        "arousal_pc2_r": 0.437,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.487,
+        "arousal_pc2_r": 0.398,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.474,
+        "arousal_pc2_r": 0.446,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.586,
+        "arousal_pc2_r": 0.526,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.588,
+        "arousal_pc2_r": 0.561,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.615,
+        "arousal_pc2_r": 0.653,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.616,
+        "arousal_pc2_r": 0.444,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.681,
+        "arousal_pc2_r": 0.28,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.679,
+        "arousal_pc2_r": 0.282,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.696,
+        "arousal_pc2_r": 0.452,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.706,
+        "arousal_pc2_r": 0.697,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.704,
+        "arousal_pc2_r": 0.609,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.727,
+        "arousal_pc2_r": 0.762,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.711,
+        "arousal_pc2_r": 0.499,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.689,
+        "arousal_pc2_r": 0.656,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.696,
+        "arousal_pc2_r": 0.66,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.681,
+        "arousal_pc2_r": 0.643,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.65,
+        "arousal_pc2_r": 0.599,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.678,
+        "arousal_pc2_r": 0.022,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.668,
+        "arousal_pc2_r": 0.273,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.667,
+        "arousal_pc2_r": 0.549,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.669,
+        "arousal_pc2_r": 0.626,
+        "arousal_best_pc": 2
+      }
+    ],
+    "arousal_settles_on_pc2_from": 6,
+    "settle_frac_depth": 0.231
+  },
+  "gemma-2-2b-it": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.549,
+        "arousal_pc2_r": 0.295,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.471,
+        "arousal_pc2_r": 0.379,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.492,
+        "arousal_pc2_r": 0.434,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.474,
+        "arousal_pc2_r": 0.471,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.492,
+        "arousal_pc2_r": 0.483,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.517,
+        "arousal_pc2_r": 0.463,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.52,
+        "arousal_pc2_r": 0.442,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.611,
+        "arousal_pc2_r": 0.582,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.599,
+        "arousal_pc2_r": 0.582,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.656,
+        "arousal_pc2_r": 0.634,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.673,
+        "arousal_pc2_r": 0.304,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.723,
+        "arousal_pc2_r": 0.141,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.735,
+        "arousal_pc2_r": 0.216,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.743,
+        "arousal_pc2_r": 0.152,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.749,
+        "arousal_pc2_r": 0.282,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.763,
+        "arousal_pc2_r": 0.218,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.773,
+        "arousal_pc2_r": 0.787,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.764,
+        "arousal_pc2_r": 0.363,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.745,
+        "arousal_pc2_r": 0.459,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.75,
+        "arousal_pc2_r": 0.492,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.742,
+        "arousal_pc2_r": 0.406,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.723,
+        "arousal_pc2_r": 0.416,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.752,
+        "arousal_pc2_r": 0.299,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.747,
+        "arousal_pc2_r": 0.34,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.742,
+        "arousal_pc2_r": 0.413,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.741,
+        "arousal_pc2_r": 0.507,
+        "arousal_best_pc": 2
+      }
+    ],
+    "arousal_settles_on_pc2_from": 7,
+    "settle_frac_depth": 0.269
+  },
+  "gemma-2-9b-base": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.557,
+        "arousal_pc2_r": 0.431,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.464,
+        "arousal_pc2_r": 0.351,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.502,
+        "arousal_pc2_r": 0.391,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.48,
+        "arousal_pc2_r": 0.387,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.48,
+        "arousal_pc2_r": 0.39,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.447,
+        "arousal_pc2_r": 0.439,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.476,
+        "arousal_pc2_r": 0.463,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.473,
+        "arousal_pc2_r": 0.429,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.524,
+        "arousal_pc2_r": 0.56,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.546,
+        "arousal_pc2_r": 0.576,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.559,
+        "arousal_pc2_r": 0.569,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.609,
+        "arousal_pc2_r": 0.605,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.621,
+        "arousal_pc2_r": 0.648,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.626,
+        "arousal_pc2_r": 0.614,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.67,
+        "arousal_pc2_r": 0.571,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.684,
+        "arousal_pc2_r": 0.594,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.676,
+        "arousal_pc2_r": 0.444,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.746,
+        "arousal_pc2_r": 0.525,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.735,
+        "arousal_pc2_r": 0.719,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.738,
+        "arousal_pc2_r": 0.596,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.722,
+        "arousal_pc2_r": 0.391,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.749,
+        "arousal_pc2_r": 0.467,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.744,
+        "arousal_pc2_r": 0.569,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.754,
+        "arousal_pc2_r": 0.632,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.745,
+        "arousal_pc2_r": 0.59,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.742,
+        "arousal_pc2_r": 0.636,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 26,
+        "valence_r": 0.743,
+        "arousal_pc2_r": 0.605,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 27,
+        "valence_r": 0.734,
+        "arousal_pc2_r": 0.553,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 28,
+        "valence_r": 0.715,
+        "arousal_pc2_r": 0.577,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 29,
+        "valence_r": 0.717,
+        "arousal_pc2_r": 0.579,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 30,
+        "valence_r": 0.718,
+        "arousal_pc2_r": 0.586,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 31,
+        "valence_r": 0.711,
+        "arousal_pc2_r": 0.573,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 32,
+        "valence_r": 0.712,
+        "arousal_pc2_r": 0.523,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 33,
+        "valence_r": 0.7,
+        "arousal_pc2_r": 0.545,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 34,
+        "valence_r": 0.697,
+        "arousal_pc2_r": 0.549,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 35,
+        "valence_r": 0.692,
+        "arousal_pc2_r": 0.497,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 36,
+        "valence_r": 0.686,
+        "arousal_pc2_r": 0.53,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 37,
+        "valence_r": 0.684,
+        "arousal_pc2_r": 0.488,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 38,
+        "valence_r": 0.679,
+        "arousal_pc2_r": 0.527,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 39,
+        "valence_r": 0.684,
+        "arousal_pc2_r": 0.561,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 40,
+        "valence_r": 0.702,
+        "arousal_pc2_r": 0.559,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 41,
+        "valence_r": 0.713,
+        "arousal_pc2_r": 0.592,
+        "arousal_best_pc": 2
+      }
+    ],
+    "arousal_settles_on_pc2_from": 8,
+    "settle_frac_depth": 0.19
+  },
+  "gemma-2-9b-it": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.534,
+        "arousal_pc2_r": 0.385,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.497,
+        "arousal_pc2_r": 0.346,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.53,
+        "arousal_pc2_r": 0.395,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.511,
+        "arousal_pc2_r": 0.384,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.513,
+        "arousal_pc2_r": 0.384,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.514,
+        "arousal_pc2_r": 0.45,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.52,
+        "arousal_pc2_r": 0.46,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.518,
+        "arousal_pc2_r": 0.418,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.552,
+        "arousal_pc2_r": 0.553,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.576,
+        "arousal_pc2_r": 0.642,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.602,
+        "arousal_pc2_r": 0.595,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.639,
+        "arousal_pc2_r": 0.648,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.661,
+        "arousal_pc2_r": 0.672,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.669,
+        "arousal_pc2_r": 0.577,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.708,
+        "arousal_pc2_r": 0.505,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.727,
+        "arousal_pc2_r": 0.502,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.722,
+        "arousal_pc2_r": 0.219,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.77,
+        "arousal_pc2_r": 0.04,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.768,
+        "arousal_pc2_r": 0.357,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.77,
+        "arousal_pc2_r": 0.047,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.761,
+        "arousal_pc2_r": 0.156,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.786,
+        "arousal_pc2_r": 0.169,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.786,
+        "arousal_pc2_r": 0.566,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.796,
+        "arousal_pc2_r": 0.629,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.792,
+        "arousal_pc2_r": 0.609,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.794,
+        "arousal_pc2_r": 0.618,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 26,
+        "valence_r": 0.801,
+        "arousal_pc2_r": 0.64,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 27,
+        "valence_r": 0.783,
+        "arousal_pc2_r": 0.525,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 28,
+        "valence_r": 0.777,
+        "arousal_pc2_r": 0.554,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 29,
+        "valence_r": 0.774,
+        "arousal_pc2_r": 0.584,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 30,
+        "valence_r": 0.767,
+        "arousal_pc2_r": 0.61,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 31,
+        "valence_r": 0.77,
+        "arousal_pc2_r": 0.609,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 32,
+        "valence_r": 0.765,
+        "arousal_pc2_r": 0.562,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 33,
+        "valence_r": 0.754,
+        "arousal_pc2_r": 0.536,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 34,
+        "valence_r": 0.753,
+        "arousal_pc2_r": 0.533,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 35,
+        "valence_r": 0.754,
+        "arousal_pc2_r": 0.489,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 36,
+        "valence_r": 0.748,
+        "arousal_pc2_r": 0.503,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 37,
+        "valence_r": 0.757,
+        "arousal_pc2_r": 0.459,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 38,
+        "valence_r": 0.756,
+        "arousal_pc2_r": 0.448,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 39,
+        "valence_r": 0.766,
+        "arousal_pc2_r": 0.464,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 40,
+        "valence_r": 0.781,
+        "arousal_pc2_r": 0.454,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 41,
+        "valence_r": 0.78,
+        "arousal_pc2_r": 0.45,
+        "arousal_best_pc": 3
+      }
+    ],
+    "arousal_settles_on_pc2_from": 8,
+    "settle_frac_depth": 0.19
+  },
+  "gemma-2-27b-base": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.415,
+        "arousal_pc2_r": 0.202,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.401,
+        "arousal_pc2_r": 0.126,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.508,
+        "arousal_pc2_r": 0.193,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.605,
+        "arousal_pc2_r": 0.196,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.543,
+        "arousal_pc2_r": 0.215,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.517,
+        "arousal_pc2_r": 0.176,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.504,
+        "arousal_pc2_r": 0.3,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.424,
+        "arousal_pc2_r": 0.309,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.445,
+        "arousal_pc2_r": 0.277,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.422,
+        "arousal_pc2_r": 0.241,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.393,
+        "arousal_pc2_r": 0.285,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.404,
+        "arousal_pc2_r": 0.228,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.529,
+        "arousal_pc2_r": 0.319,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.442,
+        "arousal_pc2_r": 0.05,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.513,
+        "arousal_pc2_r": 0.157,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.484,
+        "arousal_pc2_r": 0.306,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.488,
+        "arousal_pc2_r": 0.436,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.435,
+        "arousal_pc2_r": 0.474,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.462,
+        "arousal_pc2_r": 0.272,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.485,
+        "arousal_pc2_r": 0.107,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.438,
+        "arousal_pc2_r": 0.164,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.485,
+        "arousal_pc2_r": 0.163,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.523,
+        "arousal_pc2_r": 0.028,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.673,
+        "arousal_pc2_r": 0.112,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.744,
+        "arousal_pc2_r": 0.429,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.746,
+        "arousal_pc2_r": 0.382,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 26,
+        "valence_r": 0.738,
+        "arousal_pc2_r": 0.409,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 27,
+        "valence_r": 0.732,
+        "arousal_pc2_r": 0.587,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 28,
+        "valence_r": 0.745,
+        "arousal_pc2_r": 0.63,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 29,
+        "valence_r": 0.74,
+        "arousal_pc2_r": 0.647,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 30,
+        "valence_r": 0.735,
+        "arousal_pc2_r": 0.673,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 31,
+        "valence_r": 0.72,
+        "arousal_pc2_r": 0.668,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 32,
+        "valence_r": 0.72,
+        "arousal_pc2_r": 0.651,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 33,
+        "valence_r": 0.737,
+        "arousal_pc2_r": 0.646,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 34,
+        "valence_r": 0.749,
+        "arousal_pc2_r": 0.666,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 35,
+        "valence_r": 0.747,
+        "arousal_pc2_r": 0.698,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 36,
+        "valence_r": 0.737,
+        "arousal_pc2_r": 0.728,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 37,
+        "valence_r": 0.734,
+        "arousal_pc2_r": 0.732,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 38,
+        "valence_r": 0.73,
+        "arousal_pc2_r": 0.742,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 39,
+        "valence_r": 0.732,
+        "arousal_pc2_r": 0.738,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 40,
+        "valence_r": 0.732,
+        "arousal_pc2_r": 0.735,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 41,
+        "valence_r": 0.726,
+        "arousal_pc2_r": 0.723,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 42,
+        "valence_r": 0.723,
+        "arousal_pc2_r": 0.697,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 43,
+        "valence_r": 0.728,
+        "arousal_pc2_r": 0.679,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 44,
+        "valence_r": 0.572,
+        "arousal_pc2_r": 0.589,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 45,
+        "valence_r": 0.493,
+        "arousal_pc2_r": 0.544,
+        "arousal_best_pc": 2
+      }
+    ],
+    "arousal_settles_on_pc2_from": 27,
+    "settle_frac_depth": 0.587
+  },
+  "gemma-2-27b-it": {
+    "per_layer": [
+      {
+        "layer": 0,
+        "valence_r": 0.532,
+        "arousal_pc2_r": 0.251,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 1,
+        "valence_r": 0.503,
+        "arousal_pc2_r": 0.204,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 2,
+        "valence_r": 0.633,
+        "arousal_pc2_r": 0.242,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 3,
+        "valence_r": 0.644,
+        "arousal_pc2_r": 0.285,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 4,
+        "valence_r": 0.537,
+        "arousal_pc2_r": 0.373,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 5,
+        "valence_r": 0.437,
+        "arousal_pc2_r": 0.292,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 6,
+        "valence_r": 0.529,
+        "arousal_pc2_r": 0.387,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 7,
+        "valence_r": 0.418,
+        "arousal_pc2_r": 0.35,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 8,
+        "valence_r": 0.452,
+        "arousal_pc2_r": 0.335,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 9,
+        "valence_r": 0.441,
+        "arousal_pc2_r": 0.282,
+        "arousal_best_pc": 5
+      },
+      {
+        "layer": 10,
+        "valence_r": 0.405,
+        "arousal_pc2_r": 0.23,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 11,
+        "valence_r": 0.484,
+        "arousal_pc2_r": 0.143,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 12,
+        "valence_r": 0.539,
+        "arousal_pc2_r": 0.012,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 13,
+        "valence_r": 0.574,
+        "arousal_pc2_r": 0.071,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 14,
+        "valence_r": 0.517,
+        "arousal_pc2_r": 0.105,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 15,
+        "valence_r": 0.503,
+        "arousal_pc2_r": 0.067,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 16,
+        "valence_r": 0.536,
+        "arousal_pc2_r": 0.17,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 17,
+        "valence_r": 0.53,
+        "arousal_pc2_r": 0.178,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 18,
+        "valence_r": 0.519,
+        "arousal_pc2_r": 0.147,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 19,
+        "valence_r": 0.535,
+        "arousal_pc2_r": 0.158,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 20,
+        "valence_r": 0.555,
+        "arousal_pc2_r": 0.177,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 21,
+        "valence_r": 0.573,
+        "arousal_pc2_r": 0.02,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 22,
+        "valence_r": 0.658,
+        "arousal_pc2_r": 0.042,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 23,
+        "valence_r": 0.706,
+        "arousal_pc2_r": 0.147,
+        "arousal_best_pc": 4
+      },
+      {
+        "layer": 24,
+        "valence_r": 0.771,
+        "arousal_pc2_r": 0.223,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 25,
+        "valence_r": 0.78,
+        "arousal_pc2_r": 0.227,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 26,
+        "valence_r": 0.774,
+        "arousal_pc2_r": 0.259,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 27,
+        "valence_r": 0.79,
+        "arousal_pc2_r": 0.559,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 28,
+        "valence_r": 0.793,
+        "arousal_pc2_r": 0.541,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 29,
+        "valence_r": 0.784,
+        "arousal_pc2_r": 0.582,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 30,
+        "valence_r": 0.775,
+        "arousal_pc2_r": 0.544,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 31,
+        "valence_r": 0.772,
+        "arousal_pc2_r": 0.578,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 32,
+        "valence_r": 0.771,
+        "arousal_pc2_r": 0.556,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 33,
+        "valence_r": 0.777,
+        "arousal_pc2_r": 0.536,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 34,
+        "valence_r": 0.779,
+        "arousal_pc2_r": 0.541,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 35,
+        "valence_r": 0.78,
+        "arousal_pc2_r": 0.59,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 36,
+        "valence_r": 0.776,
+        "arousal_pc2_r": 0.617,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 37,
+        "valence_r": 0.775,
+        "arousal_pc2_r": 0.643,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 38,
+        "valence_r": 0.769,
+        "arousal_pc2_r": 0.675,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 39,
+        "valence_r": 0.77,
+        "arousal_pc2_r": 0.65,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 40,
+        "valence_r": 0.772,
+        "arousal_pc2_r": 0.651,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 41,
+        "valence_r": 0.767,
+        "arousal_pc2_r": 0.63,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 42,
+        "valence_r": 0.767,
+        "arousal_pc2_r": 0.588,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 43,
+        "valence_r": 0.775,
+        "arousal_pc2_r": 0.607,
+        "arousal_best_pc": 2
+      },
+      {
+        "layer": 44,
+        "valence_r": 0.788,
+        "arousal_pc2_r": 0.535,
+        "arousal_best_pc": 3
+      },
+      {
+        "layer": 45,
+        "valence_r": 0.794,
+        "arousal_pc2_r": 0.493,
+        "arousal_best_pc": 3
+      }
+    ],
+    "arousal_settles_on_pc2_from": 27,
+    "settle_frac_depth": 0.587
+  }
+}

@@ -1,0 +1,123 @@
+{
+ "figure": "gge1_v3_fig2_transport",
+ "source_artifacts": [
+  "geometry_out_100T/pmap_transport_100T.json",
+  "geometry_out_100T/pmap_transport_floor_100T.json"
+ ],
+ "style": "STYLE_DECISIONS.md (locked 2026-08-04) + review/REVIEW_ROUND1.md revisions",
+ "plotted_values": {
+  "pairs": {
+   "gemma-2-2b-base->gemma-2-27b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9716237565124259
+   },
+   "gemma-2-27b-base->gemma-2-2b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9761545273223322
+   },
+   "gemma-2-2b-base->gemma-2-2b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9778643838357184
+   },
+   "gemma-2-2b-base->gemma-2-9b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9789539453740845
+   },
+   "gemma-2-2b-base->gemma-2-9b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9734240133192702
+   },
+   "gemma-2-2b-it->gemma-2-9b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 0.9941520467836257,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9758981268416925
+   },
+   "gemma-2-2b-it->gemma-2-9b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9775633482498901
+   },
+   "gemma-2-9b-base->gemma-2-9b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9769532025085265
+   },
+   "gemma-2-27b-base->gemma-2-2b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9753249655730594
+   },
+   "gemma-2-27b-base->gemma-2-9b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9760286022661359
+   },
+   "gemma-2-27b-base->gemma-2-9b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9741705146891101
+   },
+   "gemma-2-27b-base->gemma-2-27b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9744960503924579
+   },
+   "gemma-2-27b-it->gemma-2-2b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9734360273075726
+   },
+   "gemma-2-27b-it->gemma-2-2b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9777020689664115
+   },
+   "gemma-2-27b-it->gemma-2-9b-base": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9727536111804976
+   },
+   "gemma-2-27b-it->gemma-2-9b-it": {
+    "median_rank": 1.0,
+    "top1_acc": 1.0,
+    "top5_acc": 1.0,
+    "median_cosine": 0.9777439661586026
+   }
+  },
+  "primary_pair": "gemma-2-2b-base->gemma-2-27b-base",
+  "floor": {
+   "shuffled_top1_distribution": {
+    "min": 0.0,
+    "mean": 0.0036836257309941518,
+    "p50": 0.0,
+    "p90": 0.011695906432748537,
+    "p99": 0.017543859649122806,
+    "max": 0.03508771929824561
+   },
+   "p_add_one": 9.999000099990002e-05,
+   "floor_count": 0,
+   "n_perm": 10000
+  },
+  "note": "per-pair permutation p recorded DEFERRED in the artifact; floor graded on the primary pair only (ruling 1)"
+ }
+}

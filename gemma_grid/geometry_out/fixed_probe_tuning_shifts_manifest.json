@@ -1,0 +1,18 @@
+{
+ "rule": "M.9 \u2014 every input hashed at run time",
+ "inputs_sha256": {
+  "gemma_grid/anthropic_originals/Anthropic Emotion Vectors - original essay Base and IT sections.txt": "d69752c5f898069d56468002ca730535329c8476782f8371d1398768dbfc7de5",
+  "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+  "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__neutral_100T.pt": "13b6c6b98c67308f57dda598d2d4723e3708d9cc189ca9e371492faa6ec6c965",
+  "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+  "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__neutral_100T.pt": "82282c77ec8b94f0ecfa9bf08b4c69c46ed85a17d72920f03d6874c407f67bac",
+  "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+  "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__neutral_100T.pt": "723360d2febc35707deed7f6079023810c1e8c114917065d64f21affcee90340",
+  "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+  "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__neutral_100T.pt": "fd557d875961e6f6f12662a9319c99eb3b8233b077dc46362723990339c9ef74",
+  "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "neutral_100T.pt": "04e1a814c586f4aa30ef96edf075956dddab8bec19b6f46f998d36f1c30a644b",
+  "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5",
+  "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__neutral_100T.pt": "0b6c5abde2e395fd2cecbe2522566f57759ec6bf635678681295e9465fa7d5bd"
+ }
+}

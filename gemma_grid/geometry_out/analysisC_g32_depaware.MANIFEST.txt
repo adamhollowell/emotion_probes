@@ -1,0 +1,20 @@
+GGE1 100T — ANALYSIS C (G3.2 dependence-aware bootstrap) MANIFEST (Coordinator verification)
+Pulled off critical path 2026-08-28 while the B SVD diagnostic runs. NOT appended to SR.5 (per Adam; SR.5 at full-batch handback).
+
+artifact : analysisC_g32_depaware_100T.json
+sha256   : 196c59b03ccb2def9c0777653c94c85de896a6ab5c3ec9d3beb58e8dabd37a03
+
+PARAMS
+  B / seed / resample : 2000 / 0 / 45 RM emotions jointly, PCA fixed on 171
+  registered_SE       : 0.21821789023599236
+
+RESULT — VERIFY vs ledger (registered p 0.237/0.200; dep-aware SE ~4x smaller; dep-aware p ~1e-5/1e-6)
+  BASE: arousal_r 2b/27b = 0.4992/0.6675  delta_z=0.2580
+        p_registered=0.23712  SE_reg=0.2182  SE_depaware=0.0586 (reg/da=3.73x)  p_depaware=1.059e-05
+  IT  : arousal_r 2b/27b = 0.3630/0.5783  delta_z=0.2796
+        p_registered=0.20011  SE_reg=0.2182  SE_depaware=0.0577 (reg/da=3.78x)  p_depaware=1.266e-06
+
+  CHECK: base p_reg 0.23712~=0.237 OK; it p_reg 0.20011~=0.200 OK; SE reg/da ~3.7-3.8x (~4x) OK; p_depaware 1.06e-5/1.27e-6 (~1e-5/1e-6) OK
+
+PROVENANCE : GCP gge1-floor (n2-standard-32), numpy 2.0.2 / scipy-openblas
+INTEGRITY  : anchor 6de2e293..971b, pre-statement 09eaa4fb..2eef (governing)

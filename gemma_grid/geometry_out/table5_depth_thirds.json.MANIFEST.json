@@ -1,0 +1,15 @@
+{
+ "script": "gemma_grid/scripts/table5_depth_thirds_100T.py",
+ "script_sha256": "98aff854a9e155b1da3b9a6eb37b20d1c0d18de3799921cfe95c2828861b0e62",
+ "inputs": {
+  "gemma_grid/geometry_out_100T/fig84_depth_tuning.json": "fea661bdacde2431dca984c57ed0d844cd53e2d4b08d4d5be18664acfd14332b",
+  "fixed_probe_tuning_shifts_100T_results.json": "4d7fe9eacd20cee46257d43b8ea6d1246cd24555194dac605c595727b75b318a"
+ },
+ "output": "gemma_grid/geometry_out_100T/table5_depth_thirds_100T.json",
+ "output_sha256": "83b5934cc94f18a11eb426b10edb7045916837b3e253708a93c3129953c43ec0",
+ "versions": {
+  "python": "3.12.13",
+  "numpy": "2.4.6"
+ },
+ "run_utc": "2026-10-23T14:59:43Z"
+}

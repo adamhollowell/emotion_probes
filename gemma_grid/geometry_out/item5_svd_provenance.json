@@ -1,0 +1,29 @@
+{
+ "record": "Item 5 gesdd->gesvd fallback provenance (LC-59 count gap closure).",
+ "regime": "single-thread BLAS (OMP/OPENBLAS/MKL/VECLIB/NUMEXPR=1), numpy 2.4.6 scipy fallback",
+ "total_svd_calls_item5": 108,
+ "total_fallbacks": 2,
+ "fallbacks_by_task": {
+  "gemma-2-27b-base->gemma-2-27b-it|k=40": 1,
+  "gemma-2-27b-it->gemma-2-27b-base|k=40": 1
+ },
+ "fallback_events": [
+  {
+   "task": "gemma-2-27b-base->gemma-2-27b-it|k=40",
+   "shape": [
+    4608,
+    4608
+   ]
+  },
+  {
+   "task": "gemma-2-27b-it->gemma-2-27b-base|k=40",
+   "shape": [
+    4608,
+    4608
+   ]
+  }
+ ],
+ "all_metrics_bit_identical_to_shipped": true,
+ "governance": "fallbacks>0 -> null-space caveat applies to the listed (task,shape) cases; Ledger amendment recorded",
+ "prep_svd_note": "the source-PCA prep SVD is full-rank (171xd); any fallback there would be separately listed by task '|prep'"
+}

@@ -1,0 +1,59 @@
+{
+ "job": "diag_T3_9b (T.3 9B centered near-null)",
+ "basis": "RAW/basis-immune; neutral_100T acts, 9b-it raw probes, L28",
+ "target_centered_r_structure_from_artifact": -0.1214,
+ "reproduce": {
+  "centered_none": -0.1214,
+  "uncentered": 0.9993,
+  "artifact_centered": -0.1214,
+  "artifact_uncentered": 0.9993
+ },
+ "massive_dims": {
+  "n_union20": 21,
+  "it_top5_dims": [
+   504,
+   1235,
+   3033,
+   1132,
+   979
+  ],
+  "base_top5_dims": [
+   504,
+   1235,
+   2558,
+   1279,
+   3033
+  ],
+  "it_top5_var_share_pct": 9.9,
+  "dim4140_in_union": false,
+  "dim4140_var_rank_it": null
+ },
+ "drop_test_centered_r_structure": {
+  "none": {
+   "r_structure": -0.1214,
+   "SD_base": 0.00167,
+   "SD_it": 0.00237
+  },
+  "it-top20": {
+   "r_structure": 0.9538,
+   "SD_base": 0.00211,
+   "SD_it": 0.00207
+  },
+  "union": {
+   "r_structure": 0.9595,
+   "SD_base": 0.00216,
+   "SD_it": 0.00211
+  }
+ },
+ "reliability_after_union_drop_oddeven": {
+  "base": 0.9754,
+  "it": 0.9825
+ },
+ "cross_size_uncentered_consistency": {
+  "2B_vs_9B_full": 0.5411,
+  "2B_vs_9B_dropped": 0.241,
+  "9B_vs_27B_full": 0.1706,
+  "9B_vs_27B_dropped": -0.025,
+  "note": "cross-size collapse NOT claimed explained (mirrors 27B note)"
+ }
+}

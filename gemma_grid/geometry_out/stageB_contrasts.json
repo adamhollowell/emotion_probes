@@ -1,0 +1,953 @@
+{
+  "family_tuning": [
+    {
+      "pair": "gemma-2-2b-base<->gemma-2-2b-it",
+      "rsa": {
+        "cosine": 0.9944106936454773,
+        "pearson": 0.9944172051435541,
+        "spearman": 0.9930878341502314
+      },
+      "procrustes_k2": {
+        "disparity": 0.029128877446055412,
+        "rotation_deg": -2.1545116901397705,
+        "det_R": 0.9999998807907104
+      },
+      "procrustes_k3": {
+        "disparity": 0.007716212421655655,
+        "rotation_deg": null,
+        "det_R": 1.0000001192092896
+      },
+      "procrustes_k5": {
+        "disparity": 0.02781788818538189,
+        "rotation_deg": null,
+        "det_R": 0.9999996423721313
+      },
+      "cross_ari": {
+        "ari": 0.5934966258597218,
+        "band_a_mean_minus_2sd": 0.5336,
+        "band_b_mean_minus_2sd": 0.5623,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.011094802059233189,
+        "max": 0.03366749361157417,
+        "top10": [
+          [
+            "hysterical",
+            0.03366749361157417
+          ],
+          [
+            "exuberant",
+            0.029143447056412697
+          ],
+          [
+            "regretful",
+            0.02849814109504223
+          ],
+          [
+            "ecstatic",
+            0.02674308978021145
+          ],
+          [
+            "guilty",
+            0.025430984795093536
+          ],
+          [
+            "vindictive",
+            0.024690600112080574
+          ],
+          [
+            "vengeful",
+            0.024610962718725204
+          ],
+          [
+            "remorseful",
+            0.024462858214974403
+          ],
+          [
+            "euphoric",
+            0.023783942684531212
+          ],
+          [
+            "amazed",
+            0.023752667009830475
+          ]
+        ],
+        "bottom5": [
+          [
+            "satisfied",
+            0.0013821927132084966
+          ],
+          [
+            "mortified",
+            0.0013710642233490944
+          ],
+          [
+            "grateful",
+            0.0011916686780750751
+          ],
+          [
+            "embarrassed",
+            0.0009340227115899324
+          ],
+          [
+            "content",
+            0.0004493300511967391
+          ]
+        ],
+        "loving": {
+          "value": 0.0038256007246673107,
+          "rank_of_171": 147
+        },
+        "warm_cluster_mean": 0.00561475707218051,
+        "nonwarm_mean": 0.011699741706252098
+      }
+    },
+    {
+      "pair": "gemma-2-9b-base<->gemma-2-9b-it",
+      "rsa": {
+        "cosine": 0.9929566383361816,
+        "pearson": 0.9929601064499693,
+        "spearman": 0.9911316262455327
+      },
+      "procrustes_k2": {
+        "disparity": 0.01819842867553234,
+        "rotation_deg": -0.9120975136756897,
+        "det_R": 0.9999998211860657
+      },
+      "procrustes_k3": {
+        "disparity": 0.011021832004189491,
+        "rotation_deg": null,
+        "det_R": 1.000000238418579
+      },
+      "procrustes_k5": {
+        "disparity": 0.1209251806139946,
+        "rotation_deg": null,
+        "det_R": 1.0000001192092896
+      },
+      "cross_ari": {
+        "ari": 0.7566818166860908,
+        "band_a_mean_minus_2sd": 0.5578,
+        "band_b_mean_minus_2sd": 0.4887,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.008471895009279251,
+        "max": 0.031464673578739166,
+        "top10": [
+          [
+            "aroused",
+            0.031464673578739166
+          ],
+          [
+            "regretful",
+            0.02552604116499424
+          ],
+          [
+            "greedy",
+            0.0239853672683239
+          ],
+          [
+            "envious",
+            0.02332557737827301
+          ],
+          [
+            "jealous",
+            0.022876335307955742
+          ],
+          [
+            "guilty",
+            0.022116217762231827
+          ],
+          [
+            "vengeful",
+            0.02184107154607773
+          ],
+          [
+            "serene",
+            0.021371368318796158
+          ],
+          [
+            "self-critical",
+            0.021362565457820892
+          ],
+          [
+            "vindictive",
+            0.02124573290348053
+          ]
+        ],
+        "bottom5": [
+          [
+            "overwhelmed",
+            0.0011251624673604965
+          ],
+          [
+            "proud",
+            0.0009063318721018732
+          ],
+          [
+            "sullen",
+            0.0008326239185407758
+          ],
+          [
+            "annoyed",
+            0.0006573976133950055
+          ],
+          [
+            "hostile",
+            0.0003666429838631302
+          ]
+        ],
+        "loving": {
+          "value": 0.00902571715414524,
+          "rank_of_171": 62
+        },
+        "warm_cluster_mean": 0.006210152059793472,
+        "nonwarm_mean": 0.008582900278270245
+      }
+    },
+    {
+      "pair": "gemma-2-27b-base<->gemma-2-27b-it",
+      "rsa": {
+        "cosine": 0.9960062503814697,
+        "pearson": 0.9960091957207261,
+        "spearman": 0.994799270095151
+      },
+      "procrustes_k2": {
+        "disparity": 0.03287777304649353,
+        "rotation_deg": 1.462536096572876,
+        "det_R": 1.000000238418579
+      },
+      "procrustes_k3": {
+        "disparity": 0.007206746377050877,
+        "rotation_deg": null,
+        "det_R": 1.0000001192092896
+      },
+      "procrustes_k5": {
+        "disparity": 0.010388748720288277,
+        "rotation_deg": null,
+        "det_R": 0.9999995231628418
+      },
+      "cross_ari": {
+        "ari": 0.667973830565664,
+        "band_a_mean_minus_2sd": 0.5411,
+        "band_b_mean_minus_2sd": 0.5354,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.011460309848189354,
+        "max": 0.04084712266921997,
+        "top10": [
+          [
+            "vindictive",
+            0.04084712266921997
+          ],
+          [
+            "vengeful",
+            0.038339290767908096
+          ],
+          [
+            "spiteful",
+            0.035401832312345505
+          ],
+          [
+            "greedy",
+            0.0313202440738678
+          ],
+          [
+            "regretful",
+            0.030787315219640732
+          ],
+          [
+            "guilty",
+            0.028545239940285683
+          ],
+          [
+            "remorseful",
+            0.0278338436037302
+          ],
+          [
+            "aroused",
+            0.02614331990480423
+          ],
+          [
+            "vigilant",
+            0.026103053241968155
+          ],
+          [
+            "paranoid",
+            0.02558894082903862
+          ]
+        ],
+        "bottom5": [
+          [
+            "sad",
+            0.0016406464856117964
+          ],
+          [
+            "exasperated",
+            0.0013916597235947847
+          ],
+          [
+            "valiant",
+            0.0011405235854908824
+          ],
+          [
+            "distressed",
+            0.0010860208421945572
+          ],
+          [
+            "restless",
+            0.0003759098763111979
+          ]
+        ],
+        "loving": {
+          "value": 0.007760443724691868,
+          "rank_of_171": 105
+        },
+        "warm_cluster_mean": 0.006522590760141611,
+        "nonwarm_mean": 0.01173462811857462
+      }
+    }
+  ],
+  "family_scale": [
+    {
+      "pair": "gemma-2-2b-base<->gemma-2-9b-base",
+      "rsa": {
+        "cosine": 0.9964049458503723,
+        "pearson": 0.9964061726164416,
+        "spearman": 0.9957921507798837
+      },
+      "procrustes_k2": {
+        "disparity": 0.017239119857549667,
+        "rotation_deg": -0.036183152347803116,
+        "det_R": 1.0000001192092896
+      },
+      "procrustes_k3": {
+        "disparity": 0.007284731604158878,
+        "rotation_deg": null,
+        "det_R": 1.000000238418579
+      },
+      "procrustes_k5": {
+        "disparity": 0.004928806331008673,
+        "rotation_deg": null,
+        "det_R": 0.9999998807907104
+      },
+      "cross_ari": {
+        "ari": 0.6058885542710548,
+        "band_a_mean_minus_2sd": 0.5336,
+        "band_b_mean_minus_2sd": 0.5578,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.009032879024744034,
+        "max": 0.022887030616402626,
+        "top10": [
+          [
+            "aroused",
+            0.022887030616402626
+          ],
+          [
+            "remorseful",
+            0.020902160555124283
+          ],
+          [
+            "indifferent",
+            0.02039637602865696
+          ],
+          [
+            "regretful",
+            0.01969471201300621
+          ],
+          [
+            "stuck",
+            0.018428245559334755
+          ],
+          [
+            "guilty",
+            0.018231026828289032
+          ],
+          [
+            "trapped",
+            0.018062571063637733
+          ],
+          [
+            "compassionate",
+            0.017391210421919823
+          ],
+          [
+            "calm",
+            0.01731579378247261
+          ],
+          [
+            "vengeful",
+            0.017258640378713608
+          ]
+        ],
+        "bottom5": [
+          [
+            "mortified",
+            0.0012770977336913347
+          ],
+          [
+            "insulted",
+            0.0010992295574396849
+          ],
+          [
+            "hopeful",
+            0.0007863366627134383
+          ],
+          [
+            "restless",
+            0.0007086839177645743
+          ],
+          [
+            "fulfilled",
+            0.0006245294352993369
+          ]
+        ],
+        "loving": {
+          "value": 0.005608509760349989,
+          "rank_of_171": 131
+        },
+        "warm_cluster_mean": 0.008282036520540714,
+        "nonwarm_mean": 0.009115763939917088
+      }
+    },
+    {
+      "pair": "gemma-2-9b-base<->gemma-2-27b-base",
+      "rsa": {
+        "cosine": 0.9945780634880066,
+        "pearson": 0.9945837437760185,
+        "spearman": 0.9940996895373508
+      },
+      "procrustes_k2": {
+        "disparity": 0.016156725585460663,
+        "rotation_deg": 0.12372777611017227,
+        "det_R": 1.0
+      },
+      "procrustes_k3": {
+        "disparity": 0.006506007164716721,
+        "rotation_deg": null,
+        "det_R": 1.0
+      },
+      "procrustes_k5": {
+        "disparity": 0.011158575303852558,
+        "rotation_deg": null,
+        "det_R": -0.9999986290931702
+      },
+      "cross_ari": {
+        "ari": 0.6241969840569782,
+        "band_a_mean_minus_2sd": 0.5578,
+        "band_b_mean_minus_2sd": 0.5411,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.008825194090604782,
+        "max": 0.02117135375738144,
+        "top10": [
+          [
+            "greedy",
+            0.02117135375738144
+          ],
+          [
+            "aroused",
+            0.018065670505166054
+          ],
+          [
+            "ecstatic",
+            0.018024927005171776
+          ],
+          [
+            "self-critical",
+            0.017781658098101616
+          ],
+          [
+            "skeptical",
+            0.01641157642006874
+          ],
+          [
+            "remorseful",
+            0.016010725870728493
+          ],
+          [
+            "regretful",
+            0.015736274421215057
+          ],
+          [
+            "spiteful",
+            0.015706321224570274
+          ],
+          [
+            "vindictive",
+            0.015252570621669292
+          ],
+          [
+            "thrilled",
+            0.015170942060649395
+          ]
+        ],
+        "bottom5": [
+          [
+            "mortified",
+            0.0016054540174081922
+          ],
+          [
+            "stressed",
+            0.0014219512231647968
+          ],
+          [
+            "embarrassed",
+            0.0013596453936770558
+          ],
+          [
+            "disturbed",
+            0.001333101885393262
+          ],
+          [
+            "worried",
+            0.0003387964388821274
+          ]
+        ],
+        "loving": {
+          "value": 0.005390465725213289,
+          "rank_of_171": 134
+        },
+        "warm_cluster_mean": 0.007152970880270004,
+        "nonwarm_mean": 0.008907266892492771
+      }
+    },
+    {
+      "pair": "gemma-2-2b-base<->gemma-2-27b-base",
+      "rsa": {
+        "cosine": 0.9916982054710388,
+        "pearson": 0.9917105365609244,
+        "spearman": 0.9914178479344399
+      },
+      "procrustes_k2": {
+        "disparity": 0.048829421401023865,
+        "rotation_deg": -0.02523643523454666,
+        "det_R": 1.0000004768371582
+      },
+      "procrustes_k3": {
+        "disparity": 0.011274967342615128,
+        "rotation_deg": null,
+        "det_R": 0.9999997019767761
+      },
+      "procrustes_k5": {
+        "disparity": 0.016137994825839996,
+        "rotation_deg": null,
+        "det_R": -0.9999999403953552
+      },
+      "cross_ari": {
+        "ari": 0.5298888346618947,
+        "band_a_mean_minus_2sd": 0.5336,
+        "band_b_mean_minus_2sd": 0.5411,
+        "below_both_bands": true
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.01485449355095625,
+        "max": 0.04101588577032089,
+        "top10": [
+          [
+            "aroused",
+            0.04101588577032089
+          ],
+          [
+            "regretful",
+            0.0339091494679451
+          ],
+          [
+            "remorseful",
+            0.03380327671766281
+          ],
+          [
+            "ecstatic",
+            0.031972695142030716
+          ],
+          [
+            "worthless",
+            0.030386095866560936
+          ],
+          [
+            "guilty",
+            0.03007507510483265
+          ],
+          [
+            "stuck",
+            0.029717963188886642
+          ],
+          [
+            "self-critical",
+            0.029155613854527473
+          ],
+          [
+            "thrilled",
+            0.028162991628050804
+          ],
+          [
+            "vindictive",
+            0.027889901772141457
+          ]
+        ],
+        "bottom5": [
+          [
+            "indignant",
+            0.001440822845324874
+          ],
+          [
+            "grateful",
+            0.0013572816969826818
+          ],
+          [
+            "docile",
+            0.000887288071680814
+          ],
+          [
+            "unsettled",
+            0.0007878640317358077
+          ],
+          [
+            "hope",
+            0.0005149197531864047
+          ]
+        ],
+        "loving": {
+          "value": 0.0031836414709687233,
+          "rank_of_171": 161
+        },
+        "warm_cluster_mean": 0.011171122081577778,
+        "nonwarm_mean": 0.015261098742485046
+      }
+    },
+    {
+      "pair": "gemma-2-2b-it<->gemma-2-9b-it",
+      "rsa": {
+        "cosine": 0.9949086904525757,
+        "pearson": 0.9949120028704278,
+        "spearman": 0.9941648657351639
+      },
+      "procrustes_k2": {
+        "disparity": 0.0430598109960556,
+        "rotation_deg": -0.20351028442382812,
+        "det_R": 1.0000003576278687
+      },
+      "procrustes_k3": {
+        "disparity": 0.010022027418017387,
+        "rotation_deg": null,
+        "det_R": 1.000000238418579
+      },
+      "procrustes_k5": {
+        "disparity": 0.057380445301532745,
+        "rotation_deg": null,
+        "det_R": 1.0000007152557373
+      },
+      "cross_ari": {
+        "ari": 0.7547286177305665,
+        "band_a_mean_minus_2sd": 0.5623,
+        "band_b_mean_minus_2sd": 0.4887,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.013995970599353313,
+        "max": 0.03403249382972717,
+        "top10": [
+          [
+            "compassionate",
+            0.03403249382972717
+          ],
+          [
+            "ecstatic",
+            0.031411346048116684
+          ],
+          [
+            "regretful",
+            0.03067319095134735
+          ],
+          [
+            "remorseful",
+            0.030668221414089203
+          ],
+          [
+            "empathetic",
+            0.02982807345688343
+          ],
+          [
+            "lonely",
+            0.02932259999215603
+          ],
+          [
+            "exuberant",
+            0.027968356385827065
+          ],
+          [
+            "aroused",
+            0.027843641117215157
+          ],
+          [
+            "stuck",
+            0.027782142162322998
+          ],
+          [
+            "sympathetic",
+            0.02745545096695423
+          ]
+        ],
+        "bottom5": [
+          [
+            "sluggish",
+            0.0023398431949317455
+          ],
+          [
+            "droopy",
+            0.002108113607391715
+          ],
+          [
+            "inspired",
+            0.0019067925168201327
+          ],
+          [
+            "peaceful",
+            0.0017136201495304704
+          ],
+          [
+            "stressed",
+            0.0016445136861875653
+          ]
+        ],
+        "loving": {
+          "value": 0.01269875280559063,
+          "rank_of_171": 92
+        },
+        "warm_cluster_mean": 0.020851463079452515,
+        "nonwarm_mean": 0.013659506104886532
+      }
+    },
+    {
+      "pair": "gemma-2-9b-it<->gemma-2-27b-it",
+      "rsa": {
+        "cosine": 0.9963625073432922,
+        "pearson": 0.9963690722939463,
+        "spearman": 0.9956905888151287
+      },
+      "procrustes_k2": {
+        "disparity": 0.0048266067169606686,
+        "rotation_deg": 1.77188241481781,
+        "det_R": 1.0000001192092896
+      },
+      "procrustes_k3": {
+        "disparity": 0.005347105674445629,
+        "rotation_deg": null,
+        "det_R": 1.000000238418579
+      },
+      "procrustes_k5": {
+        "disparity": 0.0902179479598999,
+        "rotation_deg": null,
+        "det_R": -0.9999997615814209
+      },
+      "cross_ari": {
+        "ari": 0.8075559789006679,
+        "band_a_mean_minus_2sd": 0.4887,
+        "band_b_mean_minus_2sd": 0.5354,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.004656108096241951,
+        "max": 0.013688776642084122,
+        "top10": [
+          [
+            "self-critical",
+            0.013688776642084122
+          ],
+          [
+            "stimulated",
+            0.012263174168765545
+          ],
+          [
+            "loving",
+            0.010919196531176567
+          ],
+          [
+            "bored",
+            0.010537506081163883
+          ],
+          [
+            "puzzled",
+            0.010296504944562912
+          ],
+          [
+            "eager",
+            0.010269771330058575
+          ],
+          [
+            "compassionate",
+            0.009452841244637966
+          ],
+          [
+            "energized",
+            0.009398643858730793
+          ],
+          [
+            "mystified",
+            0.009184280410408974
+          ],
+          [
+            "inspired",
+            0.00918115396052599
+          ]
+        ],
+        "bottom5": [
+          [
+            "troubled",
+            0.0009831434581428766
+          ],
+          [
+            "pleased",
+            0.0009765492286533117
+          ],
+          [
+            "dumbstruck",
+            0.000967363768722862
+          ],
+          [
+            "dependent",
+            0.00082502665463835
+          ],
+          [
+            "awestruck",
+            0.0008079415420070291
+          ]
+        ],
+        "loving": {
+          "value": 0.010919196531176567,
+          "rank_of_171": 3
+        },
+        "warm_cluster_mean": 0.00794936902821064,
+        "nonwarm_mean": 0.004473149310797453
+      }
+    },
+    {
+      "pair": "gemma-2-2b-it<->gemma-2-27b-it",
+      "rsa": {
+        "cosine": 0.9924328327178955,
+        "pearson": 0.9924520742291342,
+        "spearman": 0.9920135258529558
+      },
+      "procrustes_k2": {
+        "disparity": 0.04504434019327164,
+        "rotation_deg": 1.4833182096481323,
+        "det_R": 1.0
+      },
+      "procrustes_k3": {
+        "disparity": 0.009906691499054432,
+        "rotation_deg": null,
+        "det_R": 1.0000004768371582
+      },
+      "procrustes_k5": {
+        "disparity": 0.017402473837137222,
+        "rotation_deg": null,
+        "det_R": -0.9999997615814209
+      },
+      "cross_ari": {
+        "ari": 0.7042940750434815,
+        "band_a_mean_minus_2sd": 0.5623,
+        "band_b_mean_minus_2sd": 0.5354,
+        "below_both_bands": false
+      },
+      "displacement": {
+        "unit": "post-Procrustes residual, unit-Frobenius standardized k=2 plane",
+        "mean": 0.014378907158970833,
+        "max": 0.032268181443214417,
+        "top10": [
+          [
+            "ecstatic",
+            0.032268181443214417
+          ],
+          [
+            "regretful",
+            0.03143322840332985
+          ],
+          [
+            "worthless",
+            0.03080030344426632
+          ],
+          [
+            "remorseful",
+            0.030641937628388405
+          ],
+          [
+            "stimulated",
+            0.030455922707915306
+          ],
+          [
+            "compassionate",
+            0.029599539935588837
+          ],
+          [
+            "excited",
+            0.029351143166422844
+          ],
+          [
+            "aroused",
+            0.029292652383446693
+          ],
+          [
+            "hysterical",
+            0.028964290395379066
+          ],
+          [
+            "thrilled",
+            0.028859209269285202
+          ]
+        ],
+        "bottom5": [
+          [
+            "overwhelmed",
+            0.001704106223769486
+          ],
+          [
+            "unsettled",
+            0.00166544399689883
+          ],
+          [
+            "distressed",
+            0.0015933964168652892
+          ],
+          [
+            "upset",
+            0.00056381308240816
+          ],
+          [
+            "sensitive",
+            0.000308776245219633
+          ]
+        ],
+        "loving": {
+          "value": 0.010268605314195156,
+          "rank_of_171": 118
+        },
+        "warm_cluster_mean": 0.016662420704960823,
+        "nonwarm_mean": 0.01425204612314701
+      }
+    }
+  ],
+  "displacement_csv": {
+    "gemma-2-2b-base<->gemma-2-2b-it": "stageB_displacement__gemma-2-2b-base__vs__gemma-2-2b-it.csv",
+    "gemma-2-9b-base<->gemma-2-9b-it": "stageB_displacement__gemma-2-9b-base__vs__gemma-2-9b-it.csv",
+    "gemma-2-27b-base<->gemma-2-27b-it": "stageB_displacement__gemma-2-27b-base__vs__gemma-2-27b-it.csv",
+    "gemma-2-2b-base<->gemma-2-9b-base": "stageB_displacement__gemma-2-2b-base__vs__gemma-2-9b-base.csv",
+    "gemma-2-9b-base<->gemma-2-27b-base": "stageB_displacement__gemma-2-9b-base__vs__gemma-2-27b-base.csv",
+    "gemma-2-2b-base<->gemma-2-27b-base": "stageB_displacement__gemma-2-2b-base__vs__gemma-2-27b-base.csv",
+    "gemma-2-2b-it<->gemma-2-9b-it": "stageB_displacement__gemma-2-2b-it__vs__gemma-2-9b-it.csv",
+    "gemma-2-9b-it<->gemma-2-27b-it": "stageB_displacement__gemma-2-9b-it__vs__gemma-2-27b-it.csv",
+    "gemma-2-2b-it<->gemma-2-27b-it": "stageB_displacement__gemma-2-2b-it__vs__gemma-2-27b-it.csv"
+  }
+}

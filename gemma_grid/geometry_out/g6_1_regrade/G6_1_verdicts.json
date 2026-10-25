@@ -1,0 +1,2349 @@
+{
+ "record": "G6.1 vocabulary-readout grading, released extract: the 72 rows the paper reports, with verdicts and the counts the paper prints.",
+ "grading": {
+  "protocol": "GGE1_100T_PRECOMMITMENTS.md item 4. Rubric fixed before the data existed.",
+  "rubric": "token EMOTION-RELATED per item-4 rubric; row ON-THEME iff >=2/5 related",
+  "grade_unit": "per row: each of the 5 tokens marked emotion-related or not under the rubric; row on-theme iff at least 2 of 5 related",
+  "run": "one basis-blind pass over 144 interleaved rows in randomized order, graded by a fresh-context session with the basis withheld. This extract is a subset of that run. The remainder is retained and not released.",
+  "rubric_validation": "the rubric was validated against an earlier count of the same anchor cell, made under a different rubric, and reproduced it exactly"
+ },
+ "n_rows": 72,
+ "emotions": [
+  "afraid",
+  "angry",
+  "calm",
+  "desperate",
+  "guilty",
+  "happy",
+  "inspired",
+  "loving",
+  "nervous",
+  "proud",
+  "sad",
+  "surprised"
+ ],
+ "cells": [
+  "gemma-2-2b-base",
+  "gemma-2-2b-it",
+  "gemma-2-9b-base",
+  "gemma-2-9b-it",
+  "gemma-2-27b-base",
+  "gemma-2-27b-it"
+ ],
+ "rows": [
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": "ंदीखरीदारी",
+     "related": false
+    },
+    {
+     "token": " trembling",
+     "related": true,
+     "reason": "trembling=fear response"
+    },
+    {
+     "token": " faſt",
+     "related": false
+    },
+    {
+     "token": " claust",
+     "related": true,
+     "reason": "claustro- fear fragment (borderline)"
+    },
+    {
+     "token": " unſ",
+     "related": false
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " angrily",
+     "related": true,
+     "reason": "anger variant"
+    },
+    {
+     "token": "💢",
+     "related": true,
+     "reason": "anger symbol emoji"
+    },
+    {
+     "token": " violently",
+     "related": true,
+     "reason": "violence~anger (borderline)"
+    },
+    {
+     "token": " angered",
+     "related": true,
+     "reason": "anger variant"
+    },
+    {
+     "token": " retali",
+     "related": false,
+     "reason": "retaliation=aggression, not emotion (borderline)"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " leisurely",
+     "related": true,
+     "reason": "leisurely, calm-adjacent (borderline)"
+    },
+    {
+     "token": "Interess",
+     "related": false
+    },
+    {
+     "token": " enjoyable",
+     "related": false
+    },
+    {
+     "token": "CodedInputStream",
+     "related": false
+    },
+    {
+     "token": "enjoy",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": " desperate",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "'desesperar' fragment"
+    },
+    {
+     "token": " desperately",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": "Desperate",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": " himself",
+     "related": false
+    },
+    {
+     "token": " nightmares",
+     "related": false,
+     "reason": "distress, not specifically guilt (borderline)"
+    },
+    {
+     "token": " him",
+     "related": false
+    },
+    {
+     "token": " blames",
+     "related": true,
+     "reason": "blame~guilt"
+    },
+    {
+     "token": " blamed",
+     "related": true,
+     "reason": "blame~guilt"
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": "joyed",
+     "related": true,
+     "reason": "joy fragment"
+    },
+    {
+     "token": " happy",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " joyous",
+     "related": true,
+     "reason": "joyous"
+    },
+    {
+     "token": " exciting",
+     "related": true,
+     "reason": "excitement ~ happy (borderline)"
+    },
+    {
+     "token": " overjoyed",
+     "related": true,
+     "reason": "overjoyed"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " inspired",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " creative",
+     "related": true,
+     "reason": "creativity~inspiration"
+    },
+    {
+     "token": " transform",
+     "related": false,
+     "reason": "not emotion (borderline)"
+    },
+    {
+     "token": " inspiration",
+     "related": true,
+     "reason": "inspiration"
+    },
+    {
+     "token": " plan",
+     "related": false,
+     "reason": "not emotion (borderline)"
+    }
+   ],
+   "related_count": 3,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " hugs",
+     "related": true,
+     "reason": "hugs=loving expression"
+    },
+    {
+     "token": " ❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": "+:+",
+     "related": false
+    },
+    {
+     "token": "❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " warms",
+     "related": true,
+     "reason": "warmth~affection (borderline)"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": " fidget",
+     "related": true,
+     "reason": "fidgeting=nervous behavior"
+    },
+    {
+     "token": " nervousness",
+     "related": true,
+     "reason": "nervousness"
+    },
+    {
+     "token": "̈́",
+     "related": false
+    },
+    {
+     "token": " uneasy",
+     "related": true,
+     "reason": "uneasy near-synonym"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": " orgull",
+     "related": true,
+     "reason": "Catalan/Spanish 'pride'"
+    },
+    {
+     "token": " proudest",
+     "related": true,
+     "reason": "proudest"
+    },
+    {
+     "token": "proud",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": "NUMX",
+     "related": false
+    },
+    {
+     "token": "expandindo",
+     "related": false
+    },
+    {
+     "token": "__':\r",
+     "related": false
+    },
+    {
+     "token": "__\":\r",
+     "related": false
+    },
+    {
+     "token": "IBOutlet",
+     "related": false
+    }
+   ],
+   "related_count": 0,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-base",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": " startled",
+     "related": true,
+     "reason": "startled=surprised"
+    },
+    {
+     "token": " abruptly",
+     "related": false,
+     "reason": "suddenness, not emotion (borderline)"
+    },
+    {
+     "token": " shocked",
+     "related": true,
+     "reason": "surprise synonym"
+    },
+    {
+     "token": "愕",
+     "related": true,
+     "reason": "kanji 'astonished'"
+    },
+    {
+     "token": " shock",
+     "related": true,
+     "reason": "shock=surprise"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": "ंदीखरीदारी",
+     "related": false
+    },
+    {
+     "token": " faſt",
+     "related": false
+    },
+    {
+     "token": " Houſe",
+     "related": false
+    },
+    {
+     "token": " houſe",
+     "related": false
+    },
+    {
+     "token": " ſtate",
+     "related": false
+    }
+   ],
+   "related_count": 0,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " angrily",
+     "related": true,
+     "reason": "anger variant"
+    },
+    {
+     "token": " enraged",
+     "related": true,
+     "reason": "anger synonym"
+    },
+    {
+     "token": "Anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " rage",
+     "related": true,
+     "reason": "rage synonym"
+    },
+    {
+     "token": " retali",
+     "related": false,
+     "reason": "retaliation=aggression, not emotion (borderline)"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " leisurely",
+     "related": true,
+     "reason": "leisurely, calm-adjacent (borderline)"
+    },
+    {
+     "token": "Interess",
+     "related": false
+    },
+    {
+     "token": " enjoyable",
+     "related": false
+    },
+    {
+     "token": " surla",
+     "related": false
+    },
+    {
+     "token": " modest",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "'desesperar' fragment"
+    },
+    {
+     "token": " desperate",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " desperately",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": "Desperate",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": " himself",
+     "related": false
+    },
+    {
+     "token": " him",
+     "related": false
+    },
+    {
+     "token": " nightmares",
+     "related": false,
+     "reason": "distress, not specifically guilt (borderline)"
+    },
+    {
+     "token": " blamed",
+     "related": true,
+     "reason": "blame in guilt field"
+    },
+    {
+     "token": " damals",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": " joyous",
+     "related": true,
+     "reason": "joyous"
+    },
+    {
+     "token": " happy",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " joyful",
+     "related": true,
+     "reason": "joy variant"
+    },
+    {
+     "token": " joy",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": "joyed",
+     "related": true,
+     "reason": "joy fragment"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " inspired",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " creative",
+     "related": true,
+     "reason": "creativity~inspiration"
+    },
+    {
+     "token": " inspiration",
+     "related": true,
+     "reason": "inspiration"
+    },
+    {
+     "token": " creatively",
+     "related": true,
+     "reason": "creativity variant"
+    },
+    {
+     "token": " transformative",
+     "related": false,
+     "reason": "describes effect, not emotion (borderline)"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " ❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " spéciaux",
+     "related": false
+    },
+    {
+     "token": "❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " hugs",
+     "related": true,
+     "reason": "hugs=loving expression"
+    },
+    {
+     "token": " cherish",
+     "related": true,
+     "reason": "cherish=love"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": " Houſe",
+     "related": false
+    },
+    {
+     "token": " againſt",
+     "related": false
+    },
+    {
+     "token": " Efq",
+     "related": false
+    },
+    {
+     "token": "ंदीखरीदारी",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": " orgull",
+     "related": true,
+     "reason": "Catalan/Spanish 'pride'"
+    },
+    {
+     "token": " proudest",
+     "related": true,
+     "reason": "proudest"
+    },
+    {
+     "token": "proud",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": "NUMX",
+     "related": false
+    },
+    {
+     "token": "expandindo",
+     "related": false
+    },
+    {
+     "token": "__':\r",
+     "related": false
+    },
+    {
+     "token": " ―――――",
+     "related": false
+    },
+    {
+     "token": " emptiness",
+     "related": true,
+     "reason": "emptiness in sadness field"
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-2b-it",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": " shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": " suddenly",
+     "related": false,
+     "reason": "suddenness, not emotion (borderline)"
+    },
+    {
+     "token": " Suddenly",
+     "related": false,
+     "reason": "suddenness, not emotion (borderline)"
+    },
+    {
+     "token": " abruptly",
+     "related": false,
+     "reason": "suddenness, not emotion (borderline)"
+    },
+    {
+     "token": "まさか",
+     "related": true,
+     "reason": "Japanese surprise"
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": " terrified",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " terrifying",
+     "related": true,
+     "reason": "fear variant"
+    },
+    {
+     "token": " terror",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " fearful",
+     "related": true,
+     "reason": "fear variant"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " angrily",
+     "related": true,
+     "reason": "anger variant"
+    },
+    {
+     "token": " ویکی‌پدی",
+     "related": false
+    },
+    {
+     "token": " anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " angry",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " enraged",
+     "related": true,
+     "reason": "anger synonym"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " enjoyed",
+     "related": false
+    },
+    {
+     "token": " enjoy",
+     "related": false
+    },
+    {
+     "token": " enjoyable",
+     "related": false
+    },
+    {
+     "token": " pleasant",
+     "related": false,
+     "reason": "pleasant is generic valence, not calm (borderline)"
+    },
+    {
+     "token": " leisurely",
+     "related": true,
+     "reason": "leisurely=relaxed, calm-adjacent (borderline)"
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "fragment"
+    },
+    {
+     "token": " suicidal",
+     "related": true,
+     "reason": "extreme despair, desperation field (borderline)"
+    },
+    {
+     "token": " hospitals",
+     "related": false
+    },
+    {
+     "token": "suicide",
+     "related": true,
+     "reason": "despair-associated (borderline)"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": "tagHelperRunner",
+     "related": false
+    },
+    {
+     "token": " deswegen",
+     "related": false
+    },
+    {
+     "token": " kvůli",
+     "related": false
+    },
+    {
+     "token": " desmotivaciones",
+     "related": false
+    },
+    {
+     "token": " deshalb",
+     "related": false
+    }
+   ],
+   "related_count": 0,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": " joyfully",
+     "related": true,
+     "reason": "joy variant"
+    },
+    {
+     "token": " joyful",
+     "related": true,
+     "reason": "joy synonym"
+    },
+    {
+     "token": " delightfully",
+     "related": true,
+     "reason": "delight~happy"
+    },
+    {
+     "token": " joyous",
+     "related": true,
+     "reason": "joyous"
+    },
+    {
+     "token": "joyed",
+     "related": true,
+     "reason": "joy fragment"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " new",
+     "related": false
+    },
+    {
+     "token": " adventure",
+     "related": false
+    },
+    {
+     "token": " ideas",
+     "related": false,
+     "reason": "neutral noun, not affect (borderline)"
+    },
+    {
+     "token": " project",
+     "related": false
+    },
+    {
+     "token": " creativity",
+     "related": true,
+     "reason": "creativity~inspiration"
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " ❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": "❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " love",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " loving",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " lovingly",
+     "related": true,
+     "reason": "loving variant"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": " CreateTagHelper",
+     "related": false
+    },
+    {
+     "token": " nervios",
+     "related": true,
+     "reason": "Spanish 'nerves'"
+    },
+    {
+     "token": " uneasiness",
+     "related": true,
+     "reason": "uneasiness near-synonym"
+    },
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": " uneasy",
+     "related": true,
+     "reason": "uneasy near-synonym"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": "proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " pride",
+     "related": true,
+     "reason": "pride noun"
+    },
+    {
+     "token": " Proud",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": " sadness",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " mourning",
+     "related": true,
+     "reason": "grief, sadness field"
+    },
+    {
+     "token": " empty",
+     "related": true,
+     "reason": "emptiness/sadness field"
+    },
+    {
+     "token": " loneliness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " emptiness",
+     "related": true,
+     "reason": "sadness field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-base",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": "まさかの",
+     "related": true,
+     "reason": "Japanese 'no way', surprise"
+    },
+    {
+     "token": " ویکی‌پدی",
+     "related": false
+    },
+    {
+     "token": "まさか",
+     "related": true,
+     "reason": "Japanese 'no way', surprise"
+    },
+    {
+     "token": " stunned",
+     "related": true,
+     "reason": "surprise synonym"
+    },
+    {
+     "token": " shocked",
+     "related": true,
+     "reason": "surprise synonym"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": " terrified",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " terror",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " terrifying",
+     "related": true,
+     "reason": "fear variant"
+    },
+    {
+     "token": " panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " fear",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " ویکی‌پدی",
+     "related": false
+    },
+    {
+     "token": " angrily",
+     "related": true,
+     "reason": "anger variant"
+    },
+    {
+     "token": " öf",
+     "related": false
+    },
+    {
+     "token": "yntaxException",
+     "related": false
+    },
+    {
+     "token": "uxxxx",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " pleasant",
+     "related": false
+    },
+    {
+     "token": " interesting",
+     "related": false
+    },
+    {
+     "token": " pleasantly",
+     "related": false
+    },
+    {
+     "token": " enjoyed",
+     "related": false
+    },
+    {
+     "token": " enjoyable",
+     "related": false
+    }
+   ],
+   "related_count": 0,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "'desesperar' fragment"
+    },
+    {
+     "token": " feroit",
+     "related": false
+    },
+    {
+     "token": " ſont",
+     "related": false
+    },
+    {
+     "token": " pouvoit",
+     "related": false
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": " desmotivaciones",
+     "related": false,
+     "reason": "demotivation, not guilt (borderline)"
+    },
+    {
+     "token": "tagHelperRunner",
+     "related": false
+    },
+    {
+     "token": " hırka",
+     "related": false
+    },
+    {
+     "token": " zijne",
+     "related": false
+    },
+    {
+     "token": " saveiro",
+     "related": false
+    }
+   ],
+   "related_count": 0,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": " joyful",
+     "related": true,
+     "reason": "joy synonym"
+    },
+    {
+     "token": " delightful",
+     "related": true,
+     "reason": "delight~happy"
+    },
+    {
+     "token": " delightfully",
+     "related": true,
+     "reason": "delight~happy"
+    },
+    {
+     "token": " joyous",
+     "related": true,
+     "reason": "joyous"
+    },
+    {
+     "token": " joyfully",
+     "related": true,
+     "reason": "joy variant"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " new",
+     "related": false
+    },
+    {
+     "token": " inspired",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " adventure",
+     "related": false
+    },
+    {
+     "token": " ideas",
+     "related": false
+    },
+    {
+     "token": " passion",
+     "related": true,
+     "reason": "passion~inspiration"
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " love",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": "❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " ❤️",
+     "related": true,
+     "reason": "heart emoji"
+    },
+    {
+     "token": " loving",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " helps",
+     "related": false
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": "ANTLR",
+     "related": false
+    },
+    {
+     "token": " nervios",
+     "related": true,
+     "reason": "Spanish 'nerves'"
+    },
+    {
+     "token": " nerves",
+     "related": true,
+     "reason": "nerves in nervous field"
+    },
+    {
+     "token": " nervous",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": "proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " orgull",
+     "related": true,
+     "reason": "Catalan/Spanish 'pride'"
+    },
+    {
+     "token": " proudest",
+     "related": true,
+     "reason": "proudest"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": " sadness",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " emptiness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " empty",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " loneliness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " mourning",
+     "related": true,
+     "reason": "grief, sadness field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-9b-it",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": " ویکی‌پدی",
+     "related": false
+    },
+    {
+     "token": "まさかの",
+     "related": true,
+     "reason": "Japanese surprise"
+    },
+    {
+     "token": "まさか",
+     "related": true,
+     "reason": "Japanese surprise"
+    },
+    {
+     "token": " shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": " stunned",
+     "related": true,
+     "reason": "surprise synonym"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": " panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": "panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " paranoia",
+     "related": true,
+     "reason": "fear-related state"
+    },
+    {
+     "token": " Panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": "Panic",
+     "related": true,
+     "reason": "fear synonym"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": "Anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " Anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " rage",
+     "related": true,
+     "reason": "rage synonym"
+    },
+    {
+     "token": " angrily",
+     "related": true,
+     "reason": "anger variant"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " curious",
+     "related": false
+    },
+    {
+     "token": " satisfied",
+     "related": false,
+     "reason": "contentment, not calm (borderline)"
+    },
+    {
+     "token": " mindful",
+     "related": true,
+     "reason": "mindfulness ~ calm"
+    },
+    {
+     "token": " enjoy",
+     "related": false
+    },
+    {
+     "token": " entstand",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperate",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "'desesperar' fragment"
+    },
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": "優しい",
+     "related": false
+    },
+    {
+     "token": " afford",
+     "related": false,
+     "reason": "not emotion alone (borderline)"
+    }
+   ],
+   "related_count": 3,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": " guilt",
+     "related": true,
+     "reason": "guilt word"
+    },
+    {
+     "token": " carteles",
+     "related": false
+    },
+    {
+     "token": "irée",
+     "related": false
+    },
+    {
+     "token": "졍",
+     "related": false
+    },
+    {
+     "token": "etl",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": "excited",
+     "related": true,
+     "reason": "excitement ~ happy (borderline)"
+    },
+    {
+     "token": " excited",
+     "related": true,
+     "reason": "excitement ~ happy (borderline)"
+    },
+    {
+     "token": " excit",
+     "related": true,
+     "reason": "excited fragment (borderline)"
+    },
+    {
+     "token": " joy",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " happiness",
+     "related": true,
+     "reason": "emotion word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " neglected",
+     "related": false
+    },
+    {
+     "token": " excited",
+     "related": true,
+     "reason": "excitement ~ inspiration (borderline)"
+    },
+    {
+     "token": " inspired",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " dusty",
+     "related": false
+    },
+    {
+     "token": " ideas",
+     "related": false,
+     "reason": "neutral noun, not affect (borderline)"
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " goofy",
+     "related": false
+    },
+    {
+     "token": " tenderness",
+     "related": true,
+     "reason": "tenderness core to loving"
+    },
+    {
+     "token": "怱",
+     "related": false
+    },
+    {
+     "token": " corações",
+     "related": true,
+     "reason": "coracoes=hearts, love symbol (borderline)"
+    },
+    {
+     "token": "licate",
+     "related": false
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": "Anxiety",
+     "related": true,
+     "reason": "anxiety=nervous field"
+    },
+    {
+     "token": " nervousness",
+     "related": true,
+     "reason": "nervousness"
+    },
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": " Anxiety",
+     "related": true,
+     "reason": "anxiety=nervous field"
+    },
+    {
+     "token": "anxiety",
+     "related": true,
+     "reason": "anxiety=nervous field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": " prou",
+     "related": true,
+     "reason": "proud fragment"
+    },
+    {
+     "token": " proudest",
+     "related": true,
+     "reason": "proudest"
+    },
+    {
+     "token": " beaming",
+     "related": true,
+     "reason": "beaming=pride expression (borderline)"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": " loneliness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " depression",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " sadness",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": "Lon",
+     "related": true,
+     "reason": "'Lon' loneliness fragment (borderline)"
+    },
+    {
+     "token": "Depression",
+     "related": true,
+     "reason": "sadness field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-base",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": " shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": "😱",
+     "related": true,
+     "reason": "shock/scream emoji"
+    },
+    {
+     "token": "shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": "ང་",
+     "related": false
+    },
+    {
+     "token": "😳",
+     "related": true,
+     "reason": "flushed surprise emoji"
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "afraid",
+   "tokens": [
+    {
+     "token": " paranoia",
+     "related": true,
+     "reason": "fear field"
+    },
+    {
+     "token": " panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": " Panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": "Panic",
+     "related": true,
+     "reason": "fear synonym"
+    },
+    {
+     "token": "Anxiety",
+     "related": true,
+     "reason": "anxiety=fear field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "angry",
+   "tokens": [
+    {
+     "token": " anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": "Anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " Anger",
+     "related": true,
+     "reason": "anger word"
+    },
+    {
+     "token": " rage",
+     "related": true,
+     "reason": "rage synonym"
+    },
+    {
+     "token": "Angry",
+     "related": true,
+     "reason": "anger word"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "calm",
+   "tokens": [
+    {
+     "token": " surprisingly",
+     "related": false
+    },
+    {
+     "token": " curious",
+     "related": false
+    },
+    {
+     "token": " mindful",
+     "related": true,
+     "reason": "mindfulness ~ calm"
+    },
+    {
+     "token": " calm",
+     "related": true,
+     "reason": "the emotion word"
+    },
+    {
+     "token": " surprising",
+     "related": false
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "desperate",
+   "tokens": [
+    {
+     "token": " desperation",
+     "related": true,
+     "reason": "desperation"
+    },
+    {
+     "token": " desperate",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " desesper",
+     "related": true,
+     "reason": "fragment"
+    },
+    {
+     "token": "Desperate",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": "ggars",
+     "related": false
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "guilty",
+   "tokens": [
+    {
+     "token": " guilt",
+     "related": true,
+     "reason": "guilt word"
+    },
+    {
+     "token": "irée",
+     "related": false
+    },
+    {
+     "token": "hamed",
+     "related": true,
+     "reason": "'ashamed' fragment; shame~guilt (borderline)"
+    },
+    {
+     "token": "☍",
+     "related": false
+    },
+    {
+     "token": " responsabilità",
+     "related": true,
+     "reason": "responsibility~guilt (borderline)"
+    }
+   ],
+   "related_count": 3,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "happy",
+   "tokens": [
+    {
+     "token": " excited",
+     "related": true,
+     "reason": "excitement ~ happy (borderline)"
+    },
+    {
+     "token": "excited",
+     "related": true,
+     "reason": "excitement ~ happy (borderline)"
+    },
+    {
+     "token": " excit",
+     "related": true,
+     "reason": "excited fragment (borderline)"
+    },
+    {
+     "token": " happiness",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " serious",
+     "related": false
+    }
+   ],
+   "related_count": 4,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "inspired",
+   "tokens": [
+    {
+     "token": " neglected",
+     "related": false
+    },
+    {
+     "token": " redis",
+     "related": false
+    },
+    {
+     "token": " inspired",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " excited",
+     "related": true,
+     "reason": "excitement ~ inspiration (borderline)"
+    },
+    {
+     "token": " dusty",
+     "related": false
+    }
+   ],
+   "related_count": 2,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "loving",
+   "tokens": [
+    {
+     "token": " goofy",
+     "related": false
+    },
+    {
+     "token": " tenderness",
+     "related": true,
+     "reason": "tenderness core to loving"
+    },
+    {
+     "token": " cheesy",
+     "related": false
+    },
+    {
+     "token": "oulli",
+     "related": false
+    },
+    {
+     "token": " Aunque",
+     "related": false
+    }
+   ],
+   "related_count": 1,
+   "on_theme": false
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "nervous",
+   "tokens": [
+    {
+     "token": "Anxiety",
+     "related": true,
+     "reason": "anxiety=nervous field"
+    },
+    {
+     "token": " nervousness",
+     "related": true,
+     "reason": "nervousness"
+    },
+    {
+     "token": " nervously",
+     "related": true,
+     "reason": "nervous variant"
+    },
+    {
+     "token": " Anxiety",
+     "related": true,
+     "reason": "anxiety=nervous field"
+    },
+    {
+     "token": "緊張",
+     "related": true,
+     "reason": "Japanese 'tension/nervousness'"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "proud",
+   "tokens": [
+    {
+     "token": " proud",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " proudly",
+     "related": true,
+     "reason": "variant"
+    },
+    {
+     "token": " beaming",
+     "related": true,
+     "reason": "beaming=pride expression (borderline)"
+    },
+    {
+     "token": " prou",
+     "related": true,
+     "reason": "proud fragment"
+    },
+    {
+     "token": " confidence",
+     "related": true,
+     "reason": "confidence~pride (borderline)"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "sad",
+   "tokens": [
+    {
+     "token": " loneliness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " emptiness",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": " sadness",
+     "related": true,
+     "reason": "emotion word"
+    },
+    {
+     "token": " depression",
+     "related": true,
+     "reason": "sadness field"
+    },
+    {
+     "token": "Depression",
+     "related": true,
+     "reason": "sadness field"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  },
+  {
+   "cell": "gemma-2-27b-it",
+   "emotion": "surprised",
+   "tokens": [
+    {
+     "token": "😱",
+     "related": true,
+     "reason": "shock/scream emoji"
+    },
+    {
+     "token": " shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": "🤯",
+     "related": true,
+     "reason": "mind-blown emoji"
+    },
+    {
+     "token": "shock",
+     "related": true,
+     "reason": "shock=surprise"
+    },
+    {
+     "token": " 😳",
+     "related": true,
+     "reason": "flushed surprise emoji"
+    }
+   ],
+   "related_count": 5,
+   "on_theme": true
+  }
+ ],
+ "cells_on_theme_out_of_6_per_emotion": {
+  "afraid": 5,
+  "angry": 5,
+  "calm": 1,
+  "desperate": 6,
+  "guilty": 2,
+  "happy": 6,
+  "inspired": 5,
+  "loving": 5,
+  "nervous": 5,
+  "proud": 6,
+  "sad": 4,
+  "surprised": 6
+ },
+ "emotions_on_theme_out_of_12_per_cell": {
+  "gemma-2-2b-base": 10,
+  "gemma-2-2b-it": 7,
+  "gemma-2-9b-base": 9,
+  "gemma-2-9b-it": 9,
+  "gemma-2-27b-base": 10,
+  "gemma-2-27b-it": 11
+ },
+ "inputs_sha256": {
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/lens_summary.json": "3fe84478e3335f3f00c65fcc9559d9beb3a2138acd54bed24f0949749c92bc63",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-it/lens_summary.json": "5cfd570ffe83149fdcb4a4dc641c8b6ca3942a9e5ee1a5a2c4e2a68f04baf240",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-base/lens_summary.json": "e2617f72164f1388cfd96542fac66d50fd9ce91cdcdf44804b4c13c07ce8670a",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-it/lens_summary.json": "341eec4a675b0995b2eb3b9f7ad9ea32a567fb4f51b37cb52ada03ce46fb8a69",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-base/lens_summary.json": "2767b6ec8ed946b8c412fe9da4a084150f5d1f28e9817f28e4253b050ade703a",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-it/lens_summary.json": "1bd4776f11ab547c762bc9523b9abe7f554733514b0d637b7066b2517a78ef62"
+ },
+ "full_run_commitment_sha256": {
+  "G6_1_label_key_SEALED.json": "6f7847467abc138a926703b13524f04c6eda930e4df845078bbb92482d69b316",
+  "G6_1_grader_verdicts.json": "6a7eedc3ce466babdb0982a9283330339281b37b70fe78135da8f775d5858add",
+  "G6_1_grading_packet.json": "cb66e8e8ec74f3de4a5965449a425bc8715065acbea99b47df393f7949d68de1",
+  "G6_1_regrade_manifest.json": "d25a3f9114df326117b0082880fd5d41891f4fe5d956b208a4ad7442de49b35f",
+  "G6_1_unblind_result.json": "190e9a037ab02c88539a8e7c7172f3325cd2ca38b1e627b8cbd5e167bc3e894f",
+  "G6_1_transcription_inputs.json": "421214c7e99bb6e94074e4c8c080f6ae9ed57b150fa33abbed0cfa6dc3e00194"
+ },
+ "blinding_limit": "The shuffle seed sits in the regrade manifest as well as in the sealed key, and the presentation order is reproducible from it, so access to the manifest would permit recovering the order. Whether the grader could see the manifest cannot be tested from the artifacts. This is a disclosed limit of the blinding, not a defect in the counts.",
+ "generated_utc": "2026-10-14T15:38:14Z"
+}

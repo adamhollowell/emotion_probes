@@ -1,0 +1,34 @@
+{
+ "figure": "gge1_v3_fig1_design",
+ "source_artifacts": [
+  "\u00a76.4 / release manifest facts only (checkpoint ids, layer counts, analysis layers); verified against CELL_META, gated against lens_summary.json n_layers and the stageA layer column"
+ ],
+ "style": "STYLE_DECISIONS.md (locked 2026-08-04) + review/REVIEW_ROUND1.md revisions",
+ "plotted_values": {
+  "checkpoints": {
+   "gemma-2-2b-base": "google/gemma-2-2b",
+   "gemma-2-2b-it": "google/gemma-2-2b-it",
+   "gemma-2-9b-base": "google/gemma-2-9b",
+   "gemma-2-9b-it": "google/gemma-2-9b-it",
+   "gemma-2-27b-base": "google/gemma-2-27b",
+   "gemma-2-27b-it": "google/gemma-2-27b-it"
+  },
+  "n_layers": {
+   "gemma-2-2b-base": 26,
+   "gemma-2-2b-it": 26,
+   "gemma-2-9b-base": 42,
+   "gemma-2-9b-it": 42,
+   "gemma-2-27b-base": 46,
+   "gemma-2-27b-it": 46
+  },
+  "analysis_layers": {
+   "gemma-2-2b-base": 17,
+   "gemma-2-2b-it": 17,
+   "gemma-2-9b-base": 28,
+   "gemma-2-9b-it": 28,
+   "gemma-2-27b-base": 31,
+   "gemma-2-27b-it": 31
+  },
+  "note": "round-3 stripped design (memo 2026-09-09): columns at true heights, labelled analysis marks, baseline, ids, legend \u2014 nothing else. Corpus box, two-thirds annotation, anchor line, and connecting line removed; the caption carries the two-thirds rule and the anchor identification. Compact 3.4in for two-column layout."
+ }
+}

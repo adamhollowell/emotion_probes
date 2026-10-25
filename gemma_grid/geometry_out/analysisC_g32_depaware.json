@@ -1,0 +1,29 @@
+{
+ "record": "Analysis C \u2014 dependence-aware bootstrap for G3.2 (gap_boot machinery; arousal_r 2b->27b contrast).",
+ "params": {
+  "B": 2000,
+  "seed": 0,
+  "resample": "45 RM emotions jointly, PCA fixed on 171",
+  "registered_SE": 0.21821789023599236
+ },
+ "chains": {
+  "base": {
+   "arousal_r_2b": 0.4992351014337052,
+   "arousal_r_27b": 0.6675247122103364,
+   "delta_z_point": 0.2579782323267874,
+   "p_registered": 0.23712445753756928,
+   "SE_registered": 0.21821789023599236,
+   "SE_dependence_aware_bootstrap": 0.058567671215024514,
+   "p_dependence_aware": 1.0588690461554862e-05
+  },
+  "it": {
+   "arousal_r_2b": 0.36303792505848453,
+   "arousal_r_27b": 0.5783451629451445,
+   "delta_z_point": 0.2795920075269989,
+   "p_registered": 0.20010532884464838,
+   "SE_registered": 0.21821789023599236,
+   "SE_dependence_aware_bootstrap": 0.057706715898605564,
+   "p_dependence_aware": 1.2657887304978743e-06
+  }
+ }
+}

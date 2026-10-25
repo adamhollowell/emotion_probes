@@ -1,0 +1,22 @@
+cell_id: gemma-2-9b-it
+model_id: google/gemma-2-9b-it
+tuning: it                       # base | it
+status: to-run
+
+# --- Extraction regime: pinned to match the anchor 27b-base run ---
+tl_compatibility_mode: false     # RAW HF numerics (no fold_ln/centering). NOT the Config default (True).
+dtype: bfloat16
+device: cuda
+skip_first_n_tokens: 50
+pca_variance_target: 0.50
+emotion_subset: null             # full 171-emotion list
+
+# --- Corpus (reused verbatim, model-agnostic) ---
+stories: data/stories/stories_171_canonical_clean.jsonl
+neutral: data/stories/neutral_dialogues.jsonl
+
+# --- Layer derivation (LOCKED at GATE 1: strict 2/3, round(2/3*n_layers)) ---
+depth_fraction: 0.6667           # LOCKED strict 2/3. (0.6739=31/46 rejected: only moved 2B, and to the layer farther from 2/3.)
+expect_n_layers: 42             # assertion target, READ+asserted from model config, not trusted
+expect_d_model: 3584
+analysis_layer_expected: 28      # COMPUTED round(depth_fraction*n_layers); asserted at load 

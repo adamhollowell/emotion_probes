@@ -1,0 +1,13 @@
+# LC-59 P-map battery + B1/B2 handback manifest
+artifact: gemma_grid/geometry_out_100T/b2_covariate_transfer_100T.json
+sha256: ae09c101590a173d343aa5b92b5b4606e335d041e3561a26daca57788dac7c2d
+bytes: 4000
+description: B2 covariate-transfer test
+producer: gemma_grid/nogpu_additions_100T/b2_covariate_transfer_100T.py
+producer_sha256: 81c31c24da65e9e76ab15527c14e69a69453006af49bb135330dff141e26cbac
+frozen_input_sha256: e76e40266e40fe682b709d7c25f11089eaf4cdd881c0283c41a76cc2ee5c4e4a  g54a_displacement_model_100T.py
+spec_sha256: ae05e8bdcd5611558f0999217f2555c1037a52cc95ef2e4e033fa589cf06569a
+floor_recomputed: false
+qwen_touched: false
+svd_note: gesdd->gesvd fallback (Coordinator remedy-1b) active in battery producer; convergent SVDs bit-identical; frozen pmap_transport_100T.py byte-stable
+generated_utc: 2026-09-03T05:25:52Z

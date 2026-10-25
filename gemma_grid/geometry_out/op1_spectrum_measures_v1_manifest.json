@@ -1,0 +1,16 @@
+{
+ "m9_note": "SR.5 input manifest.",
+ "created_utc": "2026-08-19T16:24:18+00:00",
+ "inputs": {
+  "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+  "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+  "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+  "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+  "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5",
+  "gemma_grid/geometry_out_100T/stageA_cross_cell_table.csv": "68bb9e0a291279f6b852ff75f42b81b409dfaf6887be5174cdeb6d6ea39f3581"
+ },
+ "output": {
+  "gemma_grid/geometry_out_100T/op1_spectrum_measures_100T_v1.json": "ff483ee9f858bb064d4512604f7b6c42ea46f77af9a4c3a8dd11b44510c3e8d5"
+ }
+}

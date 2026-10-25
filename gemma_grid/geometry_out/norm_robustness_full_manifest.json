@@ -1,0 +1,27 @@
+{
+  "rule": "M.9 \u2014 every input hashed at run time",
+  "inputs_sha256": {
+    "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+    "gemma_grid/geometry_out_100T/gemma-2-2b-base/c3_vectors.pt": "6d23da00388a5514088c0bff5fe9250dcc33b09b7ec8619d7f33d4d77e7460c6",
+    "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+    "gemma_grid/geometry_out_100T/gemma-2-2b-it/c3_vectors.pt": "21edd586fb0aa7fe1775d954fb9e615b445854f4b6c1369198dfb858c2af880d",
+    "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+    "gemma_grid/geometry_out_100T/gemma-2-9b-base/c3_vectors.pt": "1314eb023c104ea2b9aa3972427ae30f088d68601982f7112ecb11cccc26e407",
+    "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+    "gemma_grid/geometry_out_100T/gemma-2-9b-it/c3_vectors.pt": "270ac1001bdc2590236bf01f9126596e8814f220ead04163e81f4a980d86ef3c",
+    "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+    "gemma_grid/geometry_out_100T/gemma-2-27b-base/c3_vectors.pt": "5b701c50f765bd798259013716d55ea8d3cff17cc13dd91ada09b2dbeaa7e4ca",
+    "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5",
+    "gemma_grid/geometry_out_100T/gemma-2-27b-it/c3_vectors.pt": "40ca301223e376bfe78bd6eac6973945c182f9908264970b9ec1507eee5329f2",
+    "data/ratings/russell_mehrabian_1977.csv": "b8a0e952957e6c849d3507bdd0d6e848fcb8f308b628837e3c6dc8f77bb6cffd",
+    "data/ratings/nrc_vad_v2_1.csv": "eacaf94f81d0df5d7250c4cdc7c80668f3a81a91adf0ed525c4d95f6149db12a",
+    "data/ratings/warriner_cache.csv": "78ac8107c78e116bb96538fae4faa47281a155f5f8fe39f30bbc6ea3db05b446",
+    "gemma_grid/geometry_out_100T/stageA_cross_cell_table.csv": "68bb9e0a291279f6b852ff75f42b81b409dfaf6887be5174cdeb6d6ea39f3581",
+    "gemma_grid/geometry_out_100T/gemma-2-2b-base/c3_embedding.json": "7662118bc87aabfc5d679621c738d1abc5eacb96f8589b108ef737295f586103",
+    "gemma_grid/geometry_out_100T/gemma-2-2b-it/c3_embedding.json": "a1e7cb6fb5591746c6231bea0a1fa9c80b70a60361268821cade0bb6f880b0ef",
+    "gemma_grid/geometry_out_100T/gemma-2-9b-base/c3_embedding.json": "8255dd666e09fd8c1b0e0e843551e18d154096f161eb9333b11e6ec623787f95",
+    "gemma_grid/geometry_out_100T/gemma-2-9b-it/c3_embedding.json": "be15b918660461d7742a471dbddde1c390b63720bbf4ce7559a3276dc950c9b3",
+    "gemma_grid/geometry_out_100T/gemma-2-27b-base/c3_embedding.json": "c1e6ced9eef5ec25ef4c8d587637e7301fbced6a9867e1fa6cd05dcc766d7b61",
+    "gemma_grid/geometry_out_100T/gemma-2-27b-it/c3_embedding.json": "ea4c279a7944013f885cde89598c6d720cdcb74adb9673d28e5913ba6afa1bbc"
+  }
+}

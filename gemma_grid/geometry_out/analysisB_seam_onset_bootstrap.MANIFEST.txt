@@ -1,0 +1,16 @@
+GGE1 100T — ANALYSIS B v2 FULL-SCOPE MANIFEST (Coordinator verification)
+Producer deliverable 2026-09-02. NOT SR.5 (Coordinator handback).
+
+enriched JSON : analysisB_seam_onset_bootstrap_100T.json  sha256 ca3f961459fa46fc973e6972cf9e108da7316bdc699919ef0b20930e2fc6ee6c
+draw-level CSV: analysisB_drawlevel_100T.csv (500 rows, 23 cols)  sha256 23b056696470f0e65de97be13175bdf9c34451abc4165e7cfe679b278b37bfde
+v1 headline preserved: analysisB_..._v1headline_c6d8546e.json (superseded; core identical)
+
+CORE (reproduces c6d8546e EXACTLY): onset<10k both 27B L23 p95_ci[23,23]; seam ci95 {"gemma-2-2b-base": [7.0, 7.0], "gemma-2-2b-it": [7.0, 7.0], "gemma-2-9b-base": [8.0, 10.0], "gemma-2-9b-it": [10.0, 10.0], "gemma-2-27b-base": [23.0, 24.0], "gemma-2-27b-it": [23.0, 24.0]}
+  gap<10k {"gemma-2-27b-base": {"frac_gap_ci95": [0.0, 0.0217], "frac_zero_gap": 0.896}, "gemma-2-27b-it": {"frac_gap_ci95": [0.0, 0.0217], "frac_zero_gap": 0.756}}
+
+NEW: L0-readable frac 2B/9B = {"gemma-2-2b-base": 1.0, "gemma-2-2b-it": 1.0, "gemma-2-9b-base": 1.0, "gemma-2-9b-it": 1.0} (all 1.0).
+  lt100/lt1000 sensitivity (LABELED): lt100 none in-WIN; lt1000 27b-base none, 27b-it L26/27 in 43/500. See TEARDOWN sensitivity_finding (real, not bug).
+
+GATES: G2/2b carried fwd (gesvd path untouched); G3 bitident=True + curve==onset_of; G4 14.9h/61.8GB.
+INTEGRITY: frozen 11a12790 + successor a9e5e376 byte-stable; anchor 6de2e293 unchanged.
+REMEDY LINEAGE: gesvd successor a9e5e376 (frozen byte-stable); v2 wrapper = additive collector, gesvd clean for every clean, RNG unchanged.

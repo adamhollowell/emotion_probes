@@ -1,0 +1,114 @@
+{
+ "record": "four constructions of the registered arousal interaction DiD (SR.4 object-identity pin)",
+ "ruling_2026_10_08": {
+  "by": "Adam",
+  "paper_reports": "A_raw_r_did (the preregistration's r-unit arithmetic)",
+  "stored_artifact_delta_stays": "C_tanh_per_size_did (the r45 convention named at Appendix R.3)",
+  "recomputation_implied": false,
+  "verdict_effect": "none; p derives from B_fisher_z_did and NULL_subfloor holds under all four",
+  "open_item": "whether Table E.4's five-arm delta column follows the headline to A or stays r45"
+ },
+ "prereg_formula": "([IT-base] arousal r)@27B - ([IT-base] arousal r)@2B  (PREREGISTRATION.md (e), r units)",
+ "floor": 0.15,
+ "se_fisher_did": 0.3086066999241838,
+ "registered_arm": {
+  "A_raw_r_did": 0.047017627110028715,
+  "B_fisher_z_did": 0.02161377520021135,
+  "C_tanh_per_size_did": 0.02108823730579401,
+  "D_tanh_of_z_did": 0.021610410165950344
+ },
+ "registered_arm_test": {
+  "z_statistic": 0.0700366362931241,
+  "p_two_sided": 0.944164499673302,
+  "se": 0.3086066999241838,
+  "statistic_built_from": "B_fisher_z_did"
+ },
+ "artifact_delta": 0.021088237305793955,
+ "artifact_p": 0.9441644996733021,
+ "artifact_delta_is": [
+  "C_tanh_per_size_did"
+ ],
+ "floor_ratios": {
+  "A_raw_r_did": 0.31345084740019147,
+  "B_fisher_z_did": 0.14409183466807568,
+  "C_tanh_per_size_did": 0.1405882487052934,
+  "D_tanh_of_z_did": 0.14406940110633562
+ },
+ "verdict_robustness": "every construction is positive and sub-floor; p is a function of B alone, so NULL_subfloor and the registered direction hold under all four",
+ "norm_arms": [
+  {
+   "arm": "Russell-Mehrabian [reg]",
+   "n": 45,
+   "p": 0.944164499673302,
+   "E4_printed_delta": 0.047,
+   "E4_printed_is_A": true,
+   "E4_printed_is_C": false,
+   "pre_update_delta": 0.021,
+   "pre_update_was_C": true,
+   "A_raw_r_did": 0.047017627110028715,
+   "B_fisher_z_did": 0.02161377520021135,
+   "C_tanh_per_size_did": 0.02108823730579401,
+   "D_tanh_of_z_did": 0.021610410165950344
+  },
+  {
+   "arm": "NRC VAD [natural]",
+   "n": 161,
+   "p": 0.5484608439931935,
+   "E4_printed_delta": 0.072,
+   "E4_printed_is_A": true,
+   "E4_printed_is_C": false,
+   "pre_update_delta": 0.095,
+   "pre_update_was_C": true,
+   "A_raw_r_did": 0.07203447698885013,
+   "B_fisher_z_did": 0.09547771132066651,
+   "C_tanh_per_size_did": 0.09469641509103414,
+   "D_tanh_of_z_did": 0.09518864061414002
+  },
+  {
+   "arm": "NRC VAD [matched45]",
+   "n": 45,
+   "p": 0.8737547655391634,
+   "E4_printed_delta": 0.059,
+   "E4_printed_is_A": true,
+   "E4_printed_is_C": false,
+   "pre_update_delta": 0.048,
+   "pre_update_was_C": true,
+   "A_raw_r_did": 0.05870495799864106,
+   "B_fisher_z_did": 0.04903482168772383,
+   "C_tanh_per_size_did": 0.04821614115412898,
+   "D_tanh_of_z_did": 0.048995559448723684
+  },
+  {
+   "arm": "Warriner [natural]",
+   "n": 126,
+   "p": 0.7618628599582072,
+   "E4_printed_delta": 0.052,
+   "E4_printed_is_A": true,
+   "E4_printed_is_C": false,
+   "pre_update_delta": 0.054,
+   "pre_update_was_C": true,
+   "A_raw_r_did": 0.0518099543389256,
+   "B_fisher_z_did": 0.05464756934674747,
+   "C_tanh_per_size_did": 0.05425495561394656,
+   "D_tanh_of_z_did": 0.05459323520286055
+  },
+  {
+   "arm": "Warriner [matched45]",
+   "n": 42,
+   "p": 0.9175938010950618,
+   "E4_printed_delta": 0.047,
+   "E4_printed_is_A": true,
+   "E4_printed_is_C": false,
+   "pre_update_delta": 0.033,
+   "pre_update_was_C": true,
+   "A_raw_r_did": 0.0466298328207892,
+   "B_fisher_z_did": 0.03313536940377165,
+   "C_tanh_per_size_did": 0.032609892943260985,
+   "D_tanh_of_z_did": 0.03312324770453634
+  }
+ ],
+ "producer_note": "norm_robustness_full_100T.py prints A as its DiD line; with Table E.4 switched to A on 2026-10-08 the table is reproducible from its own cited script, delta column included, which closes the SR.4 producer gap",
+ "all_checks_pass": true,
+ "script": "gemma_grid/scripts/verify_interaction_did_constructions.py",
+ "script_sha256": "207d769415799721d796170ac5338e36e6804594fdb3d8bcd4675d09b665cc8f"
+}

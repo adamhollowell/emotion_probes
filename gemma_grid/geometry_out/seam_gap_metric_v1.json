@@ -1,0 +1,69 @@
+{
+ "provenance": {
+  "script": "gemma_grid/scripts/seam_gap_metric_100T.py",
+  "created_utc": "2026-08-19T16:24:14+00:00",
+  "ruling": "Adam 2026-08-10 (ruling 9): build the seam-gap metric for GGE1.",
+  "definition": "seam_gap = frac(consolidation seam, G6.4 sustained-RSA>=0.97) - frac(readability onset, G6.2 median-own-rank<10k). Convention note: onset=L0 for cells readable from layer 0 (never-gating); the gap is then the consolidation depth itself.",
+  "status": "UNREGISTERED exploratory; Phase-5 check owed before paper contact.",
+  "gates": "anchor (27b-base) seam+onset hard-assert vs ledger G6.4/G6.2; internal validity (sustained-crossing, n_layers) hard for all; non-anchor ledger mismatches warn-and-record in ledger_reference_mismatch (LC-23)."
+ },
+ "cells": {
+  "gemma-2-2b-base": {
+   "consolidation_layer": 7,
+   "readability_onset_layer": 0,
+   "n_layers": 26,
+   "consolidation_frac": 0.2692,
+   "onset_frac": 0.0,
+   "seam_gap": 0.2692
+  },
+  "gemma-2-2b-it": {
+   "consolidation_layer": 7,
+   "readability_onset_layer": 0,
+   "n_layers": 26,
+   "consolidation_frac": 0.2692,
+   "onset_frac": 0.0,
+   "seam_gap": 0.2692
+  },
+  "gemma-2-9b-base": {
+   "consolidation_layer": 9,
+   "readability_onset_layer": 0,
+   "n_layers": 42,
+   "consolidation_frac": 0.2143,
+   "onset_frac": 0.0,
+   "seam_gap": 0.2143
+  },
+  "gemma-2-9b-it": {
+   "consolidation_layer": 10,
+   "readability_onset_layer": 0,
+   "n_layers": 42,
+   "consolidation_frac": 0.2381,
+   "onset_frac": 0.0,
+   "seam_gap": 0.2381
+  },
+  "gemma-2-27b-base": {
+   "consolidation_layer": 23,
+   "readability_onset_layer": 23,
+   "n_layers": 46,
+   "consolidation_frac": 0.5,
+   "onset_frac": 0.5,
+   "seam_gap": 0.0
+  },
+  "gemma-2-27b-it": {
+   "consolidation_layer": 23,
+   "readability_onset_layer": 23,
+   "n_layers": 46,
+   "consolidation_frac": 0.5,
+   "onset_frac": 0.5,
+   "seam_gap": 0.0
+  }
+ },
+ "ledger_reference_mismatch": [
+  {
+   "cell": "gemma-2-27b-it",
+   "metric": "consolidation_seam",
+   "measured_100T": 23,
+   "ledger_reference": 24
+  }
+ ],
+ "reading": "Gap collapses with scale: ~0.27 at 2B, ~0.21-0.24 at 9B, 0.000/0.022 at 27B \u2014 the single number carrying G6.4's 'two measures, same seam is scale-emergent' claim."
+}

@@ -1,0 +1,310 @@
+{
+  "cell": "gemma-2-2b-base",
+  "analysis_layer": 17,
+  "n_layers": 26,
+  "fair_selfrank_n": 140,
+  "onset_layer_median_lt_10k": 0,
+  "onset_fractional_depth": 0.0,
+  "per_layer_median_own_rank": [
+    {
+      "layer": 0,
+      "median_own_rank": 4488.0
+    },
+    {
+      "layer": 1,
+      "median_own_rank": 5766.0
+    },
+    {
+      "layer": 2,
+      "median_own_rank": 5731.5
+    },
+    {
+      "layer": 3,
+      "median_own_rank": 6250.0
+    },
+    {
+      "layer": 4,
+      "median_own_rank": 4872.5
+    },
+    {
+      "layer": 5,
+      "median_own_rank": 7746.0
+    },
+    {
+      "layer": 6,
+      "median_own_rank": 4741.5
+    },
+    {
+      "layer": 7,
+      "median_own_rank": 631.5
+    },
+    {
+      "layer": 8,
+      "median_own_rank": 651.0
+    },
+    {
+      "layer": 9,
+      "median_own_rank": 573.5
+    },
+    {
+      "layer": 10,
+      "median_own_rank": 1384.0
+    },
+    {
+      "layer": 11,
+      "median_own_rank": 494.5
+    },
+    {
+      "layer": 12,
+      "median_own_rank": 575.0
+    },
+    {
+      "layer": 13,
+      "median_own_rank": 185.5
+    },
+    {
+      "layer": 14,
+      "median_own_rank": 249.5
+    },
+    {
+      "layer": 15,
+      "median_own_rank": 171.0
+    },
+    {
+      "layer": 16,
+      "median_own_rank": 43.0
+    },
+    {
+      "layer": 17,
+      "median_own_rank": 41.5
+    },
+    {
+      "layer": 18,
+      "median_own_rank": 26.5
+    },
+    {
+      "layer": 19,
+      "median_own_rank": 28.5
+    },
+    {
+      "layer": 20,
+      "median_own_rank": 32.0
+    },
+    {
+      "layer": 21,
+      "median_own_rank": 38.0
+    },
+    {
+      "layer": 22,
+      "median_own_rank": 23.0
+    },
+    {
+      "layer": 23,
+      "median_own_rank": 20.0
+    },
+    {
+      "layer": 24,
+      "median_own_rank": 29.5
+    },
+    {
+      "layer": 25,
+      "median_own_rank": 25.5
+    }
+  ],
+  "analysis_layer_raw_selfranks_median": 65.5,
+  "table1_raw_analysis_layer": {
+    "happy": {
+      "top": [
+        "joyed",
+        " happy",
+        " joyous",
+        " exciting",
+        " overjoyed"
+      ],
+      "bottom": [
+        " worse",
+        " peggio",
+        " Worse",
+        "worse",
+        " peor"
+      ]
+    },
+    "sad": {
+      "top": [
+        "NUMX",
+        "expandindo",
+        "__':\r",
+        "__\":\r",
+        "IBOutlet"
+      ],
+      "bottom": [
+        "!",
+        "!!",
+        "!!!",
+        "!\"",
+        "!!!!"
+      ]
+    },
+    "angry": {
+      "top": [
+        " angrily",
+        "\ud83d\udca2",
+        " violently",
+        " angered",
+        " retali"
+      ],
+      "bottom": [
+        " contin\u00faas",
+        " nahilalakip",
+        "tored",
+        " marvels",
+        "Yay"
+      ]
+    },
+    "afraid": {
+      "top": [
+        "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+        " trembling",
+        " fa\u017ft",
+        " claust",
+        " un\u017f"
+      ],
+      "bottom": [
+        " enjoy",
+        " :)",
+        " happy",
+        " enjoys",
+        " ENJOY"
+      ]
+    },
+    "surprised": {
+      "top": [
+        " startled",
+        " abruptly",
+        " shocked",
+        "\u6115",
+        " shock"
+      ],
+      "bottom": [
+        "Portail",
+        "DockStyle",
+        "NUMX",
+        "principalColumn",
+        "SEGUIR"
+      ]
+    },
+    "guilty": {
+      "top": [
+        " himself",
+        " nightmares",
+        " him",
+        " blames",
+        " blamed"
+      ],
+      "bottom": [
+        " calendriers",
+        "ValueStyle",
+        "WriteTagHelper",
+        " autorytatywna",
+        "rungsseite"
+      ]
+    },
+    "nervous": {
+      "top": [
+        " nervously",
+        " fidget",
+        " nervousness",
+        "\u0344",
+        " uneasy"
+      ],
+      "bottom": [
+        " happy",
+        "addCriterion",
+        " enjoy",
+        " enriched",
+        "reciated"
+      ]
+    },
+    "desperate": {
+      "top": [
+        " desperation",
+        " desperate",
+        " desesper",
+        " desperately",
+        "Desperate"
+      ],
+      "bottom": [
+        " enjoyment",
+        " enjoying",
+        "enjoy",
+        " enjoy",
+        "Enjoy"
+      ]
+    },
+    "proud": {
+      "top": [
+        " proud",
+        " proudly",
+        " orgull",
+        " proudest",
+        "proud"
+      ],
+      "bottom": [
+        "\u51fa\u7248\u5e74",
+        "\u0902\u0926\u0940\u0916\u0930\u0940\u0926\u093e\u0930\u0940",
+        " worse",
+        " peggio",
+        " fruitless"
+      ]
+    },
+    "loving": {
+      "top": [
+        " hugs",
+        " \u2764\ufe0f",
+        "+:+",
+        "\u2764\ufe0f",
+        " warms"
+      ],
+      "bottom": [
+        " worse",
+        " Worse",
+        " suspiciously",
+        " supposed",
+        " blatant"
+      ]
+    },
+    "inspired": {
+      "top": [
+        " inspired",
+        " creative",
+        " transform",
+        " inspiration",
+        " plan"
+      ],
+      "bottom": [
+        "MigrationBuilder",
+        " Efq",
+        " \ud83d\ude44",
+        " Worse",
+        " worse"
+      ]
+    },
+    "calm": {
+      "top": [
+        " leisurely",
+        "Interess",
+        " enjoyable",
+        "CodedInputStream",
+        "enjoy"
+      ],
+      "bottom": [
+        " fucking",
+        " freaking",
+        " mierda",
+        " worse",
+        " frantically"
+      ]
+    }
+  },
+  "conventions": "raw v@W_U for Table-1; (1+w) norm lens (eps 1e-6) for sweep; cleaned vectors; own token = ' word' single-token (140/171)"
+}

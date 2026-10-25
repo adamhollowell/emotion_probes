@@ -1,0 +1,2122 @@
+GGE1 100T — ANALYSIS A (displacement rank-stability, G5.4a/G5.4b) MANIFEST (Coordinator verification)
+Pulled off critical path 2026-08-28 while the B SVD diagnostic runs. NOT appended to SR.5 (per Adam; SR.5 at full-batch handback).
+
+artifact : analysisA_displacement_bootstrap_100T.json
+sha256   : 61205676579706601cc1563e9d6ebb286bb9128d6eac45c2d4529422880e80e9
+
+PARAMS
+  B / seed / shared_draw_indices : 1000 / 20260827 / True
+  pairs : ['gemma-2-2b-base__gemma-2-2b-it', 'gemma-2-9b-base__gemma-2-9b-it', 'gemma-2-27b-base__gemma-2-27b-it']
+
+  trio  : ['vindictive', 'vengeful', 'spiteful']
+
+DRAW-LEVEL CSVs (sha256)
+  analysisA_ranks__gemma-2-2b-base__vs__gemma-2-2b-it.csv : db2a096cec56beae1b220d14dc10c7eea1b39e4725a26f84dcc8b9fc26e00a2c
+  analysisA_ranks__gemma-2-9b-base__vs__gemma-2-9b-it.csv : baedc81f416850656afdf25e16f994e83b7a8eb7df9850bc013f3706d4b06b0e
+  analysisA_ranks__gemma-2-27b-base__vs__gemma-2-27b-it.csv : e7f8b5d1a6150f840a75170db9761655e599a7146b9507c2e3875c3000af3dba
+
+RESULT (trio + per-pair, verbatim from JSON)
+[
+ "vindictive",
+ "vengeful",
+ "spiteful"
+]
+{
+ "gemma-2-2b-base__vs__gemma-2-2b-it": {
+  "trio_each_top10_frac": {
+   "vindictive": 0.637,
+   "vengeful": 0.661,
+   "spiteful": 0.174
+  },
+  "trio_mean_rank_top_decile_frac": 0.843,
+  "loving_rank_ci95": [
+   98,
+   153
+  ],
+  "rank_ci95_per_emotion": {
+   "afraid": [
+    119,
+    162
+   ],
+   "alarmed": [
+    88,
+    120
+   ],
+   "alert": [
+    39,
+    72
+   ],
+   "amazed": [
+    4,
+    13
+   ],
+   "amused": [
+    32,
+    69
+   ],
+   "angry": [
+    74,
+    107
+   ],
+   "annoyed": [
+    102,
+    140
+   ],
+   "anxious": [
+    114,
+    143
+   ],
+   "aroused": [
+    4,
+    34
+   ],
+   "ashamed": [
+    8,
+    30
+   ],
+   "astonished": [
+    34,
+    51
+   ],
+   "at ease": [
+    105,
+    155
+   ],
+   "awestruck": [
+    15,
+    49
+   ],
+   "bewildered": [
+    109,
+    145
+   ],
+   "bitter": [
+    26,
+    40
+   ],
+   "blissful": [
+    24,
+    50
+   ],
+   "bored": [
+    99,
+    159
+   ],
+   "brooding": [
+    77,
+    108
+   ],
+   "calm": [
+    74,
+    143
+   ],
+   "cheerful": [
+    20,
+    42
+   ],
+   "compassionate": [
+    42,
+    114
+   ],
+   "contemptuous": [
+    50,
+    82
+   ],
+   "content": [
+    147,
+    171
+   ],
+   "defiant": [
+    77,
+    148
+   ],
+   "delighted": [
+    33,
+    53
+   ],
+   "dependent": [
+    27,
+    47
+   ],
+   "depressed": [
+    52,
+    82
+   ],
+   "desperate": [
+    75,
+    128
+   ],
+   "disdainful": [
+    49,
+    75
+   ],
+   "disgusted": [
+    114,
+    171
+   ],
+   "disoriented": [
+    64,
+    115
+   ],
+   "dispirited": [
+    64,
+    92
+   ],
+   "distressed": [
+    153,
+    169
+   ],
+   "disturbed": [
+    126,
+    152
+   ],
+   "docile": [
+    43,
+    119
+   ],
+   "droopy": [
+    124,
+    170
+   ],
+   "dumbstruck": [
+    42,
+    64
+   ],
+   "eager": [
+    42,
+    74
+   ],
+   "ecstatic": [
+    3,
+    10
+   ],
+   "elated": [
+    12,
+    34
+   ],
+   "embarrassed": [
+    136,
+    171
+   ],
+   "empathetic": [
+    61,
+    143
+   ],
+   "energized": [
+    9,
+    31
+   ],
+   "enraged": [
+    56,
+    91
+   ],
+   "enthusiastic": [
+    15,
+    38
+   ],
+   "envious": [
+    13,
+    28
+   ],
+   "euphoric": [
+    6,
+    19
+   ],
+   "exasperated": [
+    118,
+    161
+   ],
+   "excited": [
+    10,
+    25
+   ],
+   "exuberant": [
+    2,
+    4
+   ],
+   "frightened": [
+    85,
+    125
+   ],
+   "frustrated": [
+    128,
+    153
+   ],
+   "fulfilled": [
+    134,
+    171
+   ],
+   "furious": [
+    61,
+    96
+   ],
+   "gloomy": [
+    73,
+    102
+   ],
+   "grateful": [
+    131,
+    170
+   ],
+   "greedy": [
+    17,
+    62
+   ],
+   "grief-stricken": [
+    46,
+    82
+   ],
+   "grumpy": [
+    95,
+    137
+   ],
+   "guilty": [
+    4,
+    9
+   ],
+   "happy": [
+    35,
+    55
+   ],
+   "hateful": [
+    59,
+    101
+   ],
+   "heartbroken": [
+    54,
+    81
+   ],
+   "hope": [
+    154,
+    171
+   ],
+   "hopeful": [
+    148,
+    171
+   ],
+   "horrified": [
+    78,
+    134
+   ],
+   "hostile": [
+    147,
+    171
+   ],
+   "humiliated": [
+    55,
+    94
+   ],
+   "hurt": [
+    58,
+    87
+   ],
+   "hysterical": [
+    1,
+    3
+   ],
+   "impatient": [
+    34,
+    85
+   ],
+   "indifferent": [
+    16,
+    67
+   ],
+   "indignant": [
+    86,
+    143
+   ],
+   "infatuated": [
+    73,
+    144
+   ],
+   "inspired": [
+    69,
+    120
+   ],
+   "insulted": [
+    87,
+    126
+   ],
+   "invigorated": [
+    40,
+    56
+   ],
+   "irate": [
+    78,
+    111
+   ],
+   "irritated": [
+    101,
+    135
+   ],
+   "jealous": [
+    12,
+    28
+   ],
+   "joyful": [
+    26,
+    44
+   ],
+   "jubilant": [
+    12,
+    33
+   ],
+   "kind": [
+    55,
+    123
+   ],
+   "lazy": [
+    108,
+    162
+   ],
+   "listless": [
+    81,
+    126
+   ],
+   "lonely": [
+    21,
+    61
+   ],
+   "loving": [
+    98,
+    153
+   ],
+   "mad": [
+    68,
+    98
+   ],
+   "melancholy": [
+    43,
+    74
+   ],
+   "miserable": [
+    53,
+    71
+   ],
+   "mortified": [
+    137,
+    170
+   ],
+   "mystified": [
+    129,
+    170
+   ],
+   "nervous": [
+    67,
+    94
+   ],
+   "nostalgic": [
+    71,
+    146
+   ],
+   "obstinate": [
+    80,
+    138
+   ],
+   "offended": [
+    92,
+    137
+   ],
+   "on edge": [
+    111,
+    130
+   ],
+   "optimistic": [
+    102,
+    134
+   ],
+   "outraged": [
+    69,
+    111
+   ],
+   "overwhelmed": [
+    149,
+    171
+   ],
+   "panicked": [
+    47,
+    69
+   ],
+   "paranoid": [
+    35,
+    72
+   ],
+   "patient": [
+    59,
+    111
+   ],
+   "peaceful": [
+    44,
+    122
+   ],
+   "perplexed": [
+    139,
+    171
+   ],
+   "playful": [
+    4,
+    37
+   ],
+   "pleased": [
+    91,
+    123
+   ],
+   "proud": [
+    129,
+    166
+   ],
+   "puzzled": [
+    120,
+    170
+   ],
+   "rattled": [
+    106,
+    130
+   ],
+   "reflective": [
+    18,
+    47
+   ],
+   "refreshed": [
+    79,
+    113
+   ],
+   "regretful": [
+    1,
+    4
+   ],
+   "rejuvenated": [
+    73,
+    110
+   ],
+   "relaxed": [
+    70,
+    127
+   ],
+   "relieved": [
+    108,
+    163
+   ],
+   "remorseful": [
+    4,
+    12
+   ],
+   "resentful": [
+    16,
+    29
+   ],
+   "resigned": [
+    23,
+    55
+   ],
+   "restless": [
+    109,
+    155
+   ],
+   "sad": [
+    77,
+    113
+   ],
+   "safe": [
+    120,
+    158
+   ],
+   "satisfied": [
+    148,
+    171
+   ],
+   "scared": [
+    98,
+    139
+   ],
+   "scornful": [
+    45,
+    77
+   ],
+   "self-confident": [
+    140,
+    171
+   ],
+   "self-conscious": [
+    118,
+    159
+   ],
+   "self-critical": [
+    23,
+    49
+   ],
+   "sensitive": [
+    134,
+    171
+   ],
+   "sentimental": [
+    80,
+    146
+   ],
+   "serene": [
+    32,
+    114
+   ],
+   "shaken": [
+    116,
+    155
+   ],
+   "shocked": [
+    47,
+    75
+   ],
+   "skeptical": [
+    57,
+    114
+   ],
+   "sleepy": [
+    10,
+    35
+   ],
+   "sluggish": [
+    88,
+    147
+   ],
+   "smug": [
+    60,
+    105
+   ],
+   "sorry": [
+    34,
+    54
+   ],
+   "spiteful": [
+    9,
+    33
+   ],
+   "stimulated": [
+    9,
+    36
+   ],
+   "stressed": [
+    146,
+    163
+   ],
+   "stubborn": [
+    58,
+    111
+   ],
+   "stuck": [
+    17,
+    38
+   ],
+   "sullen": [
+    97,
+    139
+   ],
+   "surprised": [
+    40,
+    62
+   ],
+   "suspicious": [
+    48,
+    101
+   ],
+   "sympathetic": [
+    61,
+    139
+   ],
+   "tense": [
+    114,
+    146
+   ],
+   "terrified": [
+    67,
+    109
+   ],
+   "thankful": [
+    151,
+    171
+   ],
+   "thrilled": [
+    7,
+    22
+   ],
+   "tired": [
+    45,
+    91
+   ],
+   "tormented": [
+    50,
+    79
+   ],
+   "trapped": [
+    14,
+    31
+   ],
+   "triumphant": [
+    113,
+    149
+   ],
+   "troubled": [
+    92,
+    111
+   ],
+   "uneasy": [
+    133,
+    165
+   ],
+   "unhappy": [
+    61,
+    79
+   ],
+   "unnerved": [
+    117,
+    150
+   ],
+   "unsettled": [
+    124,
+    149
+   ],
+   "upset": [
+    143,
+    161
+   ],
+   "valiant": [
+    115,
+    171
+   ],
+   "vengeful": [
+    4,
+    28
+   ],
+   "vibrant": [
+    19,
+    36
+   ],
+   "vigilant": [
+    34,
+    90
+   ],
+   "vindictive": [
+    5,
+    29
+   ],
+   "vulnerable": [
+    104,
+    130
+   ],
+   "weary": [
+    129,
+    159
+   ],
+   "worn out": [
+    119,
+    154
+   ],
+   "worried": [
+    135,
+    160
+   ],
+   "worthless": [
+    18,
+    34
+   ]
+  }
+ },
+ "gemma-2-9b-base__vs__gemma-2-9b-it": {
+  "trio_each_top10_frac": {
+   "vindictive": 0.421,
+   "vengeful": 0.612,
+   "spiteful": 0.07
+  },
+  "trio_mean_rank_top_decile_frac": 0.746,
+  "loving_rank_ci95": [
+   22,
+   118
+  ],
+  "rank_ci95_per_emotion": {
+   "afraid": [
+    87,
+    159
+   ],
+   "alarmed": [
+    99,
+    167
+   ],
+   "alert": [
+    19,
+    63
+   ],
+   "amazed": [
+    15,
+    80
+   ],
+   "amused": [
+    26,
+    109
+   ],
+   "angry": [
+    65,
+    148
+   ],
+   "annoyed": [
+    132,
+    171
+   ],
+   "anxious": [
+    95,
+    157
+   ],
+   "aroused": [
+    1,
+    3
+   ],
+   "ashamed": [
+    5,
+    19
+   ],
+   "astonished": [
+    44,
+    135
+   ],
+   "at ease": [
+    38,
+    113
+   ],
+   "awestruck": [
+    13,
+    80
+   ],
+   "bewildered": [
+    90,
+    170
+   ],
+   "bitter": [
+    17,
+    30
+   ],
+   "blissful": [
+    19,
+    43
+   ],
+   "bored": [
+    35,
+    133
+   ],
+   "brooding": [
+    109,
+    166
+   ],
+   "calm": [
+    29,
+    130
+   ],
+   "cheerful": [
+    45,
+    151
+   ],
+   "compassionate": [
+    11,
+    157
+   ],
+   "contemptuous": [
+    21,
+    75
+   ],
+   "content": [
+    87,
+    169
+   ],
+   "defiant": [
+    48,
+    167
+   ],
+   "delighted": [
+    72,
+    147
+   ],
+   "dependent": [
+    15,
+    51
+   ],
+   "depressed": [
+    66,
+    145
+   ],
+   "desperate": [
+    26,
+    76
+   ],
+   "disdainful": [
+    32,
+    85
+   ],
+   "disgusted": [
+    41,
+    144
+   ],
+   "disoriented": [
+    24,
+    101
+   ],
+   "dispirited": [
+    62,
+    124
+   ],
+   "distressed": [
+    106,
+    166
+   ],
+   "disturbed": [
+    91,
+    138
+   ],
+   "docile": [
+    43,
+    166
+   ],
+   "droopy": [
+    35,
+    110
+   ],
+   "dumbstruck": [
+    28,
+    54
+   ],
+   "eager": [
+    62,
+    169
+   ],
+   "ecstatic": [
+    28,
+    90
+   ],
+   "elated": [
+    38,
+    98
+   ],
+   "embarrassed": [
+    28,
+    96
+   ],
+   "empathetic": [
+    15,
+    149
+   ],
+   "energized": [
+    26,
+    90
+   ],
+   "enraged": [
+    66,
+    159
+   ],
+   "enthusiastic": [
+    56,
+    168
+   ],
+   "envious": [
+    3,
+    13
+   ],
+   "euphoric": [
+    17,
+    48
+   ],
+   "exasperated": [
+    102,
+    157
+   ],
+   "excited": [
+    54,
+    166
+   ],
+   "exuberant": [
+    22,
+    73
+   ],
+   "frightened": [
+    43,
+    111
+   ],
+   "frustrated": [
+    140,
+    170
+   ],
+   "fulfilled": [
+    92,
+    169
+   ],
+   "furious": [
+    86,
+    166
+   ],
+   "gloomy": [
+    106,
+    160
+   ],
+   "grateful": [
+    72,
+    169
+   ],
+   "greedy": [
+    1,
+    14
+   ],
+   "grief-stricken": [
+    46,
+    139
+   ],
+   "grumpy": [
+    98,
+    170
+   ],
+   "guilty": [
+    3,
+    20
+   ],
+   "happy": [
+    67,
+    139
+   ],
+   "hateful": [
+    35,
+    125
+   ],
+   "heartbroken": [
+    67,
+    141
+   ],
+   "hope": [
+    64,
+    138
+   ],
+   "hopeful": [
+    95,
+    165
+   ],
+   "horrified": [
+    89,
+    171
+   ],
+   "hostile": [
+    99,
+    171
+   ],
+   "humiliated": [
+    16,
+    45
+   ],
+   "hurt": [
+    51,
+    124
+   ],
+   "hysterical": [
+    8,
+    46
+   ],
+   "impatient": [
+    15,
+    84
+   ],
+   "indifferent": [
+    24,
+    170
+   ],
+   "indignant": [
+    26,
+    99
+   ],
+   "infatuated": [
+    15,
+    82
+   ],
+   "inspired": [
+    45,
+    169
+   ],
+   "insulted": [
+    50,
+    98
+   ],
+   "invigorated": [
+    37,
+    107
+   ],
+   "irate": [
+    76,
+    146
+   ],
+   "irritated": [
+    115,
+    171
+   ],
+   "jealous": [
+    3,
+    11
+   ],
+   "joyful": [
+    57,
+    114
+   ],
+   "jubilant": [
+    57,
+    136
+   ],
+   "kind": [
+    25,
+    138
+   ],
+   "lazy": [
+    69,
+    171
+   ],
+   "listless": [
+    66,
+    159
+   ],
+   "lonely": [
+    82,
+    171
+   ],
+   "loving": [
+    22,
+    118
+   ],
+   "mad": [
+    74,
+    157
+   ],
+   "melancholy": [
+    105,
+    169
+   ],
+   "miserable": [
+    40,
+    87
+   ],
+   "mortified": [
+    39,
+    116
+   ],
+   "mystified": [
+    85,
+    171
+   ],
+   "nervous": [
+    40,
+    87
+   ],
+   "nostalgic": [
+    63,
+    170
+   ],
+   "obstinate": [
+    61,
+    168
+   ],
+   "offended": [
+    50,
+    113
+   ],
+   "on edge": [
+    79,
+    135
+   ],
+   "optimistic": [
+    103,
+    170
+   ],
+   "outraged": [
+    78,
+    159
+   ],
+   "overwhelmed": [
+    121,
+    170
+   ],
+   "panicked": [
+    63,
+    141
+   ],
+   "paranoid": [
+    26,
+    140
+   ],
+   "patient": [
+    66,
+    170
+   ],
+   "peaceful": [
+    4,
+    23
+   ],
+   "perplexed": [
+    93,
+    170
+   ],
+   "playful": [
+    11,
+    68
+   ],
+   "pleased": [
+    96,
+    169
+   ],
+   "proud": [
+    106,
+    171
+   ],
+   "puzzled": [
+    71,
+    168
+   ],
+   "rattled": [
+    82,
+    134
+   ],
+   "reflective": [
+    23,
+    102
+   ],
+   "refreshed": [
+    42,
+    99
+   ],
+   "regretful": [
+    2,
+    10
+   ],
+   "rejuvenated": [
+    26,
+    72
+   ],
+   "relaxed": [
+    18,
+    65
+   ],
+   "relieved": [
+    23,
+    99
+   ],
+   "remorseful": [
+    6,
+    28
+   ],
+   "resentful": [
+    9,
+    18
+   ],
+   "resigned": [
+    40,
+    141
+   ],
+   "restless": [
+    126,
+    171
+   ],
+   "sad": [
+    107,
+    167
+   ],
+   "safe": [
+    59,
+    129
+   ],
+   "satisfied": [
+    77,
+    158
+   ],
+   "scared": [
+    63,
+    137
+   ],
+   "scornful": [
+    21,
+    70
+   ],
+   "self-confident": [
+    58,
+    148
+   ],
+   "self-conscious": [
+    74,
+    167
+   ],
+   "self-critical": [
+    2,
+    16
+   ],
+   "sensitive": [
+    92,
+    168
+   ],
+   "sentimental": [
+    74,
+    171
+   ],
+   "serene": [
+    2,
+    15
+   ],
+   "shaken": [
+    113,
+    162
+   ],
+   "shocked": [
+    66,
+    153
+   ],
+   "skeptical": [
+    32,
+    143
+   ],
+   "sleepy": [
+    8,
+    26
+   ],
+   "sluggish": [
+    20,
+    82
+   ],
+   "smug": [
+    36,
+    141
+   ],
+   "sorry": [
+    24,
+    80
+   ],
+   "spiteful": [
+    9,
+    44
+   ],
+   "stimulated": [
+    42,
+    166
+   ],
+   "stressed": [
+    107,
+    162
+   ],
+   "stubborn": [
+    61,
+    168
+   ],
+   "stuck": [
+    11,
+    31
+   ],
+   "sullen": [
+    141,
+    171
+   ],
+   "surprised": [
+    52,
+    150
+   ],
+   "suspicious": [
+    55,
+    169
+   ],
+   "sympathetic": [
+    17,
+    158
+   ],
+   "tense": [
+    124,
+    165
+   ],
+   "terrified": [
+    46,
+    141
+   ],
+   "thankful": [
+    69,
+    166
+   ],
+   "thrilled": [
+    48,
+    135
+   ],
+   "tired": [
+    22,
+    77
+   ],
+   "tormented": [
+    28,
+    88
+   ],
+   "trapped": [
+    7,
+    26
+   ],
+   "triumphant": [
+    104,
+    171
+   ],
+   "troubled": [
+    58,
+    112
+   ],
+   "uneasy": [
+    94,
+    148
+   ],
+   "unhappy": [
+    52,
+    106
+   ],
+   "unnerved": [
+    51,
+    110
+   ],
+   "unsettled": [
+    95,
+    148
+   ],
+   "upset": [
+    117,
+    162
+   ],
+   "valiant": [
+    21,
+    125
+   ],
+   "vengeful": [
+    2,
+    28
+   ],
+   "vibrant": [
+    31,
+    80
+   ],
+   "vigilant": [
+    30,
+    160
+   ],
+   "vindictive": [
+    3,
+    33
+   ],
+   "vulnerable": [
+    114,
+    168
+   ],
+   "weary": [
+    130,
+    170
+   ],
+   "worn out": [
+    138,
+    170
+   ],
+   "worried": [
+    80,
+    134
+   ],
+   "worthless": [
+    16,
+    32
+   ]
+  }
+ },
+ "gemma-2-27b-base__vs__gemma-2-27b-it": {
+  "trio_each_top10_frac": {
+   "vindictive": 1.0,
+   "vengeful": 0.999,
+   "spiteful": 1.0
+  },
+  "trio_mean_rank_top_decile_frac": 1.0,
+  "loving_rank_ci95": [
+   75,
+   158
+  ],
+  "rank_ci95_per_emotion": {
+   "afraid": [
+    100,
+    150
+   ],
+   "alarmed": [
+    97,
+    140
+   ],
+   "alert": [
+    71,
+    104
+   ],
+   "amazed": [
+    17,
+    27
+   ],
+   "amused": [
+    73,
+    131
+   ],
+   "angry": [
+    24,
+    70
+   ],
+   "annoyed": [
+    119,
+    168
+   ],
+   "anxious": [
+    114,
+    145
+   ],
+   "aroused": [
+    5,
+    14
+   ],
+   "ashamed": [
+    11,
+    27
+   ],
+   "astonished": [
+    43,
+    61
+   ],
+   "at ease": [
+    106,
+    148
+   ],
+   "awestruck": [
+    27,
+    53
+   ],
+   "bewildered": [
+    122,
+    158
+   ],
+   "bitter": [
+    28,
+    42
+   ],
+   "blissful": [
+    20,
+    34
+   ],
+   "bored": [
+    128,
+    167
+   ],
+   "brooding": [
+    92,
+    142
+   ],
+   "calm": [
+    73,
+    140
+   ],
+   "cheerful": [
+    38,
+    68
+   ],
+   "compassionate": [
+    63,
+    150
+   ],
+   "contemptuous": [
+    44,
+    82
+   ],
+   "content": [
+    137,
+    168
+   ],
+   "defiant": [
+    63,
+    153
+   ],
+   "delighted": [
+    32,
+    60
+   ],
+   "dependent": [
+    24,
+    42
+   ],
+   "depressed": [
+    63,
+    102
+   ],
+   "desperate": [
+    33,
+    60
+   ],
+   "disdainful": [
+    52,
+    87
+   ],
+   "disgusted": [
+    119,
+    166
+   ],
+   "disoriented": [
+    68,
+    133
+   ],
+   "dispirited": [
+    81,
+    118
+   ],
+   "distressed": [
+    154,
+    170
+   ],
+   "disturbed": [
+    141,
+    163
+   ],
+   "docile": [
+    108,
+    171
+   ],
+   "droopy": [
+    74,
+    151
+   ],
+   "dumbstruck": [
+    30,
+    49
+   ],
+   "eager": [
+    79,
+    131
+   ],
+   "ecstatic": [
+    6,
+    21
+   ],
+   "elated": [
+    14,
+    34
+   ],
+   "embarrassed": [
+    84,
+    161
+   ],
+   "empathetic": [
+    86,
+    165
+   ],
+   "energized": [
+    25,
+    53
+   ],
+   "enraged": [
+    29,
+    75
+   ],
+   "enthusiastic": [
+    41,
+    93
+   ],
+   "envious": [
+    15,
+    24
+   ],
+   "euphoric": [
+    10,
+    19
+   ],
+   "exasperated": [
+    153,
+    171
+   ],
+   "excited": [
+    25,
+    57
+   ],
+   "exuberant": [
+    5,
+    16
+   ],
+   "frightened": [
+    67,
+    108
+   ],
+   "frustrated": [
+    136,
+    169
+   ],
+   "fulfilled": [
+    112,
+    167
+   ],
+   "furious": [
+    23,
+    68
+   ],
+   "gloomy": [
+    92,
+    138
+   ],
+   "grateful": [
+    82,
+    166
+   ],
+   "greedy": [
+    4,
+    13
+   ],
+   "grief-stricken": [
+    63,
+    111
+   ],
+   "grumpy": [
+    92,
+    149
+   ],
+   "guilty": [
+    4,
+    10
+   ],
+   "happy": [
+    32,
+    59
+   ],
+   "hateful": [
+    57,
+    92
+   ],
+   "heartbroken": [
+    77,
+    118
+   ],
+   "hope": [
+    131,
+    170
+   ],
+   "hopeful": [
+    145,
+    169
+   ],
+   "horrified": [
+    70,
+    115
+   ],
+   "hostile": [
+    104,
+    170
+   ],
+   "humiliated": [
+    35,
+    80
+   ],
+   "hurt": [
+    93,
+    130
+   ],
+   "hysterical": [
+    4,
+    17
+   ],
+   "impatient": [
+    57,
+    117
+   ],
+   "indifferent": [
+    30,
+    95
+   ],
+   "indignant": [
+    68,
+    156
+   ],
+   "infatuated": [
+    87,
+    153
+   ],
+   "inspired": [
+    73,
+    119
+   ],
+   "insulted": [
+    108,
+    143
+   ],
+   "invigorated": [
+    30,
+    49
+   ],
+   "irate": [
+    32,
+    95
+   ],
+   "irritated": [
+    94,
+    144
+   ],
+   "jealous": [
+    11,
+    19
+   ],
+   "joyful": [
+    29,
+    57
+   ],
+   "jubilant": [
+    17,
+    40
+   ],
+   "kind": [
+    86,
+    140
+   ],
+   "lazy": [
+    45,
+    96
+   ],
+   "listless": [
+    76,
+    113
+   ],
+   "lonely": [
+    32,
+    62
+   ],
+   "loving": [
+    75,
+    158
+   ],
+   "mad": [
+    35,
+    79
+   ],
+   "melancholy": [
+    68,
+    117
+   ],
+   "miserable": [
+    59,
+    83
+   ],
+   "mortified": [
+    114,
+    165
+   ],
+   "mystified": [
+    81,
+    151
+   ],
+   "nervous": [
+    57,
+    76
+   ],
+   "nostalgic": [
+    82,
+    157
+   ],
+   "obstinate": [
+    83,
+    156
+   ],
+   "offended": [
+    92,
+    150
+   ],
+   "on edge": [
+    118,
+    141
+   ],
+   "optimistic": [
+    95,
+    134
+   ],
+   "outraged": [
+    35,
+    100
+   ],
+   "overwhelmed": [
+    152,
+    170
+   ],
+   "panicked": [
+    43,
+    63
+   ],
+   "paranoid": [
+    7,
+    35
+   ],
+   "patient": [
+    65,
+    122
+   ],
+   "peaceful": [
+    61,
+    129
+   ],
+   "perplexed": [
+    97,
+    153
+   ],
+   "playful": [
+    45,
+    112
+   ],
+   "pleased": [
+    78,
+    116
+   ],
+   "proud": [
+    156,
+    171
+   ],
+   "puzzled": [
+    91,
+    157
+   ],
+   "rattled": [
+    83,
+    116
+   ],
+   "reflective": [
+    29,
+    62
+   ],
+   "refreshed": [
+    79,
+    114
+   ],
+   "regretful": [
+    1,
+    5
+   ],
+   "rejuvenated": [
+    48,
+    84
+   ],
+   "relaxed": [
+    74,
+    123
+   ],
+   "relieved": [
+    66,
+    121
+   ],
+   "remorseful": [
+    4,
+    12
+   ],
+   "resentful": [
+    18,
+    28
+   ],
+   "resigned": [
+    57,
+    99
+   ],
+   "restless": [
+    154,
+    171
+   ],
+   "sad": [
+    109,
+    160
+   ],
+   "safe": [
+    118,
+    156
+   ],
+   "satisfied": [
+    107,
+    149
+   ],
+   "scared": [
+    77,
+    124
+   ],
+   "scornful": [
+    41,
+    75
+   ],
+   "self-confident": [
+    125,
+    171
+   ],
+   "self-conscious": [
+    87,
+    136
+   ],
+   "self-critical": [
+    11,
+    25
+   ],
+   "sensitive": [
+    91,
+    150
+   ],
+   "sentimental": [
+    104,
+    171
+   ],
+   "serene": [
+    47,
+    117
+   ],
+   "shaken": [
+    88,
+    125
+   ],
+   "shocked": [
+    36,
+    55
+   ],
+   "skeptical": [
+    30,
+    72
+   ],
+   "sleepy": [
+    10,
+    28
+   ],
+   "sluggish": [
+    61,
+    117
+   ],
+   "smug": [
+    28,
+    62
+   ],
+   "sorry": [
+    35,
+    67
+   ],
+   "spiteful": [
+    3,
+    8
+   ],
+   "stimulated": [
+    33,
+    81
+   ],
+   "stressed": [
+    142,
+    163
+   ],
+   "stubborn": [
+    61,
+    117
+   ],
+   "stuck": [
+    12,
+    22
+   ],
+   "sullen": [
+    135,
+    170
+   ],
+   "surprised": [
+    52,
+    72
+   ],
+   "suspicious": [
+    21,
+    55
+   ],
+   "sympathetic": [
+    86,
+    168
+   ],
+   "tense": [
+    103,
+    124
+   ],
+   "terrified": [
+    52,
+    81
+   ],
+   "thankful": [
+    84,
+    154
+   ],
+   "thrilled": [
+    13,
+    32
+   ],
+   "tired": [
+    33,
+    69
+   ],
+   "tormented": [
+    43,
+    70
+   ],
+   "trapped": [
+    16,
+    30
+   ],
+   "triumphant": [
+    141,
+    169
+   ],
+   "troubled": [
+    85,
+    111
+   ],
+   "uneasy": [
+    140,
+    165
+   ],
+   "unhappy": [
+    67,
+    88
+   ],
+   "unnerved": [
+    123,
+    151
+   ],
+   "unsettled": [
+    123,
+    156
+   ],
+   "upset": [
+    156,
+    171
+   ],
+   "valiant": [
+    120,
+    171
+   ],
+   "vengeful": [
+    2,
+    4
+   ],
+   "vibrant": [
+    28,
+    49
+   ],
+   "vigilant": [
+    6,
+    31
+   ],
+   "vindictive": [
+    1,
+    2
+   ],
+   "vulnerable": [
+    118,
+    154
+   ],
+   "weary": [
+    137,
+    168
+   ],
+   "worn out": [
+    126,
+    164
+   ],
+   "worried": [
+    99,
+    133
+   ],
+   "worthless": [
+    22,
+    37
+   ]
+  }
+ }
+}
+
+PROVENANCE : GCP gge1-floor (n2-standard-32), numpy 2.0.2 / scipy-openblas, parallel post-floor run
+INTEGRITY  : anchor 6de2e293..971b, pre-statement 09eaa4fb..2eef (governing)

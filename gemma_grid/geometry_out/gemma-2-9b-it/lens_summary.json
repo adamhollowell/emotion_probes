@@ -1,0 +1,374 @@
+{
+  "cell": "gemma-2-9b-it",
+  "analysis_layer": 28,
+  "n_layers": 42,
+  "fair_selfrank_n": 140,
+  "onset_layer_median_lt_10k": 0,
+  "onset_fractional_depth": 0.0,
+  "per_layer_median_own_rank": [
+    {
+      "layer": 0,
+      "median_own_rank": 3827.0
+    },
+    {
+      "layer": 1,
+      "median_own_rank": 4451.0
+    },
+    {
+      "layer": 2,
+      "median_own_rank": 3942.0
+    },
+    {
+      "layer": 3,
+      "median_own_rank": 2598.5
+    },
+    {
+      "layer": 4,
+      "median_own_rank": 2969.5
+    },
+    {
+      "layer": 5,
+      "median_own_rank": 1408.0
+    },
+    {
+      "layer": 6,
+      "median_own_rank": 1873.0
+    },
+    {
+      "layer": 7,
+      "median_own_rank": 1845.5
+    },
+    {
+      "layer": 8,
+      "median_own_rank": 309.5
+    },
+    {
+      "layer": 9,
+      "median_own_rank": 185.0
+    },
+    {
+      "layer": 10,
+      "median_own_rank": 170.0
+    },
+    {
+      "layer": 11,
+      "median_own_rank": 264.0
+    },
+    {
+      "layer": 12,
+      "median_own_rank": 316.0
+    },
+    {
+      "layer": 13,
+      "median_own_rank": 175.0
+    },
+    {
+      "layer": 14,
+      "median_own_rank": 149.0
+    },
+    {
+      "layer": 15,
+      "median_own_rank": 256.0
+    },
+    {
+      "layer": 16,
+      "median_own_rank": 297.0
+    },
+    {
+      "layer": 17,
+      "median_own_rank": 106.5
+    },
+    {
+      "layer": 18,
+      "median_own_rank": 79.0
+    },
+    {
+      "layer": 19,
+      "median_own_rank": 63.0
+    },
+    {
+      "layer": 20,
+      "median_own_rank": 94.0
+    },
+    {
+      "layer": 21,
+      "median_own_rank": 36.5
+    },
+    {
+      "layer": 22,
+      "median_own_rank": 57.0
+    },
+    {
+      "layer": 23,
+      "median_own_rank": 37.0
+    },
+    {
+      "layer": 24,
+      "median_own_rank": 45.0
+    },
+    {
+      "layer": 25,
+      "median_own_rank": 39.0
+    },
+    {
+      "layer": 26,
+      "median_own_rank": 27.0
+    },
+    {
+      "layer": 27,
+      "median_own_rank": 23.0
+    },
+    {
+      "layer": 28,
+      "median_own_rank": 26.0
+    },
+    {
+      "layer": 29,
+      "median_own_rank": 20.5
+    },
+    {
+      "layer": 30,
+      "median_own_rank": 23.0
+    },
+    {
+      "layer": 31,
+      "median_own_rank": 19.0
+    },
+    {
+      "layer": 32,
+      "median_own_rank": 19.0
+    },
+    {
+      "layer": 33,
+      "median_own_rank": 19.0
+    },
+    {
+      "layer": 34,
+      "median_own_rank": 17.0
+    },
+    {
+      "layer": 35,
+      "median_own_rank": 16.0
+    },
+    {
+      "layer": 36,
+      "median_own_rank": 17.0
+    },
+    {
+      "layer": 37,
+      "median_own_rank": 18.0
+    },
+    {
+      "layer": 38,
+      "median_own_rank": 20.5
+    },
+    {
+      "layer": 39,
+      "median_own_rank": 20.5
+    },
+    {
+      "layer": 40,
+      "median_own_rank": 19.0
+    },
+    {
+      "layer": 41,
+      "median_own_rank": 23.0
+    }
+  ],
+  "analysis_layer_raw_selfranks_median": 57.5,
+  "table1_raw_analysis_layer": {
+    "happy": {
+      "top": [
+        " joyful",
+        " delightful",
+        " delightfully",
+        " joyous",
+        " joyfully"
+      ],
+      "bottom": [
+        "IntoConstraints",
+        "MigrationBuilder",
+        " CreateTagHelper",
+        "RectangleBorder",
+        " BrowserModule"
+      ]
+    },
+    "sad": {
+      "top": [
+        " sadness",
+        " emptiness",
+        " empty",
+        " loneliness",
+        " mourning"
+      ],
+      "bottom": [
+        " NSCoder",
+        " inform\u00e9e",
+        "\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629",
+        " Administrativna",
+        " \u0644\u0644\u0627\u0633\u0645\u0627\u0621"
+      ]
+    },
+    "angry": {
+      "top": [
+        " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+        " angrily",
+        " \u00f6f",
+        "yntaxException",
+        "uxxxx"
+      ],
+      "bottom": [
+        " adventure",
+        " adventures",
+        " adventurous",
+        "joyed",
+        " nanti"
+      ]
+    },
+    "afraid": {
+      "top": [
+        " terrified",
+        " terror",
+        " terrifying",
+        " panic",
+        " fear"
+      ],
+      "bottom": [
+        " :)",
+        "\ud83d\ude09",
+        " :-)",
+        " ;)",
+        " delightful"
+      ]
+    },
+    "surprised": {
+      "top": [
+        " \u0648\u06cc\u06a9\u06cc\u200c\u067e\u062f\u06cc",
+        "\u307e\u3055\u304b\u306e",
+        "\u307e\u3055\u304b",
+        " shock",
+        " stunned"
+      ],
+      "bottom": [
+        " nanti",
+        " nantinya",
+        "ModelSerializer",
+        "sometimes",
+        " lagi"
+      ]
+    },
+    "guilty": {
+      "top": [
+        " desmotivaciones",
+        "tagHelperRunner",
+        " h\u0131rka",
+        " zijne",
+        " saveiro"
+      ],
+      "bottom": [
+        " familiar",
+        " unexpected",
+        " unusual",
+        " dynamic",
+        " fascinating"
+      ]
+    },
+    "nervous": {
+      "top": [
+        " nervously",
+        "ANTLR",
+        " nervios",
+        " nerves",
+        " nervous"
+      ],
+      "bottom": [
+        " celebrate",
+        " wonderful",
+        " \u0645\u062d\u0641\u0648\u0638\u0629",
+        " dedicate",
+        " happy"
+      ]
+    },
+    "desperate": {
+      "top": [
+        " desperation",
+        " desesper",
+        " feroit",
+        " \u017font",
+        " pouvoit"
+      ],
+      "bottom": [
+        " enjoy",
+        " enjoying",
+        " enjoyed",
+        " delighted",
+        " delight"
+      ]
+    },
+    "proud": {
+      "top": [
+        " proud",
+        " proudly",
+        "proud",
+        " orgull",
+        " proudest"
+      ],
+      "bottom": [
+        " \u041c\u0435\u043a\u0441\u0438\u0447\u043a\u0430",
+        " OMITBAD",
+        " jakie\u015b",
+        "expandindo",
+        " vaguely"
+      ]
+    },
+    "loving": {
+      "top": [
+        " love",
+        "\u2764\ufe0f",
+        " \u2764\ufe0f",
+        " loving",
+        " helps"
+      ],
+      "bottom": [
+        "<unused79>",
+        "<unused52>",
+        "[@BOS@]",
+        "<unused8>",
+        "<unused14>"
+      ]
+    },
+    "inspired": {
+      "top": [
+        " new",
+        " inspired",
+        " adventure",
+        " ideas",
+        " passion"
+      ],
+      "bottom": [
+        "<unused79>",
+        "[@BOS@]",
+        "<unused8>",
+        "<unused3>",
+        "<unused43>"
+      ]
+    },
+    "calm": {
+      "top": [
+        " pleasant",
+        " interesting",
+        " pleasantly",
+        " enjoyed",
+        " enjoyable"
+      ],
+      "bottom": [
+        " Italijanski",
+        " \u043c\u04d9\u043a\u0430\u043b",
+        "<unused14>",
+        "[@BOS@]",
+        "<unused79>"
+      ]
+    }
+  },
+  "conventions": "raw v@W_U for Table-1; (1+w) norm lens (eps 1e-6) for sweep; cleaned vectors; own token = ' word' single-token (140/171)"
+}

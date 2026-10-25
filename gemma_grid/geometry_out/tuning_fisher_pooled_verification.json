@@ -1,0 +1,223 @@
+{
+ "record": "registered tuning Fisher p reproduction (SR.4 serialization of the pooled SE) + Holm ladder",
+ "se_single_pair": 0.21821789023599236,
+ "se_pooled": 0.12598815766974242,
+ "se_pooled_construction": "sqrt(2/42)/sqrt(3) -- three size pairs treated as independent",
+ "independence_assumptions": [
+  "across the 45 rated emotions within a size pair",
+  "across the three size pairs"
+ ],
+ "tolerance": 1e-09,
+ "all_match": true,
+ "rows": [
+  {
+   "signal": "valence_r",
+   "contrast": "2b",
+   "delta_z": 0.11753455362649934,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.5901553036169123,
+   "p_artifact": 0.5901553036169123,
+   "match": true
+  },
+  {
+   "signal": "valence_r",
+   "contrast": "9b",
+   "delta_z": 0.14048397754842346,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.5197191027606148,
+   "p_artifact": 0.5197191027606147,
+   "match": true
+  },
+  {
+   "signal": "valence_r",
+   "contrast": "27b",
+   "delta_z": 0.11781716297920575,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.589261813296251,
+   "p_artifact": 0.589261813296251,
+   "match": true
+  },
+  {
+   "signal": "valence_r",
+   "contrast": "POOLED[IT-base]",
+   "delta_z": 0.12527856471804286,
+   "se_used": 0.12598815766974242,
+   "p_recomputed": 0.32004384803282754,
+   "p_artifact": 0.3200438480328276,
+   "match": true,
+   "p_if_single_pair_se_used": 0.5659011444410068
+  },
+  {
+   "signal": "arousal_r",
+   "contrast": "2b",
+   "delta_z": -0.16790622942915234,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.4416303665206359,
+   "p_artifact": 0.44163036652063603,
+   "match": true
+  },
+  {
+   "signal": "arousal_r",
+   "contrast": "9b",
+   "delta_z": -0.0341761915297113,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.8755482922443097,
+   "p_artifact": 0.8755482922443096,
+   "match": true
+  },
+  {
+   "signal": "arousal_r",
+   "contrast": "27b",
+   "delta_z": -0.146292454228941,
+   "se_used": 0.21821789023599236,
+   "p_recomputed": 0.5026052276626007,
+   "p_artifact": 0.5026052276626007,
+   "match": true
+  },
+  {
+   "signal": "arousal_r",
+   "contrast": "POOLED[IT-base]",
+   "delta_z": -0.11612495839593488,
+   "se_used": 0.12598815766974242,
+   "p_recomputed": 0.3566781502661476,
+   "p_artifact": 0.3566781502661476,
+   "match": true,
+   "p_if_single_pair_se_used": 0.5946211319041308
+  }
+ ],
+ "holm": {
+  "m": 9,
+  "m_rule": "in_holm tuning rows CARRYING a p; floor-only rows with no p are excluded",
+  "in_holm_rows_total": 11,
+  "in_holm_rows_without_p": [
+   {
+    "signal": "layerstab_all",
+    "floor": 0.01,
+    "verdict": "n/a"
+   },
+   {
+    "signal": "layerstab_mid_late",
+    "floor": 0.01,
+    "verdict": "n/a"
+   }
+  ],
+  "alpha": 0.05,
+  "ladder": [
+   {
+    "rank": 1,
+    "signal": "var_pc2",
+    "p": 1.7761681014860642e-10,
+    "holm_threshold": 0.005555555555555556,
+    "rejected": true,
+    "artifact_holm_alpha": 0.005555555555555556,
+    "artifact_holm_significant": true,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 2,
+    "signal": "var_pc3",
+    "p": 0.0013424671066748495,
+    "holm_threshold": 0.00625,
+    "rejected": true,
+    "artifact_holm_alpha": 0.00625,
+    "artifact_holm_significant": true,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 3,
+    "signal": "neighbor_cos(9 anchor pairs)",
+    "p": 0.01741068801801937,
+    "holm_threshold": 0.0071428571428571435,
+    "rejected": false,
+    "artifact_holm_alpha": 0.0071428571428571435,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 4,
+    "signal": "valence_r",
+    "p": 0.3200438480328276,
+    "holm_threshold": 0.008333333333333333,
+    "rejected": false,
+    "artifact_holm_alpha": 0.008333333333333333,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 5,
+    "signal": "arousal_r",
+    "p": 0.3566781502661476,
+    "holm_threshold": 0.01,
+    "rejected": false,
+    "artifact_holm_alpha": 0.01,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 6,
+    "signal": "offdiag_pc2_pleasure",
+    "p": 0.47213394662307717,
+    "holm_threshold": 0.0125,
+    "rejected": false,
+    "artifact_holm_alpha": 0.0125,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 7,
+    "signal": "var_pc1",
+    "p": 0.5836814664153178,
+    "holm_threshold": 0.016666666666666666,
+    "rejected": false,
+    "artifact_holm_alpha": 0.016666666666666666,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 8,
+    "signal": "offdiag_pc1_arousal",
+    "p": 0.7430222897039633,
+    "holm_threshold": 0.025,
+    "rejected": false,
+    "artifact_holm_alpha": 0.025,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_subfloor"
+   },
+   {
+    "rank": 9,
+    "signal": "self_ARI(k=10)",
+    "p": 0.7976160175951539,
+    "holm_threshold": 0.05,
+    "rejected": false,
+    "artifact_holm_alpha": 0.05,
+    "artifact_holm_significant": false,
+    "threshold_agrees": true,
+    "flag_agrees": true,
+    "verdict": "NULL_after_Holm"
+   }
+  ],
+  "survivors": [
+   "var_pc2",
+   "var_pc3"
+  ],
+  "note": "the ladder stops at the first failure, so rows below it are unrejected too"
+ },
+ "script": "gemma_grid/scripts/verify_tuning_fisher_pooled.py",
+ "script_sha256": "ac85286070b5b901217d6ccd58aa24317e8b5625be8400c148f04b25f3439968"
+}

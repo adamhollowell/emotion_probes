@@ -1,0 +1,74 @@
+{
+  "gemma-2-2b-base": {
+    "pos": {
+      "onset": 0,
+      "L0": 1578,
+      "final": 42
+    },
+    "neg": {
+      "onset": 2,
+      "L0": 11335,
+      "final": 25
+    }
+  },
+  "gemma-2-2b-it": {
+    "pos": {
+      "onset": 0,
+      "L0": 1914,
+      "final": 26
+    },
+    "neg": {
+      "onset": 4,
+      "L0": 10891,
+      "final": 18
+    }
+  },
+  "gemma-2-9b-base": {
+    "pos": {
+      "onset": 0,
+      "L0": 1155,
+      "final": 29
+    },
+    "neg": {
+      "onset": 0,
+      "L0": 7776,
+      "final": 15
+    }
+  },
+  "gemma-2-9b-it": {
+    "pos": {
+      "onset": 0,
+      "L0": 1024,
+      "final": 34
+    },
+    "neg": {
+      "onset": 0,
+      "L0": 6695,
+      "final": 18
+    }
+  },
+  "gemma-2-27b-base": {
+    "pos": {
+      "onset": 22,
+      "L0": 152752,
+      "final": 32
+    },
+    "neg": {
+      "onset": 23,
+      "L0": 111771,
+      "final": 16
+    }
+  },
+  "gemma-2-27b-it": {
+    "pos": {
+      "onset": 21,
+      "L0": 174544,
+      "final": 18
+    },
+    "neg": {
+      "onset": 23,
+      "L0": 112597,
+      "final": 13
+    }
+  }
+}

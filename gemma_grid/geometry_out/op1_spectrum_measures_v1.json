@@ -1,0 +1,95 @@
+{
+ "provenance": {
+  "script": "gemma_grid/scripts/op1_spectrum_measures_100T.py",
+  "created_utc": "2026-08-19T16:24:18+00:00",
+  "ruling": "Adam 2026-08-10 (ruling 10): bolt the cheap OP.1 part on \u2014 PR + TwoNN ID per cell.",
+  "definitions": "PR=(sum \u03bb)^2/sum \u03bb^2 over PCA eigenvalues of the 171 vectors (mean-centered); TwoNN MLE ID on unit-normalized vectors.",
+  "status": "UNREGISTERED exploratory; Phase-5 check owed before paper contact."
+ },
+ "cells": {
+  "gemma-2-2b-base": {
+   "analysis_layer": 17,
+   "cleaned": {
+    "participation_ratio": 6.896,
+    "twonn_id": 4.355,
+    "var_pc1_check": 31.617
+   },
+   "raw": {
+    "participation_ratio": 6.771,
+    "twonn_id": 4.327,
+    "var_pc1_check": 32.075
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  },
+  "gemma-2-2b-it": {
+   "analysis_layer": 17,
+   "cleaned": {
+    "participation_ratio": 6.883,
+    "twonn_id": 4.256,
+    "var_pc1_check": 31.888
+   },
+   "raw": {
+    "participation_ratio": 6.702,
+    "twonn_id": 4.293,
+    "var_pc1_check": 32.794
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  },
+  "gemma-2-9b-base": {
+   "analysis_layer": 28,
+   "cleaned": {
+    "participation_ratio": 7.342,
+    "twonn_id": 4.342,
+    "var_pc1_check": 29.849
+   },
+   "raw": {
+    "participation_ratio": 7.145,
+    "twonn_id": 4.318,
+    "var_pc1_check": 30.573
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  },
+  "gemma-2-9b-it": {
+   "analysis_layer": 28,
+   "cleaned": {
+    "participation_ratio": 7.611,
+    "twonn_id": 4.255,
+    "var_pc1_check": 29.158
+   },
+   "raw": {
+    "participation_ratio": 7.257,
+    "twonn_id": 4.241,
+    "var_pc1_check": 30.514
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  },
+  "gemma-2-27b-base": {
+   "analysis_layer": 31,
+   "cleaned": {
+    "participation_ratio": 8.393,
+    "twonn_id": 4.341,
+    "var_pc1_check": 26.732
+   },
+   "raw": {
+    "participation_ratio": 8.26,
+    "twonn_id": 4.303,
+    "var_pc1_check": 27.24
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  },
+  "gemma-2-27b-it": {
+   "analysis_layer": 31,
+   "cleaned": {
+    "participation_ratio": 8.273,
+    "twonn_id": 4.255,
+    "var_pc1_check": 27.268
+   },
+   "raw": {
+    "participation_ratio": 8.197,
+    "twonn_id": 4.247,
+    "var_pc1_check": 27.279
+   },
+   "gate_var_pc1_vs_stageA": "PASS"
+  }
+ }
+}

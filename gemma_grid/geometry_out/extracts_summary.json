@@ -1,0 +1,114 @@
+{
+  "fig84_headline": {
+    "2b": {
+      "min_rsa_layer": 25,
+      "min_frac_depth": 0.9615384615384616,
+      "min_rsa": 0.9909309334982107,
+      "perturbation_1minusRSA_by_third": {
+        "early": 0.004227632426425876,
+        "mid": 0.00551166986175089,
+        "late": 0.007549613266765398
+      }
+    },
+    "9b": {
+      "min_rsa_layer": 40,
+      "min_frac_depth": 0.9523809523809523,
+      "min_rsa": 0.9904017966558438,
+      "perturbation_1minusRSA_by_third": {
+        "early": 0.0034250778807189963,
+        "mid": 0.005530791525808043,
+        "late": 0.007327498004564892
+      }
+    },
+    "27b": {
+      "min_rsa_layer": 45,
+      "min_frac_depth": 0.9782608695652174,
+      "min_rsa": 0.8244766122733279,
+      "perturbation_1minusRSA_by_third": {
+        "early": 0.010042112238173972,
+        "mid": 0.014194409948164566,
+        "late": 0.021318242612043292
+      }
+    }
+  },
+  "seam_per_cell": {
+    "metric": "first layer where RSA-to-analysis-layer >= 0.97 (sustained 3 layers; E1 band-edge style). Replaces the earlier largest-adjacent-jump detector, which early wobble fooled (correction logged).",
+    "gemma-2-2b-base": {
+      "consolidation_layer_rsa_ge_0.97": 7,
+      "frac_depth": 0.269,
+      "pre_seam_max_rsa": 0.957,
+      "n_layers": 26
+    },
+    "gemma-2-2b-it": {
+      "consolidation_layer_rsa_ge_0.97": 7,
+      "frac_depth": 0.269,
+      "pre_seam_max_rsa": 0.948,
+      "n_layers": 26
+    },
+    "gemma-2-9b-base": {
+      "consolidation_layer_rsa_ge_0.97": 9,
+      "frac_depth": 0.214,
+      "pre_seam_max_rsa": 0.969,
+      "n_layers": 42
+    },
+    "gemma-2-9b-it": {
+      "consolidation_layer_rsa_ge_0.97": 10,
+      "frac_depth": 0.238,
+      "pre_seam_max_rsa": 0.963,
+      "n_layers": 42
+    },
+    "gemma-2-27b-base": {
+      "consolidation_layer_rsa_ge_0.97": 23,
+      "frac_depth": 0.5,
+      "pre_seam_max_rsa": 0.961,
+      "n_layers": 46
+    },
+    "gemma-2-27b-it": {
+      "consolidation_layer_rsa_ge_0.97": 23,
+      "frac_depth": 0.5,
+      "pre_seam_max_rsa": 0.93,
+      "n_layers": 46
+    }
+  },
+  "boundary_overlap": {
+    "purity_rank_corr_mean_offdiag": 0.618,
+    "bottom_decile_in_all_six": [
+      "infatuated"
+    ],
+    "moral_emotion_purity_mean_across_cells": {
+      "regretful": 0.85,
+      "remorseful": 0.883,
+      "guilty": 0.867,
+      "vindictive": 0.667,
+      "vengeful": 0.6,
+      "spiteful": 0.7
+    },
+    "loving_purity_mean": 0.65
+  },
+  "consolidation": {
+    "gemma-2-2b-base": {
+      "arousal_settles_on_pc2_from": 6,
+      "settle_frac_depth": 0.231
+    },
+    "gemma-2-2b-it": {
+      "arousal_settles_on_pc2_from": 7,
+      "settle_frac_depth": 0.269
+    },
+    "gemma-2-9b-base": {
+      "arousal_settles_on_pc2_from": 8,
+      "settle_frac_depth": 0.19
+    },
+    "gemma-2-9b-it": {
+      "arousal_settles_on_pc2_from": 8,
+      "settle_frac_depth": 0.19
+    },
+    "gemma-2-27b-base": {
+      "arousal_settles_on_pc2_from": 27,
+      "settle_frac_depth": 0.587
+    },
+    "gemma-2-27b-it": {
+      "arousal_settles_on_pc2_from": 27,
+      "settle_frac_depth": 0.587
+    }
+  }
+}

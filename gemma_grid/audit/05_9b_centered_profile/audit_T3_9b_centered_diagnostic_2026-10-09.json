@@ -1,0 +1,98 @@
+{
+  "inputs": {
+    "probes": {
+      "path": "data/gemma-2-9b-it/vectors/canonical_100T.pt",
+      "sha256": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+      "key": "vectors_raw",
+      "layer": 28,
+      "shape": [
+        171,
+        3584
+      ],
+      "d_model_declared": 3584,
+      "n_emotions": 171
+    },
+    "base": {
+      "path": "data/gemma-2-9b-base/vectors/gemma-2-9b-base__neutral_100T.pt",
+      "sha256": "723360d2febc35707deed7f6079023810c1e8c114917065d64f21affcee90340",
+      "key": "acts",
+      "layer": 28,
+      "shape": [
+        500,
+        3584
+      ],
+      "src": "neutral_dialogues_100T_HA.jsonl",
+      "src_sha256": "3838a8f23e726d2433135336477ab0ee0e21f4ecb8ca06613963d26de8a3a04f",
+      "analysis_layer_declared": 28,
+      "d_model_declared": 3584
+    },
+    "it": {
+      "path": "data/gemma-2-9b-it/vectors/gemma-2-9b-it__neutral_100T.pt",
+      "sha256": "fd557d875961e6f6f12662a9319c99eb3b8233b077dc46362723990339c9ef74",
+      "key": "acts",
+      "layer": 28,
+      "shape": [
+        500,
+        3584
+      ],
+      "src": "neutral_dialogues_100T_HA.jsonl",
+      "src_sha256": "3838a8f23e726d2433135336477ab0ee0e21f4ecb8ca06613963d26de8a3a04f",
+      "analysis_layer_declared": 28,
+      "d_model_declared": 3584
+    }
+  },
+  "claims": {
+    "1_uncentered_r": 0.9993392965070416,
+    "1_centered_r": -0.12135313737528626,
+    "2_n_union20": 21,
+    "2_overlap": 19,
+    "2_union_dims": [
+      79,
+      270,
+      376,
+      504,
+      595,
+      979,
+      999,
+      1132,
+      1235,
+      1243,
+      1279,
+      1799,
+      2059,
+      2293,
+      2476,
+      2488,
+      2558,
+      2885,
+      3033,
+      3186,
+      3475
+    ],
+    "3_centered_r_drop_union": 0.9595265411089704,
+    "3_centered_r_drop_it_top20": 0.9538279131608255,
+    "4_reliability_base_centered_on_full": -0.18184155396283427,
+    "4_reliability_base_centered_within_half": 0.9754270315581309,
+    "4_reliability_it_centered_on_full": -0.17809278915810142,
+    "4_reliability_it_centered_within_half": 0.9825038794766932,
+    "5_d_model": 3584,
+    "5_dim4140_exists_in_9B": false,
+    "5_dim4140_in_union": false
+  },
+  "extras": {
+    "random_drop_control": {
+      "n_trials": 200,
+      "k": 21,
+      "seed": 0,
+      "mean_r": -0.12572341086519864,
+      "sd_r": 0.047442845792620814,
+      "min_r": -0.2079656273861382,
+      "max_r": 0.4667923447159222,
+      "n_ge_observed": 0
+    },
+    "variance_share_union_base": 0.284655413008854,
+    "variance_share_top20_base": 0.28012718864463104,
+    "variance_share_union_it": 0.211207499812183,
+    "variance_share_top20_it": 0.2068835952823555
+  }
+}

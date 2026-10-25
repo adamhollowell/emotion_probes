@@ -1,0 +1,13 @@
+{
+ "m9_note": "SR.5 input manifest -- sha256 of every input, written at run time.",
+ "inputs": {
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/stageA_summary.json": "b63e0deeda5537cda6856e54874bbc9e0bb04c0d3ef2c0f83ade97cebef6c21d",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-it/stageA_summary.json": "da853e5943ddbf8a78a525707ee64eb4f866142234dc940cc99e230d80060476",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-base/stageA_summary.json": "2008ed37bc34c22ec136d20ed2362879d096a53078a7724c70c1356bb938c7a4",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-it/stageA_summary.json": "b5d8a00575cc0fade95e4b7114fa61dca49285e191de6f0d191ee800dd42c41b",
+  "gemma_grid/geometry_out_100T/stageC_grading.json": "5ae1c53c7637b42a84346f787eddf7d9c2145b0c2cb99925644034d4bd2f4b7b",
+  "norm_robustness_full_100T_results.json": "6b51146eecf57ebbbc1ba15eaa43d8f4588c8e4d748c0731a00342d858a52fa4",
+  "norm_robustness_full_100T.py": "668a8e29fa3164163074a7097404f3c2d00f32f00c99366d5a895343ec9b79f3"
+ },
+ "output": "gemma_grid/geometry_out_100T/interaction_did_constructions_100T.json"
+}
