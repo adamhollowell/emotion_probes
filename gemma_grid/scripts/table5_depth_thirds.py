@@ -26,7 +26,7 @@ FIG84 = os.path.join(REPO, "gemma_grid/geometry_out/fig84_depth_tuning.json")
 SHIFTS = os.path.join(REPO, "gemma_grid/geometry_out/fixed_probe_tuning_shifts_results.json")
 OUT = os.path.join(REPO, "gemma_grid/geometry_out/table5_depth_thirds.json")
 
-# Table 5 as printed in GGE1_DRAFT_v9_100T.md (sha256 2a1a1911...), early / middle / late.
+# Table 5 as printed in the final draft, GGE1_DRAFT_v10_100T.md (sha256 c2b6740a...), early / middle / late.
 PRINTED = {
     ("Perturbation", "2B"): (".0042", ".0055", ".0075"),
     ("Perturbation", "9B"): (".0034", ".0055", ".0073"),
