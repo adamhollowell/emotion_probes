@@ -1,0 +1,28 @@
+{
+ "output": "gemma_grid/geometry_out_100T/layerstab_cosine_check_100T.json",
+ "output_sha256": "a9dc629c8827a4e36f6d2e9eaa615eb9bde903ce18a48252b773b9161c0a2c41",
+ "script": "gemma_grid/scripts/layerstab_cosine_check_100T.py",
+ "script_sha256": "d099fda489bfcbc6a6846b97d77f8b20bd15cbbe2adab594d4652b731bf80944",
+ "noise_floor_sha256": "33d08246d345ce77c806c891e35e2f1e48a9c0e4d196869241bfb8e2b04a9bc4",
+ "inputs": {
+  "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+  "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+  "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+  "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+  "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5"
+ },
+ "references": {
+  "gemma_grid/geometry_out_100T/layerstab_ci_100T.json": "4b69312afa208e6a28d8f1beb013ef9eb8638bc9e92fd151138c7a9de4e4cfd5",
+  "gemma_grid/geometry_out_100T/layerstab_ci_100T_exclL45.json": "a543a3027620fb426a3ce3716e83b9889726fe7bbe3b02b1c4bf26d2b6b725f1",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-base/stageA_summary.json": "b63e0deeda5537cda6856e54874bbc9e0bb04c0d3ef2c0f83ade97cebef6c21d",
+  "gemma_grid/geometry_out_100T/gemma-2-2b-it/stageA_summary.json": "da853e5943ddbf8a78a525707ee64eb4f866142234dc940cc99e230d80060476",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-base/stageA_summary.json": "9e739107d4759b8cdaea06fb930cdcab9e0a0ccb19b69f3d16c1d888eb4ae824",
+  "gemma_grid/geometry_out_100T/gemma-2-9b-it/stageA_summary.json": "d726dbe3a30c4113c78628ab08920e4bc808fb240667ef452e1ea0a34deac5aa",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-base/stageA_summary.json": "2008ed37bc34c22ec136d20ed2362879d096a53078a7724c70c1356bb938c7a4",
+  "gemma_grid/geometry_out_100T/gemma-2-27b-it/stageA_summary.json": "b5d8a00575cc0fade95e4b7114fa61dca49285e191de6f0d191ee800dd42c41b"
+ },
+ "python": "3.13.16",
+ "numpy": "2.5.3",
+ "generated_utc": "2026-10-26T12:49:06Z"
+}

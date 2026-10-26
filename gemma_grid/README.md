@@ -165,6 +165,7 @@ Steps 1 and 2 write into `data/`: the token ids of the neutral corpus (`data/c3_
 | `p34b_arousal_pc23_family.json` | `scripts/phase4_p34b_arousal_pc23.py` | §5.3 |
 | `p37_velocity_family.json` | `scripts/phase4_p37_velocity.py` | Appendix H, the layer-to-layer rotation |
 | `layerstab_ci_exclL45.json` | `scripts/phase4_layerstab_ci_exclL45.py` | §8.3 |
+| `layerstab_cosine_check.json` | `scripts/layerstab_cosine_check.py` | Appendix H |
 | `b1_onsetcurve.json`, `b1_onsetcurve_knee.json`, `b1_window_sensitivity.json` | `scripts/b1_onsetcurve.py`, `scripts/lc60_c1_b1_window_sensitivity.py` | §6.3 |
 | `b2_covariate_transfer.json`, `per_emotion_ownword_ranks.json` | `scripts/b2_covariate_transfer.py` | §7.4 |
 | `g54a_displacement_model.json` | `scripts/g54a_displacement_model.py`, with inputs from `scripts/nogpu_adapters.py` | §7.4 |
@@ -190,6 +191,8 @@ Steps 1 and 2 write into `data/`: the token ids of the neutral corpus (`data/c3_
 `lens_readability_ablations.json` holds the layer-0 checks of §6.2 and Appendix E. They read the cleaned vectors without the final normalization, read the uncleaned vectors through the full readout, and pass random directions through the readout at each of the three widths. The producer was written for the release on 2026-10-26 and imports `scripts/phase4_lens.py` unchanged, so it needs `LENS_ASSET_DIR` as that script does. Before it writes, its reference arm must reproduce each model's layer-0 median in `lens_cross_cell.json` exactly, and in the run of record it did.
 
 `precision_story_summary.json` is the record of the bf16 against fp32 comparison in §8.4 and Appendix J. A spot-check re-extracted 40 stories per emotion at each size's analysis layer in both precisions. The file keeps the story measurements and names each size's worst vector, the story vector with the lowest cosine between the two precisions, with the share of its error that falls in its largest dimension. It also carries the two hardware comparisons that §8.4 and Appendix J cite, both on story vectors. The spot-check's activation files are not released, so `scripts/precision_story_extract.py` does not run from the release. Its manifest gives their sha256.
+
+`layerstab_cosine_check.json` recomputes the registered layer-stability measure of §8.3 with uncentered cosine in place of Pearson, with the same vectors, sampled layers and bootstrap draws, and reports every value under both with the difference. Its Pearson side reproduces `layerstab_ci.json` and `layerstab_ci_exclL45.json` before it writes.
 
 `job1`, `job2` and the raw against cleaned embedding file were first computed without a retained script. Their scripts were written afterwards from the procedure each artifact records, and each reproduces every stored value exactly in the pinned environment. Each of the three has a verify mode, which is its default. The second parametric null ran from code kept in a working memo, which ships unchanged (below).
 

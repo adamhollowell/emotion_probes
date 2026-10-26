@@ -11,7 +11,7 @@ not kept, and its as-run hash is that of its text recovered from the run's sessi
 the as-run hash is that of the working copy kept after the run. Where a working copy was edited after its run, the copy that ran
 was recovered and is used instead (`scripts/item3_corrected.py`).
 
-84 edited, 14 unchanged, 1 shipped byte for byte as audit code, 2 written for the release, 1 recovered from the run's record; 102 in all.
+85 edited, 14 unchanged, 1 shipped byte for byte as audit code, 2 written for the release, 1 recovered from the run's record; 103 in all.
 
 | Released script | Ran as | As run (sha256) | Released (sha256) | Status | Released lines that differ |
 |---|---|---|---|---|---|
@@ -60,6 +60,7 @@ was recovered and is used instead (`scripts/item3_corrected.py`).
 | `scripts/item5_svd_provenance.py` | `item5_svd_provenance_100T.py` | `45611aeb8539ab3db3733a7f3d7bad89c470f9505d547a59d991fab55f483d18` | `7a9f85155c394756b9f3371d754b982bd62c027ee5d300974a152900a71ef232` | edited | 7, 37-38, 45, 82 |
 | `scripts/job1_L18_emotion_bootstrap_sensitivity.py` | `job1_L18_emotion_bootstrap_sensitivity_100T.py` | `5150b62211a80096c22595674264000a9d14a0093d305fab2941069c6c973dd3` | `58db888f5500db64946a4f5c0669ff6927a3adc7c83dff993908c1a09f3d20a6` | edited | 5, 29-30, 51-52, 56-59, 154 |
 | `scripts/job2_layer_permutation_null.py` | `job2_layer_permutation_null_100T.py` | `8d8891cfb053f70901f7f2d07782d524b1905458be6535e41b3b6a6b9069f4c2` | `f03b40499a48bb67e393a3a9e0121e316b447b68f2e21f184c4890bd2eb56441` | edited | 5, 10, 28-29, 45-46, 100 |
+| `scripts/layerstab_cosine_check.py` | `layerstab_cosine_check_100T.py` | `d099fda489bfcbc6a6846b97d77f8b20bd15cbbe2adab594d4652b731bf80944` | `4af3907ed38e48fff584d7fd167fd4df87238caed84624795aa8cf6dea6038e4` | edited | 27, 38-39, 42-45 |
 | `scripts/lc60_c1_b1_window_sensitivity.py` | `lc60_c1_b1_window_sensitivity.py` | `fbe3c41d544abc1b0091a3c533ee8a7d43fdf8f3524a8e133b28bccbd64c942d` | `fbf09a2668b10e8acd520c0e481dc05289d5611f8092ddb16635b2c4d665c5fa` | edited | 21, 23-25 |
 | `scripts/lens_readability_ablations.py` | `lens_readability_ablations_100T.py` | `4f45f85f18e5efddf70045570a894b621d5c555cbbc915eccb97ec80ee286955` | `6f6f7750e53e2e89928c6b2f7dc5e85b157f986751a34dcc27fcfbbe0b153a39` | edited | 2, 4, 11, 27-28, 43-44, 47-48; 1 line removed |
 | `scripts/nogpu_adapters.py` |  |  | `4889224f59a199227f50ea1cb46fa8157679db575c9f54e9c5dcc652043a75ab` | written for the release | written for the release from the run's surviving record |
