@@ -13,15 +13,23 @@ error mean and maximum over the 6,840 story vectors) and identifies two vectors:
   largest relative error   the story vector with the largest ||bf16 - fp32|| / ||fp32||.
 
 For each it records the emotion, the story's slot among that emotion's 40 sampled stories, the story's
-position among that emotion's 1,200 stories in corpus order, and the top dimension of the difference with its share, max_d (bf16_d - fp32_d)^2 / sum_d (bf16_d - fp32_d)^2.
+position among that emotion's 1,200 stories in corpus order, and the top dimension of the difference
+with its share, max_d (bf16_d - fp32_d)^2 / sum_d (bf16_d - fp32_d)^2.
 The worst vector's share is the summary's worst_vec_topdim_share, and the script checks that it
 reproduces it, and the stored statistics, to within 1e-6 before writing.
 
+Two hardware records are added, story fields only. For 9B and 27B, cross_environment copies the story
+fields of the spot-check file's stored truth_gate: the spot-check's bf16 story vectors (H200) against
+the stored extraction (H100), as relative difference and cosine. For 9B, twin_run parses the twin-run
+result line: the same 6,840 story vectors extracted twice on one accelerator, once with the forward
+pass stopped at the layer read and once completed, compared bit for bit.
+
 The spot-check activation files are not part of the release. Their sha256 values are in the manifest.
 
-    python gemma_grid/scripts/precision_story_extract.py --spotcheck-dir <folder> --summary <summary json>
+    python gemma_grid/scripts/precision_story_extract.py --spotcheck-dir <folder> --summary <summary json> \
+        --twin-result <twin_9b_result.txt>
 """
-import argparse, hashlib, json, sys
+import argparse, hashlib, json, re, sys
 from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np, torch
@@ -53,6 +61,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--spotcheck-dir", required=True)
     ap.add_argument("--summary", required=True)
+    ap.add_argument("--twin-result", required=True)
     a = ap.parse_args()
     sd, summ = Path(a.spotcheck_dir), json.loads(Path(a.summary).read_text())
     out = {"analysis": "bf16 against fp32 precision spot-check, story vectors only",
@@ -89,12 +98,31 @@ def main():
                            **{key: S[key] for key in STORED},
                            "worst_vec_topdim_share": S["worst_vec_topdim_share"],
                            "worst_vector": worst, "largest_relative_error_vector": big}
+        if "truth_gate" in p:
+            g = p["truth_gate"]
+            if g["stories_rel_diff"] != S["truth_gate"]["stories_rel_diff"]:
+                sys.exit(f"STOP: {s} truth_gate stories_rel_diff differs between the activation file and the summary")
+            out["sizes"][s]["cross_environment"] = {
+                "comparison": "spot-check bf16 story vectors (H200) against the stored extraction (H100), same stories",
+                "stories_rel_diff": g["stories_rel_diff"], "stories_cos": g["stories_cos"],
+                "stories_outliers_below_0.999": g["stories_outliers_below_0.999"]}
         print(f"{s}: worst vector {worst['emotion']} slot {worst['story_slot']} dim {worst['topdim']} share {worst['topdim_share']:.4f}; "
               f"largest relative error {big['emotion']} slot {big['story_slot']} dim {big['topdim']} share {big['topdim_share']:.4f}")
+    line = Path(a.twin_result).read_text().strip()
+    num = lambda pat: float(re.search(pat, line).group(1))
+    bits = re.search(r"bit-differing vectors=(\d+)/(\d+)", line)
+    out["sizes"]["9b"]["twin_run"] = {
+        "comparison": "bf16 story vectors extracted twice on one H200, forward pass stopped at the layer read against completed, same rows",
+        "n_vectors": int(bits.group(2)), "bit_differing_vectors": int(bits.group(1)),
+        "rel_diff_max": num(r"rel_diff max=([0-9.e+-]+)"), "rel_diff_mean": num(r"rel_diff max=[0-9.e+-]+ mean=([0-9.e+-]+)"),
+        "cos_min": num(r"cos min=([0-9.e+-]+)"), "cos_mean": num(r"cos min=[0-9.e+-]+ mean=([0-9.e+-]+)"),
+        "record_line": line}
+    if out["sizes"]["9b"]["twin_run"]["n_vectors"] != out["sizes"]["9b"]["n_story_vectors"]:
+        sys.exit("STOP: twin-run vector count differs from the spot-check's")
     OUT.write_text(json.dumps(out, indent=1))
     man = {"output": str(OUT.relative_to(REPO)), "output_sha256": sha(OUT),
            "script": str(Path(__file__).resolve().relative_to(REPO)), "script_sha256": sha(Path(__file__).resolve()),
-           "inputs": {**inputs, "summary": sha(a.summary)}, "tolerance_against_stored": TOL,
+           "inputs": {**inputs, "summary": sha(a.summary), "twin_9b_result.txt": sha(a.twin_result)}, "tolerance_against_stored": TOL,
            "python": sys.version.split()[0], "numpy": np.__version__, "torch": torch.__version__,
            "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")}
     OUT.with_name(OUT.stem + "_manifest.json").write_text(json.dumps(man, indent=1))

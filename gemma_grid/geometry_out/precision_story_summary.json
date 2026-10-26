@@ -57,6 +57,26 @@
     "topdim": 504,
     "topdim_share": 0.5314550995826721,
     "relative_error": 0.013154841028153896
+   },
+   "cross_environment": {
+    "comparison": "spot-check bf16 story vectors (H200) against the stored extraction (H100), same stories",
+    "stories_rel_diff": 0.0013818490551784635,
+    "stories_cos": {
+     "min": 0.9999752640724182,
+     "mean": 0.9999989867210388,
+     "n_below_0.999": 0
+    },
+    "stories_outliers_below_0.999": []
+   },
+   "twin_run": {
+    "comparison": "bf16 story vectors extracted twice on one H200, forward pass stopped at the layer read against completed, same rows",
+    "n_vectors": 6840,
+    "bit_differing_vectors": 0,
+    "rel_diff_max": 0.0,
+    "rel_diff_mean": 0.0,
+    "cos_min": 0.9999982,
+    "cos_mean": 0.9999999,
+    "record_line": "TWIN-RUN 9B truncated-vs-full bf16 (H200, same rows): rel_diff max=0.000e+00 mean=0.000e+00 | cos min=0.9999982 mean=0.9999999 | bit-differing vectors=0/6840"
    }
   },
   "27b": {
@@ -83,6 +103,16 @@
     "topdim": 4140,
     "topdim_share": 0.9758860468864441,
     "relative_error": 0.07217195630073547
+   },
+   "cross_environment": {
+    "comparison": "spot-check bf16 story vectors (H200) against the stored extraction (H100), same stories",
+    "stories_rel_diff": 0.0036298318300396204,
+    "stories_cos": {
+     "min": 0.999871551990509,
+     "mean": 0.9999986290931702,
+     "n_below_0.999": 0
+    },
+    "stories_outliers_below_0.999": []
    }
   }
  }
