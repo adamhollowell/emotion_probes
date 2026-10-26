@@ -1,0 +1,89 @@
+{
+ "analysis": "bf16 against fp32 precision spot-check, story vectors only",
+ "definitions": {
+  "worst_vector": "the story vector with the lowest bf16 against fp32 cosine",
+  "largest_relative_error_vector": "the story vector with the largest ||bf16 - fp32|| / ||fp32||",
+  "topdim_share": "max_d (bf16_d - fp32_d)^2 / sum_d (bf16_d - fp32_d)^2 for that vector",
+  "stored_statistics": "copied from the spot-check summary as stored, over all story vectors"
+ },
+ "sizes": {
+  "2b": {
+   "layer": 17,
+   "n_story_vectors": 6840,
+   "width": 2304,
+   "stories_cos_mean": 0.999994158744812,
+   "stories_cos_min": 0.9999319314956665,
+   "stories_rel_mean": 0.0037722575943917036,
+   "stories_rel_max": 0.01184780802577734,
+   "worst_vec_topdim_share": 0.07041565328836441,
+   "worst_vector": {
+    "emotion": "playful",
+    "story_slot": 21,
+    "story_index": 656,
+    "topdim": 334,
+    "topdim_share": 0.07041565328836441,
+    "cosine": 0.999932050704956
+   },
+   "largest_relative_error_vector": {
+    "emotion": "playful",
+    "story_slot": 21,
+    "story_index": 656,
+    "topdim": 334,
+    "topdim_share": 0.07041565328836441,
+    "relative_error": 0.011847807094454765
+   }
+  },
+  "9b": {
+   "layer": 28,
+   "n_story_vectors": 6840,
+   "width": 3584,
+   "stories_cos_mean": 0.9999961256980896,
+   "stories_cos_min": 0.9999544620513916,
+   "stories_rel_mean": 0.0029733972623944283,
+   "stories_rel_max": 0.013154842890799046,
+   "worst_vec_topdim_share": 0.028774000704288483,
+   "worst_vector": {
+    "emotion": "safe",
+    "story_slot": 2,
+    "story_index": 38,
+    "topdim": 999,
+    "topdim_share": 0.028774000704288483,
+    "cosine": 0.9999544620513916
+   },
+   "largest_relative_error_vector": {
+    "emotion": "serene",
+    "story_slot": 24,
+    "story_index": 710,
+    "topdim": 504,
+    "topdim_share": 0.5314550995826721,
+    "relative_error": 0.013154841028153896
+   }
+  },
+  "27b": {
+   "layer": 31,
+   "n_story_vectors": 6840,
+   "width": 4608,
+   "stories_cos_mean": 0.9999954104423523,
+   "stories_cos_min": 0.9998301267623901,
+   "stories_rel_mean": 0.0038026832044124603,
+   "stories_rel_max": 0.07217197865247726,
+   "worst_vec_topdim_share": 0.9758860468864441,
+   "worst_vector": {
+    "emotion": "uneasy",
+    "story_slot": 36,
+    "story_index": 996,
+    "topdim": 4140,
+    "topdim_share": 0.9758860468864441,
+    "cosine": 0.999829888343811
+   },
+   "largest_relative_error_vector": {
+    "emotion": "uneasy",
+    "story_slot": 36,
+    "story_index": 996,
+    "topdim": 4140,
+    "topdim_share": 0.9758860468864441,
+    "relative_error": 0.07217195630073547
+   }
+  }
+ }
+}

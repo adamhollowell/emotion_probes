@@ -1,0 +1,17 @@
+{
+ "output": "gemma_grid/geometry_out_100T/precision_story_summary.json",
+ "output_sha256": "2eb0d4f512ea73a5171e50639345359f9036c461999eae8139011dd80312dbda",
+ "script": "gemma_grid/scripts/precision_story_extract_100T.py",
+ "script_sha256": "ea57abb6a8319be683044dce0b1bdd699e637f735a3134b0357109c64b56dd18",
+ "inputs": {
+  "precision_spotcheck_2b.pt": "c37f5d8f83034b205a92787d3dcf3f87e406c7f8c5a73c9e28a491a88fe21331",
+  "precision_spotcheck_9b.pt": "34072dbb945560c06d7f06af49ee09f97147dfac7f80834f3b3554fe4842b05a",
+  "precision_spotcheck_27b.pt": "3d6b4e35ee5c323d54b5d3295d6f5176fe0bc530713cd9f8f248d103529b369b",
+  "summary": "42985cc93b5eb8f70aa3b524a2832ab944bc106b6b80973e81cfe235c4c35563"
+ },
+ "tolerance_against_stored": 1e-06,
+ "python": "3.13.16",
+ "numpy": "2.5.3",
+ "torch": "2.14.1+cu130",
+ "generated_utc": "2026-10-26T12:27:52Z"
+}
