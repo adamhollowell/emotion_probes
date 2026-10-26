@@ -11,7 +11,7 @@ not kept, and its as-run hash is that of its text recovered from the run's sessi
 the as-run hash is that of the working copy kept after the run. Where a working copy was edited after its run, the copy that ran
 was recovered and is used instead (`scripts/item3_corrected.py`).
 
-82 edited, 14 unchanged, 1 shipped byte for byte as audit code, 2 written for the release, 1 recovered from the run's record; 100 in all.
+83 edited, 14 unchanged, 1 shipped byte for byte as audit code, 2 written for the release, 1 recovered from the run's record; 101 in all.
 
 | Released script | Ran as | As run (sha256) | Released (sha256) | Status | Released lines that differ |
 |---|---|---|---|---|---|
@@ -61,6 +61,7 @@ was recovered and is used instead (`scripts/item3_corrected.py`).
 | `scripts/job1_L18_emotion_bootstrap_sensitivity.py` | `job1_L18_emotion_bootstrap_sensitivity_100T.py` | `5150b62211a80096c22595674264000a9d14a0093d305fab2941069c6c973dd3` | `58db888f5500db64946a4f5c0669ff6927a3adc7c83dff993908c1a09f3d20a6` | edited | 5, 29-30, 51-52, 56-59, 154 |
 | `scripts/job2_layer_permutation_null.py` | `job2_layer_permutation_null_100T.py` | `8d8891cfb053f70901f7f2d07782d524b1905458be6535e41b3b6a6b9069f4c2` | `f03b40499a48bb67e393a3a9e0121e316b447b68f2e21f184c4890bd2eb56441` | edited | 5, 10, 28-29, 45-46, 100 |
 | `scripts/lc60_c1_b1_window_sensitivity.py` | `lc60_c1_b1_window_sensitivity.py` | `fbe3c41d544abc1b0091a3c533ee8a7d43fdf8f3524a8e133b28bccbd64c942d` | `fbf09a2668b10e8acd520c0e481dc05289d5611f8092ddb16635b2c4d665c5fa` | edited | 21, 23-25 |
+| `scripts/lens_readability_ablations.py` | `lens_readability_ablations_100T.py` | `4f45f85f18e5efddf70045570a894b621d5c555cbbc915eccb97ec80ee286955` | `6f6f7750e53e2e89928c6b2f7dc5e85b157f986751a34dcc27fcfbbe0b153a39` | edited | 2, 4, 11, 27-28, 43-44, 47-48; 1 line removed |
 | `scripts/nogpu_adapters.py` |  |  | `4889224f59a199227f50ea1cb46fa8157679db575c9f54e9c5dcc652043a75ab` | written for the release | written for the release from the run's surviving record |
 | `scripts/noise_floor.py` | `noise_floor.py` | `33d08246d345ce77c806c891e35e2f1e48a9c0e4d196869241bfb8e2b04a9bc4` | `33d08246d345ce77c806c891e35e2f1e48a9c0e4d196869241bfb8e2b04a9bc4` | unchanged |  |
 | `scripts/norm_robustness_full.py` | `norm_robustness_full_100T.py` | `668a8e29fa3164163074a7097404f3c2d00f32f00c99366d5a895343ec9b79f3` | `6c1514832e811192013dc4e97427c1136a278b6ec5adfd88e7aa931e86c72584` | edited | 2, 4-7, 11-12, 20, 22, 30-35, 150-152, 163, 176-177 |

@@ -171,6 +171,7 @@ Steps 1 and 2 write into `data/`: the token ids of the neutral corpus (`data/c3_
 | `g66_frequency_control.json` | `scripts/g66_frequency_control.py`, with inputs from `scripts/nogpu_adapters.py` | Appendix F |
 | `valence_asymmetry_onset.json` | `scripts/baseit_welfarepaper_scan/g6_6_valence_asymmetry.py` | Appendix F |
 | `fair_emotions_v1.json` | `scripts/serialize_fair_emotions.py` | Appendix F |
+| `lens_readability_ablations.json` | `scripts/lens_readability_ablations.py` (imports `scripts/phase4_lens.py`) | §6.2, Appendix E |
 | `job2_layer_permutation_null.json` | `scripts/job2_layer_permutation_null.py` | §7.3 |
 | `probe_l45/PROBE_REPORT.md`, `probe_l45/PROBE_REPORT_FOLLOWUP.md` | `probe_l45/analyze_probe_l45.py` (seed 0), then `probe_l45/analyze_followup_l45.py` (seed 1 and the decision rule) | §8.3, Appendix H |
 | `parametric_search_artifact_null_SECOND.json` | `scripts/parametric_search_artifact_null_v2.py` | §7.3 |
@@ -184,6 +185,8 @@ Steps 1 and 2 write into `data/`: the token ids of the neutral corpus (`data/c3_
 | `tuning_dependence_aware_ci_extract.json` | `scripts/tuning_dependence_aware_ci.py`, then `scripts/tuning_dependence_aware_ci_extract.py` | §7.1, last paragraph |
 
 `tuning_dependence_aware_ci_extract.json` carries the 17 rows the paper's §7.1 relies on, each as a point estimate and a 95 percent percentile interval: the twelve per-size tuning deltas, the four pooled deltas, and the arousal interaction. The analysis is unregistered and grades nothing. Its producer reports bootstrap standard errors as well, and the extract leaves them out because on three rows (2B PC2 with pleasure, pooled PC2 with pleasure, and the interaction) the per-draw re-signing of each axis, which flips a sign in 10 of 2,000 draws, inflates the standard error while the interval still describes the row faithfully. The re-signing rule was stated in the analysis's specification before it ran and is not part of the registration. The extract commits by sha256 to the full output, which the producer regenerates.
+
+`lens_readability_ablations.json` holds the layer-0 checks of §6.2 and Appendix E. They read the cleaned vectors without the final normalization, read the uncleaned vectors through the full readout, and pass random directions through the readout at each of the three widths. The producer was written for the release on 2026-10-26 and imports `scripts/phase4_lens.py` unchanged, so it needs `LENS_ASSET_DIR` as that script does. Before it writes, its reference arm must reproduce each model's layer-0 median in `lens_cross_cell.json` exactly, and in the run of record it did.
 
 `job1`, `job2` and the raw against cleaned embedding file were first computed without a retained script. Their scripts were written afterwards from the procedure each artifact records, and each reproduces every stored value exactly in the pinned environment. Each of the three has a verify mode, which is its default. The second parametric null ran from code kept in a working memo, which ships unchanged (below).
 

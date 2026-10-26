@@ -1,0 +1,30 @@
+{
+ "output": "gemma_grid/geometry_out_100T/lens_readability_ablations_100T.json",
+ "output_sha256": "dca15d9cce8a826d9ec04d528ce3dffcaabbc95052e2af859a776b99bad8f43b",
+ "script": "gemma_grid/scripts/lens_readability_ablations_100T.py",
+ "script_sha256": "4f45f85f18e5efddf70045570a894b621d5c555cbbc915eccb97ec80ee286955",
+ "readout_module_sha256": "7830ad8dcc3bf9db4535f8b628cace0824fd14c5f645f3653997eb8514e5f04b",
+ "inputs": {
+  "gemma_grid/data/gemma-2-2b-base/vectors/canonical_100T.pt": "4622ff9c90fa56c7890f0af45931fd5454f514b7e374f82da5bcbdfa130a0300",
+  "gemma_grid/data/gemma-2-2b-it/vectors/canonical_100T.pt": "e404a92a73607d02565bc9d405bb8d3d7cf242e25e40b493baf55d5938b2882f",
+  "gemma_grid/data/gemma-2-9b-base/vectors/canonical_100T.pt": "74b8f3f50dbfbe4b93683a7007482e7eb41d9d8c84b6ccc9ff13827d8fedbb5c",
+  "gemma_grid/data/gemma-2-9b-it/vectors/canonical_100T.pt": "f99508c5ed0f71325cce804f971ceda1ae0cd707d8bf6e45174cecc15b89767a",
+  "data/vectors/emotion_vectors_171_100T.pt": "6de2e293d0e642bd164111e3be24917d7460bd4810fffa6c710cd1a97235971b",
+  "gemma_grid/data/gemma-2-27b-it/vectors/canonical_100T.pt": "10d1234df22ef4e335b0cefd8e264dee5d75f9a1f2e94f285b18199f21d4b2b5"
+ },
+ "lens_ingredients": {
+  "gemma_grid/data/gemma-2-2b-base/vectors/gemma-2-2b-base__lens_ingredients.pt": "211e301911ac75f4f94ddb4dc90d7fae6f07cd7acea2661e7c9f7febb0576286",
+  "gemma_grid/data/gemma-2-2b-it/vectors/gemma-2-2b-it__lens_ingredients.pt": "f128f3915e5244c54b941398ff3c634bf90335c5fcb55a52647481b31341de26",
+  "gemma_grid/data/gemma-2-9b-base/vectors/gemma-2-9b-base__lens_ingredients.pt": "cd96c5f954d67d38d1daab5c4b99193187970631f4ddac2954e52a0beca6794c",
+  "gemma_grid/data/gemma-2-9b-it/vectors/gemma-2-9b-it__lens_ingredients.pt": "ef7a68567bb5f122d9b0489894616836d38c86ada0ef1be87ff72c3bdd9f66c6",
+  "data/vectors/lens_ingredients.pt": "6653b2908a88fa50f3b25ee1d481e5dc5ab87629a5d00c392b6517953a5b4096",
+  "gemma_grid/data/gemma-2-27b-it/vectors/gemma-2-27b-it__lens_ingredients.pt": "771df8d9b11246d523617df6684bbb675d2179c74846a2374183277d37459e97"
+ },
+ "emotion_token_ids_sha256": "732250b5fa17c2b1c6d8fb5f7168407cee6cd50dc6e03ce28227009c41ab9f06",
+ "reference_file": "gemma_grid/geometry_out_100T/lens_cross_cell.json",
+ "reference_sha256": "453d5457b23402fccdbb11fad64106a1ad0632188460717b7c711c146445bda4",
+ "numpy": "2.0.2",
+ "torch": "2.8.0",
+ "python": "3.9.6",
+ "generated_utc": "2026-10-26T12:06:07Z"
+}
