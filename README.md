@@ -204,7 +204,7 @@ Please cite the paper ([arXiv:2609.22208](https://arxiv.org/abs/2609.22208)):
   year          = {2026},
   eprint        = {2609.22208},
   archivePrefix = {arXiv},
-  primaryClass  = {cs.AI},
+  primaryClass  = {cs.CL},
   url           = {https://arxiv.org/abs/2609.22208}
 }
 ```
