@@ -15,7 +15,7 @@ preferred-citation:
   year: 2026
   identifiers:
     - type: other
-      value: "arXiv:[ID ON POSTING]"
+      value: "arXiv:2610.35411"
 references:
   - type: article
     title: "Replicating the Geometry of Emotion Representations in a Base Open-Weights Model"

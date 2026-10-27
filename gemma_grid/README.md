@@ -4,7 +4,7 @@ This directory holds the code, results, audit record, and manifests for a six-mo
 
 It sits inside the repository of the replication study it builds on (Hollowell 2026, arXiv:2609.22208), whose pipeline it inherits unchanged. Base 27B is the anchor model, the one the replication study measured, so the grid's anchor vectors are the replication's released vectors.
 
-Paper: The Geometry of Emotion Representations Across Scale, Depth, and Instruction Tuning, arXiv:[ID ON POSTING].
+Paper: The Geometry of Emotion Representations Across Scale, Depth, and Instruction Tuning, arXiv:2610.35411 (https://arxiv.org/abs/2610.35411).
 
 ## Where the files are
 
@@ -286,9 +286,9 @@ The §6.1 grading was run as one blind pass over 144 interleaved rows. `geometry
   title         = {The Geometry of Emotion Representations Across Scale, Depth, and Instruction Tuning},
   author        = {Hollowell, Adam},
   year          = {2026},
-  eprint        = {[ID ON POSTING]},
+  eprint        = {2610.35411},
   archivePrefix = {arXiv},
-  primaryClass  = {[CLASS ON POSTING]}
+  primaryClass  = {cs.CL}
 }
 
 @misc{hollowell2026replicating,
